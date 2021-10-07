@@ -1,0 +1,9 @@
+#header{
+    display: flex;
+}
+
+#encabezado{
+    display: flex;
+    height: 90px;
+    background-color:black;
+}

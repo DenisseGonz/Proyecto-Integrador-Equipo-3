@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Header</title>
+</head>
+
+<body>
+    <div id="header">
+
+        <div id="logo">
+            <img src="./icon/logo.png" alt="" width="180px" />
+        </div>
+
+        <nav class="navbar navbar-expand-lg" id="encabezado">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <svg id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="white" />
+                </svg>
+            </button>
+
+            <div class="collapse navbar-collapse nav-item" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Mi Perfil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Salas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Gryffindor</a>
+                            <a class="dropdown-item" href="#">Hufflepuff</a>
+                            <div class="dropdown-item">Slytherin</div>
+                            <a class="dropdown-item" href="#">Ravenclaw</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="btn btn-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                    <path
+                        d="M5 4h14a3 3 0 0 1 3 3v4h-7v-1H9v1H2V7a3 3 0 0 1 3-3m6 7h2v2h-2v-2m-9 1h7v1l2 2h2l2-2v-1h7v8H2v-8z"
+                        fill="white" />
+                </svg>
+            </button>
+        </nav>
+    </div>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-2">
+                    <img src="https://img.ecartelera.com/noticias/fotos/50300/50316/1.jpg" class="d-block col"
+                        alt="...">
+                    <div clas="col cartext">
+                        <h3>
+                            Anuncio del director Albus Dumbledore
+                        </h3>
+                        <h4>
+                            31 de Febrero
+                        </h4>
+                        <p>
+                            A todos los estudiantes se les recuerda que el martes 31 de Febrero tendremos un importante
+                            anuncio de nuestro director por lo que se les solicita que todos atiendan el evento sin
+                            falta.
+                        </p>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="carousel-item">
+                <div class="row row-cols-1 row-cols-md-2">
+                    <img src="https://img.ecartelera.com/noticias/fotos/34400/34410/1.jpg" class="d-block col"
+                        alt="...">
+                    <div clas="col">
+                        <h3>
+                            Visita de representantes del ministerio de magia
+                        </h3>
+                        <h4>
+                            15 de Abril
+                        </h4>
+                        <p>
+                            El mes de abril será especial pues recibiremos a algunos representantes del ministerio de
+                            magia asegurese de ser cortés y ponga en alto el nombre de nuestra institución.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row row-cols-1 row-cols-md-2">
+                    <img src="https://super-ficcion.com/wp-content/uploads/2020/04/1-1-1.jpg" class="d-block col"
+                        alt="...">
+                    <div clas="col">
+                        <h3>
+                            Clase magistral profesor Sutanito
+                        </h3>
+                        <h4>
+                            10 de Abril
+                        </h4>
+                        <p>
+                            A todos los interesados en topicos avanzados sobre defensa de las artes obscuras los
+                            invitamos a presenciar la clase magistral que nos presentera el profesor sutanito
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+        </div>
+      </div> -->
+
+
+    <!-- Comportamientos de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- <script src="config.js"></script> -->
+</body>
+
+</html>

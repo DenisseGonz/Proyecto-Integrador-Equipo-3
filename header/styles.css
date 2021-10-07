@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0%;
+}
+
+#encabezado{
+    display: flex;
+    height: 90 px; 
+    background-color: black;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    justify-content: space-around;
+}
+
+#desplegable{
+    background-color: rgb(90, 90, 90);
+    margin-left: 2px;
+}

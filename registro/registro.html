@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="registro.css" rel="stylesheet" type="text/css" />
+    <title>Registro</title>
+
+</head>
+
+<body id="mask">
+    <div id="encabezado">
+        <div id="escudo">
+            <img src="imagenes/escudo.png" height="140px">
+        </div>
+    
+    </div>
+
+    <div id="formulario-registro">
+        <div class="titulos">
+            <h1 id="titulo1">¡Bienvenido!</h1>
+            <h2 id="subtitulo">Regístrate</h2>
+        </div>
+        <form method="POST">
+            <div class="form-group row">
+                <label for="inputNombre" class="col-sm-3 col-form- label" id="etiquetas">Nombre: </label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputFamilia" class="col-sm-3 col-form- label" id="etiquetas">Familia:</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="inputFamilia" placeholder="Familia">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputEmail" class="col-sm-3 col-form- label" id="etiquetas">Correo electrónico:</label>
+                <div class="col-sm-7">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="algo@hogwarts.com">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputContraseña" class="col-sm-3 col-form- label" id="etiquetas">Contraseña:</label>
+                <div class="col-sm-7">
+                    <input type="password" class="form-control" id="inputContraseña"
+                        placeholder="8 caracteres alfanuméricos">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputConfirma" class="col-sm-3 col-form- label" id="etiquetas">Confirma contraseña:</label>
+                <div class="col-sm-7">
+                    <input type="password" class="form-control" id="inputConfirma" placeholder="Repite tu contraseña">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputCasa" class="col-sm-3 col-form- label" id="etiquetas">Casa de Hogwarts:</label>
+                <div class="col-sm-7">
+                    <select name="Casa" id="inputCasa" class="form-control">
+                        <option value="1"> Gryffindor</option>
+                        <option value="2"> Hufflepuff</option>
+                        <option value="3"> Ravenclaw </option>
+                        <option value="4"> Slytherin </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputPregunta" class="col-sm-3 col-form- label" id="etiquetas">Pregunta de seguridad:</label>
+                <div class="col-sm-7">
+                    <select name="pregunta" id="inputPregunta" class="form-control">
+                        <option value="1"> Nombre de tu primera mascota</option>
+                        <option value="2"> Hechizo favorito</option>
+                        <option value="3"> ¿A qué casa de Hogwarts perteneció tu madre? </option>
+                        <option value="4"> ¿Cuál es el patronus tu padre? </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputRespuesta" class="col-sm-3 col-form- label" id="etiquetas">Respuesta:</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="inputRespuesta"
+                        placeholder="Respuesta a la pregunta de seguridad">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-12 boton">
+                    <button type="submit" class="btn ">Regístrame</button>
+                </div>
+            </div>
+
+
+
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>

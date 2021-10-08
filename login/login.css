@@ -1,0 +1,89 @@
+body{
+    display:flex;
+    flex-direction:column nowrap;    
+    justify-content: center;
+    width:1440px;
+    height:1024px;
+    background-image: url(./imagenes/Gawalpop.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-blend-mode:lighten; 
+    
+}
+#encabezado{
+    display:flex;
+    align-self: flex-start;
+    width:1440px;
+    height:157px;
+    background-color: black;
+    align-items: center;
+}
+#escudo{
+    display:flex;
+    justify-content: flex-start;
+    padding-left: 70px;
+    margin: 10px;
+}
+
+#mask{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(65, 64, 64); 
+}
+ 
+#formulario-registro{
+    display:flex;
+    flex-direction:column ;
+    align-content:space-around;
+    justify-content: center;
+    width:580px;
+    height:795px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    margin-top: 25px;
+    border-radius: 25px;
+}
+
+.form-group{
+    justify-content:space-around;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+#etiquetas{
+    color:white;
+    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
+    font-size: 22px;
+}
+#titulo1{
+    color:white;
+    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
+    font-size:45px;
+    
+}
+#subtitulo{
+    color:white;
+    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
+    font-size: 30px;
+}
+
+.campo{
+    background: rgb(34,47,89);
+    background: linear-gradient(180deg, rgba(196,196,196,1) 0%, rgba(34,47,89,1) 70%);
+}
+.boton{
+    background: rgb(28,68,205);
+    background: linear-gradient(315deg, rgba(28,68,205,0.65) 0%, rgba(196,196,196,0) 84%);
+}

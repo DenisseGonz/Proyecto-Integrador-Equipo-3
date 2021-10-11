@@ -1,0 +1,34 @@
+*{
+    margin-right: 0;
+    padding-right: 0;
+}
+.contenedorPrincipal{
+    margin: 0;
+    max-width: none;
+    padding-right: 0;
+}
+#encaEve{
+    height: 85vh;
+}
+#imgEncabezado{
+    margin:5% 0;
+    position: static;
+    float: right;
+    width: 100%;
+    height: 65vh;    
+}
+.titulo_Eve{
+    color: gold;
+    transform: translate(0%,-50%);
+    font-size: 5em;
+    -webkit-text-stroke: white 3px;
+}
+.albus{
+    width: 75px;
+    height: 75px;
+}
+.titulo-card{
+    font-size: 26px;
+    font-style:bold;
+    margin-left: 10px;
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Delivery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="delivery.css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
+</head>
+
+<body>
+    <!-- El seguiente bloque de código controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
+    <div id="particles-js">
+        <img id="fondo" src="../src/assets/img/hogwarts-fondo.png" />
+    </div>
+
+    <!-- Este bloque de codigo despliega el header dejar aqui -->
+    <div id="header">
+        <div id="logo">
+            <img src="../src/assets/img/logo_header.png" alt="" width="180px" />
+        </div>
+        <nav class="navbar navbar-expand-lg" id="encabezado">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <svg id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="white" />
+                </svg>
+            </button>
+
+            <div id="logo2">
+                <img src="../src/assets/img/logo_header.png" alt="" width="120px" />
+            </div>
+
+            <a class="navbar-brand order-lg-12 p-0 me-2" href="">
+                <svg class="d-block my-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M5 4h14a3 3 0 0 1 3 3v4h-7v-1H9v1H2V7a3 3 0 0 1 3-3m6 7h2v2h-2v-2m-9 1h7v1l2 2h2l2-2v-1h7v8H2v-8z"
+                        fill="white" />
+                </svg>
+            </a>
+
+            <div class="collapse navbar-collapse nav-item" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Mi Perfil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Salas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Gryffindor</a>
+                            <a class="dropdown-item" href="#">Hufflepuff</a>
+                            <div class="dropdown-item">Slytherin</div>
+                            <a class="dropdown-item" href="#">Ravenclaw</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <!-- Inserte los elementos que compondran su página dentro de este div -->
+    <!-- <div class="contenedorPrincipal"> -->
+        <div>
+        <div class="fondo">
+            <h1>¡Indícanos tu lugar y llevamos tu producto!*</h1>
+            <br>
+            <br>
+            <br>
+            <div class="borde justify-content-center container">
+                <form action="post">
+                    <div class="container1">
+                        <div class="nombre">
+                            <label for="Nombre">Nombre</label><br>
+                            <textarea class="nombre" placeholder="Ronald"></textarea>
+                        </div>
+                        <div class="div-fam">
+                            <label for="fam">Familia</label><br>
+                            <textarea class="fam" placeholder="Wesley"></textarea>
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="form-group">
+                            <label for="inputPregunta" class="label">¿A qué casa perteneces?</label>
+                            <div>
+                                <select name="pregunta" id="inputPregunta" class="form-control">
+                                    <option value="1">Gryffindor</option>
+                                    <option value="2">Hufflepuff</option>
+                                    <option value="3">Ravenclaw</option>
+                                    <option value="4">Slytherin</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="div-fam">
+                            <label for="Mensaje">Cuarto</label><br>
+                            <textarea class="mensaje" placeholder="#239"></textarea>
+                        </div>
+                    </div>
+                    <div class="btn-enviar">
+                        <button type="button" class="btn btn-primary btn-lg">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <br>
+            <br>
+            <div class="terminos">
+                <p>
+                *Aplican términos y condiciones.<br>No aplica para alumnos de las siguientes instituciones: Academia Beauxbatons e Instituto Durmstrang
+                </p>
+            </div>
+
+
+        </div>
+    </div>    
+
+
+
+
+
+
+
+        <!-- Este bloque de codigo controla el footer dejar aqui -->
+        <footer class="footer ">
+            <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejon Diagonal</h2>
+            <div class="row mt-4 justify-content-center align-items-center">
+                <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
+                    <div class=" col-lg-6 col-md-12 col-sm-12">
+                        <ul class="footer__menu_1">
+                            <li class="nav-item">
+                                <a class=" nav-link" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Acerca de Nosotros</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="linea"></div>
+                    <div class=" col-lg-3 col-md-12 col-sm-12">
+                        <ul class="">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-lg-3  col-md-6 col-sm-6 col-6">
+                    <div class="footer__imagen">
+                        <img src="../src/assets/img/Hogwartscrest.png" alt="hogwarts">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Se importa la librería de las partículas primero antes del script de configuración -->
+        <script src="..\node_modules\particles.js\particles.js"></script>
+        <script src="../src/assets/js/cargador-particulas.js"></script>
+
+        <!-- Comportamientos de Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

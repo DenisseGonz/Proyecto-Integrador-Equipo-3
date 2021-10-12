@@ -1,0 +1,76 @@
+.contenedorPrincipal{
+    margin: 0 auto;
+    width: 90% !important; 
+    z-index: 99;
+}
+
+.cartext{
+    background-color: steelblue;
+    padding: 3.5em;
+    margin-left:0 ;
+}
+
+.cardgroup{
+    margin: 5em;
+}
+
+
+
+@media (min-width:992px){
+    #carouselExampleControls{
+        display: none;
+    }
+
+    .card:hover{
+        transform: translateY(-15px);
+        transition: 0.5s;
+        box-shadow: 0.5em 0.5em 10px rgba(240,240, 240, 0.3);
+    }
+
+    .card{
+        background-color: #2a623d;
+    }
+
+    .card-img-top{
+        padding: 0.5em;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .card-body{
+        overflow: hidden;
+    }
+    
+
+    .card-body:hover{
+        transform: translateY(8px);
+    }
+
+    .card-text{
+        position: relative;
+        left: -300px;
+        height: 0px;
+    }
+    
+    .card-body:hover .card-text{
+        left:0;
+        height: auto;
+    }
+
+
+
+}
+
+@media (max-width:991px){
+    .cardgroup{
+        display:none;
+    }
+}
+
+#carouselExampleControls{
+    margin: 5em;
+}
+
+
+
+

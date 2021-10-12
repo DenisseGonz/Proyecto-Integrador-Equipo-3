@@ -92,37 +92,46 @@
                 <h1 class="titulo_Eve text-center font-weight-bolder">Eventos</h1>
             </div>
         </div>
-        <div id="contenedorPubli" class="container row justify-content-around">
+
+        <!-- Publicaciones con cards -->
+
+        <div id="contenedorPubli" class="container-fluid mx-0 row justify-content-around">
             <div class="card col-5">
                 <div class="card-header">
-                    <button id="btn-perfil" type="button" class="btn rounded-circle">
-                        <img src="src/assets/img/albus.jpg" class="rounded-circle albus"/>
-                        <label class="titulo-card"> Albus Percival Wulfric Brian Dumbledore</label>
-                    </button>
+                    <img src="src/assets/img/albus.jpg" class="rounded-circle eventos__perfil"/>
+                    <label class="titulo-card"> Albus P.W.B. Dumbledore</label>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <img src="src/assets/img/copa-eventos.jpg" class="eventos__foto rounded" />
+                    <h5 class="my-3 card-title">Torneo de los Tres Magos</h5>
+                    <p class="card-text text-justify"> Este es otro año para el evento del Torneo de los Tres Magos. Como es costumbre se realizará entre las escuelas de magia de la <strong>Academia Beauxbatons</strong>, el <strong>Instituto Durmstrang</strong> y nosotros. Queridos alumnos y aspirantes a campeones, esperemos que como en cada torneo den lo mejor de sí y que sea una experiencia de aprendizaje para todos ustedes aunque sea solo para observar las intrigantes y peligrosas pruebas por las que pasaran los campeones. </p>
                 </div>
-                <div class="card-footer text-muted">
-                    2 days ago
+                <div class="card-footer text-muted container row justify-content-between">
+                    <div class="col-5">Hace 2 días</div>
+                    <div class="col-5 text-right">
+                        <label for="checkbox__estrella" class="eventos__estrellas">★</label>
+                        <input type="checkbox" id="checkbox__estrella" class="eventos__checkbox"/>
+                        <span id="puntuaciones__eventos">Me gusta</span>
+                    </div>
                 </div>
             </div>
             <div class="card col-5">
                 <div class="card-header">
-                    <button id="btn-perfil" type="button" class="btn rounded-circle">
-                        <img src="src/assets/img/albus.jpg" class="rounded-circle albus"/>
-                        <label class="titulo-card"> Albus Percival Wulfric Brian Dumbledore</label>
-                    </button>
+                    <img src="src/assets/img/Filiusflitwick-profilepic.jpg" class="rounded-circle eventos__perfil"/>
+                    <label class="titulo-card"> Filius Flitwick</label>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <img src="src/assets/img/Coro-sapos.jpg" class="eventos__foto rounded" />
+                    <h5 class="my-3 card-title">Presentación del Coro</h5>
+                    <p class="card-text text-justify"> Queridos alumnos, me veo con el gusto de anunciarles que las actividades del Coro de Sapos siguen su curso normal, además de que gustoso les hago una atenta invitación. ¡Su voz sería un buen aditamento a este gran grupo! De estar interesados siempre pueden consultar conmigo.</p>
                 </div>
-                <div class="card-footer text-muted">
-                    2 days ago
+                <div class="card-footer text-muted container row justify-content-between">
+                    <div class="col-5">Hace 5 días</div>
+                    <div class="col-5 text-right">
+                        <label for="checkbox__estrella" class="eventos__estrellas">★</label>
+                        <input type="checkbox" id="checkbox__estrella" class="eventos__checkbox"/>
+                        <span id="puntuaciones__eventos">Me gusta</span>
+                    </div>
                 </div>
             </div>
         </div>

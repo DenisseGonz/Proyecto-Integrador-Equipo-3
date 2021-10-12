@@ -23,12 +23,28 @@
     font-size: 5em;
     -webkit-text-stroke: white 3px;
 }
-.albus{
-    width: 75px;
-    height: 75px;
+.eventos__perfil{
+    width: 50px;
+    height: 50px;
 }
 .titulo-card{
-    font-size: 26px;
+    font-size: 30px;
     font-style:bold;
     margin-left: 10px;
+}
+.eventos__foto{
+    width: 90%;
+    height: 40vh;
+    margin-left: 5%;
+}
+.eventos__checkbox{
+    display:none;
+}
+.eventos__estrellas{
+    color: lightgrey;
+    -webkit-text-stroke: black 1px;
+    font-size: 1.25em;
+}
+.eventos__estrellas:hover{
+    color:orange;
 }

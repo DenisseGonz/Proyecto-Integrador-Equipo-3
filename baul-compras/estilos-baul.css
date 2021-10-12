@@ -1,4 +1,4 @@
-#usuario{
+.usuario{
     display:flex;
     flex-direction: row;
 }
@@ -42,9 +42,7 @@ body{
     justify-content: space-around;
 }
 
-#encabezados p{
-    padding: 30px;
-}
+
 #comprasResumen{
     display: flex;
     flex-direction: column;

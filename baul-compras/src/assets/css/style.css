@@ -1,0 +1,43 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    /*ayuda a mejorar el box model*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    /*1rem=10px*/
+}
+
+.casa_1:hover {
+    animation: flip; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+}
+
+/* Casa de gryffindor */
+@media (max-width: 768px) {
+    .navegacion__logo {
+        visibility: hidden;
+    }
+}
+
+.navegacion__btn img {
+    width: 75%;
+    height: 75%;
+}
+
+.navegacion__btn {
+    max-width: 12%;
+    padding: 0.2rem;
+    border: none;
+}
+
+.nav {
+    color: black;
+}

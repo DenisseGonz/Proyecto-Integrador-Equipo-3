@@ -1,0 +1,56 @@
+.usuario{
+    display:flex;
+    flex-direction: row;
+}
+
+#texto-user{
+    align-self: center;
+    color:white;
+    font-size: 20px;
+}
+
+body{
+    background-image: url(./imagenes/baul-compras.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: tomato;
+}
+.contenedorBaul{
+    display: flex;
+    width:100%;
+    flex-direction: column wrap;
+    justify-content: space-around;
+    
+}
+
+#comprasDetalle{
+    display: flex;
+    flex-direction: column;
+    /* background: rgb(87,75,11); */
+    background-image: linear-gradient(to bottom, rgba(76,54,3,1), rgba(76,54,3,0.4));
+    width:60%;
+    border-radius: 25px;
+    padding:50px;
+    margin-top: 50px;
+}
+
+#encabezados{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 35px;
+    justify-content: space-around;
+}
+
+
+#comprasResumen{
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+    background-image: linear-gradient(to bottom, rgba(241,196,15,1), rgba(241,196,15,0.2));
+    width:30%;
+    border-radius: 25px;
+    padding: 50px;
+    margin-top: 50px;
+}
+

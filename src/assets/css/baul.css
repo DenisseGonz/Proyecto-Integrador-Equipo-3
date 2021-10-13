@@ -10,10 +10,9 @@
 }
 
 body{
-    background-image: url(./imagenes/baul-compras.png);
+    background-image: url(../img/baul-compras.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: tomato;
 }
 .contenedorBaul{
     display: flex;

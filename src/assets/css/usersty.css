@@ -1,0 +1,6 @@
+.user__titulo{
+    color: gold;
+    transform: translate(0%,-50%);
+    font-size: 5em;
+    -webkit-text-stroke: white 3px;
+}

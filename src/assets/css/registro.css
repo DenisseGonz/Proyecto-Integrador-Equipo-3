@@ -1,0 +1,170 @@
+body{
+    display:flex;
+    flex-direction:column nowrap;    
+    justify-content: center;
+    width:100%;
+    height:1024px;
+    background-image: url(../img/Gawalpop-login-registro.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-blend-mode:lighten; 
+    
+}
+#encabezado{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:157px;
+    background-color: black; 
+}
+#escudo{
+    display:flex;
+    width:25%;
+    justify-content: center;
+    
+    margin: 10px;
+}
+
+#logotipo{
+    display: flex;
+    width:50%;
+    justify-content: center;
+}
+
+
+#mask{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(65, 64, 64); 
+}
+ 
+#formulario-registro{
+    display:flex;
+    flex-direction:column ;
+    align-content:space-around;
+    justify-content: center;
+    width:45%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    margin: 45px;
+    border-radius: 25px;
+    
+}
+
+#form__nombre{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin:0px;
+    padding: 0%;
+}
+#campo_form_nombre{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+}
+
+.form-group{
+    justify-content:space-around;
+   
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    padding: 20px 25px;
+    border-radius: 25px;
+}
+
+#etiquetas{
+    display: flex;
+    align-content: center;
+    width:30%;
+    color:white;
+    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
+    font-size: 22px;
+    padding: 20px;
+    align-content: center;
+}
+
+#etiquetas-pequena{
+    font-size: 21px !important;
+    width:30%;
+    color:white;
+    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
+   /*  padding: 25px; */
+}
+#campos{
+    display: flex;
+    width:50%;
+    align-content: center;
+    justify-content: center;
+    padding:10px 20px;
+}
+#titulo1{
+    color:white;
+    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
+    font-size:45px;
+    
+}
+#subtitulo{
+    color:white;
+    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
+    font-size: 30px;
+}
+
+.caja-check{
+    display: flex;
+    flex-direction: row ;
+    color:white;
+    align-content: center;
+    justify-content: flex-start;
+}
+ .opcion__casa{
+     display: flex;
+     flex-direction: column;
+   
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    padding:auto;
+} 
+
+/* 
+  Hide radio button (the round disc)
+  we will use just the label to create Push button effect */
+
+input[type=radio] {
+    display:none; 
+    margin:10px;
+}
+/* 
+  Change the look'n'feel of labels (which are adjacent to radio buttons).
+  Add some margin, padding to label */
+
+input[type=radio]+label {
+    display:inline-block;
+    margin:0px;
+    padding: 0px 25px;
+    background-color: black;
+    border-color: #ddd;
+}
+
+ /* Change background color for label next to checked radio button
+ to make it look like highlighted button */
+
+input[type=radio]:checked+label { 
+   background-image: none;
+    background-color:grey;
+}
+

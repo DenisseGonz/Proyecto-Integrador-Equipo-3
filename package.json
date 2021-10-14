@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "particles.js": "^2.0.0"
+    "particles.js": "^2.0.0",
+    "sweetalert2": "^11.1.7"
   },
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-rc.0"

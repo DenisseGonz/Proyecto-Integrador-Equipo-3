@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="./src/assets/css/login.css" rel="stylesheet" type="text/css" />
+    <title>login</title>
+
+</head>
+
+<body id="mask">
+    <div id="encabezado">
+        <div id="escudo">
+            <img src="./src/assets/img/escudo-login.png" height="140px">
+        </div>
+        <div id="logotipo">
+            <img src="./src/assets/img/logo_header.png" height="140px">
+        </div>
+        <div id="escudo">
+            <img src="./src/assets/img/escudo-login.png" height="140px">
+        </div>
+
+    </div>
+
+    <div id="formulario-registro">
+        <div class="titulos">
+            <h1 id="titulo1">¡Bienvenido!</h1>
+            <h2 id="subtitulo">Ingresa</h2>
+        </div>
+        <form method="POST">
+            <div class="form-group row">
+                <label for="inputEmail" class="col-sm-3 col-form- label" id="etiquetas">Correo electrónico:</label>
+                <div class="col-sm-7">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="algo@hogwarts.com">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputContraseña" class="col-sm-3 col-form- label" id="etiquetas">Contraseña:</label>
+                <div class="col-sm-7">
+                    <input type="password" class="form-control" id="inputContraseña"
+                        placeholder="8 caracteres alfanuméricos">
+                </div>
+            </div>
+
+            <div class="recuperacion">
+                <button type="button" class="btn btn-outline-secondary">¿Olvidaste tu contraseña?</button>
+            </div>
+
+            <div class="btn-entrar">
+                <div class="form-group entrar">
+                    <div class="col-sm-12 boton">
+                        <button type="submit" class="btn">Entrar</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+        <div class="nuevo-usuario">
+
+            <img src="./src/assets/img/sombrero-login.png" width="150px">
+            <div class="btn-nuevo">
+                <button type="button" class="btn btn-dark">¿Eres nuevo? Regístrate</button>
+            </div>
+            <img src="./src/assets/img/sombrero-login.png" width="150px">
+        </div>
+    </div>
+
+
+</body>
+
+</html>

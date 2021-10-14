@@ -2,9 +2,12 @@
     --black-dg: rgba(0, 0, 0, 0.8);
     --black: #000;
     --red-bg: rgba(174, 0, 1, 0.9);
-    --red: #ae0001;
     --white: #fff;
     --gold: #dfa507;
+    --hufflepuff: #d2b207;
+    --slytherin: #0b360e;
+    --ravenclaw: #035b78;
+    --griffindor: #ae0001;
 }
 
 html {
@@ -22,11 +25,6 @@ html {
 body {
     font-size: 1.6rem;
     /*1rem=10px*/
-}
-
-.casa_1:hover {
-    animation: flip; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 3s; /* don't forget to set a duration! */
 }
 
 /* NAVEGACION */
@@ -69,17 +67,19 @@ body {
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: contain;
-    border: 2px solid var(--red);
+    height: 2rem;
+    border: 2px solid var(--griffindor);
     margin-left: 1.5rem;
     margin-bottom: 0.8rem;
+    padding-bottom: 6.3rem;
     border-radius: 2rem;
 }
 
 .nav-menu {
-    color: var(--red);
+    color: var(--griffindor);
     -webkit-text-stroke: 2px var(--black);
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 3.6rem;
 }
 
 @media (min-width: 300px) and (max-width: 500px) {
@@ -87,7 +87,7 @@ body {
         visibility: hidden;
     }
     .navegacion {
-        background-color: var(--red);
+        background-color: var(--griffindor);
     }
     .nav__li {
         border: 2px solid var(--black);
@@ -96,8 +96,45 @@ body {
     .nav-menu {
         color: var(--gold);
         -webkit-text-stroke: transparent;
-        font-weight: 500;
+        font-weight: 700;
     }
+}
+
+.nav-menu:hover {
+    color: var(--gold);
+}
+
+.hufflepuff,
+.ravenclaw,
+.slytherin,
+.griffindor {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--griffindor);
+    border-radius: 0.5rem;
+}
+.hufflepuff:hover {
+    background-color: var(--hufflepuff);
+    color: var(--white);
+}
+
+.ravenclaw:hover {
+    background-color: var(--ravenclaw);
+    color: var(--white);
+}
+
+.slytherin:hover {
+    background-color: var(--slytherin);
+    color: var(--white);
+}
+.griffindor:hover {
+    background-color: var(--griffindor);
+    color: var(--white);
+}
+
+.dropdown-menu {
+    background-color: var(--black-dg);
+    border-radius: 1rem;
 }
 
 /* GRIFFINDOR */
@@ -106,15 +143,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
-
-    height: 140rem;
-}
-
-@media (max-width: 768px) {
-    .header {
-        height: 60rem;
-        width: 100%;
-    }
+    width: 100%;
+    height: 100vh;
 }
 
 .seccion {
@@ -131,17 +161,16 @@ body {
 .seccion__texto {
     background-color: var(--white);
     text-align: justify;
-    padding: 3rem;
+    padding: 2rem;
     margin-top: 6rem;
-    margin-left: 11rem;
-    width: 60rem;
-    height: 58rem;
+    margin-bottom: 5rem;
+    border-radius: 2rem;
 }
 
 @media (min-width: 300px) and (max-width: 650px) {
     .seccion__texto {
         width: 50rem;
-        height: 30rem;
+        height: 63rem;
     }
     .header {
         width: 100%;
@@ -152,11 +181,11 @@ body {
 .seccion__fundador img {
     margin-top: 5rem;
     border-radius: 10rem;
-    height: 60rem;
+    width: 70%;
+    height: 50rem;
 }
 
 .seccion__fundador p {
-    margin-left: 2rem;
     font-size: 3rem;
 }
 
@@ -179,7 +208,7 @@ body {
 
 .footer h2,
 .nav__enlace {
-    color: #fff;
+    color: var(--white);
     font-weight: 700;
 }
 
@@ -199,7 +228,7 @@ ul {
 }
 
 .linea {
-    border-left: 1px solid #fff;
+    border-left: 1px solid var(--white);
     height: 75px;
     position: relative;
     right: -3%;

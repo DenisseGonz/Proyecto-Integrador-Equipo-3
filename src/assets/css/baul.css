@@ -17,17 +17,17 @@ body{
 .contenedorBaul{
     display: flex;
     width:100%;
-    flex-direction: column wrap;
+    flex-direction: column nowrap;
     justify-content: space-around;
     
 }
 
 #comprasDetalle{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     /* background: rgb(87,75,11); */
     background-image: linear-gradient(to bottom, rgba(76,54,3,1), rgba(76,54,3,0.4));
-    width:60%;
+    width:55%;
     border-radius: 25px;
     padding:50px;
     margin-top: 50px;
@@ -37,17 +37,51 @@ body{
     display: flex;
     flex-direction: row;
     color: white;
-    font-size: 35px;
+    font-size:xx-large;
     justify-content: space-around;
 }
 
+#detalleProductos{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.Producto{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    justify-content: center;
+    align-content: center;
+}
+.textoDetalle{
+    color:white;
+    align-self: center;
+ font-size: large;
+ padding-left: 10px;
+}
+.precioProducto{
+    display:flex;
+    flex-direction: column; 
+    width:20%;
+    color:white;
+    font-size: large;
+    padding-left: 10px;
+}
+
+.contadorProducto{
+    display:flex;
+    flex-direction: column; 
+    width:20%;
+    
+}
 
 #comprasResumen{
     display: flex;
     flex-direction: column;
     /* background-color: yellow; */
     background-image: linear-gradient(to bottom, rgba(241,196,15,1), rgba(241,196,15,0.2));
-    width:30%;
+    width:35%;
     border-radius: 25px;
     padding: 50px;
     margin-top: 50px;

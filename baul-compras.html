@@ -14,7 +14,7 @@
 <body>
 
     <!-- El seguiente bloque de codigo controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
-   <!--  <div id="particles-js">
+    <!--  <div id="particles-js">
         <img id="fondo" src="./src/assets/img/hogwarts-fondo.png" />
     </div> -->
 
@@ -23,7 +23,7 @@
         <div id="logo">
             <img src="./src/assets/img/logo_header.png" alt="" width="180px" />
         </div>
-        <nav class="navbar navbar-expand-lg" id="encabezado" .d-flex >
+        <nav class="navbar navbar-expand-lg" id="encabezado" .d-flex>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <svg id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -32,7 +32,7 @@
                     <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="white" />
                 </svg>
             </button>
-            
+
             <div class="usuario order-lg-12 order-sm-1">
                 <div id="logo-user">
                     <img src="./src/assets/img/logo-user.png" alt="" width="60px" />
@@ -46,7 +46,7 @@
                 <img src="./src/assets/img/logo_header.png" alt="" width="120px" />
             </div>
 
-          
+
 
             <div class="collapse navbar-collapse nav-item" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -83,7 +83,7 @@
                 </ul>
             </div>
 
-            
+
         </nav>
     </div>
 
@@ -92,35 +92,45 @@
     <!-- Inserte los elementos que compondran su página dentro de este div -->
     <div class="contenedorBaul">
         <div id="comprasDetalle">
-            <div id="encabezados">
-                <p>Artículos</p>
-                <p>Precio</p>
-                <p>Cantidad</p>
+            <div class="Producto">
+                <div id="encabezados">
+                    <p>Artículos</p>
+                </div>
+                <div id="detalleProductos">
+                    <div class="imagenProducto"> <img src="src/assets/img/mandragora_baul.jpg" width="100px"></div>
+                    <div class="textoDetalle">Mandrágora joven.</br> Departamento: Herbología</div>
+                </div>
             </div>
-            <div id="detalleProductos">
-                <div class="imagenProducto">Imagen </div>
-                <div class="precioProducto">$$$$</div>
-                <div class="contadorProducto"></div>
+            <div class="precioProducto">
+                <div id="encabezados">
+                    <p>Precio</p>
+                </div>
+                <div class="textoDetalle">$$$</div>
+            </div>
+            <div class="contadorProducto">
+                <div id="encabezados">
+                    <p>Cantidad</p>
+                </div>
 
             </div>
-            <div id="detalleProductos">
-                
-            </div>
-            
+
         </div>
 
+
         <div id="comprasResumen">
-            <div class="tituloResumen"> <p>Resumen </p></div>
-            <div class="resumenProductos"> 
+            <div class="tituloResumen">
+                <p>Resumen </p>
+            </div>
+            <div class="resumenProductos">
                 <div class="nProducto"> n </div>
                 <div class="nombreProducto">Producto</div>
                 <div class="precioProducto">$$$</div>
             </div>
-            
+
 
 
         </div>
-        
+
     </div>
 
 

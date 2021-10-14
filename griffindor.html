@@ -7,34 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>GRYFFINDOR</title>
     <link rel="stylesheet" href="./src/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/assets/css/normalize.css">
     <link rel="stylesheet" href="./src/assets/css/gryffindor.css">
 
 </head>
 
 <body>
+    <!-- Inicio de la barra de navegacion -->
     <header class="header">
         <div class="navegacion">
             <nav class="nav-principal navbar navbar-expand-md navbar-light bg-faded">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-principal"
+                <!-- Boton de hamburguesa -->
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#nav-principal"
                     aria-label="Mostrar Navegacion">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon "></span>
                 </button>
-                <span class="d-lg-none">
+                <span class="d-lg-none d-md-none">
                     <img src="./src/assets/img/logo_header.png" alt="Logo HarryPotter">
                 </span>
-                <button class="nav__btn">
+                <!-- Boton de baul de compras -->
+                <button class="nav__btn d-md-none d-lg-block">
                     <a href="#" class="nav__baul navbar-brand d-md-none d-lg-none">
                         <img src="./src/assets/img/baul.png" alt="">
                     </a>
                 </button>
+                <!-- Elementos de la navegacion -->
                 <div class="container">
                     <div class="collapse navbar-collapse w-100" id="nav-principal">
                         <ul class="nav nav-justified w-100 flex-column flex-sm-row">
                             <li class="nav__li nav-item">
                                 <a href="#" class="nav-menu nav-link ">Inicio</a>
                             </li>
-                            <li class="nav__li nav-item">
-                                <a href="#" class="nav-menu nav-link ">Salas</a>
+                            <!-- Inicio del dropdown o sub-menu -->
+                            <li class="nav__li nav-item dropdown">
+                                <a class="nav-menu nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                                    aria-expanded="false">Salas</a>
+                                <ul class="dropdown-menu w-100 text-center" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item hufflepuff" href="#">Hufflepuff</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item ravenclaw" href="#">Ravenclaw</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item slytherin" href="#">Slytherin</a></li>
+                                </ul>
                             </li>
                             <li class="nav__li nav-item">
                                 <a href="#" class="nav-menu nav-link  ">Eventos</a>
@@ -49,28 +67,36 @@
                     </div><!-- accion del menu en responsive -->
 
                 </div><!-- Termino del contenedor -->
-                <button class="nav__btn__2 ">
+                <span class="nav__btn__2 d-md-none d-lg-block">
                     <a href="#" class="nav__baul__2 navbar-brand">
                         <img src="./src/assets/img/Gryffindor.png" alt="">
                     </a>
-                </button>
+                </span>
             </nav>
         </div>
     </header>
-    <section class="seccion justify-content-center align-items-center text-center" id="degradado">
-        <div class="container-fluid">
-            <div class="row w-100">
-                <div class="col-lg-6 col-md-12 col-sm-12 text-center align-items-center">
-                    <div class="seccion__texto">
+    <section class="seccion " id="degradado">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 order-12 order-lg-1 d-flex ">
+                    <div class="seccion__texto ">
                         <p>Godric Gryffindor fue un mago que vivió en la época medieval y uno de los cuatro fundadores
                             del Colegio Hogwarts de Magia y Hechicería. Era amigo de Salazar Slytherin, pero se opuso a
                             él cuando éste pensaba que no se debía aceptar a los nacidos de muggles como estudiantes de
                             Hogwarts. Se desconoce la fecha de su muerte. El lugar de nacimiento de Godric Gryffindor se
                             conoce como Valle de Godric, en su honor. El retrato de Godric Gryffindor sigue estando en
-                            Hogwarts, en el pasillo del séptimo piso.</p>
+                            Hogwarts, en el pasillo del séptimo piso. <br> <br> Godric Gryffindor fue un mago de sangre
+                            pura, nacido en un día de junio, en el Valle de Godric hace más o menos mil años. Él y su
+                            familia vivieron en África por algún tiempo, lejos de la cacería de brujas en Inglaterra.
+                            Esto hizo que Godric descubriera la vida salvaje de África, la cual le comenzaba a agradar.
+                            Disfrutaba especialmente observando a los leones. Godric era aventurero, por eso no era
+                            difícil saber que se metió en líos. Sin embargo, él era tan noble que sus padres casi no lo
+                            tenían que retar. Godric aprendió todo lo que sabía de magia por medio de su padre, quien
+                            solía ser profesor, y quien siempre pensó que tendría que haber una escuela de magia para
+                            los niños con habilidades mágicas. </p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                <div class="col-lg-6 col-md-12 col-12 text-center order-1 order-lg-12">
                     <div class="seccion__fundador">
                         <img src="./src/assets/img/Godric_Griff.jpg" alt="">
                         <p>Godric Gryffindor</p>
@@ -78,7 +104,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center align-items-center">
-                <div class="seccion__curiosidades col-lg-8 col-md-8 col-sm-8">
+                <div class="seccion__curiosidades col-lg-9 col-md-9 col-sm-9">
 
                 </div>
             </div>

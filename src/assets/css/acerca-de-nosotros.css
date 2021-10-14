@@ -1,0 +1,31 @@
+.contenedor__acerca{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+}
+
+.imagen-superior{
+    display: flex;
+    justify-content: center;
+    background-color:black , 0.8;
+    width: 100%;
+
+    margin: auto;
+    padding: 5% 10%;
+}
+
+.central{
+    display:flex;
+}
+
+.fenix{
+    width:80%;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.info{
+    color:white;
+    font-size: large;
+}

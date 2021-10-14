@@ -89,14 +89,14 @@
     <!-- Inserte los elementos que compondran su página dentro de este div -->
     <div class="container">
         <div id="user__banner">
-            <img src="./src/assets/img/banner-hufflepof.png" width="100%" height="500px" class="img-fluid" />
+            <img src="./src/assets/img/banner-hufflepof.png" class="user__foto__banner" />
             <h2 class="user__titulo text-center font-weight-bolder">Bienvenido mago (nombre de usuario) a tu perfil de
                 (nombre de la casa)</h2>
         </div>
 
 
         <!-- Menu colapsable con opciones  -->
-        <div class="accordion" id="accordionExample">
+        <center><div class="accordion" id="accordionExample">
             <div class="card">
                 <div class="card-header" id="headingOne">
                     <h2 class="mb-0">
@@ -229,12 +229,84 @@
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
-                        And lastly, the placeholder content for the third and final accordion panel. This panel is
-                        hidden by default.
+                        
+                        <p>Bienvenido, aquí puedes añadir, ver, modificar o eliminar tus formas de pago, aceptamos
+                            las tarjetas mágicas de Gringotts así como las de muggles de Visa y American Express.
+                            ¿Qué quieres hacer?</p>
+                        <!-- Aquí empiezan los formularios de la forma de pago -->
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-link active nav__pago" id="nav-ver-tab" data-toggle="tab"
+                                    href="#nav-ver" role="tab" aria-controls="nav-ver" aria-selected="true">Ver</a>
+                                <a class="nav-link nav__pago" id="nav-add-tab" data-toggle="tab" href="#nav-add"
+                                    role="tab" aria-controls="nav-add" aria-selected="false">Añadir</a>
+                                <a class="nav-link nav__pago" id="nav-update-tab" data-toggle="tab"
+                                    href="#nav-update" role="tab" aria-controls="nav-update"
+                                    aria-selected="false">Actualizar</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-ver" role="tabpanel"
+                                aria-labelledby="nav-ver-tab">
+                                <div class="card" style="width: 100%">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tarjeta VISA terminación XXXX</h5>
+                                        <p class="card-text">
+                                            Nombre del propietario: <span class="text-muted">Fulanito de
+                                                tal</span><br>
+                                            Banco Asociado: <span class="text-muted">Gringotts</span>
+                                        </p>
+                                        <a href="#" class="card-link">Borrar Tarjeta</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" style="position: relative;" id="nav-add" role="tabpanel" aria-labelledby="nav-add-tab">
+                                
+                                <!-- Form de añadir tarjeta -->
+                                
+                                <form class="user__fadd">
+                                    <div class="form-group row">
+                                        <label for="fp__add__tarjeta" class="col-sm-3 col-form-label">Número de Tarjeta:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="fp__add__tarjeta">
+                                        </div>
+                                        </div>
+                                    <div class="form-group row">
+                                        <label for="fp__add__banco" class="col-sm-3 col-form-label">Banco de la tarjeta:</label>
+                                        <div class="col-sm-9">
+                                            <select id="fp__add__banco" class="custom-select" required>
+                                                <option selected>Seleccionar Banco</option>
+                                                <option value="1">Gringotts</option>
+                                                <option value="2">Cualquier banco con VISA</option>
+                                                <option value="3">Cualquier banco con American Express</option>
+                                            </select>                                         
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="fp__add__propietario" class="col-sm-3 col-form-label">Propietario:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="fp__add__propietario">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="fp__add__vencimiento" class="col-sm-3 col-form-label">Fecha de Vencimiento:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" placeholder="MM/AA" class="form-control" id="fp__add__vencimiento">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" type="submit">Añadir Tarjeta</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="nav-update" role="tabpanel"
+                                aria-labelledby="nav-update-tab">
+                                Aquí aparecera un formulario de actualizar
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>
+        </div></center>
 
 
 

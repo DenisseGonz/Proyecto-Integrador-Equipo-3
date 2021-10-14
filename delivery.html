@@ -7,14 +7,14 @@
     <title>Delivery</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="delivery.css">
-    <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
+    <link rel="stylesheet" href="/src/assets/css/delivery.css">
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/gencomps.css">
 </head>
 
 <body>
     <!-- El seguiente bloque de código controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
     <div id="particles-js">
-        <img id="fondo" src="../src/assets/img/hogwarts-fondo.png" />
+        <img id="fondo" src="./src/assets/img/hogwarts-fondo.png" />
     </div>
 
     <!-- Este bloque de codigo despliega el header dejar aqui -->
@@ -48,6 +48,9 @@
 
             <div class="collapse navbar-collapse nav-item" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Mi Perfil <span class="sr-only">(current)</span></a>
                     </li>
@@ -74,9 +77,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -177,15 +177,15 @@
                 </div>
                 <div class=" col-lg-3  col-md-6 col-sm-6 col-6">
                     <div class="footer__imagen">
-                        <img src="../src/assets/img/Hogwartscrest.png" alt="hogwarts">
+                        <img src="./src/assets/img/Hogwartscrest.png" alt="hogwarts">
                     </div>
                 </div>
             </div>
         </footer>
 
         <!-- Se importa la librería de las partículas primero antes del script de configuración -->
-        <script src="..\node_modules\particles.js\particles.js"></script>
-        <script src="../src/assets/js/cargador-particulas.js"></script>
+        <script src=".\node_modules\particles.js\particles.js"></script>
+        <script src="./src/assets/js/cargador-particulas.js"></script>
 
         <!-- Comportamientos de Bootstrap -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -195,7 +195,7 @@
             integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
             crossorigin="anonymous"></script>
 
-
+            <script src="delivery.js"></script>
 </body>
 
 </html>

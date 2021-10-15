@@ -14,12 +14,19 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .contenedorBaul{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#compras{
     display: flex;
     width:100%;
     flex-direction: column nowrap;
     justify-content: space-around;
-    
 }
 
 #comprasDetalle{
@@ -27,6 +34,7 @@ body{
     flex-direction: row;
     /* background: rgb(87,75,11); */
     background-image: linear-gradient(to bottom, rgba(76,54,3,1), rgba(76,54,3,0.4));
+    align-content: space-around;
     width:55%;
     border-radius: 25px;
     padding:50px;
@@ -51,18 +59,21 @@ body{
     display:flex;
     flex-direction: column;
     width:50%;
-    justify-content: center;
+    justify-content:center;
     align-content: center;
 }
 .textoDetalle{
     color:white;
     align-self: center;
- font-size: large;
- padding-left: 10px;
+    align-content: center;
+    justify-content: center;
+    font-size: large;
+    padding-left: 10px;
 }
 .precioProducto{
     display:flex;
     flex-direction: column; 
+    align-content: center;
     width:20%;
     color:white;
     font-size: large;
@@ -72,18 +83,147 @@ body{
 .contadorProducto{
     display:flex;
     flex-direction: column; 
-    width:20%;
-    
+    align-content: center;
+    width:25%;    
 }
+.contador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.qty .count {
+    color: #000;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0 2px
+    ;min-width: 35px;
+    text-align: center;
+}
+.qty .plus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font: 30px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    }
+.qty .minus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font: 30px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    background-clip: padding-box;
+}
+div {
+    text-align: center;
+}
+.minus:hover{
+    background-color: #717fe0 !important;
+}
+.plus:hover{
+    background-color: #717fe0 !important;
+}
+/*Prevent text selection*/
+span{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+input{  
+    border: 0;
+    width: 2%;
+}
+nput::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input:disabled{
+    background-color:white;
+}
+         
 
 #comprasResumen{
     display: flex;
     flex-direction: column;
     /* background-color: yellow; */
-    background-image: linear-gradient(to bottom, rgba(241,196,15,1), rgba(241,196,15,0.2));
+    background-image: linear-gradient(to bottom, rgb(182, 148, 11), rgba(241,196,15,0.2));
     width:35%;
     border-radius: 25px;
     padding: 50px;
     margin-top: 50px;
+}
+
+.nProducto{
+    width:15%;
+    color:white;
+}
+
+.nombreProducto{
+    width: 60%;
+    color:white;
+}
+
+
+/* Carrusel */
+
+.carrusel{
+    background-image: linear-gradient(to bottom, rgba(76,54,3,1), rgba(76,54,3,0.4));
+    justify-self: center;
+    width:80%;
+    border-radius: 25px;
+    padding:30px;
+    margin:4% 8%;
+ 
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.card{
+    width: 200px;
+    height: 230px;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
 }
 

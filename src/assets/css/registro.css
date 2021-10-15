@@ -53,22 +53,8 @@ body{
     
 }
 
-#form__nombre{
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    margin:0px;
-    padding: 0%;
-}
-#campo_form_nombre{
-    display: flex;
-    flex-direction: column;
-    width:50%;
-}
-
 .form-group{
     justify-content:space-around;
-   
 }
 
 .boton{
@@ -86,31 +72,6 @@ body{
     border-radius: 25px;
 }
 
-#etiquetas{
-    display: flex;
-    align-content: center;
-    width:30%;
-    color:white;
-    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
-    font-size: 22px;
-    padding: 20px;
-    align-content: center;
-}
-
-#etiquetas-pequena{
-    font-size: 21px !important;
-    width:30%;
-    color:white;
-    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
-   /*  padding: 25px; */
-}
-#campos{
-    display: flex;
-    width:50%;
-    align-content: center;
-    justify-content: center;
-    padding:10px 20px;
-}
 #titulo1{
     color:white;
     -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
@@ -123,21 +84,35 @@ body{
     font-size: 30px;
 }
 
+
+.etiquetas{
+    font-size: 19px !important;
+    width:50%;
+    color:white;
+    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
+   /*  padding: 25px; */
+}
+#campos{
+    display: flex;
+    width:40%;
+    align-content:flex-end;
+    /* justify-content: center; */
+  /*   padding:10px 20px; */
+}
+
 .caja-check{
     display: flex;
     flex-direction: row ;
     color:white;
-    align-content: center;
-    justify-content: flex-start;
+    justify-content:space-between;
 }
  .opcion__casa{
-     display: flex;
-     flex-direction: column;
-   
-    justify-content: center;
-    align-content: center;
-    margin: auto;
-    padding:auto;
+    /* display: flex;
+    flex-direction: row; */
+    /* justify-content: center; */
+   /*  align-content: ; */
+    padding: 0px 0px;
+    height: 70px;
 } 
 
 /* 

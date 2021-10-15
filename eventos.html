@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/gencomps.css">
+    <link rel="stylesheet" href="./src/assets/css/eventos.css">
+</head>
+
+<body>
+    <!-- El particle-js contiene las partículas para que se explayen en todo el html, dejar como primer elemento siempre -->
+    <div id="particles-js">
+        <img id="fondo" src="./src/assets/img/hogwarts-fondo.png" />
+    </div>
+    <!-- Este bloque de codigo despliega el header dejar aqui -->
+    <div id="header">
+        <div id="logo">
+            <img src="./src/assets/img/logo_header.png" width="180px" />
+        </div>
+        <nav class="navbar navbar-expand-lg" id="encabezado">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="white" />
+                </svg>
+            </button>
+
+            <div id="logo2">
+                <img src="./src/assets/img/logo_header.png" width="120px" />
+            </div>
+
+            <a class="navbar-brand order-lg-12 p-0 me-2" href="./baul-compras.html">
+                <svg class="d-block my-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M5 4h14a3 3 0 0 1 3 3v4h-7v-1H9v1H2V7a3 3 0 0 1 3-3m6 7h2v2h-2v-2m-9 1h7v1l2 2h2l2-2v-1h7v8H2v-8z"
+                        fill="white" />
+                </svg>
+            </a>
+
+            <div class="collapse navbar-collapse nav-item" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./usuario.html">Mi Perfil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Salas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./griffindor.html">Gryffindor</a>
+                            <a class="dropdown-item" href="#">Hufflepuff</a>
+                            <div class="dropdown-item">Slytherin</div>
+                            <a class="dropdown-item" href="#">Ravenclaw</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./delivery.html">Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./acerca-de-nosotros.html">Acerca de nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Inserte los elementos generales aquí (no es necesario el header o footer en esta parte) -->
+    <div class="contenedorPrincipal container-fluid">
+        <div id="encaEve" class="row">
+            <div class="col-2"></div>
+            <div class="col-10">
+                <img id="imgEncabezado" src="./src/assets/img/baile-harry-potter-cdmx.jpg"
+                    class="rounded-left img-fluid" />
+                <h1 class="titulo_Eve text-center font-weight-bolder">Eventos</h1>
+            </div>
+        </div>
+
+        <!-- Publicaciones con cards -->
+
+        <div id="contenedorPubli" class="container-fluid mx-0 row justify-content-around">
+            <div class="card col-5">
+                <div class="card-header">
+                    <img src="./src/assets/img/albus.jpg" class="rounded-circle eventos__perfil"/>
+                    <label class="titulo-card"> Albus P.W.B. Dumbledore</label>
+                </div>
+                <div class="card-body">
+                    <img src="./src/assets/img/copa-eventos.jpg" class="eventos__foto rounded" />
+                    <h5 class="my-3 card-title">Torneo de los Tres Magos</h5>
+                    <p class="card-text text-justify"> Este es otro año para el evento del Torneo de los Tres Magos. Como es costumbre se realizará entre las escuelas de magia de la <strong>Academia Beauxbatons</strong>, el <strong>Instituto Durmstrang</strong> y nosotros. Queridos alumnos y aspirantes a campeones, esperemos que como en cada torneo den lo mejor de sí y que sea una experiencia de aprendizaje para todos ustedes aunque sea solo para observar las intrigantes y peligrosas pruebas por las que pasaran los campeones. </p>
+                </div>
+                <div class="card-footer text-muted container row justify-content-between">
+                    <div class="col-5">Hace 2 días</div>
+                    <div class="col-5 text-right">
+                        <label for="checkbox__estrella" class="eventos__estrellas">★</label>
+                        <input type="checkbox" id="checkbox__estrella" class="eventos__checkbox"/>
+                        <span id="puntuaciones__eventos">Me gusta</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-5">
+                <div class="card-header">
+                    <img src="./src/assets/img/Filiusflitwick-profilepic.jpg" class="rounded-circle eventos__perfil"/>
+                    <label class="titulo-card"> Filius Flitwick</label>
+                </div>
+                <div class="card-body">
+                    <img src="./src/assets/img/Coro-sapos.jpg" class="eventos__foto rounded" />
+                    <h5 class="my-3 card-title">Presentación del Coro</h5>
+                    <p class="card-text text-justify"> Queridos alumnos, me veo con el gusto de anunciarles que las actividades del Coro de Sapos siguen su curso normal, además de que gustoso les hago una atenta invitación. ¡Su voz sería un buen aditamento a este gran grupo! De estar interesados siempre pueden consultar conmigo.</p>
+                </div>
+                <div class="card-footer text-muted container row justify-content-between">
+                    <div class="col-5">Hace 5 días</div>
+                    <div class="col-5 text-right">
+                        <label for="checkbox__estrella" class="eventos__estrellas">★</label>
+                        <input type="checkbox" id="checkbox__estrella" class="eventos__checkbox"/>
+                        <span id="puntuaciones__eventos">Me gusta</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-100"></div>
+
+    <!-- Este bloque de codigo controla el footer dejar aqui -->
+    <footer class="footer">
+        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
+        <div class="row mt-4 justify-content-center align-items-center">
+            <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
+                <div class=" col-lg-6 col-md-12 col-sm-12">
+                    <ul class="footer__menu_1">
+                        <li class="nav-item">
+                            <a class=" nav-link" href="./inicio.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./acerca-de-nosotros.html">Acerca de Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="linea"></div>
+                <div class=" col-lg-3 col-md-12 col-sm-12">
+                    <ul class="">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/DenisseGonz/Proyecto-Integrador-Equipo-3">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class=" col-lg-3  col-md-6 col-sm-6 col-6">
+                <div class="footer__imagen">
+                    <img src="./src/assets/img/Hogwartscrest.png" alt="hogwarts">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Se importa la librería de las partículas primero antes del script de configuración -->
+    <script src="node_modules\particles.js\particles.js"></script>
+    <script src="src\assets\js\cargador-particulas.js"></script>
+
+    <!-- Complementos de Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

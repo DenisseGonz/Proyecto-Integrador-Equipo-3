@@ -11,6 +11,7 @@
 
     <title>Acerca de nosotros</title>
 </head>
+
 <body>
 
     <!-- El seguiente bloque de codigo controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
@@ -37,9 +38,10 @@
                 <img src="./src/assets/img/logo_header.png" alt="" width="120px" />
             </div>
 
-            <a class="navbar-brand order-lg-12 p-0 me-2" href="">
-                <svg class="d-block my-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
-                    role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+            <a class="navbar-brand order-lg-12 p-0 me-2" href="baul-compras.html">
+                <svg class="d-block my-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
                     <path
                         d="M5 4h14a3 3 0 0 1 3 3v4h-7v-1H9v1H2V7a3 3 0 0 1 3-3m6 7h2v2h-2v-2m-9 1h7v1l2 2h2l2-2v-1h7v8H2v-8z"
                         fill="white" />
@@ -49,10 +51,10 @@
             <div class="collapse navbar-collapse nav-item" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link" href="inicio.html">Inicio</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Mi Perfil <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="usuario.html">Mi Perfil</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -60,23 +62,26 @@
                             Salas
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Gryffindor</a>
+                            <a class="dropdown-item" href="griffindor.html">Gryffindor</a>
                             <a class="dropdown-item" href="#">Hufflepuff</a>
                             <div class="dropdown-item">Slytherin</div>
                             <a class="dropdown-item" href="#">Ravenclaw</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Delivery</a>
+                        <a class="nav-link" href="productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="delivery.html">Delivery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Eventos</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                        <a class="nav-link" href="eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
                     </li>
                 </ul>
             </div>
@@ -87,18 +92,119 @@
 
     <!-- Inserte los elementos que compondran su página dentro de este div -->
     <div class="contenedor__acerca">
-        <div class="imagen-superior">
-            <img src="./src/assets/img/estudio_acerca.png" width="80%">
+        <div class="imagen__superior">
+            <img src="./src/assets/img/acercade_imagen-superior.png" width="100%">
         </div>
         <div class="central">
             <div class="fenix">
                 <img src="./src/assets/img/acercade_fenix2.png" height="300px">
             </div>
             <div class="info">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad ratione reprehenderit sequi labore, possimus, corrupti, veritatis sit alias blanditiis accusamus aliquid. Libero eum ducimus eaque tempora voluptas minima dignissimos dolorum?</p>
+                <h3>La Orden del Fénix</h3>
+                <p>Nuestra misión es hacer la experiencia estudiantil en Hogwarts íntegra y completa. Nos interesa la
+                    integridad y la funcionalidad de un sitio que promueva el intercambio de ideas, eventos, información
+                    y galeones. Nuestra visión es llevar la magia del instituto más allá del aula.<br>Ubicados en Ciudad
+                    de México, 2021.</p>
+                <p class="pequeñas">No estamos asociados de ninguna manera con Callejón Diagon®.</p>
             </div>
         </div>
-        
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="cartas ">
+            <!-- Primera Carta -->
+            <div class="row px-2 justify-content-around ">
+                <div class="carta">
+                    <div class="carta-inner">
+                        <div class="carta-front">
+                            <img src="./src/assets/img/avatar-manuel.jpg" alt="Avatar" style="width:200px;height:200px;">
+                            <p class="pie_de_carta">Editor</p>
+                        </div>
+                        <div class="carta-back">
+                            <h1>Manuel Domínguez</h1>
+                            <p>Hufflepuff</p>
+                            <p>Cazador Junior de Quidditch</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segunda Carta -->
+                <div class="carta  ">
+                    <div class="carta-inner">
+                        <div class="carta-front">
+                            <img src="./src/assets/img/avatar-manuel.jpg" alt="Avatar"
+                                style="width:200px;height:200px;">
+                        </div>
+                        <div class="carta-back">
+                            <h1>Sheila Sanchez</h1>
+                            <p>Muggle</p>
+                            <p>Cazador Junior de Quidditch</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tercera Carta -->
+                <div class="carta  ">
+                    <div class="carta-inner">
+                        <div class="carta-front">
+                            <img src="./src/assets/img/avatar-manuel.jpg" alt="Avatar"
+                                style="width:200px;height:200px;">
+                        </div>
+                        <div class="carta-back">
+                            <h1>Denisse González</h1>
+                            <p>Muggle</p>
+                            <p>Cazador Junior de Quidditch</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="espacio"></div>
+            <!-- Cuarta Carta -->
+            <div class="row px-2 justify-content-around">
+                <div class="carta  ">
+                    <div class="carta-inner">
+                        <div class="carta-front">
+                            <img src="./src/assets/img/avatar-manuel.jpg" alt="Avatar"
+                                style="width:200px;height:200px;">
+                        </div>
+                        <div class="carta-back">
+                            <h1>Jesús Martínez</h1>
+                            <p>Muggle</p>
+                            <p>Cazador Junior de Quidditch</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quinta Carta -->
+                <div class="carta  ">
+                    <div class="carta-inner">
+                        <div class="carta-front">
+                            <img src="./src/assets/img/avatar-manuel.jpg" alt="Avatar"
+                                style="width:200px;height:200px;">
+                        </div>
+                        <div class="carta-back">
+                            <h1>Armando Linares</h1>
+                            <p>Muggle</p>
+                            <p>Cazador Junior de Quidditch</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sexta Carta -->
+                <div class="carta  ">
+                    <div class="carta-inner">
+                        <div class="carta-front">
+                            <img src="./src/assets/img/avatar-manuel.jpg" alt="Avatar"
+                                style="width:200px;height:200px;">
+                        </div>
+                        <div class="carta-back">
+                            <h1>Sergio Borjon</h1>
+                            <p>Muggle</p>
+                            <p>Cazador Junior de Quidditch</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
 
@@ -115,13 +221,13 @@
                 <div class=" col-lg-6 col-md-12 col-sm-12">
                     <ul class="footer__menu_1">
                         <li class="nav-item">
-                            <a class=" nav-link" href="#">Inicio</a>
+                            <a class=" nav-link" href="inicio.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="contacto">Contacto</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Acerca de Nosotros</a>
+                            <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
                         </li>
                     </ul>
                 </div>
@@ -129,10 +235,10 @@
                 <div class=" col-lg-3 col-md-12 col-sm-12">
                     <ul class="">
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Tienda</a>
+                            <a class="nav-link" href="productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">GitHub</a>
+                            <a class="nav-link" href="https://github.com/DenisseGonz/Proyecto-Integrador-Equipo-3">GitHub</a>
                         </li>
                     </ul>
                 </div>

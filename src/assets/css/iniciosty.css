@@ -28,7 +28,7 @@
     }
 
     .card{
-        background-color: #2a623d;
+        background-image: url(https://c.tenor.com/ll3rQ9a_zqYAAAAC/galaxy.gif);
     }
 
     .card-img-top{
@@ -39,6 +39,7 @@
 
     .card-body{
         overflow: hidden;
+        color: white;
     }
     
 
@@ -52,7 +53,7 @@
         height: 0px;
     }
     
-    .card-body:hover .card-text{
+    .card:hover .card-text{
         left:0;
         height: auto;
     }

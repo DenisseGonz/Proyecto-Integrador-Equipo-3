@@ -1,6 +1,9 @@
 *{
     margin: 0;
 }
+body,a,a:hover {
+    cursor: url(http://cur.cursors-4u.net/user/use-1/use160.cur), progress;
+}
 #particles-js{
     background-color:  #000511;
     height: 100vh;

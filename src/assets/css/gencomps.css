@@ -1,8 +1,12 @@
 * {
     margin: 0;
 }
-#particles-js {
-    background-color: #000511;
+
+body,a,a:hover {
+    cursor: url(http://cur.cursors-4u.net/user/use-1/use160.cur), progress;
+}
+#particles-js{
+    background-color:  #000511;
     height: 100vh;
     width: 100%;
     position: fixed;

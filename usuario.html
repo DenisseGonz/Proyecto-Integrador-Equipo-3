@@ -90,21 +90,23 @@
 
 
     <!-- Inserte los elementos que compondran su página dentro de este div -->
-    <div class="container">
+    <div class="container-fluid">
         <div id="user__banner">
-            <img src="./src/assets/img/banner-hufflepof.png" class="user__foto__banner" />
-            <h2 class="user__titulo text-center font-weight-bolder">Bienvenido mago (nombre de usuario) a tu perfil de
-                (nombre de la casa)</h2>
+            <img src="./src/assets/img/banner-slytherin.jpg" class="user__foto__banner" />
+            <h2 class="user__titulo text-center font-weight-bolder">Bienvenido mago Draco Malfoy a tu perfil de
+                Slytherin</h2>
         </div>
 
+        <h3 class="text-center user__indicaciones">Aquí puedes ver tu información de usuario, pedidos y formas de pago.</h3>
 
         <!-- Menu colapsable con opciones  -->
         <center>
-            <div class="accordion" id="accordionExample">
-                <div class="card">
+            <div class="accordion text-white" id="accordionExample">
+                <!-- EDITAR USUARIO -->
+                <div class="card bg-dark">
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            <button class="btn btn-outline-warning btn-block text-left" type="button" data-toggle="collapse"
                                 data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     aria-hidden="true" role="img" width="1.5em" height="1.5em"
@@ -185,10 +187,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <!-- HISTORIAL DE PEDIDOS -->
+                <div class="card bg-dark">
                     <div class="card-header" id="headingTwo">
                         <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            <button class="btn btn-outline-warning btn-block text-left collapsed" type="button"
                                 data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                                 aria-controls="collapseTwo">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -207,15 +210,56 @@
                         </h2>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-header">
+                            <h6 class="card-subtitle my-2">A continuación se muestran los pedidos que usted
+                                como usuario ha hecho a lo largo del tiempo</h6>
+                        </div>
                         <div class="card-body">
-                            Some placeholder content for the second accordion panel. This panel is hidden by default.
+                            <p class="card-text text-left row justify-content-around">
+                                <strong class="col-3">Nombre: </strong><span class="col-2">Draco </span><strong
+                                    class="col-3"> Familia: </strong><span class="col-2">Malfoy</span>
+                                <strong class="col-3">Casa: </strong><span class="col-2">Slytherin</span><strong
+                                    class="col-3"> Cuarto: </strong><span class="col-2">#234</span>
+                                <strong class="col-3">No. de Pedido: </strong><span class="col-2">000001</span><strong
+                                    class="col-3"> Fecha de Entrega: </strong><span class="col-2">18/10/2018</span>
+                                <strong class="col-3">Forma de Pago: </strong><span
+                                    class="col-2">VISA-XXXX</span><strong class="col-3"> ID-Lechuza: </strong><span
+                                    class="col-2">02342</span>
+                            <table class="table my-2">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Artículo</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Precio ind</th>
+                                        <th scope="col">Precio total</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-white">
+                                    <tr>
+                                        <th scope="row">001</th>
+                                        <td>Nimbus 2000</td>
+                                        <td>6</td>
+                                        <td>$2000.00</td>
+                                        <td>$12,000.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row text-left">
+                                <strong class="col-12">Total pagado: </strong>
+                                <span class="col-11">Artículos: $12,000.00</span>
+                                <span class="col-11">Comisión (2%): $240.00</span>
+                                <span class="col-5 border-top border-dark">Total: $12,240.00</span>
+                            </div>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <!-- FORMA DE PAGO -->
+                <div class="card bg-dark">
                     <div class="card-header" id="headingThree">
                         <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            <button class="btn btn-outline-warning btn-block text-left collapsed" type="button"
                                 data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                                 aria-controls="collapseThree">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -243,7 +287,7 @@
                             <p>Bienvenido, aquí puedes añadir, ver, modificar o eliminar tus formas de pago, aceptamos
                                 las tarjetas mágicas de Gringotts así como las de muggles de Visa y American Express.
                                 ¿Qué quieres hacer?</p>
-                            <!-- Aquí empiezan los formularios de la forma de pago -->
+                            <!-- VER FORMA DE PAGO -->
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <a class="nav-link active nav__pago" id="nav-ver-tab" data-toggle="tab"
@@ -258,13 +302,12 @@
                             <div class="tab-content" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="nav-ver" role="tabpanel"
                                     aria-labelledby="nav-ver-tab">
-                                    <div class="card" style="width: 100%">
+                                    <div class="card bg-dark" style="width: 100%">
                                         <div class="card-body">
                                             <h5 class="card-title">Tarjeta VISA terminación XXXX</h5>
                                             <p class="card-text">
-                                                Nombre del propietario: <span class="text-muted">Fulanito de
-                                                    tal</span><br>
-                                                Banco Asociado: <span class="text-muted">Gringotts</span>
+                                                Nombre del propietario: <span>Draco Malfoy</span><br>
+                                                Banco Asociado: <span>Gringotts</span>
                                             </p>
                                             <a href="#" class="card-link">Borrar Tarjeta</a>
                                         </div>
@@ -273,21 +316,22 @@
                                 <div class="tab-pane fade" style="position: relative;" id="nav-add" role="tabpanel"
                                     aria-labelledby="nav-add-tab">
 
-                                    <!-- Form de añadir tarjeta -->
+                                    <!-- AÑADIR FORMA DE PAGO -->
 
                                     <form class="user__fadd">
                                         <div class="form-group row">
-                                            <label for="fp__add__tarjeta" class="col-sm-3 col-form-label">Número de
+                                            <label for="pago__tarjeta" class="col-sm-3 col-form-label">Número de
                                                 Tarjeta:</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="fp__add__tarjeta">
+                                                <input type="text" class="form-control"
+                                                    placeholder="XXXX-XXXX-XXXX-XXXX" id="pago__tarjeta">
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="fp__add__banco" class="col-sm-3 col-form-label">Banco de la
+                                            <label for="pago__banco" class="col-sm-3 col-form-label">Banco de la
                                                 tarjeta:</label>
                                             <div class="col-sm-9">
-                                                <select id="fp__add__banco" class="custom-select" required>
+                                                <select id="pago__banco" class="custom-select" required>
                                                     <option selected>Seleccionar Banco</option>
                                                     <option value="1">Gringotts</option>
                                                     <option value="2">Cualquier banco con VISA</option>
@@ -296,48 +340,103 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="fp__add__propietario"
+
+                                            <label for="pago__propietario"
                                                 class="col-sm-3 col-form-label">Propietario:</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="fp__add__propietario">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Ej.Albus Percival Brian Wulfric Dumbledore"
+                                                    id="pago__propietario">
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="fp__add__vencimiento" class="col-sm-3 col-form-label">Fecha de
+                                            <label for="pago__vencimiento" class="col-sm-3 col-form-label">Fecha de
                                                 Vencimiento:</label>
                                             <div class="col-sm-9">
                                                 <input type="text" placeholder="MM/AA" class="form-control"
-                                                    id="fp__add__vencimiento">
+                                                    id="pago__vencimiento">
                                             </div>
                                         </div>
-                                        <button class="btn btn-primary" type="submit">Añadir Tarjeta</button>
+                                        <div class="form-group row">
+                                            <label for="pago__seguridad" class="col-sm-3 col-form-label">No. de
+                                                seguridad: </label>
+                                            <div class="col-sm-9">
+                                                <input type="text" placeholder="XXX" class="form-control"
+                                                    id="pago__seguridad">
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary" type="submit">Añadir tarjeta</button>
                                     </form>
                                 </div>
+
+                                <!-- ACTUALIZAR FORMA DE PAGO -->
                                 <div class="tab-pane fade" id="nav-update" role="tabpanel"
                                     aria-labelledby="nav-update-tab">
-                                    Aquí aparecera un formulario de actualizar
+                                    <h5 class="card-title">Tarjeta terminación XXXX</h5>
+                                    <form class="user__pago">
+                                        <div class="form-group row">
+                                            <label for="pago__tarjeta" class="col-sm-3 col-form-label">Número de
+                                                Tarjeta:</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control"
+                                                    placeholder="XXXX-XXXX-XXXX-XXXX" id="pago__tarjeta">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="pago__banco" class="col-sm-3 col-form-label">Banco de la
+                                                tarjeta:</label>
+                                            <div class="col-sm-9">
+                                                <select id="pago__banco" class="custom-select" required>
+                                                    <option selected>Seleccionar Banco</option>
+                                                    <option value="1">Gringotts</option>
+                                                    <option value="2">Cualquier banco con VISA</option>
+                                                    <option value="3">Cualquier banco con American Express
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="pago__propietario"
+                                                class="col-sm-3 col-form-label">Propietario:</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Ej.Albus Percival Brian Wulfric Dumbledore"
+                                                    id="pago__propietario">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="pago__vencimiento" class="col-sm-3 col-form-label">Fecha
+                                                de Vencimiento:</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" placeholder="MM/AA" class="form-control"
+                                                    id="pago__vencimiento">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="pago__seguridad" class="col-sm-3 col-form-label">No. de
+                                                seguridad: </label>
+                                            <div class="col-sm-9">
+                                                <input type="text" placeholder="XXX" class="form-control"
+                                                    id="pago__seguridad">
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary" type="submit">Actualizar
+                                            tarjeta</button>
+                                    </form>
                                 </div>
                             </div>
-
                         </div>
                     </div>
+
                 </div>
             </div>
-        </center>
-
-
-
-
+    </div>
+    </div>
+    </center>
     </div>
 
-
-
-
-
-
-
     <!-- Este bloque de codigo controla el footer dejar aqui -->
-    <footer class="footer ">
+    <footer class="footer">
         <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
         <div class="row mt-4 justify-content-center align-items-center">
             <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
@@ -376,7 +475,8 @@
     </footer>
 
     <!-- Se importa la librería de las partículas primero antes del script de configuración -->
-    <script src="node_modules\particles.js\particles.js"></script>
+    <!-- <script src="node_modules\particles.js\particles.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="./src/assets/js/cargador-particulas.js"></script>
 
     <!-- Comportamientos de Bootstrap -->

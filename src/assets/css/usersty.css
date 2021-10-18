@@ -1,17 +1,24 @@
 .user__titulo {
     color: gold;
-    transform: translate(0%, -50%);
-    font-size: 5em;
-    -webkit-text-stroke: white 3px;
+    transform: translate(0%,-150%);
+    font-size: 2.5em;
 }
 .user__foto__banner {
     width: 100%;
-    height: 55vh;
-    border: rgb(133, 120, 51) 10px solid;
+    height: 75vh;
+    border: rgb(58, 133, 51) 10px solid;
+}
+.user__indicaciones{
+    color: gold;
+
+}
+.btn-outline-warning{
+    border: none;
 }
 .accordion {
     width: 75%;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 .nav__pago {
     color: goldenrod;

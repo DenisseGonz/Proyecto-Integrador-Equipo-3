@@ -1,9 +1,9 @@
-.user__titulo{
+.user__titulo {
     color: gold;
     transform: translate(0%,-150%);
     font-size: 2.5em;
 }
-.user__foto__banner{
+.user__foto__banner {
     width: 100%;
     height: 75vh;
     border: rgb(58, 133, 51) 10px solid;
@@ -15,19 +15,15 @@
 .btn-outline-warning{
     border: none;
 }
-.accordion{
+.accordion {
     width: 75%;
     margin-top: 5%;
     margin-bottom: 5%;
 }
-.nav__pago{
-    color:goldenrod;
+.nav__pago {
+    color: goldenrod;
     -webkit-text-stroke: rgb(0, 0, 0) 0.5px;
 }
-.user__fadd{
+.user__fadd {
     margin: 3%;
 }
-
-
-
-

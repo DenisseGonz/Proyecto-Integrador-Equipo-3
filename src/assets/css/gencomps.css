@@ -1,6 +1,7 @@
-*{
+* {
     margin: 0;
 }
+
 body,a,a:hover {
     cursor: url(http://cur.cursors-4u.net/user/use-1/use160.cur), progress;
 }
@@ -8,16 +9,16 @@ body,a,a:hover {
     background-color:  #000511;
     height: 100vh;
     width: 100%;
-    position:fixed;
-    z-index:-1;
+    position: fixed;
+    z-index: -1;
 }
-#fondo{
+#fondo {
     bottom: 0;
     height: 70vh;
     width: 100%;
-    position:fixed;
-    z-index:-1;
-    filter: brightness(60%);   
+    position: fixed;
+    z-index: -1;
+    filter: brightness(60%);
 }
 .contenedorPrincipal {
     width: 100%;
@@ -25,32 +26,29 @@ body,a,a:hover {
     z-index: 99;
 }
 
-
 /*Estos cambios los estoy realizando para unir las versiones hare una prueba elemental*/
 
-@media (min-width:992px) {
-    #logo{
-        display:flex;
+@media (min-width: 992px) {
+    #logo {
+        display: flex;
         justify-content: center;
         background-color: black;
-    } 
+    }
 
-    #logo2{
+    #logo2 {
         display: none;
     }
 }
 
-@media (max-width:991px){
-    #logo{
-        display:none;
-    } 
-
-    #logo2{
-        display:flex;
+@media (max-width: 991px) {
+    #logo {
+        display: none;
     }
 
+    #logo2 {
+        display: flex;
+    }
 }
-
 
 /*#logo{
     display:flex;
@@ -58,10 +56,10 @@ body,a,a:hover {
     background-color: black;
 }*/
 
-#encabezado{
+#encabezado {
     display: flex;
     height: 90px;
-    background-color:black;
+    background-color: black;
     z-index: 100;
 }
 
@@ -69,12 +67,12 @@ body,a,a:hover {
  color:white;   
 }*/
 
-.nav-item{
-    background-color:black;
-    padding-left:30px;
+.nav-item {
+    background-color: black;
+    padding-left: 30px;
 }
 
-.btn-menu{
+.btn-menu {
     align-self: flex-end;
 }
 

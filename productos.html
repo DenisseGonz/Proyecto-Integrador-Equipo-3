@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./src/assets/css/gencomps.css">
-    <link rel="stylesheet" href="/src/assets/css/productos.css">
-    <title>Productos Test</title>
+    <link rel="stylesheet" href="./src/assets/css/productos.css">
+    <title>Productos</title>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
                 <img src="./src/assets/img/logo_header.png" alt="" width="120px" />
             </div>
 
-            <a class="navbar-brand order-lg-12 p-0 me-2" href="">
+            <a class="navbar-brand order-lg-12 p-0 me-2" href="./baul-compras.html">
                 <svg class="d-block my-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet"
                     viewBox="0 0 24 24">
@@ -50,7 +50,10 @@
             <div class="collapse navbar-collapse nav-item" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Mi Perfil <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="inicio.html">Inicio<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="usuario.html">Mi Perfil <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -58,223 +61,210 @@
                             Salas
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Gryffindor</a>
+                            <a class="dropdown-item" href="griffindor.html">Gryffindor</a>
                             <a class="dropdown-item" href="#">Hufflepuff</a>
                             <div class="dropdown-item">Slytherin</div>
                             <a class="dropdown-item" href="#">Ravenclaw</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Delivery</a>
+                        <a class="nav-link" href="productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="delivery.html">Delivery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Eventos</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                        <a class="nav-link" href="eventos.html">Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
 
-
-
-
-
-
-    <!-- Inserte los elementos que compondran su página dentro de este div -->
-
     <!-- botones de las casas -->
-    <div class="justify-content-center">
-        <button type="button" class="btn btn-warning"><img src="/src/assets/img/productos-hufflepuff.png" width="70" />
+    <div class=" justify-content-around my-4 row">
+        <button type="button" class="btn btn-warning col-2"><img src="./src/assets/img/productos-hufflepuff.png" width="70" />
             Botanica</button>
-        <button type="button" class="btn btn-primary"><img src="/src/assets/img/prodcutos-ravenclaw.png" width="70" />
+        <button type="button" class="btn btn-primary col-2"><img src="./src/assets/img/prodcutos-ravenclaw.png" width="70" />
             Instrumentos</button>
-        <button type="button" class="btn btn-success"><img src="/src/assets/img/productos-slytherin.png" width="70" />
+        <button type="button" class="btn btn-success col-2"><img src="./src/assets/img/productos-slytherin.png" width="70" />
             Pociones</button>
-        <button type="button" class="btn btn-danger"><img src="/src/assets/img/productos-gryffindor.png" width="70" />
+        <button type="button" class="btn btn-danger col-2"><img src="./src/assets/img/productos-gryffindor.png" width="70" />
             Deportes</button>
     </div>
 
     <!--   callejon diagonal  -->
-    <img id="imgEncabezado" src="/src/assets/img/productos-callejon.png" class="rounded-left img-fluid" />
+    <img id="imgEncabezado" src="./src/assets/img/productos-callejon.png" class="rounded-left img-fluid" />
     <h1 class="titulo_armando text-center font-weight-bolder">Callejon Diagonal</h1>
 
-
-
-
-
-
     <!-- carrusel -->
-    <h2 style="text-align:center">Mejores productos</h2>
-
-    <div class="container">
-        <div class="mySlides">
-            <div class="numbertext">1 / 6</div>
-            <img src="https://images.unsplash.com/photo-1634054199581-25b0bcd7db5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-                style="width:100%">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">2 / 6</div>
-            <img src="https://images.unsplash.com/photo-1634054199581-25b0bcd7db5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-                style="width:100%">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">3 / 6</div>
-            <img src="https://images.unsplash.com/photo-1634054199581-25b0bcd7db5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-                style="width:100%">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">4 / 6</div>
-            <img src="https://images.unsplash.com/photo-1634054199581-25b0bcd7db5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-                style="width:100%">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">5 / 6</div>
-            <img src="https://images.unsplash.com/photo-1634054199581-25b0bcd7db5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-                style="width:100%">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">6 / 6</div>
-            <img src="https://images.unsplash.com/photo-1634054199581-25b0bcd7db5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-                style="width:100%">
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-
-        <div class="caption-container">
-            <p id="caption"></p>
-        </div>
-
-        <div class="row">
-            <div class="column">
-                <img class="demo cursor"
-                    src="https://images.unsplash.com/photo-1634054199581-25b0bcd7db5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-                    style="width:100%" onclick="currentSlide(1)" alt="Producto 1">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://dyn.media.titanbooks.com/MEJYaWIDmwXCyqUgEw1p4mDTqXA=/fit-in/600x600/filters:format(webp)/https://media.titanbooks.com/catalog/products/WandCollection.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
             </div>
-            <div class="column">
-                <img class="demo cursor"
-                    src="https://images.unsplash.com/photo-1634054199581-25b0bcd7db5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-                    style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+            <div class="carousel-item">
+                <img src="https://dyn.media.titanbooks.com/MEJYaWIDmwXCyqUgEw1p4mDTqXA=/fit-in/600x600/filters:format(webp)/https://media.titanbooks.com/catalog/products/WandCollection.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
             </div>
-            <div class="column">
-                <img class="demo cursor"
-                    src="https://images.unsplash.com/photo-1634054199581-25b0bcd7db5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-                    style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-            </div>
-            <div class="column">
-                <img class="demo cursor"
-                    src="https://images.unsplash.com/photo-1634054199581-25b0bcd7db5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-                    style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-            </div>
-            <div class="column">
-                <img class="demo cursor"
-                    src="https://images.unsplash.com/photo-1634054199581-25b0bcd7db5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-                    style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-            </div>
-            <div class="column">
-                <img class="demo cursor"
-                    src="https://images.unsplash.com/photo-1634054199581-25b0bcd7db5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-                    style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+            <div class="carousel-item">
+                <img src="https://dyn.media.titanbooks.com/MEJYaWIDmwXCyqUgEw1p4mDTqXA=/fit-in/600x600/filters:format(webp)/https://media.titanbooks.com/catalog/products/WandCollection.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
             </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-
-
-
-
-
-
-
-
-
 
     <!-- Productos -->
-    <!--         <div class="card-group">
+    <div class="cardgroup">
+        <div class=" row row-col-md-3 card-deck">
             <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="./src/assets/img/nimbus200.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Producto</h5>
-
+                    <h5 class="card-title">Nimbus 2000</h5>
+                    <h6>$2000</h6>
+                    <p class="card-text">Exelente escoba para practicar Quidditch tiene mango de caoba</p>
                 </div>
             </div>
             <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="./src/assets/img/bolquid.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Producto</h5>
-
+                    <h5 class="card-title">Boletos partido de Quidditch</h5>
+                    <h6>$10</h6>
+                    <p class="card-text">Asista al partido de este sabado 15 de Abril.</p>
                 </div>
             </div>
             <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="./src/assets/img/mandragora.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Producto</h5>
-
-                </div>
-            </div>
-        </div> -->
-    <!-- Productos 2 -->
-    <!--         <div class="card-group">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Producto</h5>
-
+                    <h5 class="card-title">Mandragoras</h5>
+                    <h6>$7.50</h6>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content.
+                    </p>
                 </div>
             </div>
             <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="./src/assets/img/libro.webp" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Producto</h5>
-
+                    <h5 class="card-title">Mil hierbas magicas y hongos</h5>
+                    <h6>$150</h6>
+                    <p class="card-text">Excelente libro que reune buena parte de los conocimientos elementales sobre
+                        herbología
+                    </p>
                 </div>
             </div>
             <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="./src/assets/img/libro.webp" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Producto</h5>
+                    <h5 class="card-title">Mil hierbas magicas y hongos</h5>
+                    <h6>$150</h6>
+                    <p class="card-text">Excelente libro que reune buena parte de los conocimientos elementales sobre
+                        herbología
+                    </p>
                 </div>
             </div>
-        </div> -->
-
-
-
+        </div>
     </div>
 
-
-
-
-
-
+    <!-- Productos 2 -->
+    <div class="cardgroup">
+        <div class=" row row-col-md-3 card-deck">
+            <div class="card">
+                <img src="./src/assets/img/nimbus200.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nimbus 2000</h5>
+                    <h6>$2000</h6>
+                    <p class="card-text">Exelente escoba para practicar Quidditch tiene mango de caoba</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./src/assets/img/bolquid.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Boletos partido de Quidditch</h5>
+                    <h6>$10</h6>
+                    <p class="card-text">Asista al partido de este sabado 15 de Abril.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./src/assets/img/mandragora.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mandragoras</h5>
+                    <h6>$7.50</h6>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./src/assets/img/libro.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mil hierbas magicas y hongos</h5>
+                    <h6>$150</h6>
+                    <p class="card-text">Excelente libro que reune buena parte de los conocimientos elementales sobre
+                        herbología
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./src/assets/img/libro.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mil hierbas magicas y hongos</h5>
+                    <h6>$150</h6>
+                    <p class="card-text">Excelente libro que reune buena parte de los conocimientos elementales sobre
+                        herbología
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Este bloque de codigo controla el footer dejar aqui -->
     <footer class="footer ">
-        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejon Diagonal</h2>
+        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
         <div class="row mt-4 justify-content-center align-items-center">
             <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
                 <div class=" col-lg-6 col-md-12 col-sm-12">
                     <ul class="footer__menu_1">
                         <li class="nav-item">
-                            <a class=" nav-link" href="#">Inicio</a>
+                            <a class=" nav-link" href="./inicio.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Acerca de Nosotros</a>
+                            <a class="nav-link" href="./acerca-de-nosotros.html">Acerca de Nosotros</a>
                         </li>
                     </ul>
                 </div>
@@ -282,10 +272,13 @@
                 <div class=" col-lg-3 col-md-12 col-sm-12">
                     <ul class="">
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Tienda</a>
+
+                            <a class="nav-link" href="./productos.html">Productos</a>
+
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">GitHub</a>
+                            <a class="nav-link"
+                                href="https://github.com/DenisseGonz/Proyecto-Integrador-Equipo-3">GitHub</a>
                         </li>
                     </ul>
                 </div>
@@ -298,10 +291,9 @@
         </div>
     </footer>
 
-    <script src="/src/assets/js/productos.js"></script>
-
     <!-- Se importa la librería de las partículas primero antes del script de configuración -->
-    <script src="node_modules\particles.js\particles.js"></script>
+    <!-- <script src="node_modules\particles.js\particles.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="./src/assets/js/cargador-particulas.js"></script>
 
     <!-- Comportamientos de Bootstrap -->
@@ -311,8 +303,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>

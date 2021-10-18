@@ -1,15 +1,12 @@
+/* Botones */
 .btn {
   color: black;
   font-size: 20px;
-  display: inline-block;
-  width: 300px;
   height: 100px;
-  margin-inline: 25px;
-  margin-top: 100px;
-  margin-left: 100px;
-  margin-bottom: 100px;
+  width: 20%;
 }
 
+/* Banner callejon diagonal */
 #imgEncabezado {
   text-align: center;
   width: 100%;
@@ -23,104 +20,58 @@
   -webkit-text-stroke: white 3px;
 }
 
-/* separa */
-body {
-  font-family: Arial;
-  margin: 0;
+/* Carrusel */
+.carousel-inner {
+  height: 500px;
+  width: 100%;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
+/* Productos */
+.cardgroup {
+  margin: 100px;
   color: white;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+@media (min-width: 992px) {
+  .card:hover {
+    transform: translateY(-15px);
+    transition: 0.5s;
+    box-shadow: 0.5em 0.5em 10px rgba(240, 240, 240, 0.3);
+  }
+
+  .card {
+    background-image: url(https://c.tenor.com/ll3rQ9a_zqYAAAAC/galaxy.gif);
+  }
+
+  .card-img-top {
+    padding: 0.5em;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .card-body {
+    overflow: hidden;
+  }
+
+  .card-body:hover {
+    transform: translateY(8px);
+  }
+
+  .card-text {
+    position: relative;
+    left: -300px;
+    height: 0px;
+    color: white;
+  }
+
+  .card:hover .card-text {
+    left: 0;
+    height: auto;
+  }
 }
 
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-  margin-bottom: 25px;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-h2 {
-  color: white;
+@media (max-width: 991px) {
+  .cardgroup {
+    display: none;
+  }
 }

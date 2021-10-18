@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./src/assets/css/gencomps.css">
     <link rel="stylesheet" type="text/css" href="./src/assets/css/baul.css">
     <title>Baúl de compras</title>
@@ -14,7 +17,7 @@
 <body>
 
     <!-- El seguiente bloque de codigo controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
-   <!--  <div id="particles-js">
+    <!--  <div id="particles-js">
         <img id="fondo" src="./src/assets/img/hogwarts-fondo.png" />
     </div> -->
 
@@ -23,7 +26,7 @@
         <div id="logo">
             <img src="./src/assets/img/logo_header.png" alt="" width="180px" />
         </div>
-        <nav class="navbar navbar-expand-lg" id="encabezado" .d-flex >
+        <nav class="navbar navbar-expand-lg" id="encabezado" .d-flex>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <svg id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -32,13 +35,13 @@
                     <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="white" />
                 </svg>
             </button>
-            
+
             <div class="usuario order-lg-12 order-sm-1">
                 <div id="logo-user">
                     <img src="./src/assets/img/logo-user.png" alt="" width="60px" />
                 </div>
                 <div id="texto-user">
-                    <a href=""> ¡hola, Usuario!</a>
+                    <a href="usuario.html"> ¡hola, Usuario!</a>
                 </div>
             </div>
 
@@ -46,15 +49,15 @@
                 <img src="./src/assets/img/logo_header.png" alt="" width="120px" />
             </div>
 
-          
+
 
             <div class="collapse navbar-collapse nav-item" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link" href="inicio.html">Inicio</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Mi Perfil <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="usuario.html">Mi Perfil <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -62,28 +65,31 @@
                             Salas
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Gryffindor</a>
-                            <a class="dropdown-item" href="#">Hufflepuff</a>
+                            <a class="dropdown-item" href="griffindor.html">Gryffindor</a>
+                            <a class="dropdown-item" href="">Hufflepuff</a>
                             <div class="dropdown-item">Slytherin</div>
                             <a class="dropdown-item" href="#">Ravenclaw</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Delivery</a>
+                        <a class="nav-link" href="productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="delivery.html">Delivery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Eventos</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                        <a class="nav-link" href="eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
                     </li>
                 </ul>
             </div>
 
-            
+
         </nav>
     </div>
 
@@ -91,59 +97,128 @@
 
     <!-- Inserte los elementos que compondran su página dentro de este div -->
     <div class="contenedorBaul">
-        <div id="comprasDetalle">
-            <div id="encabezados">
-                <p>Artículos</p>
-                <p>Precio</p>
-                <p>Cantidad</p>
+        <div id="compras">
+            <div id="comprasDetalle">
+                <div class="Producto">
+                    <div id="encabezados">
+                        <p>Artículos</p>
+                    </div>
+                    <div id="detalleProductos">
+                        <div class="imagenProducto"> <img src="./src/assets/img/mandragora_baul.jpg" width="100px">
+                        </div>
+                        <div class="textoDetalle">Mandrágora joven.</br> Departamento: Herbología</div>
+                    </div>
+                </div>
+                <div class="precioProducto">
+                    <div id="encabezados">
+                        <p>Precio</p>
+                    </div>
+                    <div class="textoDetalle"></br>
+                        <p>$$$</p>
+                    </div>
+                </div>
+                <div class="contadorProducto">
+                    <div id="encabezados">
+                        <p>Cantidad</p>
+                    </div>
+                    <div class="qty mt-5 contador">
+                        <span class="minus bg-dark">-</span>
+                        <input type="number" class="count" name="qty" value="1">
+                        <span class="plus bg-dark">+</span>
+                    </div>
+                </div>
             </div>
-            <div id="detalleProductos">
-                <div class="imagenProducto">Imagen </div>
-                <div class="precioProducto">$$$$</div>
-                <div class="contadorProducto"></div>
+
+            <div id="comprasResumen">
+                <div id="encabezados">
+                    <p>Resumen </p>
+                </div>
+                <div class="resumenProductos row">
+                    <div class="nProducto"> 1 </div>
+                    <div class="nombreProducto">Mandrágora</div>
+                    <div class="precioProducto">$$$</div>
+                </div>
 
             </div>
-            <div id="detalleProductos">
-                
-            </div>
-            
         </div>
+        <!-- Carrusel -->
 
-        <div id="comprasResumen">
-            <div class="tituloResumen"> <p>Resumen </p></div>
-            <div class="resumenProductos"> 
-                <div class="nProducto"> n </div>
-                <div class="nombreProducto">Producto</div>
-                <div class="precioProducto">$$$</div>
+        <div class="container text-center my-3 carrusel">
+            <h2 id="encabezados">Te puede interesar: </h2>
+            <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner w-100 mx-5" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <img class="img-fluid" src="http://placehold.it/380?text=1" width="200px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <img class="img-fluid" src="http://placehold.it/380?text=2" width="200px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <img class="img-fluid" src="http://placehold.it/380?text=3" width="200px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <img class="img-fluid" src="http://placehold.it/380?text=4" width=200px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <img class="img-fluid" src="http://placehold.it/380?text=5" width="200px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <img class="img-fluid" src="http://placehold.it/380?text=6" width="200px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle"
+                        aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle"
+                        aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            
-
-
         </div>
-        
     </div>
-
-
-
-
-
-
 
     <!-- Este bloque de codigo controla el footer dejar aqui -->
     <footer class="footer ">
-        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejon Diagonal</h2>
+        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
         <div class="row mt-4 justify-content-center align-items-center">
             <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
                 <div class=" col-lg-6 col-md-12 col-sm-12">
                     <ul class="footer__menu_1">
                         <li class="nav-item">
-                            <a class=" nav-link" href="#">Inicio</a>
+                            <a class=" nav-link" href="inicio.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Acerca de Nosotros</a>
+                            <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
                         </li>
                     </ul>
                 </div>
@@ -151,10 +226,11 @@
                 <div class=" col-lg-3 col-md-12 col-sm-12">
                     <ul class="">
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Tienda</a>
+                            <a class="nav-link" href="productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">GitHub</a>
+                            <a class="nav-link"
+                                href="https://github.com/DenisseGonz/Proyecto-Integrador-Equipo-3">GitHub</a>
                         </li>
                     </ul>
                 </div>
@@ -179,7 +255,8 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
 
-
+    <script src="./src/assets/js/contador.js"></script>
+    <script src="./src/assets/js/carrusel_baul.js"></script>
 </body>
 
 </html>

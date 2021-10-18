@@ -165,16 +165,26 @@ input:disabled{
     margin-top: 50px;
 }
 
+.resumenProductos{
+    font-size: large;
+}
+
 .nProducto{
     width:15%;
-    color:white;
+    color:white;   
 }
 
 .nombreProducto{
     width: 60%;
     color:white;
+    
 }
 
+.compraTotal{
+    display: flex;
+    border:black;
+    width: 100%;
+}
 
 /* Carrusel */
 

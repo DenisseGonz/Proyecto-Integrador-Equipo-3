@@ -10,6 +10,11 @@
 #encaEve{
     height: 85vh;
 }
+
+.card{
+    margin-top: 5%;
+}
+
 #imgEncabezado{
     margin:5% 0;
     position: static;

@@ -31,33 +31,22 @@
             </div>
         </div>
 
-        <div class="form-group row">
-            <div id="form__nombre">
-                <div id="campo__form__nombre">
-                    <label for="inputNombre" class="col-sm-3 col-form- label" id="etiquetas">Nombre: </label>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="inputNombre campos" placeholder="Nombre">
-                    </div>
-                </div>
-                <div id="campo__form__nombre">
-                    <label for="inputFamilia" class="col-sm-3 col-form- label" id="etiquetas">Familia:</label>
-                    <div class="col-sm-3" id="campos">
-                        <input type="text" class="form-control" id="inputFamilia" placeholder="Familia">
-                    </div>
-                </div>
-            </div>
-
+        <div class="form-group row justify-content-center">
+                <label for="inputNombre" class="col-sm-3 col-lg-2 col-form- label etiquetas">Nombre: </label>
+                <input type="text" class="form-control col-sm-2 col-lg-3" id="inputNombre" placeholder="Nombre">
+                <label for="inputFamilia" class=" col-sm-3 col-form- col-lg-2 label etiquetas">Familia:</label>
+                <input type="text" class="form-control col-sm-3 col-lg-3" id="inputFamilia" placeholder="Familia">
         </div>
 
         <div class="form-group row justify-content-center">
-            <label for="inputEmail" class="col-sm-3 col-form- label" id="etiquetas">Correo electrónico:</label>
+            <label for="inputEmail" class="col-sm-3 col-form- label etiquetas">Correo electrónico:</label>
             <div class="col-sm-7" id="campos">
                 <input type="email" class="form-control" id="inputEmail" placeholder="algo@hogwarts.com">
             </div>
         </div>
 
         <div class="form-group row justify-content-center">
-            <label for="inputContraseña" class="col-sm-3 col-form- label" id="etiquetas">Contraseña:</label>
+            <label for="inputContraseña" class="col-sm-3 col-form- label etiquetas">Contraseña:</label>
             <div class="col-sm-7" id="campos">
                 <input type="password" class="form-control" id="inputContraseña"
                     placeholder="8 caracteres alfanuméricos">
@@ -65,7 +54,7 @@
         </div>
 
         <div class="form-group row justify-content-center">
-            <label for="inputConfirma" class="col-sm-3 col-form- label" id="etiquetas-pequena">Confirma
+            <label for="inputConfirma" class="col-sm-3 col-form- label etiquetas">Confirma
                 contraseña:</label>
             <div class="col-sm-7" id="campos">
                 <input type="password" class="form-control" id="inputConfirma" placeholder="Repite tu contraseña">
@@ -73,16 +62,15 @@
         </div>
 
         <div class="form-group row justify-content-center">
-            <div id="etiquetas-pequena">
-                <label for="inputCasa" class="col-sm-3 col-form-">Casa de Hogwarts:</label>
-            </div>
+
+            <label for="inputCasa" class="col-sm-3 col-form- etiquetas">Casa de Hogwarts:</label>
 
             <div class="caja-check col-sm-7">
 
                 <input type="radio" id="radio1" name="radios" value="gryffindor" checked>
                 <label for="radio1" class="opcion__casa  col-sm-3"><img src="./src/assets/img/gryffindor-registro.png"
                         width="40px">
-                    <p>Gryffindor</p>
+                    Gryffindor
                 </label>
 
                 <input type="radio" id="radio2" name="radios" value="hufflepuff">
@@ -107,8 +95,7 @@
         </div>
 
         <div class="form-group row justify-content-center">
-            <label for="inputPregunta" class="col-sm-3 col-form- label" id="etiquetas-pequena">Pregunta de
-                seguridad:</label>
+            <label for="inputPregunta" class="col-sm-3 col-form- label etiquetas">Pregunta de seguridad:</label>
             <div class="col-sm-7" id="campos">
                 <select name="pregunta" id="inputPregunta" class="form-control">
                     <option value=""> </option>
@@ -121,16 +108,15 @@
         </div>
 
         <div class="form-group row justify-content-center">
-            <label for="inputRespuesta" class="col-sm-3 col-form- label" id="etiquetas">Respuesta:</label>
+            <label for="inputRespuesta" class="col-sm-3 col-form- label etiquetas">Respuesta:</label>
             <div class="col-sm-7" id="campos">
-                <input type="text" class="form-control" id="inputRespuesta"
-                    placeholder="Respuesta a la pregunta de seguridad">
+                <input type="text" class="form-control" id="inputRespuesta" placeholder="Respuesta a la pregunta de seguridad">
             </div>
         </div>
 
         <div class="form-group">
             <div class="col-sm-12 boton">
-                <button type="submit" class="btn ">Regístrame</button>
+                <a href="inicio.html" class="btn btn-secondary btn-lg" tabindex="-1" role="button" aria-disabled="true">Entrar</a>
             </div>
         </div>
 

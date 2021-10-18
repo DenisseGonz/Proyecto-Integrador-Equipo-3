@@ -7,20 +7,20 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="contacto.css">
-    <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
+    <link rel="stylesheet" href="/src/assets/css/contacto.css">
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/gencomps.css">
 </head>
 
 <body>
     <!-- El seguiente bloque de codigo controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
     <div id="particles-js">
-        <img id="fondo" src="../src/assets/img/hogwarts-fondo.png" />
+        <img id="fondo" src="./src/assets/img/hogwarts-fondo.png" />
     </div>
 
     <!-- Este bloque de codigo despliega el header dejar aqui -->
     <div id="header">
         <div id="logo">
-            <img src="../src/assets/img/logo_header.png" alt="" width="180px" />
+            <img src="./src/assets/img/logo_header.png" alt="" width="180px" />
         </div>
         <nav class="navbar navbar-expand-lg" id="encabezado">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -33,12 +33,13 @@
             </button>
 
             <div id="logo2">
-                <img src="../src/assets/img/logo_header.png" alt="" width="120px" />
+                <img src="./src/assets/img/logo_header.png" width="120px" />
             </div>
 
-            <a class="navbar-brand order-lg-12 p-0 me-2" href="">
-                <svg class="d-block my-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
-                    role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+            <a class="navbar-brand order-lg-12 p-0 me-2" href="baul-compras.html">
+                <svg class="d-block my-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
                     <path
                         d="M5 4h14a3 3 0 0 1 3 3v4h-7v-1H9v1H2V7a3 3 0 0 1 3-3m6 7h2v2h-2v-2m-9 1h7v1l2 2h2l2-2v-1h7v8H2v-8z"
                         fill="white" />
@@ -47,8 +48,11 @@
 
             <div class="collapse navbar-collapse nav-item" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./inicio.html">Inicio</a>
+                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Mi Perfil <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./usuario.html">Mi Perfil</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -56,26 +60,26 @@
                             Salas
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Gryffindor</a>
+                            <a class="dropdown-item" href="./griffindor.html">Gryffindor</a>
                             <a class="dropdown-item" href="#">Hufflepuff</a>
                             <div class="dropdown-item">Slytherin</div>
                             <a class="dropdown-item" href="#">Ravenclaw</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Delivery</a>
+                        <a class="nav-link" href="productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="./delivery.html">Delivery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Eventos</a>
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                        <a class="nav-link" href="./eventos.html">Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="./acerca-de-nosotros.html">Acerca de Nosotros</a>
                     </li>
                 </ul>
             </div>
@@ -85,34 +89,34 @@
 
 
     <!-- Inserte los elementos que compondran su página dentro de este div -->
-    <div class="contenedorPrincipal">
+    <div class="contenedor">
         <div class="fondo">
             <h1>Contacto</h1>
             <div class="borde border justify-content-xl-start container">
                 <form action="post">
-                <div class="container1">
+                    <div class="container1">
                         <div class="nombre">
-                        <label for="Nombre">Nombre</label><br>
-                        <textarea id="Nombre" name="nombre" class="nombre" placeholder="Ronald Wesley"></textarea>
+                            <label for="Nombre">Nombre</label><br>
+                            <textarea id="Nombre" name="nombre" class="nombre" placeholder="Ronald Wesley"></textarea>
                         </div>
-                <div class="familia">
-                    <label for="Familia">Familia</label><br>
-                    <textarea type="text" id="Familia" placeholder="Griffyndor" name="Familia"></textarea>
-                </div>
-             </div>
-            <div class="container2">
-                <div class="div-mensaje">
-                    <l abel for="Mensaje">Mensaje</label><br>
-                    <textarea class="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
-                    <input type="submit" value="Enviar">
-                </div>
+                        <div class="familia">
+                            <label for="Familia">Familia</label><br>
+                            <textarea type="text" id="Familia" placeholder="Griffyndor" name="Familia"></textarea>
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="div-mensaje">
+                            <l abel for="Mensaje">Mensaje</label><br>
+                                <textarea class="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
+                                <input type="submit" value="Enviar">
+                        </div>
+                    </div>
             </div>
         </div>
-        </div>
         </form>
-        </div>
+    </div>
 
-        
+
     </div>
 
 
@@ -129,13 +133,13 @@
                 <div class=" col-lg-6 col-md-12 col-sm-12">
                     <ul class="footer__menu_1">
                         <li class="nav-item">
-                            <a class=" nav-link" href="#">Inicio</a>
+                            <a class=" nav-link" href="./inicio.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Acerca de Nosotros</a>
+                            <a class="nav-link" href="./acerca-de-nosotros.html">Acerca de Nosotros</a>
                         </li>
                     </ul>
                 </div>
@@ -143,25 +147,26 @@
                 <div class=" col-lg-3 col-md-12 col-sm-12">
                     <ul class="">
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Tienda</a>
+                            <a class="nav-link" href="productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">GitHub</a>
+                            <a class="nav-link"
+                                href="https://github.com/DenisseGonz/Proyecto-Integrador-Equipo-3">GitHub</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class=" col-lg-3  col-md-6 col-sm-6 col-6">
                 <div class="footer__imagen">
-                    <img src="../src/assets/img/Hogwartscrest.png" alt="hogwarts">
+                    <img src="./src/assets/img/Hogwartscrest.png" alt="hogwarts">
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- Se importa la librería de las partículas primero antes del script de configuración -->
-    <script src="..\node_modules\particles.js\particles.js"></script>
-    <script src="../src/assets/js/cargador-particulas.js"></script>
+    <script src=".\node_modules\particles.js\particles.js"></script>
+    <script src="./src/assets/js/cargador-particulas.js"></script>
 
     <!-- Comportamientos de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

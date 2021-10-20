@@ -4,24 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./src/assets/css/gencomps.css">
-    <link rel="stylesheet" href="./src/assets/css/usersty.css">
+    <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css"> 
+    <link rel="preload" href="../src/assets/css/normalize.css" as="style">
+    <link rel="stylesheet" href="../src/assets/css/normalize.css">
+    <link rel="preload" href="../src/assets/css/gencomps.css" as="style">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
+    <link rel="preload" href="../src/assets/css/usersty.css" as="style">
+    <link rel="stylesheet" href="../src/assets/css/usersty.css">
     <title>Mi Perfil</title>
 </head>
 
 <body>
-    <audio src="./01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
+    <audio src="../src/assets/audio/01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
     <!-- El seguiente bloque de codigo controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
     <div id="particles-js">
-        <img id="fondo" src="./src/assets/img/hogwarts-fondo.png" />
+        <img id="fondo" src="../src/assets/img/hogwarts-fondo.png" />
     </div>
 
     <!-- Este bloque de codigo despliega el header dejar aqui -->
     <div id="header">
         <div id="logo">
-            <img src="./src/assets/img/logo_header.png" alt="" width="180px" />
+            <img src="../src/assets/img/logo_header.png" alt="" width="180px" />
         </div>
         <nav class="navbar navbar-expand-lg" id="encabezado">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -34,10 +37,10 @@
             </button>
 
             <div id="logo2">
-                <img src="./src/assets/img/logo_header.png" alt="" width="120px" />
+                <img src="../src/assets/img/logo_header.png" alt="" width="120px" />
             </div>
 
-            <a class="navbar-brand order-lg-12 p-0 me-2" href="./baul-compras.html">
+            <a class="navbar-brand order-lg-12 p-0 me-2" href="baul-compras.html">
                 <svg class="d-block my-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet"
                     viewBox="0 0 24 24">
@@ -92,7 +95,7 @@
     <!-- Inserte los elementos que compondran su página dentro de este div -->
     <div class="container-fluid">
         <div id="user__banner">
-            <img src="./src/assets/img/banner-slytherin.jpg" class="user__foto__banner" />
+            <img src="../src/assets/img/banner-slytherin.jpg" class="user__foto__banner" />
             <h2 class="user__titulo text-center font-weight-bolder">Bienvenido, mago Draco Malfoy a tu perfil de
                 Slytherin</h2>
         </div>
@@ -436,30 +439,30 @@
     </div>
 
     <!-- Este bloque de codigo controla el footer dejar aqui -->
-    <footer class="footer">
+    <footer class="footer ">
         <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
         <div class="row mt-4 justify-content-center align-items-center">
             <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
                 <div class=" col-lg-6 col-md-12 col-sm-12">
                     <ul class="footer__menu_1">
-                        <li class="nav-item">
-                            <a class=" nav-link" href="./inicio.html">Inicio</a>
+                        <li class="nav-item footer__item">
+                            <a class=" nav-link" href="inicio.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        <li class="nav-item footer__item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="./acerca-de-nosotros.html">Acerca de Nosotros</a>
+                        <li class="nav-item footer__item ">
+                            <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
                         </li>
                     </ul>
                 </div>
                 <div class="linea"></div>
                 <div class=" col-lg-3 col-md-12 col-sm-12">
                     <ul class="">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="./productos.html">Productos</a>
+                        <li class="nav-item footer__item ">
+                            <a class="nav-link" href="productos.html">Productos</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item footer__item">
                             <a class="nav-link"
                                 href="https://github.com/DenisseGonz/Proyecto-Integrador-Equipo-3">GitHub</a>
                         </li>
@@ -468,7 +471,7 @@
             </div>
             <div class=" col-lg-3  col-md-6 col-sm-6 col-6">
                 <div class="footer__imagen">
-                    <img src="./src/assets/img/Hogwartscrest.png" alt="hogwarts">
+                    <img src="../src/assets/img/Hogwartscrest.png" alt="hogwarts">
                 </div>
             </div>
         </div>
@@ -477,15 +480,16 @@
     <!-- Se importa la librería de las partículas primero antes del script de configuración -->
     <!-- <script src="node_modules\particles.js\particles.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="./src/assets/js/cargador-particulas.js"></script>
+    <script src="../src/assets/js/cargador-particulas.js"></script>
 
     <!-- Comportamientos de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/assets/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
 
 
 </body>

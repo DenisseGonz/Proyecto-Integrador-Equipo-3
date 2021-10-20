@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="./src/assets/css/registro.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css"> 
+    <link rel="preload" href="../src/assets/css/normalize.css" as="style">
+    <link rel="stylesheet" href="../src/assets/css/normalize.css">
+    <link rel="preload" href="../src/assets/css/registro.css" as="style">
+    <link href="../src/assets/css/registro.css" rel="stylesheet" type="text/css" />
     <title>Registro</title>
 
 </head>
@@ -14,13 +16,13 @@
     <!-- <audio src="./01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio> -->
     <div id="encabezado">
         <div id="escudo">
-            <img src="./src/assets/img/escudo-login.png" height="140px">
+            <img src="../src/assets/img/escudo-login.png" height="140px">
         </div>
         <div id="logotipo">
-            <img src="./src/assets/img/logo_header.png" height="140px">
+            <img src="../src/assets/img/logo_header.png" height="140px">
         </div>
         <div id="escudo">
-            <img src="./src/assets/img/escudo-login.png" height="140px">
+            <img src="../src/assets/img/escudo-login.png" height="140px">
         </div>
     </div>
 
@@ -69,25 +71,25 @@
             <div class="caja-check col-sm-7">
 
                 <input type="radio" id="radio1" name="radios" value="gryffindor" checked>
-                <label for="radio1" class="opcion__casa  col-sm-3"><img src="./src/assets/img/gryffindor-registro.png"
+                <label for="radio1" class="opcion__casa  col-sm-3"><img src="../src/assets/img/gryffindor-registro.png"
                         width="40px">
                     Gryffindor
                 </label>
 
                 <input type="radio" id="radio2" name="radios" value="hufflepuff">
-                <label for="radio2" class="opcion__casa col-sm-3"><img src="./src/assets/img/hufflepuff-registro.png"
+                <label for="radio2" class="opcion__casa col-sm-3"><img src="../src/assets/img/hufflepuff-registro.png"
                         width="40px">
                     <p>Hufflepuff </p>
                 </label>
 
                 <input type="radio" id="radio3" name="radios" value="ravenclaw">
-                <label for="radio3" class="opcion__casa col-sm-3"><img src="./src/assets/img/ravenclaw-registro.png"
+                <label for="radio3" class="opcion__casa col-sm-3"><img src="../src/assets/img/ravenclaw-registro.png"
                         width="40px">
                     <p>Ravenclaw</p>
                 </label>
 
                 <input type="radio" id="radio4" name="radios" value="slytherin">
-                <label for="radio4" class="opcion__casa col-sm-3"><img src="./src/assets/img/slytherin-registro.png"
+                <label for="radio4" class="opcion__casa col-sm-3"><img src="../src/assets/img/slytherin-registro.png"
                         width="40px">
                     <p>Slytherin</p>
                 </label>
@@ -120,12 +122,15 @@
                 <a href="inicio.html" class="btn btn-secondary btn-lg" tabindex="-1" role="button" aria-disabled="true">Entrar</a>
             </div>
         </div>
-
-
-
     </form>
 
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/assets/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

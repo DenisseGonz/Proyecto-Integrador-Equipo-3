@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css">
     <link rel="preload" href="../src/assets/css/normalize.css" as="style">
     <link rel="stylesheet" href="../src/assets/css/normalize.css">
     <link rel="preload" href="../src/assets/css/gencomps.css" as="style">
@@ -12,6 +12,10 @@
     <link rel="preload" href="../src/assets/css/productos.css" as="style">
     <link rel="stylesheet" href="../src/assets/css/productos.css">
     <title>Productos</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+
+
 </head>
 
 <body>
@@ -92,22 +96,26 @@
 
     <!-- botones de las casas -->
     <div class=" justify-content-around my-4 row">
-        <button type="button" class="btn btn-warning col-2"><img src="../src/assets/img/productos-hufflepuff.png" width="70" />
+        <button type="button" class="btn btn-warning col-2"><img src="../src/assets/img/productos-hufflepuff.png"
+                width="70" />
             Botanica</button>
-        <button type="button" class="btn btn-primary col-2"><img src="../src/assets/img/prodcutos-ravenclaw.png" width="70" />
+        <button type="button" class="btn btn-primary col-2"><img src="../src/assets/img/prodcutos-ravenclaw.png"
+                width="70" />
             Instrumentos</button>
-        <button type="button" class="btn btn-success col-2"><img src="../src/assets/img/productos-slytherin.png" width="70" />
+        <button type="button" class="btn btn-success col-2"><img src="../src/assets/img/productos-slytherin.png"
+                width="70" />
             Pociones</button>
-        <button type="button" class="btn btn-danger col-2"><img src="../src/assets/img/productos-gryffindor.png" width="70" />
+        <button type="button" class="btn btn-danger col-2"><img src="../src/assets/img/productos-gryffindor.png"
+                width="70" />
             Deportes</button>
     </div>
 
     <!--   callejon diagonal  -->
-    <img id="imgEncabezado" src="../src/assets/img/productos-callejon.png" class="rounded-left img-fluid" />
-    <h1 class="titulo_armando text-center font-weight-bolder">Callejón Diagonal</h1>
+    <!--     <img id="imgEncabezado" src="../src/assets/img/productos-callejon.png" class="rounded-left img-fluid" />
+    <h1 class="titulo_armando text-center font-weight-bolder">Callejón Diagonal</h1> -->
 
     <!-- carrusel -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <!--     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -147,10 +155,10 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+    </div> -->
 
     <!-- Productos -->
-    <div class="cardgroup">
+   <!--  <div class="cardgroup">
         <div class=" row row-col-md-3 card-deck">
             <div class="card">
                 <img src="../src/assets/img/nimbus200.jpg" class="card-img-top" alt="...">
@@ -199,10 +207,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Productos 2 -->
-    <div class="cardgroup">
+   <!--  <div class="cardgroup">
         <div class=" row row-col-md-3 card-deck">
             <div class="card">
                 <img src="../src/assets/img/nimbus200.jpg" class="card-img-top" alt="...">
@@ -251,7 +259,204 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+
+    <!-- pruebaaaaaaaaaaaaaaaaaa -->
+    <!-- Titulos -->
+    <section class="section-products">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="header">
+                        <h3>Featured Product</h3>
+                        <h2>Productos</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Producto 1 -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-1" class="single-product">
+                        <div class="part-1">
+                            <ul>
+                                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                                            width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M5 4h14a3 3 0 0 1 3 3v4h-7v-1H9v1H2V7a3 3 0 0 1 3-3m6 7h2v2h-2v-2m-9 1h7v1l2 2h2l2-2v-1h7v8H2v-8z"
+                                                fill="currentColor" />
+                                        </svg>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title">Boletos partido de Quidditch</h3>
+                            <h4 class="product-old-price">$79.99</h4>
+                            <h4 class="product-price">$49.99</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-2" class="single-product">
+                        <div class="part-1">
+                            <span class="discount">15% off</span>
+                            <ul>
+                                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                                    width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M5 4h14a3 3 0 0 1 3 3v4h-7v-1H9v1H2V7a3 3 0 0 1 3-3m6 7h2v2h-2v-2m-9 1h7v1l2 2h2l2-2v-1h7v8H2v-8z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title">Here Product Title</h3>
+                            <h4 class="product-price">$49.99</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-3" class="single-product">
+                        <div class="part-1">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title">Here Product Title</h3>
+                            <h4 class="product-old-price">$79.99</h4>
+                            <h4 class="product-price">$49.99</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-4" class="single-product">
+                        <div class="part-1">
+                            <span class="new">new</span>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title">Here Product Title</h3>
+                            <h4 class="product-price">$49.99</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-1" class="single-product">
+                        <div class="part-1">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title">Here Product Title</h3>
+                            <h4 class="product-old-price">$79.99</h4>
+                            <h4 class="product-price">$49.99</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-2" class="single-product">
+                        <div class="part-1">
+                            <span class="discount">15% off</span>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title">Here Product Title</h3>
+                            <h4 class="product-price">$49.99</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-3" class="single-product">
+                        <div class="part-1">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title">Here Product Title</h3>
+                            <h4 class="product-old-price">$79.99</h4>
+                            <h4 class="product-price">$49.99</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-4" class="single-product">
+                        <div class="part-1">
+                            <span class="new">new</span>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2">
+                            <h3 class="product-title">Here Product Title</h3>
+                            <h4 class="product-price">$49.99</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Este bloque de codigo controla el footer dejar aqui -->
     <footer class="footer ">

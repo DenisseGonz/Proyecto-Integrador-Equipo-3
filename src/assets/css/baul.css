@@ -31,7 +31,7 @@ body{
 
 #comprasDetalle{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* background: rgb(87,75,11); */
     background-image: linear-gradient(to bottom, rgba(76,54,3,1), rgba(76,54,3,0.4));
     align-content: space-around;
@@ -41,24 +41,26 @@ body{
     margin-top: 50px;
 }
 
-#encabezados{
+.encabezados{
     display: flex;
     flex-direction: row;
     color: white;
     font-size:xx-large;
-    justify-content: space-around;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
-#detalleProductos{
+.detalleProductos{
     display: flex;
     flex-direction: row;
     justify-content:center;
+    width:50%
 }
 
 .Producto{
     display:flex;
-    flex-direction: column;
-    width:50%;
+    flex-direction: row;
+    width:100%;
     justify-content:center;
     align-content: center;
 }
@@ -71,25 +73,25 @@ body{
     padding-left: 10px;
 }
 .precioProducto{
-    display:flex;
-    flex-direction: column; 
+    display:flex; 
     align-content: center;
-    width:20%;
+    justify-content: center;
     color:white;
     font-size: large;
-    padding-left: 10px;
 }
 
 .contadorProducto{
     display:flex;
     flex-direction: column; 
     align-content: center;
-    width:25%;    
+    /* margin: 5% 0%; */
 }
+
 .contador{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-content: center;
 }
 .qty .count {
     color: #000;
@@ -98,8 +100,8 @@ body{
     font-size: 25px;
     font-weight: 700;
     line-height: 30px;
-    padding: 0 2px
-    ;min-width: 35px;
+    padding: 0 0px;
+    min-width: 35px;
     text-align: center;
 }
 .qty .plus {
@@ -125,9 +127,7 @@ body{
     border-radius: 50%;
     background-clip: padding-box;
 }
-div {
-    text-align: center;
-}
+
 .minus:hover{
     background-color: #717fe0 !important;
 }
@@ -167,6 +167,7 @@ input:disabled{
 
 .resumenProductos{
     font-size: large;
+    margin:10px;
 }
 
 .nProducto{
@@ -177,25 +178,32 @@ input:disabled{
 .nombreProducto{
     width: 60%;
     color:white;
-    
 }
 
 .compraTotal{
     display: flex;
-    border:black;
+    border-top: 3px solid white; 
     width: 100%;
+    font-size: larger;
+    font-weight:900;
+    color: white;
+    padding-right: 15%;
+    margin-top: 10%;
 }
-
+.btn-comprar{
+    background-color: rgb(255, 217, 0);
+    color:grey;
+    font-weight: bolder;
+}
 /* Carrusel */
 
 .carrusel{
     background-image: linear-gradient(to bottom, rgba(76,54,3,1), rgba(76,54,3,0.4));
     justify-self: center;
-    width:80%;
+    width:90%;
     border-radius: 25px;
     padding:30px;
-    margin:4% 8%;
- 
+   /*  margin:8% 8%; */
 }
 
 @media (max-width: 768px) {
@@ -209,7 +217,13 @@ input:disabled{
 
 .card{
     width: 200px;
-    height: 230px;
+    height: 250px;
+    background-color: grey;
+}
+
+.cardText{
+    color:white;
+    margin-top:10%;
 }
 
 .carousel-inner .carousel-item.active,

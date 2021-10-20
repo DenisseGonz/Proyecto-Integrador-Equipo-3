@@ -96,101 +96,102 @@
 
 
     <!-- Inserte los elementos que compondran su página dentro de este div -->
-    <div class="contenedorBaul">
-        <div id="compras">
-            <div id="comprasDetalle">
-                <div class="Producto">
-                    <div id="encabezados">
-                        <p>Artículos</p>
-                    </div>
-                    <div id="detalleProductos">
-                        <div class="imagenProducto"> <img src="./src/assets/img/mandragora_baul.jpg" width="100px">
-                        </div>
-                        <div class="textoDetalle">Mandrágora joven.</br> Departamento: Herbología</div>
-                    </div>
+    <main class="contenedorBaul">
+        <section id="compras">
+            <section id="comprasDetalle">
+                <div class="encabezados">
+                    <p class="col-6">Artículos</p>
+                    <p class="col-3">Precio</p>
+                    <p class="col-3">Cantidad</p>
                 </div>
-                <div class="precioProducto">
-                    <div id="encabezados">
-                        <p>Precio</p>
-                    </div>
-                    <div class="textoDetalle"></br>
-                        <p>$$$</p>
-                    </div>
-                </div>
-                <div class="contadorProducto">
-                    <div id="encabezados">
-                        <p>Cantidad</p>
-                    </div>
-                    <div class="qty mt-5 contador">
-                        <span class="minus bg-dark">-</span>
-                        <input type="number" class="count" name="qty" value="1">
-                        <span class="plus bg-dark">+</span>
-                    </div>
-                </div>
-            </div>
 
-            <div id="comprasResumen">
-                <div id="encabezados">
-                    <p>Resumen </p>
+                <div class="Producto">
+                    <div class="detalleProductos col-6">
+                        <img class="imagenProducto" src="./src/assets/img/mandragora_baul.jpg" width="100px">
+                        <span class="textoDetalle">Mandrágora joven.</br> Departamento: Herbología</span>
+                    </div>
+
+                    <span class="precioProducto col-3">
+                        <p class="my-5">$$$</p>
+                    </span>
+                    
+                    <div class="contadorProducto col-3">
+                        <div class="qty my-5 contador">
+                            <span class="minus bg-dark">-</span>
+                            <input type="number" class="count" name="qty" value="1">
+                            <span class="plus bg-dark">+</span>
+                        </div>
+                    </div>
                 </div>
+            </section>
+
+            <section id="comprasResumen">
+                <span class="encabezados"> Resumen </span>
                 <div class="resumenProductos row">
                     <span class="nProducto"> 1 </span>
                     <span class="nombreProducto">Mandrágora</span>
-                    <span class="precioProducto">$$$</span>
-                    <div class="compraTotal align-items-left">
-                        <!-- <p> Total:  $$$$</p> -->
-                    </div>
+                    <span class="precioProducto justify-content-end">$$$</span>
                 </div>
 
-                <button type="button" class="btn btn-warning">Comenzar compra</button>
+                <span class="compraTotal justify-content-end">
+                    <p> Total: $$$$</p>
+                </span>
 
-            </div>
-        </div>
+                <button type="button" class="btn btn-comprar my-3">Comenzar compra</button>
+
+            </section>
+        </section>
         <!-- Carrusel -->
 
-        <div class="container text-center my-3 carrusel">
-            <h2 id="encabezados">Te puede interesar: </h2>
+        <section class="container text-center my-5 carrusel">
+            <h2 class="encabezados mb-5 justify-content-start mx-5">Te puede interesar: </h2>
             <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
                 <div class="carousel-inner w-100 mx-5" role="listbox">
                     <div class="carousel-item active">
                         <div class="col-md-4">
                             <div class="card card-body">
-                                <img class="img-fluid" src="./src/assets/img/nimbus200.jpg" width="200px">
+                                <img class="img-fluid" src="./src/assets/img/nimbus200.jpg" width="200px" height="170px">
+                                <p class="cardText"> Nimbus 200</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-md-4">
                             <div class="card card-body">
-                                <img class="img-fluid" src="./src/assets/img/libro.webp" width="200px">
+                                <img class="img-fluid" src="./src/assets/img/libro.webp" width="200px" height="170px">
+                                <p class="cardText">Mil hierbas mágicas y hongos </p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-md-4">
                             <div class="card card-body">
-                                <img class="img-fluid" src="./src/assets/img/bolquid.jpg" width="200px">
+                                <img class="img-fluid" src="./src/assets/img/bolquid.jpg" width="200px" height="170px">
+                                <p class="cardText"> Boletos Quiditch</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-md-4">
                             <div class="card card-body">
-                                <img class="img-fluid" src="./src/assets/img/mandragora.jpg" width=200px">
+                                <img class="img-fluid" src="./src/assets/img/mandragora.jpg" width="200px" height="170px">
+                                <p class="cardText"> Mandrágoras en grupo</p>>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-md-4">
                             <div class="card card-body">
-                                <img class="img-fluid" src="./src/assets/img/varita.jpg" width="200px">
+                                <img class="img-fluid" src="./src/assets/img/varita.jpg" width="200px" height="170px">
+                                <p class="cardText"> Varita de cedro</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-md-4">
                             <div class="card card-body">
-                                <img class="img-fluid" src="./src/assets/img/caldero.jpg" width="200px">
+                                <img class="img-fluid" src="./src/assets/img/caldero.jpg" width="200px" height="170px">
+                                <p class="cardText"> Caldero mediano</p>
                             </div>
                         </div>
                     </div>
@@ -206,9 +207,10 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
+    <!-- Este bloque de codigo controla el footer dejar aqui -->
     <!-- Este bloque de codigo controla el footer dejar aqui -->
     <footer class="footer ">
         <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
@@ -220,7 +222,7 @@
                             <a class=" nav-link" href="inicio.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="contacto">Contacto</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>

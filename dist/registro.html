@@ -13,7 +13,6 @@
 </head>
 
 <body id="mask">
-    <!-- <audio src="./01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio> -->
     <div id="encabezado">
         <div id="escudo">
             <img src="../src/assets/img/escudo-login.png" height="140px">
@@ -34,92 +33,82 @@
             </div>
         </div>
 
-        <div class="form-group row justify-content-center">
-                <label for="inputNombre" class="col-sm-3 col-lg-2 col-form- label etiquetas">Nombre: </label>
-                <input type="text" class="form-control col-sm-2 col-lg-3" id="inputNombre" placeholder="Nombre">
-                <label for="inputFamilia" class=" col-sm-3 col-form- col-lg-2 label etiquetas">Familia:</label>
-                <input type="text" class="form-control col-sm-3 col-lg-3" id="inputFamilia" placeholder="Familia">
+        <div class="form-group row justify-content-center my-3">
+            <label for="inputNombre" class="mb-0 col-2 etiquetas p-0">Nombre: </label>
+            <input type="text" class="col-3 form-control campos p-0" id="inputNombre" placeholder="Nombre">
+            <label for="inputFamilia" class="mb-0 col-2 etiquetas">Familia: </label>
+            <input type="text" class="col-3 form-control campos p-0" id="inputFamilia" placeholder="Familia">
         </div>
 
-        <div class="form-group row justify-content-center">
-            <label for="inputEmail" class="col-sm-3 col-form- label etiquetas">Correo electrónico:</label>
-            <div class="col-sm-7" id="campos">
-                <input type="email" class="form-control" id="inputEmail" placeholder="algo@hogwarts.com">
-            </div>
+        <div class="form-group row justify-content-center my-3">
+            <label for="inputEmail" class="col-sm-3 col-form- etiquetas p-0">Correo electrónico:</label>
+            <input type="email" class="form-control campos col-sm-7" id="inputEmail" placeholder="algo@hogwarts.com">
         </div>
 
-        <div class="form-group row justify-content-center">
-            <label for="inputContraseña" class="col-sm-3 col-form- label etiquetas">Contraseña:</label>
-            <div class="col-sm-7" id="campos">
-                <input type="password" class="form-control" id="inputContraseña"
-                    placeholder="8 caracteres alfanuméricos">
-            </div>
+        <div class="form-group row justify-content-center my-3">
+            <label for="inputContraseña" class="col-sm-3 col-form- etiquetas p-0">Contraseña:</label>
+            <input type="password" class="col-sm-7 form-control campos" id="inputContraseña"
+                placeholder="8 caracteres alfanuméricos">
         </div>
 
-        <div class="form-group row justify-content-center">
-            <label for="inputConfirma" class="col-sm-3 col-form- label etiquetas">Confirma
-                contraseña:</label>
-            <div class="col-sm-7" id="campos">
-                <input type="password" class="form-control" id="inputConfirma" placeholder="Repite tu contraseña">
-            </div>
+        <div class="form-group row justify-content-center my-3">
+            <label for="inputConfirma" class="col-sm-3 col-form- etiquetas p-0">Confirma contraseña:</label>
+            <input type="password" class="col-sm-7 campos form-control" id="inputConfirma"
+                placeholder="Repite tu contraseña">
         </div>
 
-        <div class="form-group row justify-content-center">
-
-            <label for="inputCasa" class="col-sm-3 col-form- etiquetas">Casa de Hogwarts:</label>
-
-            <div class="caja-check col-sm-7">
+        <div class="form-group row justify-content-center my-3">
+            <label for="inputCasa" class="col-sm-3 col-form- etiquetas p-0">Casa de Hogwarts:</label>
+            <div class="caja-check col-sm-7 p-0">
 
                 <input type="radio" id="radio1" name="radios" value="gryffindor" checked>
-                <label for="radio1" class="opcion__casa  col-sm-3"><img src="../src/assets/img/gryffindor-registro.png"
-                        width="40px">
-                    Gryffindor
+                <label for="radio1" class="opcion__casa  col-sm-3 col">
+                    <img src="../src/assets/img/gryffindor-registro.png"width="40px">
+                   <p class="justify-content-start"> Gryffindor </p>
                 </label>
 
                 <input type="radio" id="radio2" name="radios" value="hufflepuff">
-                <label for="radio2" class="opcion__casa col-sm-3"><img src="../src/assets/img/hufflepuff-registro.png"
-                        width="40px">
+                <label for="radio2" class="opcion__casa col-sm-3 col">
+                    <img src="../src/assets/img/hufflepuff-registro.png" width="40px">
                     <p>Hufflepuff </p>
                 </label>
 
                 <input type="radio" id="radio3" name="radios" value="ravenclaw">
-                <label for="radio3" class="opcion__casa col-sm-3"><img src="../src/assets/img/ravenclaw-registro.png"
-                        width="40px">
+                <label for="radio3" class="opcion__casa col-sm-3 col">
+                    <img src="../src/assets/img/ravenclaw-registro.png" width="40px">
                     <p>Ravenclaw</p>
                 </label>
 
                 <input type="radio" id="radio4" name="radios" value="slytherin">
-                <label for="radio4" class="opcion__casa col-sm-3"><img src="../src/assets/img/slytherin-registro.png"
-                        width="40px">
+                <label for="radio4" class="opcion__casa col-sm-3 col">
+                    <img src="../src/assets/img/slytherin-registro.png" width="40px">
                     <p>Slytherin</p>
                 </label>
             </div>
 
         </div>
 
-        <div class="form-group row justify-content-center">
-            <label for="inputPregunta" class="col-sm-3 col-form- label etiquetas">Pregunta de seguridad:</label>
-            <div class="col-sm-7" id="campos">
-                <select name="pregunta" id="inputPregunta" class="form-control">
-                    <option value=""> </option>
-                    <option value="1"> Nombre de tu primera mascota</option>
-                    <option value="2"> Hechizo favorito</option>
-                    <option value="3"> ¿De qué es el núcleo de tu varita? </option>
-                    <option value="4"> ¿? </option>
-                </select>
-            </div>
+        <div class="form-group row justify-content-center my-3">
+            <label for="inputPregunta" class="col-sm-3 col-form- etiquetas p-0">Pregunta de seguridad:</label>
+            <select name="pregunta" id="inputPregunta" class="col-sm-7 form-control campos">
+                <option value=""> </option>
+                <option value="1"> Nombre de tu primera mascota</option>
+                <option value="2"> Hechizo favorito</option>
+                <option value="3"> ¿De qué es el núcleo de tu varita? </option>
+                <option value="4"> ¿? </option>
+            </select>
         </div>
 
-        <div class="form-group row justify-content-center">
-            <label for="inputRespuesta" class="col-sm-3 col-form- label etiquetas">Respuesta:</label>
-            <div class="col-sm-7" id="campos">
-                <input type="text" class="form-control" id="inputRespuesta" placeholder="Respuesta a la pregunta de seguridad">
-            </div>
+        <div class="form-group row justify-content-center my-3">
+            <label for="inputRespuesta" class="col-sm-3 col-form- etiquetas p-0">Respuesta:</label>
+            <input type="text" class="col-sm-7 form-control campos" id="inputRespuesta"
+                placeholder="Respuesta a la pregunta de seguridad">
         </div>
 
-        <div class="form-group">
+        <div class="form-group my-3">
             <div class="col-sm-12 boton">
-                <a href="inicio.html" class="btn btn-secondary btn-lg" tabindex="-1" role="button" aria-disabled="true">Entrar</a>
+                <a href="./inicio.html" class="btn btn-secondary btn-lg" tabindex="-1" role="button"
+                    aria-disabled="true">Entrar</a>
             </div>
         </div>
     </form>

@@ -12,39 +12,34 @@
 
 </head>
 
-<body id="mask">
-    <div id="encabezado">
-        <div id="escudo">
+<body class="mask">
+    <header class="Login__encabezado">
+        <div class="escudo">
             <img src="../src/assets/img/escudo-login.png" height="140px">
         </div>
-        <div id="logotipo">
+        <div class="logotipo">
             <img src="../src/assets/img/logo_header.png" height="140px">
         </div>
-        <div id="escudo">
+        <div class="escudo">
             <img src="../src/assets/img/escudo-login.png" height="140px">
         </div>
 
-    </div>
+    </header>
 
-    <div id="formulario-registro">
+    <main class="formulario-registro">
         <div class="titulos">
-            <h1 id="titulo1">¡Bienvenido!</h1>
-            <h2 id="subtitulo">Ingresa</h2>
+            <h1 class="titulo1">¡Bienvenido!</h1>
+            <h2 class="subtitulo">Ingresa</h2>
         </div>
         <form method="POST">
-            <div class="form-group row">
-                <label for="inputEmail" class="col-sm-3 col-form- label" id="etiquetas">Correo electrónico:</label>
-                <div class="col-sm-7">
-                    <input type="email" class="form-control" id="inputEmail" placeholder="algo@hogwarts.com">
-                </div>
+            <div class="form-group row justify-content-around">
+                <label for="inputEmail" class=" col-5 col-sm-3 col-form- label etiquetas">Correo electrónico:</label>
+                <input type="email" class="form-control col-6 " id="inputEmail" placeholder="algo@hogwarts.com">
             </div>
 
             <div class="form-group row">
-                <label for="inputContraseña" class="col-sm-3 col-form- label" id="etiquetas">Contraseña:</label>
-                <div class="col-sm-7">
-                    <input type="password" class="form-control" id="inputContraseña"
-                        placeholder="8 caracteres alfanuméricos">
-                </div>
+                <label for="inputContraseña" class="col-5 col-sm-3 col-form- label etiquetas">Contraseña:</label>
+                <input type="password" class="form-control col-6" id="inputContraseña" placeholder="8 caracteres alfanuméricos">
             </div>
 
             <div class="recuperacion">
@@ -54,29 +49,23 @@
             <div class="btn-entrar">
                 <div class="form-group entrar">
                     <div class="col-sm-12 boton">
-                        <a href="inicio.html" class="btn btn-secondary btn-lg" tabindex="-1" role="button" aria-disabled="true">Entrar</a>
+                        <a href="./inicio.html" class="btn btn-secondary btn-lg" tabindex="-1" role="button"
+                            aria-disabled="true">Entrar</a>
                     </div>
                 </div>
             </div>
-
         </form>
 
         <div class="nuevo-usuario">
-
             <img src="../src/assets/img/sombrero-login.png" width="150px">
             <div class="btn-nuevo">
-                <a href="registro.html" type="button" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">¿Eres nuevo? Regístrate</a>
+                <a href="./registro.html" type="button" class="btn btn-dark" tabindex="-1" role="button"
+                    aria-disabled="true">¿Eres nuevo? Regístrate</a>
             </div>
             <img src="../src/assets/img/sombrero-login.png" width="150px">
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../src/assets/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+    </main>
+
 
 </body>
 

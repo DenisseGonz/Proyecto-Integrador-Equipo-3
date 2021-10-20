@@ -4,25 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./src/assets/css/gencomps.css">
-    <link rel="stylesheet" type="text/css" href="./src/assets/css/acerca-de-nosotros.css">
+    <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css"> 
+    <link rel="preload" href="../src/assets/css/normalize.css" as="style">
+    <link rel="stylesheet" href="../src/assets/css/normalize.css">
+    <link rel="preload" href="../src/assets/css/gencomps.css" as="style">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
+    <link rel="preload" href="../src/assets/css/acerca-de-nosotros.css" as="style">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/acerca-de-nosotros.css">
 
     <title>Acerca de nosotros</title>
 </head>
 
 <body>
-    <audio src="./01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
+    <audio src="../src/assets/audio/01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
     <!-- El siguiente bloque de codigo controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
     <div id="particles-js">
-        <img id="fondo" src="./src/assets/img/hogwarts-fondo.png" />
+        <img id="fondo" src="../src/assets/img/hogwarts-fondo.png" />
     </div>
 
     <!-- Este bloque de codigo despliega el header dejar aqui -->
     <div id="header">
         <div id="logo">
-            <img src="./src/assets/img/logo_header.png" alt="" width="180px" />
+            <img src="../src/assets/img/logo_header.png" alt="" width="180px" />
         </div>
         <nav class="navbar navbar-expand-lg" id="encabezado">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -35,7 +38,7 @@
             </button>
 
             <div id="logo2">
-                <img src="./src/assets/img/logo_header.png" alt="" width="120px" />
+                <img src="../src/assets/img/logo_header.png" alt="" width="120px" />
             </div>
 
             <a class="navbar-brand order-lg-12 p-0 me-2" href="baul-compras.html">
@@ -93,11 +96,11 @@
     <!-- Inserte los elementos que compondran su página dentro de este div -->
     <div class="contenedor__acerca">
         <div class="imagen__superior">
-            <img src="./src/assets/img/acercade_imagen-superior.png" width="100%">
+            <img src="../src/assets/img/acercade_imagen-superior.png" width="100%">
         </div>
         <div class="central">
             <div class="fenix">
-                <img src="./src/assets/img/acercade_fenix2.png" height="300px">
+                <img src="../src/assets/img/acercade_fenix2.png" height="300px">
             </div>
             <div class="info">
                 <h3>La Orden del Fénix</h3>
@@ -118,7 +121,7 @@
                 <div class="carta">
                     <div class="carta-inner">
                         <div class="carta-front">
-                            <img src="./src/assets/img/avatar-manuel.jpg" alt="Avatar" style="width:200px;height:200px;">
+                            <img src="../src/assets/img/avatar-manuel.jpg" alt="Avatar" style="width:200px;height:200px;">
                             <p class="pie_de_carta">Manuel Domínguez</p>
                         </div>
                         <div class="carta-back">
@@ -132,7 +135,7 @@
                 <div class="carta  ">
                     <div class="carta-inner">
                         <div class="carta-front">
-                            <img src="./src/assets/img/avatar-manuel.jpg" alt="Avatar"
+                            <img src="../src/assets/img/avatar-manuel.jpg" alt="Avatar"
                                 style="width:200px;height:200px;">
                                 <p class="pie_de_carta">Sheila Sánchez</p>
                         </div>
@@ -147,7 +150,7 @@
                 <div class="carta  ">
                     <div class="carta-inner">
                         <div class="carta-front">
-                            <img src="./src/assets/img/avatar-manuel.jpg" alt="Avatar"
+                            <img src="../src/assets/img/avatar-manuel.jpg" alt="Avatar"
                                 style="width:200px;height:200px;">
                                 <p class="pie_de_carta">Denisse González</p>
                         </div>
@@ -165,7 +168,7 @@
                 <div class="carta  ">
                     <div class="carta-inner">
                         <div class="carta-front">
-                            <img src="./src/assets/img/avatar-manuel.jpg" alt="Avatar"
+                            <img src="../src/assets/img/avatar-manuel.jpg" alt="Avatar"
                                 style="width:200px;height:200px;">
                                 <p class="pie_de_carta">Jesús Martínez</p>
                         </div>
@@ -180,7 +183,7 @@
                 <div class="carta  ">
                     <div class="carta-inner">
                         <div class="carta-front">
-                            <img src="./src/assets/img/avatar-manuel.jpg" alt="Avatar"
+                            <img src="../src/assets/img/avatar-manuel.jpg" alt="Avatar"
                                 style="width:200px;height:200px;">
                                 <p class="pie_de_carta">Armando Linares</p>
                         </div>
@@ -195,7 +198,7 @@
                 <div class="carta  ">
                     <div class="carta-inner">
                         <div class="carta-front">
-                            <img src="./src/assets/img/avatar-manuel.jpg" alt="Avatar"
+                            <img src="../src/assets/img/avatar-manuel.jpg" alt="Avatar"
                                 style="width:200px;height:200px;">
                                 <p class="pie_de_carta">Sergio Borjón</p>
                         </div>
@@ -225,13 +228,13 @@
             <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
                 <div class=" col-lg-6 col-md-12 col-sm-12">
                     <ul class="footer__menu_1">
-                        <li class="nav-item">
+                        <li class="nav-item footer__item">
                             <a class=" nav-link" href="inicio.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto">Contacto</a>
+                        <li class="nav-item footer__item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item footer__item ">
                             <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
                         </li>
                     </ul>
@@ -239,18 +242,19 @@
                 <div class="linea"></div>
                 <div class=" col-lg-3 col-md-12 col-sm-12">
                     <ul class="">
-                        <li class="nav-item ">
+                        <li class="nav-item footer__item ">
                             <a class="nav-link" href="productos.html">Productos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/DenisseGonz/Proyecto-Integrador-Equipo-3">GitHub</a>
+                        <li class="nav-item footer__item">
+                            <a class="nav-link"
+                                href="https://github.com/DenisseGonz/Proyecto-Integrador-Equipo-3">GitHub</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class=" col-lg-3  col-md-6 col-sm-6 col-6">
                 <div class="footer__imagen">
-                    <img src="./src/assets/img/Hogwartscrest.png" alt="hogwarts">
+                    <img src="../src/assets/img/Hogwartscrest.png" alt="hogwarts">
                 </div>
             </div>
         </div>
@@ -259,15 +263,16 @@
     <!-- Se importa la librería de las partículas primero antes del script de configuración -->
     <!-- <script src="node_modules\particles.js\particles.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="./src/assets/js/cargador-particulas.js"></script>
+    <script src="../src/assets/js/cargador-particulas.js"></script>
 
     <!-- Comportamientos de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/assets/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
 
 
 </body>

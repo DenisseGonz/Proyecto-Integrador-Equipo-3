@@ -4,24 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Delivery</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./src/assets/css/delivery.css">
-    <link rel="stylesheet" type="text/css" href="./src/assets/css/gencomps.css">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css">
+    <link rel="preload" href="../src/assets/css/normalize.css" as="style"> 
+    <link rel="stylesheet" href="../src/assets/css/normalize.css">
+    <link rel="preload" href="../src/assets/css/contacto.css" as="style">
+    <link rel="stylesheet" href="../src/assets/css/contacto.css">
+    <link rel="preload" href="../src/assets/css/gencomps.css" as="style">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
 </head>
 
 <body>
-    <audio src="./01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
-    <!-- El seguiente bloque de código controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
+    <audio src="../src/assets/audio/01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
+    <!-- El seguiente bloque de codigo controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
     <div id="particles-js">
-        <img id="fondo" src="./src/assets/img/hogwarts-fondo.png" />
+        <img id="fondo" src="../src/assets/img/hogwarts-fondo.png" />
     </div>
 
     <!-- Este bloque de codigo despliega el header dejar aqui -->
     <div id="header">
         <div id="logo">
-            <img src="./src/assets/img/logo_header.png" alt="" width="180px" />
+            <img src="../src/assets/img/logo_header.png" alt="" width="180px" />
         </div>
         <nav class="navbar navbar-expand-lg" id="encabezado">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -34,7 +37,7 @@
             </button>
 
             <div id="logo2">
-                <img src="./src/assets/img/logo_header.png" alt="" width="120px" />
+                <img src="../src/assets/img/logo_header.png" width="120px" />
             </div>
 
             <a class="navbar-brand order-lg-12 p-0 me-2" href="baul-compras.html">
@@ -53,7 +56,7 @@
                         <a class="nav-link" href="inicio.html">Inicio</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="usuario.html">Mi Perfil <span class="sr-only"></span></a>
+                        <a class="nav-link" href="usuario.html">Mi Perfil</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -90,65 +93,34 @@
 
 
     <!-- Inserte los elementos que compondran su página dentro de este div -->
-    <!-- <div class="contenedorPrincipal"> -->
-    <div>
+    <div class="contenedor">
         <div class="fondo">
-            <h1>¡Indícanos tu lugar y llevamos tu producto!*</h1>
-            <br>
-            <br>
-            <br>
-            <div class="borde justify-content-center container">
+            <h1>Contacto</h1>
+            <div class="borde border justify-content-xl-start container">
                 <form action="post">
                     <div class="container1">
                         <div class="nombre">
                             <label for="Nombre">Nombre</label><br>
-                            <textarea class="nombre" placeholder="Ronald"></textarea>
+                            <textarea id="Nombre" name="nombre" class="nombre" placeholder="Ronald Wesley"></textarea>
                         </div>
-                        <div class="div-fam">
-                            <label for="fam">Familia</label><br>
-                            <textarea class="fam" placeholder="Wesley"></textarea>
+                        <div class="familia">
+                            <label for="Familia">Familia</label><br>
+                            <textarea type="text" id="Familia" placeholder="Griffyndor" name="Familia"></textarea>
                         </div>
                     </div>
                     <div class="container2">
-                        <div class="form-group">
-                            <label for="inputPregunta" class="label">¿A qué casa perteneces?</label>
-                            <div>
-                                <select name="pregunta" id="inputPregunta" class="form-control">
-                                    <option value="1">Gryffindor</option>
-                                    <option value="2">Hufflepuff</option>
-                                    <option value="3">Ravenclaw</option>
-                                    <option value="4">Slytherin</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="div-fam">
-                            <label for="Mensaje">Cuarto</label><br>
-                            <textarea class="mensaje" placeholder="#239"></textarea>
+                        <div class="div-mensaje">
+                            <l abel for="Mensaje">Mensaje</label><br>
+                                <textarea class="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
+                                <input type="submit" value="Enviar">
                         </div>
                     </div>
-                    <div class="btn-enviar">
-                        <button type="button" class="btn btn-primary btn-lg">Enviar</button>
-                    </div>
-                </form>
             </div>
-            <br>
-            <br>
-            <div class="terminos">
-                <p>
-                    *Aplican términos y condiciones.<br>No aplica para alumnos de las siguientes instituciones: Academia
-                    Beauxbatons e Instituto Durmstrang
-                </p>
-            </div>
-
-
         </div>
+        </form>
     </div>
 
-
-
-
-
-
+    </div>
 
     <!-- Este bloque de codigo controla el footer dejar aqui -->
     <footer class="footer ">
@@ -157,13 +129,13 @@
             <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
                 <div class=" col-lg-6 col-md-12 col-sm-12">
                     <ul class="footer__menu_1">
-                        <li class="nav-item">
+                        <li class="nav-item footer__item">
                             <a class=" nav-link" href="inicio.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item footer__item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item footer__item ">
                             <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
                         </li>
                     </ul>
@@ -171,10 +143,10 @@
                 <div class="linea"></div>
                 <div class=" col-lg-3 col-md-12 col-sm-12">
                     <ul class="">
-                        <li class="nav-item ">
+                        <li class="nav-item footer__item ">
                             <a class="nav-link" href="productos.html">Productos</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item footer__item">
                             <a class="nav-link"
                                 href="https://github.com/DenisseGonz/Proyecto-Integrador-Equipo-3">GitHub</a>
                         </li>
@@ -183,7 +155,7 @@
             </div>
             <div class=" col-lg-3  col-md-6 col-sm-6 col-6">
                 <div class="footer__imagen">
-                    <img src="./src/assets/img/Hogwartscrest.png" alt="hogwarts">
+                    <img src="../src/assets/img/Hogwartscrest.png" alt="hogwarts">
                 </div>
             </div>
         </div>
@@ -192,16 +164,19 @@
     <!-- Se importa la librería de las partículas primero antes del script de configuración -->
     <!-- <script src="node_modules\particles.js\particles.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="./src/assets/js/cargador-particulas.js"></script>
+    <script src="../src/assets/js/cargador-particulas.js"></script>
 
     <!-- Comportamientos de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
-    <script src="./src/assets/js/delivery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/assets/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+
+
+
 </body>
 
 </html>

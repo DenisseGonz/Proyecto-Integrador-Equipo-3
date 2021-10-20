@@ -28,6 +28,7 @@ body,a,a:hover {
 /* -------------- */
 body {
     font-size: 1.6rem;
+    overflow-x: hidden ;
     /*1rem=10px*/
 }
 

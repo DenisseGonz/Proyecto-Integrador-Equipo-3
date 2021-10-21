@@ -99,10 +99,11 @@ a:hover {
 
 .section-products .header {
     margin-bottom: 50px;
+    background-image: url(/src/assets/img/productos-callejon.png);
 }
 
 .section-products .header h3 {
-    font-size: 1rem;
+    font-size: 4.4rem;
     color: #fe302f;
     font-weight: 500;
 }

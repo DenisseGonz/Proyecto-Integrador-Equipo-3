@@ -55,7 +55,7 @@ a:hover {
 
 .section-products .header {
     margin-bottom: 50px;
-   /*  background-image: url(/src/assets/img/productos-callejon.png); */
+   /*  background-image: url(../img/productos-callejon.png); */
 }
 
 .section-products .header h3 {
@@ -100,23 +100,23 @@ a:hover {
 }
 
 .section-products #product-1 .part-1::before {
-    background: url("/src/assets/img/bolquid.jpg") no-repeat center;
+    background: url("../img/bolquid.jpg") no-repeat center;
     background-size: cover;
 		transition: all 0.3s;
 }
 
 .section-products #product-2 .part-1::before {
-    background: url("/src/assets/img/nimbus200.jpg") no-repeat center;
+    background: url("../img/nimbus200.jpg") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-3 .part-1::before {
-    background: url("/src/assets/img/mandragora.jpg") no-repeat center;
+    background: url("../img/mandragora.jpg") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-4 .part-1::before {
-    background: url("/src/assets/img/libro.webp") no-repeat center;
+    background: url("../img/libro.webp") no-repeat center;
     background-size: cover;
 }
 

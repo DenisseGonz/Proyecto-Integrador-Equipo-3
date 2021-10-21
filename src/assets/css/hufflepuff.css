@@ -3,11 +3,13 @@
     --black: #000;
     --red-bg: rgba(174, 0, 1, 0.9);
     --white: #fff;
+    --yellow-bg: rgba(210, 178, 7, 0.4);
     --gold: #dfa507;
     --hufflepuff: #d2b207;
     --slytherin: #0b360e;
     --ravenclaw: #035b78;
     --griffindor: #ae0001;
+    --casinegro: #191a14;
 }
 
 html {
@@ -22,13 +24,15 @@ html {
     box-sizing: inherit;
 }
 /* Den: Te añadi esto para el cursor */
-body,a,a:hover {
+body,
+a,
+a:hover {
     cursor: url(http://cur.cursors-4u.net/user/use-1/use160.cur), progress;
 }
 /* -------------- */
 body {
     font-size: 1.6rem;
-    overflow-x: hidden ;
+    overflow-x: hidden;
     /*1rem=10px*/
 }
 
@@ -68,12 +72,12 @@ body {
     font-size: 2rem;
 }
 .nav__li {
-    background-image: url(../img/Gryffindor.png);
+    background-image: url(../img/hufflepuff-registro.png);
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: contain;
     height: 2rem;
-    border: 2px solid var(--griffindor);
+    border: 2px solid var(--hufflepuff);
     margin-left: 1.5rem;
     margin-bottom: 0.8rem;
     padding-bottom: 6.3rem;
@@ -81,7 +85,7 @@ body {
 }
 
 .nav-menu {
-    color: var(--griffindor);
+    color: var(--hufflepuff);
     -webkit-text-stroke: 2px var(--black);
     font-weight: 700;
     font-size: 3.6rem;
@@ -92,21 +96,23 @@ body {
         visibility: hidden;
     }
     .navegacion {
-        background-color: var(--griffindor);
+        background-color: var(--hufflepuff);
     }
     .nav__li {
         border: 2px solid var(--black);
         background-image: none;
     }
     .nav-menu {
-        color: var(--gold);
+        color: var(--white);
         -webkit-text-stroke: transparent;
         font-weight: 700;
     }
 }
 
 .nav-menu:hover {
-    color: var(--gold);
+    color: var(--white);
+    -webkit-text-stroke: 2px var(--black);
+    transition: 0.5s all;
 }
 
 .hufflepuff,
@@ -115,7 +121,7 @@ body {
 .griffindor {
     font-weight: 700;
     font-size: 2.5rem;
-    color: var(--griffindor);
+    color: var(--hufflepuff);
     border-radius: 0.5rem;
 }
 .hufflepuff:hover {
@@ -144,7 +150,7 @@ body {
 
 /* GRIFFINDOR */
 .header {
-    background-image: url(../img/gryffindor-wallpaper.jpg);
+    background-image: url(../img/hufflepuff-wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -153,14 +159,14 @@ body {
 }
 
 .seccion {
-    background-image: url(../img/Sala_Griffindor.jpg);
+    background-image: url(../img/Sala_Hufflepuff.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: lighten;
 }
 
 #degradado {
-    background-color: var(--red-bg);
+    background-color: var(--yellow-bg);
 }
 
 .seccion__texto {

@@ -26,57 +26,8 @@
   width: 100%;
 }
 
+
 /* Productos */
-.cardgroup {
-  margin: 100px;
-  color: white;
-}
-
-@media (min-width: 992px) {
-  .card:hover {
-    transform: translateY(-15px);
-    transition: 0.5s;
-    box-shadow: 0.5em 0.5em 10px rgba(240, 240, 240, 0.3);
-  }
-
-  .card {
-    background-image: url(https://c.tenor.com/ll3rQ9a_zqYAAAAC/galaxy.gif);
-  }
-
-  .card-img-top {
-    padding: 0.5em;
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .card-body {
-    overflow: hidden;
-  }
-
-  .card-body:hover {
-    transform: translateY(8px);
-  }
-
-  .card-text {
-    position: relative;
-    left: -300px;
-    height: 0px;
-    color: white;
-  }
-
-  .card:hover .card-text {
-    left: 0;
-    height: auto;
-  }
-}
-
-@media (max-width: 991px) {
-  .cardgroup {
-    display: none;
-  }
-}
-
-/* pruebaaaaaaaaaaaaaaaaaa */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
@@ -97,14 +48,19 @@ a:hover {
     padding: 80px 0 54px;
 }
 
+.section-products .container {
+/*   margin-left: 10%;
+  margin-right: 10%; */
+}
+
 .section-products .header {
     margin-bottom: 50px;
-    background-image: url(/src/assets/img/productos-callejon.png);
+   /*  background-image: url(/src/assets/img/productos-callejon.png); */
 }
 
 .section-products .header h3 {
     font-size: 4.4rem;
-    color: #fe302f;
+    color: white;
     font-weight: 500;
 }
 
@@ -116,7 +72,7 @@ a:hover {
 
 .section-products .single-product {
     margin-bottom: 26px;
-   
+   width: 75%;
 }
 
 .section-products .single-product .part-1 {
@@ -253,3 +209,4 @@ a:hover {
   padding: 20px;
   border-radius: 0% 0% 10px 10px;
 }
+

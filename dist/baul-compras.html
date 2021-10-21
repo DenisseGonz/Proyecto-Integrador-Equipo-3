@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./src/assets/css/gencomps.css">
-    <link rel="stylesheet" type="text/css" href="./src/assets/css/baul.css">
+    <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css">
+    <link rel="preload" href="../src/assets/css/normalize.css" as="style">
+    <link rel="stylesheet" href="../src/assets/css/normalize.css">
+    <link rel="preload" href="../src/assets/css/gencomps.css" as="style">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
+    <link rel="preload" href="../src/assets/css/baul.css" as="style">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/baul.css">
     <title>Baúl de compras</title>
 </head>
 
 <body>
-
+    <audio src="../src/assets/audio/01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
     <!-- El seguiente bloque de codigo controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
     <!--  <div id="particles-js">
         <img id="fondo" src="./src/assets/img/hogwarts-fondo.png" />
@@ -24,7 +24,7 @@
     <!-- Este bloque de codigo despliega el header dejar aqui -->
     <div id="header">
         <div id="logo">
-            <img src="./src/assets/img/logo_header.png" alt="" width="180px" />
+            <img src="../src/assets/img/logo_header.png" alt="" width="180px" />
         </div>
         <nav class="navbar navbar-expand-lg" id="encabezado" .d-flex>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -38,7 +38,7 @@
 
             <div class="usuario order-lg-12 order-sm-1">
                 <div id="logo-user">
-                    <img src="./src/assets/img/logo-user.png" alt="" width="60px" />
+                    <img src="../src/assets/img/logo-user.png" alt="" width="60px" />
                 </div>
                 <div id="texto-user">
                     <a href="usuario.html"> ¡hola, Usuario!</a>
@@ -46,7 +46,7 @@
             </div>
 
             <div id="logo2">
-                <img src="./src/assets/img/logo_header.png" alt="" width="120px" />
+                <img src="../src/assets/img/logo_header.png" alt="" width="120px" />
             </div>
 
 
@@ -96,96 +96,104 @@
 
 
     <!-- Inserte los elementos que compondran su página dentro de este div -->
-    <div class="contenedorBaul">
-        <div id="compras">
-            <div id="comprasDetalle">
+    <main class="contenedorBaul">
+        <section id="compras">
+            <section id="comprasDetalle">
+                <div class="encabezados">
+                    <p class="col-6">Artículos</p>
+                    <p class="col-3">Precio</p>
+                    <p class="col-3">Cantidad</p>
+                </div>
+
                 <div class="Producto">
-                    <div id="encabezados">
-                        <p>Artículos</p>
+                    <div class="detalleProductos col-6">
+                        <img class="imagenProducto" src="../src/assets/img/mandragora_baul.jpg" width="100px">
+                        <span class="textoDetalle">Mandrágora joven.</br> Departamento: Herbología</span>
                     </div>
-                    <div id="detalleProductos">
-                        <div class="imagenProducto"> <img src="./src/assets/img/mandragora_baul.jpg" width="100px">
+
+                    <span class="precioProducto col-3">
+                        <p class="my-5">$$$</p>
+                    </span>
+
+                    <div class="contadorProducto col-3">
+                        <div class="qty my-5 contador">
+                            <span class="minus bg-dark">-</span>
+                            <input type="number" class="count" name="qty" value="1">
+                            <span class="plus bg-dark">+</span>
                         </div>
-                        <div class="textoDetalle">Mandrágora joven.</br> Departamento: Herbología</div>
                     </div>
                 </div>
-                <div class="precioProducto">
-                    <div id="encabezados">
-                        <p>Precio</p>
-                    </div>
-                    <div class="textoDetalle"></br>
-                        <p>$$$</p>
-                    </div>
-                </div>
-                <div class="contadorProducto">
-                    <div id="encabezados">
-                        <p>Cantidad</p>
-                    </div>
-                    <div class="qty mt-5 contador">
-                        <span class="minus bg-dark">-</span>
-                        <input type="number" class="count" name="qty" value="1">
-                        <span class="plus bg-dark">+</span>
-                    </div>
-                </div>
-            </div>
+            </section>
 
-            <div id="comprasResumen">
-                <div id="encabezados">
-                    <p>Resumen </p>
-                </div>
+            <section id="comprasResumen">
+                <span class="encabezados"> Resumen </span>
                 <div class="resumenProductos row">
-                    <div class="nProducto"> 1 </div>
-                    <div class="nombreProducto">Mandrágora</div>
-                    <div class="precioProducto">$$$</div>
+                    <span class="nProducto"> 1 </span>
+                    <span class="nombreProducto">Mandrágora</span>
+                    <span class="precioProducto justify-content-end">$$$</span>
                 </div>
 
-            </div>
-        </div>
+                <span class="compraTotal justify-content-end">
+                    <p> Total: $$$$</p>
+                </span>
+
+                <button type="button" class="btn btn-comprar my-3">Comenzar compra</button>
+
+            </section>
+        </section>
         <!-- Carrusel -->
 
-        <div class="container text-center my-3 carrusel">
-            <h2 id="encabezados">Te puede interesar: </h2>
+        <section class="container text-center my-5 carrusel">
+            <h2 class="encabezados mb-5 justify-content-start mx-5">Te puede interesar: </h2>
             <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
                 <div class="carousel-inner w-100 mx-5" role="listbox">
                     <div class="carousel-item active">
                         <div class="col-md-4">
                             <div class="card card-body">
-                                <img class="img-fluid" src="http://placehold.it/380?text=1" width="200px">
+                                <img class="img-fluid" src="../src/assets/img/nimbus200.jpg" width="200px"
+                                    height="170px">
+                                <p class="cardText"> Nimbus 200</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-md-4">
                             <div class="card card-body">
-                                <img class="img-fluid" src="http://placehold.it/380?text=2" width="200px">
+                                <img class="img-fluid" src="../src/assets/img/libro.webp" width="200px" height="170px">
+                                <p class="cardText">Mil hierbas mágicas y hongos </p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-md-4">
                             <div class="card card-body">
-                                <img class="img-fluid" src="http://placehold.it/380?text=3" width="200px">
+                                <img class="img-fluid" src="../src/assets/img/bolquid.jpg" width="200px" height="170px">
+                                <p class="cardText"> Boletos Quiditch</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-md-4">
                             <div class="card card-body">
-                                <img class="img-fluid" src="http://placehold.it/380?text=4" width=200px">
+                                <img class="img-fluid" src="../src/assets/img/mandragora.jpg" width="200px"
+                                    height="170px">
+                                <p class="cardText"> Mandrágoras en grupo</p>>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-md-4">
                             <div class="card card-body">
-                                <img class="img-fluid" src="http://placehold.it/380?text=5" width="200px">
+                                <img class="img-fluid" src="../src/assets/img/varita.jpg" width="200px" height="170px">
+                                <p class="cardText"> Varita de cedro</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-md-4">
                             <div class="card card-body">
-                                <img class="img-fluid" src="http://placehold.it/380?text=6" width="200px">
+                                <img class="img-fluid" src="../src/assets/img/caldero.jpg" width="200px" height="170px">
+                                <p class="cardText"> Caldero mediano</p>
                             </div>
                         </div>
                     </div>
@@ -201,9 +209,8 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-        </div>
-    </div>
-
+        </section>
+    </main>
     <!-- Este bloque de codigo controla el footer dejar aqui -->
     <footer class="footer ">
         <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
@@ -211,13 +218,13 @@
             <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
                 <div class=" col-lg-6 col-md-12 col-sm-12">
                     <ul class="footer__menu_1">
-                        <li class="nav-item">
+                        <li class="nav-item footer__item">
                             <a class=" nav-link" href="inicio.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item footer__item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item footer__item ">
                             <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
                         </li>
                     </ul>
@@ -225,10 +232,10 @@
                 <div class="linea"></div>
                 <div class=" col-lg-3 col-md-12 col-sm-12">
                     <ul class="">
-                        <li class="nav-item ">
+                        <li class="nav-item footer__item ">
                             <a class="nav-link" href="productos.html">Productos</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item footer__item">
                             <a class="nav-link"
                                 href="https://github.com/DenisseGonz/Proyecto-Integrador-Equipo-3">GitHub</a>
                         </li>
@@ -237,7 +244,7 @@
             </div>
             <div class=" col-lg-3  col-md-6 col-sm-6 col-6">
                 <div class="footer__imagen">
-                    <img src="./src/assets/img/Hogwartscrest.png" alt="hogwarts">
+                    <img src="../src/assets/img/Hogwartscrest.png" alt="hogwarts">
                 </div>
             </div>
         </div>
@@ -245,18 +252,17 @@
 
     <!-- Se importa la librería de las partículas primero antes del script de configuración -->
     <script src="node_modules\particles.js\particles.js"></script>
-    <script src="./src/assets/js/cargador-particulas.js"></script>
+    <script src="../src/assets/js/cargador-particulas.js"></script>
 
     <!-- Comportamientos de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
-
-    <script src="./src/assets/js/contador.js"></script>
-    <script src="./src/assets/js/carrusel_baul.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/assets/js/bootstrap.min.js"></script>
+    <script src="../src/assets/js/contador.js"></script>
+    <script src="../src/assets/js/carrusel_baul.js"></script>
 </body>
 
 </html>

@@ -1,13 +1,11 @@
 .contenedorPrincipal{
     margin: 0 auto;
-    width: 90% !important; 
+    width: 90%; 
     z-index: 99;
 }
 
 .cartext{
     background-color: steelblue;
-    padding: 3.5em;
-    margin-left:0 ;
 }
 
 .cardgroup{
@@ -28,7 +26,7 @@
     }
 
     .card{
-        background-color: #2a623d;
+        background-image: url(https://c.tenor.com/ll3rQ9a_zqYAAAAC/galaxy.gif);
     }
 
     .card-img-top{
@@ -39,26 +37,18 @@
 
     .card-body{
         overflow: hidden;
+        color: white;
     }
     
-
-    .card-body:hover{
-        transform: translateY(8px);
-    }
-
     .card-text{
-        position: relative;
-        left: -300px;
-        height: 0px;
+        visibility: hidden;
+        height: 0;
     }
     
-    .card-body:hover .card-text{
-        left:0;
+    .card:hover .card-text{
+        visibility: visible;
         height: auto;
     }
-
-
-
 }
 
 @media (max-width:991px){
@@ -71,6 +61,11 @@
     margin: 5em;
 }
 
+.cartext div{
+    padding:3em;
+ }
 
-
-
+ .padding-0{
+    padding-right:0;
+    padding-left:0;
+}

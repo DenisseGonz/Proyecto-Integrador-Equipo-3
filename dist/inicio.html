@@ -4,23 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./src/assets/css/gencomps.css">
-    <link rel="stylesheet" type="text/css" href="./src/assets/css/iniciosty.css">
+    <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css">
+    <link rel="preload" href="../src/assets/css/normalize.css" as="style">
+    <link rel="stylesheet" href="../src/assets/css/normalize.css">
+    <link rel="preload" href="../src/assets/css/gencomps.css" as="style">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
+    <link rel="preload" href="../src/assets/css/iniciosty.css" as="style">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/iniciosty.css">
     <title>Inicio</title>
 </head>
 
 <body>
     <!-- El seguiente bloque de codigo controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
+    <audio src="../src/assets/audio/01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
     <div id="particles-js">
-        <img id="fondo" src="./src/assets/img/hogwarts-fondo.png" />
+        <img id="fondo" src="../src/assets/img/hogwarts-fondo.png" />
     </div>
 
     <!-- Este bloque de codigo despliega el header dejar aqui -->
     <div id="header">
         <div id="logo">
-            <img src="./src/assets/img/logo_header.png" alt="" width="180px" />
+            <img src="../src/assets/img/logo.png" alt="" width="180px" />
         </div>
         <nav class="navbar navbar-expand-lg" id="encabezado">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -33,7 +37,7 @@
             </button>
 
             <div id="logo2">
-                <img src="./src/assets/img/logo_header.png" alt="" width="120px" />
+                <img src="../src/assets/img/logo_header.png" alt="" width="120px" />
             </div>
 
             <a class="navbar-brand order-lg-12 p-0 me-2" href="baul-compras.html">
@@ -100,21 +104,24 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row row-cols-1 row-cols-md-2">
-                        <img src="https://img.ecartelera.com/noticias/fotos/50300/50316/1.jpg" class="d-block col"
-                            alt="...">
+                        <img src="https://img.ecartelera.com/noticias/fotos/50300/50316/1.jpg"
+                            class="d-block col padding-0" alt="...">
                         <div class="col cartext">
-                            <h3>
-                                Anuncio del director Albus Dumbledore
-                            </h3>
-                            <h4>
-                                Ayer
-                            </h4>
-                            <p>
-                                A todos los estudiantes se les recuerda que el martes 2 de Noviembre tendremos un
-                                importante anuncio de nuestro director por lo que se les solicita que todos atiendan el
-                                evento sin
-                                falta.
-                            </p>
+                            <div>
+                                <h3>
+                                    Anuncio del director Albus Dumbledore
+                                </h3>
+                                <h4>
+                                    Ayer
+                                </h4>
+                                <p>
+                                    A todos los estudiantes se les recuerda que el martes 2 de Noviembre tendremos
+                                    un
+                                    importante anuncio de nuestro director por lo que se les solicita que todos
+                                    atiendan el evento sin
+                                    falta.
+                                </p>
+                            </div>
                         </div>
 
                     </div>
@@ -123,40 +130,44 @@
                 </div>
                 <div class="carousel-item">
                     <div class="row row-cols-1 row-cols-md-2">
-                        <img src="https://img.ecartelera.com/noticias/fotos/34400/34410/1.jpg" class="d-block col"
-                            alt="...">
+                        <img src="https://img.ecartelera.com/noticias/fotos/34400/34410/1.jpg"
+                            class="d-block col padding-0" alt="...">
                         <div class="col cartext">
-                            <h3>
-                                Visita de representantes del ministerio de magia
-                            </h3>
-                            <h4>
-                                15 de Abril
-                            </h4>
-                            <p>
-                                El mes de abril será especial pues recibiremos a algunos representantes del ministerio
-                                de
-                                magia asegurese de ser cortés y ponga en alto el nombre de nuestra institución.
-                            </p>
-
+                            <div>
+                                <h3>
+                                    Visita de representantes del ministerio de magia
+                                </h3>
+                                <h4>
+                                    15 de Abril
+                                </h4>
+                                <p>
+                                    El mes de abril será especial pues recibiremos a algunos representantes del
+                                    ministerio
+                                    de
+                                    magia asegúrese de ser cortés y ponga en alto el nombre de nuestra institución.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row row-cols-1 row-cols-md-2">
-                        <img src="https://super-ficcion.com/wp-content/uploads/2020/04/1-1-1.jpg" class="d-block col"
-                            alt="...">
+                        <img src="https://super-ficcion.com/wp-content/uploads/2020/04/1-1-1.jpg"
+                            class="d-block col padding-0" alt="...">
                         <div class="col cartext">
-                            <h3>
-                                Clase magistral profesor Huffledor.
-                            </h3>
-                            <h4>
-                                10 de Abril
-                            </h4>
-                            <p>
-                                A todos los interesados en topicos avanzados sobre defensa de las artes obscuras los
-                                invitamos a presenciar la clase magistral que dictará el profesor invitado Mr.
-                                Huffledor.
-                            </p>
+                            <div>
+                                <h3>
+                                    Clase magistral profesor Huffledor.
+                                </h3>
+                                <h4>
+                                    10 de Abril
+                                </h4>
+                                <p>
+                                    A todos los interesados en tópicos avanzados sobre defensa de las artes obscuras los
+                                    invitamos a presenciar la clase magistral que dictará el profesor invitado Mr.
+                                    Huffledor.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -170,46 +181,40 @@
                 <span class="sr-only">Siguiente</span>
             </a>
         </div>
-
-
-
-
         <!-- Cards para los productos destacados -->
         <div class="cardgroup">
             <div class=" row row-col-md-3 card-deck">
                 <div class="card">
-                    <img src="./src/assets/img/nimbus200.jpg" class="card-img-top" alt="...">
+                    <img src="../src/assets/img/nimbus200.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Nimbus 2000</h5>
                         <h6>$2000</h6>
-                        <p class="card-text">Exelente escoba para practicar Quidditch tiene mango de caoba</p>
+                        <p class="card-text">Excelente escoba para practicar Quidditch. Tiene mango de caoba</p>
 
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./src/assets/img/bolquid.jpg" class="card-img-top" alt="...">
+                    <img src="../src/assets/img/bolquid.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Boletos partido de Quidditch</h5>
                         <h6>$10</h6>
-                        <p class="card-text">Asista al partido de este sabado 15 de Abril.</p>
+                        <p class="card-text">Asista al partido de este sábado 15 de Abril.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./src/assets/img/mandragora.jpg" class="card-img-top" alt="...">
+                    <img src="../src/assets/img/mandragora.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Mandragoras</h5>
+                        <h5 class="card-title">Mandrágoras</h5>
                         <h6>$7.50</h6>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                             additional content.
                         </p>
                     </div>
                 </div>
-
-
                 <div class="card">
-                    <img src="./src/assets/img/libro.webp" class="card-img-top" alt="...">
+                    <img src="../src/assets/img/libro.webp" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Mil hiervas magicas y hongos</h5>
+                        <h5 class="card-title">Mil hierbas mágicas y hongos</h5>
                         <h6>$150</h6>
                         <p class="card-text">Excelente libro que reune buena parte de los conocimientos elementales
                             sobre herbología
@@ -219,53 +224,41 @@
 
             </div>
         </div>
-
-
         <!-- Carrusel productos destacados en vista móvil -->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-
-
                     <div class="card">
-                        <img src="./src/assets/img/mandragora.jpg" class="card-img-top" alt="...">
+                        <img src="../src/assets/img/mandragora.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Mandragoras</h5>
+                            <h5 class="card-title">Mandrágoras</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This card has even longer content than the first to show that equal
                                 height action.</p>
                         </div>
                     </div>
-
-
                 </div>
                 <div class="carousel-item">
 
                     <div class="card">
-                        <img src="./src/assets/img/bolquid.jpg" class="card-img-top" alt="...">
+                        <img src="../src/assets/img/bolquid.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Boletos partido de Quidditch</h5>
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional
                                 content.</p>
                         </div>
                     </div>
-
-
                 </div>
                 <div class="carousel-item">
-
-
                     <div class="card">
-                        <img src="./src/assets/img/nimbus200.jpg" class="card-img-top" alt="...">
+                        <img src="../src/assets/img/nimbus200.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Nimbus 2000</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                                 to
                                 additional content. This content is a little bit longer.</p>
-
                         </div>
                     </div>
-
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -277,23 +270,21 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
     </div>
-
     <!-- Este bloque de codigo controla el footer dejar aqui -->
     <footer class="footer ">
-        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejon Diagonal</h2>
+        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
         <div class="row mt-4 justify-content-center align-items-center">
             <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
                 <div class=" col-lg-6 col-md-12 col-sm-12">
                     <ul class="footer__menu_1">
-                        <li class="nav-item">
+                        <li class="nav-item footer__item">
                             <a class=" nav-link" href="inicio.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item footer__item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item footer__item ">
                             <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
                         </li>
                     </ul>
@@ -301,10 +292,10 @@
                 <div class="linea"></div>
                 <div class=" col-lg-3 col-md-12 col-sm-12">
                     <ul class="">
-                        <li class="nav-item ">
+                        <li class="nav-item footer__item ">
                             <a class="nav-link" href="productos.html">Productos</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item footer__item">
                             <a class="nav-link"
                                 href="https://github.com/DenisseGonz/Proyecto-Integrador-Equipo-3">GitHub</a>
                         </li>
@@ -313,26 +304,24 @@
             </div>
             <div class=" col-lg-3  col-md-6 col-sm-6 col-6">
                 <div class="footer__imagen">
-                    <img src="./src/assets/img/Hogwartscrest.png" alt="hogwarts">
+                    <img src="../src/assets/img/Hogwartscrest.png" alt="hogwarts">
                 </div>
             </div>
         </div>
     </footer>
-
     <!-- Se importa la librería de las partículas primero antes del script de configuración -->
     <!-- <script src="node_modules\particles.js\particles.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="./src/assets/js/cargador-particulas.js"></script>
+    <script src="../src/assets/js/cargador-particulas.js"></script>
 
     <!-- Comportamientos de Bootstrap -->
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>

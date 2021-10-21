@@ -7,21 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>GRYFFINDOR</title>
 
-    <link rel="stylesheet" href="./src/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./src/assets/css/loader.css">
-    <link rel="stylesheet" href="./src/assets/css/normalize.css">
-    <link rel="stylesheet" href="./src/assets/css/gryffindor.css">
+    <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css">
+    <link rel="preload" href="../src/assets/css/loader.css" as="style">
+    <link rel="stylesheet" href="../src/assets/css/loader.css">
+    <link rel="preload" href="../src/assets/css/normalize.css" as="style">
+    <link rel="stylesheet" href="../src/assets/css/normalize.css">
+    <link rel="preload" href="../src/assets/css/gryffindor.css" as="style">
+    <link rel="stylesheet" href="../src/assets/css/gryffindor.css">
 
 
 </head>
 
 <body>
+    <audio src="../src/assets/audio/01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
     <div id="pageloader-overlay" class="visible incoming">
         <div class="loader-wrapper-outer">
             <div class="loader-wrapper-inner">
                 <div class="text-center new-loading-modal">
                     <!-- INSERTAR LA IMAGEN ACÁ! -->
-                    <img src="./src/assets/img/loader.jpg" alt="loader" width="100%">
+                    <img src="../src/assets/img/loader.jpg" alt="loader" width="100%">
                 </div>
             </div>
         </div>
@@ -36,12 +40,12 @@
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <span class="d-lg-none d-md-none">
-                    <img src="./src/assets/img/logo_header.png" alt="Logo HarryPotter">
+                    <img src="../src/assets/img/logo_header.png" alt="Logo HarryPotter">
                 </span>
                 <!-- Boton de baul de compras -->
                 <button class="nav__btn d-md-none d-lg-block">
                     <a href="baul-compras.html" class="nav__baul navbar-brand d-md-none d-lg-none">
-                        <img src="./src/assets/img/baul.png" alt="">
+                        <img src="../src/assets/img/baul.png" alt="">
                     </a>
                 </button>
                 <!-- Elementos de la navegacion -->
@@ -56,15 +60,15 @@
                                 <a class="nav-menu nav-link dropdown-toggle" role="button" data-toggle="dropdown"
                                     aria-expanded="false">Salas</a>
                                 <ul class="dropdown-menu w-100 text-center" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item hufflepuff" href="#">Hufflepuff</a></li>
+                                    <li><a class="dropdown-item hufflepuff" href="hufflepuff.html">Hufflepuff</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item ravenclaw" href="#">Ravenclaw</a></li>
+                                    <li><a class="dropdown-item ravenclaw" href="ravenclaw.html">Ravenclaw</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item slytherin" href="#">Slytherin</a></li>
+                                    <li><a class="dropdown-item slytherin" href="slytherin.html">Slytherin</a></li>
                                 </ul>
                             </li>
                             <li class="nav__li nav-item">
@@ -82,7 +86,7 @@
                 </div><!-- Termino del contenedor -->
                 <span class="nav__btn__2 d-md-none d-lg-block">
                     <a href="baul-compras.html" class="nav__baul__2 navbar-brand">
-                        <img src="./src/assets/img/Gryffindor.png" alt="">
+                        <img src="../src/assets/img/Gryffindor.png" alt="">
                     </a>
                 </span>
             </nav>
@@ -111,7 +115,7 @@
                 </div>
                 <div class="col-lg-6 col-md-12 col-12 text-center order-1 order-lg-12">
                     <div class="seccion__fundador">
-                        <img src="./src/assets/img/Godric_Griff.jpg" alt="">
+                        <img src="../src/assets/img/Godric_Griff.jpg" alt="">
                         <p>Godric Gryffindor</p>
                     </div>
                 </div>
@@ -122,32 +126,31 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
+        <footer class="footer ">
             <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
-            <div class="row mt-4">
+            <div class="row mt-4 justify-content-center align-items-center">
                 <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
-                    <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class=" col-lg-6 col-md-12 col-sm-12">
                         <ul class="footer__menu_1">
-                            <li class=" nav-item ">
-                                <a class=" nav-link nav__enlace" href="inicio.html">Inicio</a>
+                            <li class="nav-item footer__item">
+                                <a class=" nav-link" href="inicio.html">Inicio</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav__enlace mt-sm-1" href="contacto.html">Contacto</a>
+                            <li class="nav-item footer__item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link nav__enlace mt-sm-1" href="acerca-de-nosotros.html">Acerca de
-                                    Nosotros</a>
+                            <li class="nav-item footer__item ">
+                                <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
                             </li>
                         </ul>
                     </div>
                     <div class="linea"></div>
                     <div class=" col-lg-3 col-md-12 col-sm-12">
-                        <ul class="footer__menu_2">
-                            <li class="nav-item ">
-                                <a class="nav-link nav__enlace" href="productos.html">Productos</a>
+                        <ul class="">
+                            <li class="nav-item footer__item ">
+                                <a class="nav-link" href="productos.html">Productos</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav__enlace mt-sm-2"
+                            <li class="nav-item footer__item">
+                                <a class="nav-link"
                                     href="https://github.com/DenisseGonz/Proyecto-Integrador-Equipo-3">GitHub</a>
                             </li>
                         </ul>
@@ -155,7 +158,7 @@
                 </div>
                 <div class=" col-lg-3  col-md-6 col-sm-6 col-6">
                     <div class="footer__imagen">
-                        <img src="./src/assets/img/Hogwartscrest.png" alt="hogwarts">
+                        <img src="../src/assets/img/Hogwartscrest.png" alt="hogwarts">
                     </div>
                 </div>
             </div>
@@ -167,9 +170,9 @@
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="./src/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./src/assets/js/bootstrap.min.js"></script>
-    <script src="./src/assets/js/loader.js"></script>
+    <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/assets/js/bootstrap.min.js"></script>
+    <script src="../src/assets/js/loader.js"></script>
 
 </body>
 

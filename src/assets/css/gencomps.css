@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 body,a,a:hover {
     cursor: url(http://cur.cursors-4u.net/user/use-1/use160.cur), progress;
 }
@@ -19,11 +23,6 @@ body,a,a:hover {
     position: fixed;
     z-index: -1;
     filter: brightness(60%);
-}
-.contenedorPrincipal {
-    width: 100%;
-    max-width: 1200px;
-    z-index: 99;
 }
 
 /*Estos cambios los estoy realizando para unir las versiones hare una prueba elemental*/
@@ -71,6 +70,10 @@ body,a,a:hover {
     background-color: black;
     padding-left: 30px;
 }
+.footer__item {
+    background-color:transparent;
+    text-align: start;
+}
 
 .btn-menu {
     align-self: flex-end;
@@ -79,7 +82,7 @@ body,a,a:hover {
 /*Codigo para el footer*/
 
 .footer {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0,0.9);
 }
 
 .footer h2,
@@ -107,7 +110,7 @@ ul {
     border-left: 1px solid #fff;
     height: 75px;
     position: relative;
-    right: 1%;
+    right: -5%;
     margin-left: -3px;
     top: 8px;
 }

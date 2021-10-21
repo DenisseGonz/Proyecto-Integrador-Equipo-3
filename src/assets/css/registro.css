@@ -87,15 +87,15 @@ body{
 
 .etiquetas{
     font-size: 19px !important;
-    width:50%;
+    align-content: center;
     color:white;
     -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
    /*  padding: 25px; */
 }
-#campos{
+.campos{
     display: flex;
-    width:40%;
-    align-content:flex-end;
+   /*  width:40%; */
+    align-content:flex-start;
     /* justify-content: center; */
   /*   padding:10px 20px; */
 }
@@ -107,9 +107,9 @@ body{
     justify-content:space-between;
 }
  .opcion__casa{
-    /* display: flex;
-    flex-direction: row; */
-    /* justify-content: center; */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
    /*  align-content: ; */
     padding: 0px 0px;
     height: 70px;

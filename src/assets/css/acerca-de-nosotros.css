@@ -58,7 +58,7 @@ body{
     background-color: transparent;
     width: 250px;
     height: 300px;
-    border: 1px solid #9b731e;
+    border: 1px solid #937c0d;
     border-radius: 15px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }

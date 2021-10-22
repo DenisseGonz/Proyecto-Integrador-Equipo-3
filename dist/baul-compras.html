@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css">
     <link rel="preload" href="../src/assets/css/normalize.css" as="style">
     <link rel="stylesheet" href="../src/assets/css/normalize.css">
     <link rel="preload" href="../src/assets/css/gencomps.css" as="style">
@@ -24,7 +24,7 @@
     <!-- Este bloque de codigo despliega el header dejar aqui -->
     <div id="header">
         <div id="logo">
-            <img src="../src/assets/img/logo_header.png" alt="" width="180px" />
+            <img src="../src/assets/img/logo.png" alt="" width="180px" />
         </div>
         <nav class="navbar navbar-expand-lg" id="encabezado" .d-flex>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -46,7 +46,7 @@
             </div>
 
             <div id="logo2">
-                <img src="../src/assets/img/logo_header.png" alt="" width="120px" />
+                <img src="../src/assets/img/logo.png" alt="" width="120px" />
             </div>
 
 
@@ -65,10 +65,10 @@
                             Salas
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="griffindor.html">Gryffindor</a>
-                            <a class="dropdown-item" href="">Hufflepuff</a>
-                            <div class="dropdown-item">Slytherin</div>
-                            <a class="dropdown-item" href="#">Ravenclaw</a>
+                            <a class="dropdown-item" href="../dist/griffindor.html">Gryffindor</a>
+                            <a class="dropdown-item" href="../dist/hufflepuff.html">Hufflepuff</a>
+                            <div class="dropdown-item" href="../dist/slytherin.html">Slytherin</div>
+                            <a class="dropdown-item" href="../dist/ravenclaw.html">Ravenclaw</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -114,12 +114,12 @@
                     <span class="precioProducto col-3">
                         <p class="my-5">$$$</p>
                     </span>
-                    
+
                     <div class="contadorProducto col-3">
-                        <div class="qty my-5 contador">
-                            <span class="minus bg-dark">-</span>
-                            <input type="number" class="count" name="qty" value="1">
-                            <span class="plus bg-dark">+</span>
+                        <div class="number contador align-items-center">
+                            <span class="minus">-</span>
+                            <input class="mx-1" type="text" value="1"/>
+                            <span class="plus">+</span>
                         </div>
                     </div>
                 </div>
@@ -150,7 +150,8 @@
                     <div class="carousel-item active">
                         <div class="col-md-4">
                             <div class="card card-body">
-                                <img class="img-fluid" src="../src/assets/img/nimbus200.jpg" width="200px" height="170px">
+                                <img class="img-fluid" src="../src/assets/img/nimbus200.jpg" width="200px"
+                                    height="170px">
                                 <p class="cardText"> Nimbus 200</p>
                             </div>
                         </div>
@@ -174,7 +175,8 @@
                     <div class="carousel-item">
                         <div class="col-md-4">
                             <div class="card card-body">
-                                <img class="img-fluid" src="../src/assets/img/mandragora.jpg" width="200px" height="170px">
+                                <img class="img-fluid" src="../src/assets/img/mandragora.jpg" width="200px"
+                                    height="170px">
                                 <p class="cardText"> Mandrágoras en grupo</p>>
                             </div>
                         </div>
@@ -209,8 +211,6 @@
             </div>
         </section>
     </main>
-
-    <!-- Este bloque de codigo controla el footer dejar aqui -->
     <!-- Este bloque de codigo controla el footer dejar aqui -->
     <footer class="footer ">
         <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
@@ -261,7 +261,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
     <script src="../src/assets/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
     <script src="../src/assets/js/contador.js"></script>
     <script src="../src/assets/js/carrusel_baul.js"></script>
 </body>

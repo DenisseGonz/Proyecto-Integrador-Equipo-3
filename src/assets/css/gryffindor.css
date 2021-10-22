@@ -21,9 +21,14 @@ html {
 *:after {
     box-sizing: inherit;
 }
-
+/* Den: Te añadi esto para el cursor */
+body,a,a:hover {
+    cursor: url(http://cur.cursors-4u.net/user/use-1/use160.cur), progress;
+}
+/* -------------- */
 body {
     font-size: 1.6rem;
+    overflow-x: hidden ;
     /*1rem=10px*/
 }
 

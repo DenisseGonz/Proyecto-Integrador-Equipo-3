@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css">
+    <link rel="preload" href="../src/assets/css/normalize.css" as="style"> 
+    <link rel="stylesheet" href="../src/assets/css/normalize.css">
+    <link rel="preload" href="../src/assets/css/login.css" as="style">
+    <link href="../src/assets/css/login.css" rel="stylesheet" type="text/css" />
+    <title>login</title>
+
+</head>
+
+<body class="mask">
+    <header class="Login__encabezado">
+        <div class="escudo">
+            <img src="../src/assets/img/escudo-login.png" height="140px">
+        </div>
+        <div class="logotipo">
+            <img src="../src/assets/img/logo_header.png" height="140px">
+        </div>
+        <div class="escudo">
+            <img src="../src/assets/img/escudo-login.png" height="140px">
+        </div>
+
+    </header>
+
+    <main class="formulario-registro">
+        <div class="titulos">
+            <h1 class="titulo1">¡Bienvenido!</h1>
+            <h2 class="subtitulo">Ingresa</h2>
+        </div>
+        <form method="POST">
+            <div class="form-group row justify-content-around">
+                <label for="inputEmail" class=" col-5 col-sm-3 col-form- label etiquetas">Correo electrónico:</label>
+                <input type="email" class="form-control col-6 " id="inputEmail" placeholder="algo@hogwarts.com">
+            </div>
+
+            <div class="form-group row">
+                <label for="inputContraseña" class="col-5 col-sm-3 col-form- label etiquetas">Contraseña:</label>
+                <input type="password" class="form-control col-6" id="inputContraseña" placeholder="8 caracteres alfanuméricos">
+            </div>
+
+            <div class="recuperacion">
+                <button type="button" class="btn btn-outline-secondary">¿Olvidaste tu contraseña?</button>
+            </div>
+
+            <div class="btn-entrar">
+                <div class="form-group entrar">
+                    <div class="col-sm-12 boton">
+                        <a href="./inicio.html" class="btn btn-secondary btn-lg" tabindex="-1" role="button"
+                            aria-disabled="true">Entrar</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="nuevo-usuario">
+            <img src="../src/assets/img/sombrero-login.png" width="150px">
+            <div class="btn-nuevo">
+                <a href="./registro.html" type="button" class="btn btn-dark" tabindex="-1" role="button"
+                    aria-disabled="true">¿Eres nuevo? Regístrate</a>
+            </div>
+            <img src="../src/assets/img/sombrero-login.png" width="150px">
+        </div>
+    </main>
+
+
+</body>
+
+</html>

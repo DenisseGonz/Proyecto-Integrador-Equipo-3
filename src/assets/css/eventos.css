@@ -10,16 +10,22 @@
 #encaEve{
     height: 85vh;
 }
+
+.card{
+    margin-top: 5%;
+}
+
 #imgEncabezado{
     margin:5% 0;
     position: static;
     float: right;
+    margin-right: 10%;
     width: 100%;
     height: 65vh;    
 }
 .titulo_Eve{
     color: gold;
-    transform: translate(0%,-50%);
+    transform: translate(-15%,-50%);
     font-size: 5em;
     -webkit-text-stroke: white 3px;
 }

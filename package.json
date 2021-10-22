@@ -2,17 +2,22 @@
   "name": "bootcamp-proyecto-integrador",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "particles.js": "^2.0.0"
+    "lodash": "^4.17.21",
+    "particles.js": "^2.0.0",
+    "sweetalert2": "^11.1.7"
   },
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-rc.0"
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "webpack": "^5.59.0",
+    "webpack-cli": "^4.9.1"
   }
 }

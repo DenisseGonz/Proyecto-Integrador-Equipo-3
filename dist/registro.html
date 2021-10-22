@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css"> 
+    <link rel="preload" href="../src/assets/css/normalize.css" as="style">
+    <link rel="stylesheet" href="../src/assets/css/normalize.css">
+    <link rel="preload" href="../src/assets/css/registro.css" as="style">
+    <link href="../src/assets/css/registro.css" rel="stylesheet" type="text/css" />
+    <title>Registro</title>
+
+</head>
+
+<body id="mask">
+    <div id="encabezado">
+        <div id="escudo">
+            <img src="../src/assets/img/escudo-login.png" height="140px">
+        </div>
+        <div id="logotipo">
+            <img src="../src/assets/img/logo_header.png" height="140px">
+        </div>
+        <div id="escudo">
+            <img src="../src/assets/img/escudo-login.png" height="140px">
+        </div>
+    </div>
+
+    <form method="POST" id="formulario-registro">
+        <div class="form-group column">
+            <div class="titulos">
+                <h1 id="titulo1">¡Bienvenido!</h1>
+                <h2 id="subtitulo">Regístrate</h2>
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-center my-3">
+            <label for="inputNombre" class="mb-0 col-2 etiquetas p-0">Nombre: </label>
+            <input type="text" class="col-3 form-control campos p-0" id="inputNombre" placeholder="Nombre">
+            <label for="inputFamilia" class="mb-0 col-2 etiquetas">Familia: </label>
+            <input type="text" class="col-3 form-control campos p-0" id="inputFamilia" placeholder="Familia">
+        </div>
+
+        <div class="form-group row justify-content-center my-3">
+            <label for="inputEmail" class="col-sm-3 col-form- etiquetas p-0">Correo electrónico:</label>
+            <input type="email" class="form-control campos col-sm-7" id="inputEmail" placeholder="algo@hogwarts.com">
+        </div>
+
+        <div class="form-group row justify-content-center my-3">
+            <label for="inputContraseña" class="col-sm-3 col-form- etiquetas p-0">Contraseña:</label>
+            <input type="password" class="col-sm-7 form-control campos" id="inputContraseña"
+                placeholder="8 caracteres alfanuméricos">
+        </div>
+
+        <div class="form-group row justify-content-center my-3">
+            <label for="inputConfirma" class="col-sm-3 col-form- etiquetas p-0">Confirma contraseña:</label>
+            <input type="password" class="col-sm-7 campos form-control" id="inputConfirma"
+                placeholder="Repite tu contraseña">
+        </div>
+
+        <div class="form-group row justify-content-center my-3">
+            <label for="inputCasa" class="col-sm-3 col-form- etiquetas p-0">Casa de Hogwarts:</label>
+            <div class="caja-check col-sm-7 p-0">
+
+                <input type="radio" id="radio1" name="radios" value="gryffindor" checked>
+                <label for="radio1" class="opcion__casa  col-sm-3 col">
+                    <img src="../src/assets/img/gryffindor-registro.png"width="40px">
+                   <p class="justify-content-start"> Gryffindor </p>
+                </label>
+
+                <input type="radio" id="radio2" name="radios" value="hufflepuff">
+                <label for="radio2" class="opcion__casa col-sm-3 col">
+                    <img src="../src/assets/img/hufflepuff-registro.png" width="40px">
+                    <p>Hufflepuff </p>
+                </label>
+
+                <input type="radio" id="radio3" name="radios" value="ravenclaw">
+                <label for="radio3" class="opcion__casa col-sm-3 col">
+                    <img src="../src/assets/img/ravenclaw-registro.png" width="40px">
+                    <p>Ravenclaw</p>
+                </label>
+
+                <input type="radio" id="radio4" name="radios" value="slytherin">
+                <label for="radio4" class="opcion__casa col-sm-3 col">
+                    <img src="../src/assets/img/slytherin-registro.png" width="40px">
+                    <p>Slytherin</p>
+                </label>
+            </div>
+
+        </div>
+
+        <div class="form-group row justify-content-center my-3">
+            <label for="inputPregunta" class="col-sm-3 col-form- etiquetas p-0">Pregunta de seguridad:</label>
+            <select name="pregunta" id="inputPregunta" class="col-sm-7 form-control campos">
+                <option value=""> </option>
+                <option value="1"> Nombre de tu primera mascota</option>
+                <option value="2"> Hechizo favorito</option>
+                <option value="3"> ¿De qué es el núcleo de tu varita? </option>
+                <option value="4"> ¿? </option>
+            </select>
+        </div>
+
+        <div class="form-group row justify-content-center my-3">
+            <label for="inputRespuesta" class="col-sm-3 col-form- etiquetas p-0">Respuesta:</label>
+            <input type="text" class="col-sm-7 form-control campos" id="inputRespuesta"
+                placeholder="Respuesta a la pregunta de seguridad">
+        </div>
+
+        <div class="form-group my-3">
+            <div class="col-sm-12 boton">
+                <a href="./inicio.html" class="btn btn-secondary btn-lg" tabindex="-1" role="button"
+                    aria-disabled="true">Entrar</a>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/assets/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

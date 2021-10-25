@@ -9,11 +9,10 @@
     color:white;
 }
 
+
 .cardgroup{
     margin: 5em;
 }
-
-
 
 @media (min-width:992px){
     #carouselExampleControls{
@@ -70,3 +69,57 @@
     padding-right:0;
     padding-left:0;
 }
+
+
+/* Tipografía */
+h3 {
+    font-family: 'Adamina', serif;
+    font-weight: 400px;
+    font-size: 43px;
+}
+
+h4{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight:900;
+    font-size: 27px;
+    color:FCFCFC;
+    text-decoration: overline#977f1e;
+}
+
+h5{
+    font-family: 'Adamina', serif;
+    font-size: 23px;
+    font-weight:800;
+}
+
+h6 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 30px;
+    text-shadow:10cm;
+    color:#9f8932;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.footer__titulo{
+    font-family: 'IM Fell English SC', serif;
+}
+
+.card-title{
+    font-family: 'Adamina', serif;
+}
+
+.card-text{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Paleta de Colores */
+/* detalles azul color:#21267A
+detalles gris color:#363859
+blanco color:#FCFCFC
+dorado color:#9f8932;
+negro color:#292100 */
+

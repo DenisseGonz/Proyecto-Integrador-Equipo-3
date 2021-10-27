@@ -4,10 +4,10 @@ body{
     justify-content: center;
     width:100%;
     height:1024px;
-    background-image: url(../img/Gawalpop-login-registro.jpg);
+    background-image: url(../img/plataforma.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    background-blend-mode:lighten; 
+    background-blend-mode: overlay ;
     
 }
 
@@ -16,7 +16,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgb(65, 64, 64); 
+    background-color: rgb(68, 53, 19); 
 }
 
 .encabezado{
@@ -142,7 +142,7 @@ body{
     }
     .formulario__datos{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin-top:-20px;
     }
     .formulario__datos--etiquetas{

@@ -1,13 +1,3 @@
-.usuario{
-    display:flex;
-    flex-direction: row;
-}
-
-#texto-user{
-    align-self: center;
-    color:white;
-    font-size: 20px;
-}
 
 body{
     background-image: url(../img/baul-compras.png);
@@ -15,24 +5,34 @@ body{
     background-size: cover;
 }
 
-.contenedorBaul{
+.contenedor__baul{
     display: flex;
     width:100%;
     flex-direction: column;
     justify-content: space-around;
 }
 
-#compras{
+
+.navegacion__usuario{
+    display:flex;
+    flex-direction: row;
+}
+.navegacion__usuario--texto{
+    align-self: center;
+    color:white;
+    font-size: 1rem;
+}
+
+.baul__compras{
     display: flex;
     width:100%;
     flex-direction: column nowrap;
     justify-content: space-around;
 }
 
-#comprasDetalle{
+.baul__compras--detalle{
     display: flex;
     flex-direction: column;
-    /* background: rgb(87,75,11); */
     background-image: linear-gradient(to bottom, rgba(76,54,3,1), rgba(76,54,3,0.4));
     align-content: space-around;
     align-items: center;
@@ -41,31 +41,32 @@ body{
     padding:50px;
     margin-top: 50px;
 }
-
-.encabezados{
+.detalle__encabezados{
     display: flex;
     flex-direction: row;
     color: white;
-    font-size:xx-large;
-    justify-content: center;
+    font-size:2rem;
+    justify-content:space-around;
     margin-bottom: 15px;
+    width: 90%;
 }
 
-.detalleProductos{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    width:50%
-}
-
-.Producto{
+.detalle__producto{
     display:flex;
     flex-direction: row;
     width:100%;
     justify-content:center;
     align-content: center;
 }
-.textoDetalle{
+
+.detalle__producto--informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width:50%
+}
+
+.producto__informacion--descripcion{
     color:white;
     align-self: center;
     align-content: center;
@@ -73,15 +74,15 @@ body{
     font-size: large;
     padding-left: 10px;
 }
-.precioProducto{
+.detalle__producto--precio{
     display:flex; 
     align-content: center;
     justify-content: center;
     color:white;
-    font-size: large;
+    font-size:1.4rem;
 }
 
-.contadorProducto{
+.detalle__producto--contador{
     display:flex;
     flex-direction: column; 
     align-content: center;
@@ -128,10 +129,9 @@ input{
 }			
 
 
-#comprasResumen{
+.compras__resumen{
     display: flex;
     flex-direction: column;
-    /* background-color: yellow; */
     background-image: linear-gradient(to bottom, rgb(182, 148, 11), rgba(241,196,15,0.2));
     width:35%;
     border-radius: 25px;
@@ -139,32 +139,23 @@ input{
     margin-top: 50px;
 }
 
-.resumenProductos{
-    font-size: large;
+.resumen__producto{
+    font-size: 1.5rem;
     margin:10px;
-}
-
-.nProducto{
-    width:15%;
     color:white;   
 }
 
-.nombreProducto{
-    width: 60%;
-    color:white;
-}
-
-.compraTotal{
+.resumen__compra--total{
     display: flex;
     border-top: 3px solid white; 
-    width: 100%;
-    font-size: larger;
+    justify-content:flex-end;
+    font-size: 1.3rem;
     font-weight:900;
     color: white;
     padding-right: 15%;
     margin-top: 10%;
 }
-.btn-comprar{
+.resumen__boton--comprar{
     background-color: rgb(255, 217, 0);
     color:grey;
     font-weight: bolder;
@@ -190,9 +181,13 @@ input{
 }
 
 .card{
+    display: flex;
     width: 200px;
     height: 250px;
     background-color: grey;
+    background-image: url(https://c.tenor.com/ll3rQ9a_zqYAAAAC/galaxy.gif);
+    
+
 }
 
 .cardText{

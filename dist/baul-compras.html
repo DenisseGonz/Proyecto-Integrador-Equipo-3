@@ -24,7 +24,7 @@
     <!-- Este bloque de codigo despliega el header dejar aqui -->
     <header id="header">
         <div id="logo">
-            <img src="../src/assets/img/logo.png" alt="" width="300" />
+            <img src="../src/assets/img/logo.png" alt="Callejón Diagonal" width="300" />
         </div>
         <nav class="navbar navbar-expand-lg" id="encabezado" .d-flex>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -38,7 +38,7 @@
 
             <div class="navegacion__usuario order-lg-12 order-sm-1">
                 <div id="logo-user">
-                    <img src="../src/assets/img/logo-user.png" alt="" width="60px" />
+                    <img src="../src/assets/img/logo-user.png" alt="Imagen usuario" width="60" />
                 </div>
                 <div class="navegacion__usuario--texto">
                     <a href="usuario.html"> ¡hola, Usuario!</a>
@@ -46,7 +46,7 @@
             </div>
 
             <div id="logo2">
-                <img src="../src/assets/img/logo.png" alt="" width="120px" />
+                <img src="../src/assets/img/logo.png" alt="" width="120" />
             </div>
 
 
@@ -98,34 +98,37 @@
     <main class="contenedor__baul">
         <section class="baul__compras">
             <section class="baul__compras--detalle">
+                <p class="detalle__titulo"> Detalle </p>
                 <div class="detalle__encabezados">
-                    <p class="col-6">Artículos</p>
-                    <p class="col-3">Precio</p>
+                    <p class="col-5">Artículos</p>
+                    <p class="col-4">Precio</p>
                     <p class="col-3">Cantidad</p>
                 </div>
 
                 <div class="detalle__producto">
-                    <div class="detalle__producto--informacion col-6">
-                        <img class="imagenProducto" src="../src/assets/img/mandragora_baul.jpg" width="100px">
-                        <span class="producto__informacion--descripcion">Mandrágora joven.</br> Departamento: Herbología</span>
+                    <div class="detalle__producto--informacion ">
+                        <img class="detalle__imagen" src="../src/assets/img/mandragora_baul.jpg" width="100">
+                        <span class="producto__informacion--descripcion">Mandrágora joven.</br> Departamento:
+                            Herbología</span>
                     </div>
+                    <span class="detalle__producto--seccion">
+                        <span class="detalle__producto--precio col-3 ">
+                            <p class="my-5">$$$</p>
+                        </span>
 
-                    <span class="detalle__producto--precio col-3">
-                        <p class="my-5">$$$</p>
-                    </span>
-
-                    <div class="detalle__producto--contador col-3">
-                        <div class="number contador align-items-center">
-                            <span class="minus">-</span>
-                            <input class="mx-1" type="text" value="1"/>
-                            <span class="plus">+</span>
+                        <div class="detalle__producto--contador col-3 col-sm-12 justify-content-end">
+                            <div class="number contador align-items-center">
+                                <span class="minus">-</span>
+                                <input class="mx-1" type="text" value="1" />
+                                <span class="plus">+</span>
+                            </div>
                         </div>
-                    </div>
+                    </span>
                 </div>
             </section>
 
             <section class="compras__resumen">
-                <span class="detalle__encabezados"> Resumen </span>
+                <span class="detalle__titulo detalle__encabezados"> Resumen </span>
                 <div class="resumen__producto row">
                     <span class="col-2"> 1 </span>
                     <span class="col-7">Mandrágora</span>
@@ -142,13 +145,14 @@
         </section>
         <!-- Carrusel -->
         <section class="container text-center my-5 carrusel">
-            <h2 class="detalle__encabezados mb-5 justify-content-start mx-5">Te puede interesar: </h2>
+            <h2 class="detalle__titulo detalle__encabezados mb-5 justify-content-start mx-5">Te puede interesar: </h2>
             <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-                <div class="carousel-inner w-100 mx-5 justify-content-around" role="listbox">
+                <div class="carousel-inner w-100 mx-3 justify-content-around" role="listbox">
                     <div class="carousel-item active">
-                        <div class="col-lg-4"> 
+                        <div class="col-lg-4">
                             <div class="card card-body">
-                                <img class="img-fluid" src="../src/assets/img/nimbus200.jpg" width="200px" height="170px">
+                                <img class="img-fluid" src="../src/assets/img/nimbus200.jpg" width="200px"
+                                    height="170px">
                                 <p class="cardText"> Nimbus 200</p>
                             </div>
                         </div>
@@ -172,7 +176,8 @@
                     <div class="carousel-item">
                         <div class="col-lg-4">
                             <div class="card card-body">
-                                <img class="img-fluid" src="../src/assets/img/mandragora.jpg" width="200px" height="170px">
+                                <img class="img-fluid" src="../src/assets/img/mandragora.jpg" width="200px"
+                                    height="170px">
                                 <p class="cardText"> Mandrágoras en grupo</p>>
                             </div>
                         </div>
@@ -226,7 +231,6 @@
                         </li>
                     </ul>
                 </div>
-                <div class="linea"></div>
                 <div class=" col-lg-3 col-md-12 col-sm-12">
                     <ul class="">
                         <li class="nav-item footer__item ">

@@ -9,7 +9,7 @@ con ese atributo o simplemente quitarlo para que todos se agreguen
 
 /*En caso de querer usar este script es posible que necesite crear un div con id #productos
 o en su defecto cambiar estas lineas apropiadamente por el id de su página*/
-
+export function agprodini(){
 const $contenedor = document.querySelector("#productos");
 const $carrusel = document.querySelector("#carrusel");
 
@@ -60,4 +60,4 @@ fetch("/src/productos.json")
     .catch(e => {
         console.log(e);
     });
-
+}

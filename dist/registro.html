@@ -33,88 +33,98 @@
             <h2 class="titulos__subtitulo">Regístrate</h2>
         </div>
 
+        <span class="formulario__filas col">
+            <div class="formulario__datos col-lg-6 col-xs-12">
+                <label for="inputNombre" class="col formulario__datos--etiquetas ">Nombre: </label>
+                <input type="text" class="col formulario__datos--campos" id="inputNombre" placeholder="Nombre">
+            </div>
+            <div class="formulario__datos col-lg-6">
+                <label for="inputFamilia" class="col formulario__datos--etiquetas">Familia: </label>
+                <input type="text" class="col formulario__datos--campos " id="inputFamilia" placeholder="Familia">
+            </div>
+        </span>
+        <span class="formulario__filas col">
+            <div class="formulario__datos col-lg-4 col-md-4">
+                <label for="inputEmail" class="col-lg-10  formulario__datos--etiquetas ">Correo
+                    electrónico:</label>
+                <input type="email" class="col-lg-11  formulario__datos--campos " id="inputEmail"
+                    placeholder="algo@hogwarts.com">
+            </div>
+            <div class="formulario__datos col-lg-4 col-md-4">
+                <label for="inputContraseña" class="col-lg-8  formulario__datos--etiquetas ">Contraseña:</label>
+                <input type="password" class="col-lg-11  formulario__datos--campos" id="inputContraseña"
+                    placeholder="8 caracteres alfanuméricos">
+            </div>
+            <div class="formulario__datos col-lg-4 col-md-4">
+                <label for="inputConfirma" class="col-lg-10 formulario__datos--etiquetas">Confirma
+                    contraseña:</label>
+                <input type="password" class="col-lg-11 formulario__datos--campos" id="inputConfirma"
+                    placeholder="Repite tu contraseña">
+            </div>
+        </span>
+        <span class="formulario__filas ">
+            <div class="formulario__datos col-lg-12 col-md-12">
+                <label for="inputCasa" class="col-lg-6 formulario__datos--etiquetas mt-3">Casa de Hogwarts:</label>
+                <div class="datos__casa--check col-lg-12 col-xs-10 mt-2">
 
-        <div class="formulario__datos">
-            <label for="inputNombre" class="col-lg-2 col-xs-4 formulario__datos--etiquetas ">Nombre: </label>
-            <input type="text" class="col-lg-4 col-xs-12 form-control formulario__datos--campos" id="inputNombre"
-                placeholder="Nombre">
-            <label for="inputFamilia" class="col-lg-2 col-xs-4 formulario__datos--etiquetas">Familia: </label>
-            <input type="text" class="col-lg-4 col-xs-12 form-control formulario__datos--campos " id="inputFamilia"
-                placeholder="Familia">
-        </div>
+                    <input type="radio" id="radio1" name="radios" value="gryffindor" checked>
+                    <label for="radio1" class="opcion__casa col-lg-2 col-xs-3">
+                        <span class="justify-content-center">
+                            <img src="../src/assets/img/Gryffindor.png" width="40">
+                            <span>Gryffindor</span>
+                        </span>
+                    </label>
 
-        <div class="formulario__datos">
-            <label for="inputEmail" class="col-lg-5 col-form- formulario__datos--etiquetas ">Correo electrónico:</label>
-            <input type="email" class="form-control formulario__datos--campos col-lg-7" id="inputEmail"
-                placeholder="algo@hogwarts.com">
-        </div>
+                    <input type="radio" id="radio2" name="radios" value="hufflepuff">
+                    <label for="radio2" class="opcion__casa col-lg-2 col-xs-3">
+                        <span class="justify-content-center">
+                            <img src="../src/assets/img/Hufflepuff_ClearBG.png" width="40">
+                            <span>Hufflepuff</span>
+                        </span>
+                    </label>
 
-        <div class="formulario__datos">
-            <label for="inputContraseña" class="col-lg-5 col-form- formulario__datos--etiquetas ">Contraseña:</label>
-            <input type="password" class="col-lg-7 form-control formulario__datos--campos" id="inputContraseña"
-                placeholder="8 caracteres alfanuméricos">
-        </div>
+                    <input type="radio" id="radio3" name="radios" value="ravenclaw">
+                    <label for="radio3" class="opcion__casa col-lg-2 col-xs-3">
+                        <span class="justify-content-center">
+                            <img src="../src/assets/img/RavenclawCrest.png" width="40">
+                            <span>Ravenclaw</span>
+                        </span>
+                    </label>
 
-        <div class="formulario__datos">
-            <label for="inputConfirma" class="col-lg-5 col-form- formulario__datos--etiquetas">Confirma
-                contraseña:</label>
-            <input type="password" class="col-lg-7 formulario__datos--campos form-control" id="inputConfirma"
-                placeholder="Repite tu contraseña">
-        </div>
+                    <input type="radio" id="radio4" name="radios" value="slytherin">
+                    <label for="radio4" class="opcion__casa col-lg-2 col-xs-3">
+                        <span class="justify-content-center">
+                            <img src="../src/assets/img/slytherin-crests.png" width="40">
+                            <span>Slytherin</span>
+                        </span>
+                    </label>
 
-        <div class="formulario__datos">
-            <label for="inputCasa" class="col-lg-4 col-form- formulario__datos--etiquetas">Casa de Hogwarts:</label>
-            <div class="datos__casa--check col-lg-7 col-xs-6">
-
-                <input type="radio" id="radio1" name="radios" value="gryffindor" checked>
-                <label for="radio1" class="opcion__casa col-lg-3 col-xs-2">
-                    <img src="../src/assets/img/Gryffindor.png" width="40">
-                    <span>Gryffindor</span>
-                </label>
-
-                <input type="radio" id="radio2" name="radios" value="hufflepuff">
-                <label for="radio2" class="opcion__casa col-lg-3 col-xs-2">
-                    <img src="../src/assets/img/Hufflepuff_ClearBG.png" width="40">
-                    <span class="justify-self-center">Hufflepuff</span>
-                </label>
-
-                <input type="radio" id="radio3" name="radios" value="ravenclaw">
-                <label for="radio3" class="opcion__casa col-lg-3 col-xs-2">
-                    <img src="../src/assets/img/RavenclawCrest.png" width="40">
-                    <span class="">Ravenclaw</span>
-                </label>
-
-                <input type="radio" id="radio4" name="radios" value="slytherin">
-                <label for="radio4" class="opcion__casa col-lg-3 col-xs-2">
-                    <img src="../src/assets/img/slytherin-crests.png" width="40">
-                    <span>Slytherin</span>
-                </label>
+                </div>
+            </div>
+        </span>
+        <span class="formulario__filas col">
+            <div class="formulario__datos col-lg-6">
+                <label for="inputPregunta" class="col formulario__datos--etiquetas">Pregunta de
+                    seguridad:</label>
+                <select name="pregunta" id="inputPregunta" class="col-lg-12 formulario__datos--campos">
+                    <option value=""> </option>
+                    <option value="1"> Nombre de tu primera mascota</option>
+                    <option value="2"> Hechizo favorito</option>
+                    <option value="3"> ¿De qué es el núcleo de tu varita? </option>
+                    <option value="4"> ¿? </option>
+                </select>
             </div>
 
-        </div>
+            <div class="formulario__datos col-lg-6">
+                <label for="inputRespuesta" class="col-lg-10 col-form- formulario__datos--etiquetas ">Respuesta:</label>
+                <input type="text" class="col-lg-12 form-control formulario__datos--campos" id="inputRespuesta"
+                    placeholder="Respuesta a la pregunta de seguridad">
+            </div>
 
-        <div class="formulario__datos">
-            <label for="inputPregunta" class="col-lg-5 col-form- formulario__datos--etiquetas">Pregunta de
-                seguridad:</label>
-            <select name="pregunta" id="inputPregunta" class="col-lg-7 form-control formulario__datos--campos">
-                <option value=""> </option>
-                <option value="1"> Nombre de tu primera mascota</option>
-                <option value="2"> Hechizo favorito</option>
-                <option value="3"> ¿De qué es el núcleo de tu varita? </option>
-                <option value="4"> ¿? </option>
-            </select>
-        </div>
-
-        <div class="formulario__datos">
-            <label for="inputRespuesta" class="col-lg-5 col-form- formulario__datos--etiquetas ">Respuesta:</label>
-            <input type="text" class="col-lg-7 form-control formulario__datos--campos" id="inputRespuesta"
-                placeholder="Respuesta a la pregunta de seguridad">
-        </div>
-
-
+        </span>
         <div class="col-lg- boton__entrar">
-            <a href="./inicio.html" class="btn btn-secondary btn-lg" tabindex="-1" role="button"
-                aria-disabled="true">Entrar</a>
+            <a href="./index.html" class="btn btn-secondary btn-lg" tabindex="-1" role="button"
+                aria-disabled="true">Regístrate</a>
         </div>
 
     </form>

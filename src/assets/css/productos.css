@@ -6,13 +6,6 @@
   width: 20%;
 }
 
-/* Banner callejon diagonal */
-#imgEncabezado {
-  text-align: center;
-  width: 100%;
-  height: 250px;
-}
-
 .titulo_armando {
   color: black;
   transform: translate(0%, -180%);
@@ -24,185 +17,6 @@
 .carousel-inner {
   height: 500px;
   width: 100%;
-}
-
-
-/* Productos */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
-
-body {
-    font-family: "Poppins", sans-serif;
-    color: #444444;
-}
-
-a,
-a:hover {
-    text-decoration: none;
-    color: inherit;
-}
-
-.section-products {
-    padding: 80px 0 54px;
-}
-
-.section-products .header {
-    margin-bottom: 50px;
-   /*  background-image: url(../img/productos-callejon.png); */
-}
-
-.section-products .header h3 {
-    font-size: 4.4rem;
-    color: white;
-    font-weight: 500;
-}
-
-.section-products .header h2 {
-    font-size: 2.2rem;
-    font-weight: 400;
-    color: white; 
-}
-
-.section-products .single-product {
-    margin-bottom: 26px;
-   width: 75%;
-}
-
-.section-products .single-product .part-1 {
-    position: relative;
-    height: 290px;
-    max-height: 290px;
-    /* margin-bottom: 20px; */
-    overflow: hidden;
-    border-radius: 10% 10% 0% 0%;
-  }
-
-.section-products .single-product .part-1::before {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		transition: all 0.3s;
-}
-
-.section-products .single-product:hover .part-1::before {
-		transform: scale(1.2,1.2) rotate(5deg);
-}
-
-.section-products #product-1 .part-1::before {
-    background: url("../img/bolquid.jpg") no-repeat center;
-    background-size: cover;
-		transition: all 0.3s;
-}
-
-.section-products #product-2 .part-1::before {
-    background: url("../img/nimbus200.jpg") no-repeat center;
-    background-size: cover;
-}
-
-.section-products #product-3 .part-1::before {
-    background: url("../img/mandragora.jpg") no-repeat center;
-    background-size: cover;
-}
-
-.section-products #product-4 .part-1::before {
-    background: url("../img/libro.webp") no-repeat center;
-    background-size: cover;
-}
-
-.section-products .single-product .part-1 .discount,
-.section-products .single-product .part-1 .new {
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    color: #ffffff;
-    background-color: #fe302f;
-    padding: 2px 8px;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-}
-
-.section-products .single-product .part-1 .new {
-    left: 0;
-    background-color: #444444;
-}
-
-.section-products .single-product .part-1 ul {
-    position: absolute;
-    bottom: -41px;
-    left: 20px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    opacity: 0;
-    transition: bottom 0.5s, opacity 0.5s;
-}
-
-.section-products .single-product:hover .part-1 ul {
-    bottom: 30px;
-    opacity: 1;
-}
-
-.section-products .single-product .part-1 ul li {
-    display: inline-block;
-    margin-right: 4px;
-}
-
-.section-products .single-product .part-1 ul li a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    background-color: #ffffff;
-    color: #444444;
-    text-align: center;
-    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
-    transition: color 0.2s;
-}
-
-.section-products .single-product .part-1 ul li a:hover {
-    color: #fe302f;
-}
-
-.section-products .single-product .part-2 .product-title {
-    font-size: 1rem;
-    color: white;
-}
-
-.section-products .single-product .part-2 h4 {
-    display: inline-block;
-    font-size: 1rem;
-    color: white;
-}
-
-.section-products .single-product .part-2 .product-old-price {
-    position: relative;
-    padding: 0 7px;
-    margin-right: 2px;
-    opacity: 0.6;
-    color: white;
-}
-
-.section-products .single-product .part-2 .product-old-price::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #444444;
-    transform: translateY(-50%);
-}
-
-.section-products .single-product .part-2{
-  background-image: url(https://c.tenor.com/ll3rQ9a_zqYAAAAC/galaxy.gif);
-  padding: 20px;
-  border-radius: 0% 0% 10px 10px;
 }
 
 /* teeeeeeeeeeeeeeeest */
@@ -250,8 +64,17 @@ a:hover {
       margin-top: 0.5rem;
   }
 
+  h1 {
+    color: white;
+  }
+  
   h2 {
       color: white;
+  }
+
+  h3 {
+    color: white;
+    margin-top: 30px;
   }
   
   .container {
@@ -323,8 +146,6 @@ a:hover {
   .small-container {
     max-width: 1080px;
     margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
   }
   
   .col-4 {
@@ -353,6 +174,12 @@ a:hover {
       border: none;
       padding: 13px 30px;
       text-transform: uppercase;
+  }
+
+  .coll-2 .buy-btn {
+    background-image: url(https://c.tenor.com/18SBZln9s3AAAAAC/black-space-outer-space.gif);
+    color: white;
+    border-radius: 10px;
   }
 
   .col-4 .buy-btn {
@@ -591,6 +418,7 @@ a:hover {
   
   .single-product .coll-2 img {
     padding: 0;
+    margin-top: 6px;
   }
   
   .single-product .coll-2 {
@@ -684,3 +512,6 @@ a:hover {
     }
   }
   
+.contenedor-productos {
+  width: 65%;
+}

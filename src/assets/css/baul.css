@@ -178,6 +178,17 @@ input{
    /*  margin:8% 8%; */
 }
 
+/* This only changes this particular animation duration */
+.animate__animated.animate__bounce {
+    --animate-duration: 25s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 1600ms;
+    --animate-delay: 0.15s;
+  }
+
 @media (max-width: 768px) {
     .carousel-inner .carousel-item > div {
         display: none;

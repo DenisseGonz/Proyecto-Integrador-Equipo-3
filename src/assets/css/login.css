@@ -83,9 +83,10 @@ body{
 
 .formulario__boton--recuperacion{
     display: flex;
+    color:white;
     justify-content: center;
     padding-bottom:30px;
-    justify-content: center; 
+    justify-content: center; ;
 }
 .registro{
     display: flex;
@@ -93,16 +94,22 @@ body{
     justify-content: center;
     align-content: center;
 }
+.formulario__boton--recuperacion a{
+    color:white;
+}
 .registro__boton{
     display: flex;
     align-self: center;
     align-content: center;
-    height:35%;   
+    height:35%;       
+}
+.registro__boton a{
+    color:white;
 }
 
 /* MediaQueries Breakpoint */
 /* X-Small devices (portrait phones, less than 576px)*/
-@media (max-width: 576px) { 
+@media (min-width: 320px) and (max-width:768px ) { 
     body{
         width: 100%;
         background-position-x: center;
@@ -130,7 +137,8 @@ body{
     } 
     .formulario{
         margin-top:30px;
-        width:80%;
+        width:90% !important;
+    
     }
     .formulario__titulos{      
         font-size: 1rem;
@@ -144,13 +152,14 @@ body{
         display: flex;
         flex-direction: column;
         margin-top:-20px;
+        
     }
     .formulario__datos--etiquetas{
         font-size: 1rem;
     }
     .formulario__datos--campos{
         justify-content: center;
-        width: 85%;
+        width: 100% !important;
     }
     .formulario__boton--recuperacion{
         font-size: 0.9rem;
@@ -170,7 +179,7 @@ body{
  }
 
 /* Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) { 
+@media (min-width: 767.98px) and (max-width:991px) { 
     body{
         width: 100%;
         background-position-x: center;
@@ -228,7 +237,7 @@ body{
 }
 
  /*Medium devices (tablets, less than 992px)*/
-
+/* 
 @media (max-width: 991.98px) { 
     body{
         width: 100%;
@@ -287,4 +296,4 @@ body{
         width:fit-content;
         height: fit-content;
     }
-}
+} */

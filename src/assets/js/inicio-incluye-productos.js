@@ -13,7 +13,7 @@ export function agprodini(){
 const $contenedor = document.querySelector("#productos");
 const $carrusel = document.querySelector("#carrusel");
 
-fetch("/src/productos.json")
+fetch("https://denissegonz.github.io/Proyecto-Integrador-Equipo-3/src/productos.json")
     .then(resp => resp.json())
     .then(data => {
         var j=0;

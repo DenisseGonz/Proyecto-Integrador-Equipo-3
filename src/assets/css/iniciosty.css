@@ -54,7 +54,7 @@ h6 {
 
 p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .footer__titulo{
@@ -271,4 +271,10 @@ producto:hover{
         text-align: center;
         box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
     }
-} 
+.carousel-control-next,
+.carousel-control-prev{
+    filter: invert(100%);
+}
+}
+
+

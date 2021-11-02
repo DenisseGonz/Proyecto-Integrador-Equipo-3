@@ -24,7 +24,7 @@
     <!-- Este bloque de codigo despliega el header dejar aqui -->
     <div id="header">
         <div id="logo">
-            <img src="../src/assets/img/logo_header.png" alt="" width="180px" />
+            <img src="../src/assets/img/logo.png" alt="" width="180px" />
         </div>
         <nav class="navbar navbar-expand-lg" id="encabezado">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -37,7 +37,7 @@
             </button>
 
             <div id="logo2">
-                <img src="../src/assets/img/logo_header.png" width="120px" />
+                <img src="../src/assets/img/logo.png" width="120px" />
             </div>
 
             <a class="navbar-brand order-lg-12 p-0 me-2" href="baul-compras.html">
@@ -64,10 +64,10 @@
                             Salas
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="griffindor.html">Gryffindor</a>
-                            <a class="dropdown-item" href="#">Hufflepuff</a>
-                            <div class="dropdown-item">Slytherin</div>
-                            <a class="dropdown-item" href="#">Ravenclaw</a>
+                            <a class="dropdown-item" href="../dist/griffindor.html">Gryffindor</a>
+                            <a class="dropdown-item" href="../dist/hufflepuff.html">Hufflepuff</a>
+                            <div class="dropdown-item" href="../dist/slytherin.html">Slytherin</div>
+                            <a class="dropdown-item" href="../dist/ravenclaw.html">Ravenclaw</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -95,7 +95,8 @@
     <!-- Inserte los elementos que compondran su página dentro de este div -->
     <div class="contenedor">
         <div class="fondo">
-            <h1>Contacto</h1>
+            <h1 id="contacto">Contacto</h1>
+            <br>
             <div class="borde border justify-content-xl-start container">
                 <form action="post">
                     <div class="container1">
@@ -116,11 +117,14 @@
                         </div>
                     </div>
             </div>
+            <br>
+            <div class="btn-enviar">
+                <button type="button" class="btn btn-primary btn-xl">Enviar</button>
+            </div>
         </div>
         </form>
     </div>
 
-    </div>
 
     <!-- Este bloque de codigo controla el footer dejar aqui -->
     <footer class="footer ">

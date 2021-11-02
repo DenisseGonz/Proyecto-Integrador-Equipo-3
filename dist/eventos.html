@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css">
     <link rel="preload" href="../src/assets/css/normalize.css" as="style">
     <link rel="stylesheet" href="../src/assets/css/normalize.css">
@@ -23,7 +24,7 @@
     <!-- Este bloque de codigo despliega el header dejar aqui -->
     <div id="header">
         <div id="logo">
-            <img src="../src/assets/img/logo_header.png" width="180px" />
+            <img src="../src/assets/img/logo.png" width="250px" />
         </div>
         <nav class="navbar navbar-expand-lg" id="encabezado">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -35,7 +36,7 @@
             </button>
 
             <div id="logo2">
-                <img src="../src/assets/img/logo_header.png" width="120px" />
+                <img src="../src/assets/img/logo.png" width="120px" />
             </div>
 
             <a class="navbar-brand order-lg-12 p-0 me-2" href="./baul-compras.html">
@@ -62,10 +63,10 @@
                             Salas
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="griffindor.html">Gryffindor</a>
-                            <a class="dropdown-item" href="#">Hufflepuff</a>
-                            <div class="dropdown-item">Slytherin</div>
-                            <a class="dropdown-item" href="#">Ravenclaw</a>
+                            <a class="dropdown-item" href="../dist/griffindor.html">Gryffindor</a>
+                            <a class="dropdown-item" href="../dist/hufflepuff.html">Hufflepuff</a>
+                            <div class="dropdown-item" href="../dist/slytherin.html">Slytherin</div>
+                            <a class="dropdown-item" href="../dist/ravenclaw.html">Ravenclaw</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -89,23 +90,41 @@
     </div>
 
     <!-- Inserte los elementos generales aquí (no es necesario el header o footer en esta parte) -->
-    <div class="contenedorPrincipal container-fluid">
-        <div id="encaEve" class="row">
-            <div class="col-2"></div>
-            <div class="col-10">
-                <img id="imgEncabezado" src="../src/assets/img/baile-harry-potter-cdmx.jpg"
-                    class="rounded-left img-fluid" />
-                <h1 class="titulo_Eve text-center font-weight-bolder">Eventos</h1>
-            </div>
-        </div>
-
+    <main class="container-fluid">
+        <section class="eventos__banner container-fluid text-center animate__animated animate__tada">
+            <img class="eventos__img img-fluid rounded" src="../src/assets/img/baile-harry-potter-cdmx.jpg"/>
+            <h1 class="eventos__titulo text-center font-weight-bolder">Eventos</h1>
+        </section>
+        
+        <p class="eventos__info">
+            Bienvenidx alumnx. Aquí encontrarás los últimos eventos como aviso de tus profesores y el director. ¡No te pierdas ninguno! 
+        </p>
         <!-- Publicaciones con cards -->
 
-        <div id="contenedorPubli" class="container-fluid mx-0 row justify-content-around">
-            <div class="card col-5">
+        <div id="eventos__publicaciones" class="container-fluid mx-0 row justify-content-around animate__animated animate__backInUp">
+            <div class="card col-12 col-lg-5">
                 <div class="card-header">
                     <img src="../src/assets/img/albus.jpg" class="rounded-circle eventos__perfil" />
-                    <label class="titulo-card"> Albus P.W.B. Dumbledore</label>
+                    <label class="eventos__card-titulo"> Albus <span class="eventos__card-siglas">P.W.B.</span> Dumbledore</label>
+                </div>
+                <div class="card-body">
+                    <img src="https://img.ecartelera.com/noticias/fotos/34400/34410/1.jpg" class="eventos__foto rounded" />
+                    <h5 class="my-3 card-title">Visita de representantes del ministerio de magia el 15 de Abril</h5>
+                    <p class="card-text text-justify">El mes de abril será especial pues recibiremos a algunos representantes del ministerio de magia asegúrese de ser cortés y ponga en alto el nombre de nuestra institución.</p>
+                </div>
+                <div class="card-footer text-muted container row justify-content-between">
+                    <div class="col-5 eventos__card-fecha">Hace 3 horas</div>
+                    <div class="col-6 text-right">
+                        <label for="checkbox__estrella" class="eventos__estrellas">★</label>
+                        <input type="checkbox" id="checkbox__estrella" class="eventos__checkbox" />
+                        <span id="eventos__card-puntuaciones">Me gusta</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12 col-lg-5">
+                <div class="card-header">
+                    <img src="../src/assets/img/albus.jpg" class="rounded-circle eventos__perfil" />
+                    <label class="eventos__card-titulo"> Albus <span class="eventos__card-siglas">P.W.B.</span> Dumbledore</label>
                 </div>
                 <div class="card-body">
                     <img src="https://img.ecartelera.com/noticias/fotos/50300/50316/1.jpg"
@@ -116,18 +135,37 @@
                         todos atiendan el evento sin falta.</p>
                 </div>
                 <div class="card-footer text-muted container row justify-content-between">
-                    <div class="col-5">Ayer</div>
-                    <div class="col-5 text-right">
+                    <div class="col-5 eventos__card-fecha">Ayer</div>
+                    <div class="col-6 text-right">
                         <label for="checkbox__estrella" class="eventos__estrellas">★</label>
                         <input type="checkbox" id="checkbox__estrella" class="eventos__checkbox" />
-                        <span id="puntuaciones__eventos">Me gusta</span>
+                        <span id="eventos__card-puntuaciones">Me gusta</span>
                     </div>
                 </div>
             </div>
-            <div class="card col-5">
+            <div class="card col-12 col-lg-5">
                 <div class="card-header">
                     <img src="../src/assets/img/albus.jpg" class="rounded-circle eventos__perfil" />
-                    <label class="titulo-card"> Albus P.W.B. Dumbledore</label>
+                    <label class="eventos__card-titulo"> Albus <span class="eventos__card-siglas">P.W.B.</span> Dumbledore</label>
+                </div>
+                <div class="card-body">
+                    <img src="https://super-ficcion.com/wp-content/uploads/2020/04/1-1-1.jpg" class="eventos__foto rounded" />
+                    <h5 class="my-3 card-title">Clase magistral profesor Huffledor 10 de Abril</h5>
+                    <p class="card-text text-justify">A todos los interesados en tópicos avanzados sobre defensa de las artes oscuras los invitamos a presenciar la clase magistral que dictará el profesor invitado Mr. Huffledor.</p>
+                </div>
+                <div class="card-footer text-muted container row justify-content-between">
+                    <div class="col-5 eventos__card-fecha">Hace 2 días</div>
+                    <div class="col-6 text-right">
+                        <label for="checkbox__estrella" class="eventos__estrellas">★</label>
+                        <input type="checkbox" id="checkbox__estrella" class="eventos__checkbox" />
+                        <span id="eventos__card-puntuaciones">Me gusta</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12 col-md-5">
+                <div class="card-header">
+                    <img src="../src/assets/img/albus.jpg" class="rounded-circle eventos__perfil" />
+                    <label class="eventos__card-titulo"> Albus <span class="eventos__card-siglas">P.W.B.</span> Dumbledore</label>
                 </div>
                 <div class="card-body">
                     <img src="../src/assets/img/copa-eventos.jpg" class="eventos__foto rounded" />
@@ -140,18 +178,18 @@
                         peligrosas pruebas por las que pasarán los campeones. </p>
                 </div>
                 <div class="card-footer text-muted container row justify-content-between">
-                    <div class="col-5">Hace 2 días</div>
-                    <div class="col-5 text-right">
+                    <div class="col-5 eventos__card-fecha">Hace 2 días</div>
+                    <div class="col-6 text-right">
                         <label for="checkbox__estrella" class="eventos__estrellas">★</label>
                         <input type="checkbox" id="checkbox__estrella" class="eventos__checkbox" />
-                        <span id="puntuaciones__eventos">Me gusta</span>
+                        <span id="eventos__card-puntuaciones">Me gusta</span>
                     </div>
                 </div>
             </div>
-            <div class="card col-5">
+            <div class="card col-12 col-md-5">
                 <div class="card-header">
                     <img src="../src/assets/img/Filiusflitwick-profilepic.jpg" class="rounded-circle eventos__perfil" />
-                    <label class="titulo-card"> Filius Flitwick</label>
+                    <label class="eventos__card-titulo"> Filius Flitwick</label>
                 </div>
                 <div class="card-body">
                     <img src="../src/assets/img/Coro-sapos.jpg" class="eventos__foto rounded" />
@@ -162,17 +200,16 @@
                         pueden consultar conmigo.</p>
                 </div>
                 <div class="card-footer text-muted container row justify-content-between">
-                    <div class="col-5">Hace 5 días</div>
-                    <div class="col-5 text-right">
+                    <div class="col-5 eventos__card-fecha">Hace 5 días</div>
+                    <div class="col-6 text-right">
                         <label for="checkbox__estrella" class="eventos__estrellas">★</label>
                         <input type="checkbox" id="checkbox__estrella" class="eventos__checkbox" />
-                        <span id="puntuaciones__eventos">Me gusta</span>
+                        <span id="eventos__card-puntuaciones">Me gusta</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="w-100"></div>
+    </main>
 
     <!-- Este bloque de codigo controla el footer dejar aqui -->
     <footer class="footer ">
@@ -216,7 +253,7 @@
     <!-- <script src="node_modules\particles.js\particles.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="..\src\assets\js\cargador-particulas.js"></script>
-
+    <script src="../src/assets/js/eventos.js"></script>
     <!-- Complementos de Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

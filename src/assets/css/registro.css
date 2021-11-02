@@ -10,37 +10,35 @@ body{
     background-blend-mode:lighten; 
     
 }
-#encabezado{
-    display:flex;
-    flex-direction: row;
-    width:100%;
-    height:157px;
-    background-color: black; 
-}
-#escudo{
-    display:flex;
-    width:25%;
-    justify-content: center;
-    
-    margin: 10px;
-}
-
-#logotipo{
-    display: flex;
-    width:50%;
-    justify-content: center;
-}
-
-
-#mask{
+.body__mask{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     background-color: rgb(65, 64, 64); 
 }
- 
-#formulario-registro{
+
+.encabezado{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:140px;
+    background-color: black; 
+}
+.encabezado__escudo{
+    display:flex;
+    width:25%;
+    justify-content: center; 
+    margin: 10px;
+}
+
+.encabezado__logotipo{
+    display: flex;
+    width:50%;
+    justify-content: center;
+}
+
+.formulario{
     display:flex;
     flex-direction:column ;
     align-content:space-around;
@@ -50,19 +48,9 @@ body{
     opacity: 0.9;
     margin: 45px;
     border-radius: 25px;
-    
 }
 
-.form-group{
-    justify-content:space-around;
-}
-
-.boton{
-    display: flex;
-    justify-content: center;
-}
-
-.titulos{
+.formulario__titulos{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,37 +58,38 @@ body{
     margin: auto;
     padding: 20px 25px;
     border-radius: 25px;
-}
-
-#titulo1{
+    font-size: 1.3rem;
     color:white;
     -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
-    font-size:45px;
-    
 }
-#subtitulo{
+
+.titulos__subtitulo{
     color:white;
     -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
-    font-size: 30px;
+    font-size: 1.2rem;
 }
 
+.formulario__datos{
+    display:flex;
+    flex-direction: row;
+    width:90%;
+    justify-content:space-around;
+    margin-top: 30px;
+    padding-left:7%;
+}
 
-.etiquetas{
-    font-size: 19px !important;
+.formulario__datos--etiquetas{
+    font-size: 1.2rem;
     align-content: center;
     color:white;
     -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
-   /*  padding: 25px; */
 }
-.campos{
+.formulario__datos--campos{
     display: flex;
-   /*  width:40%; */
     align-content:flex-start;
-    /* justify-content: center; */
-  /*   padding:10px 20px; */
 }
 
-.caja-check{
+.datos__casa--check{
     display: flex;
     flex-direction: row ;
     color:white;
@@ -109,11 +98,19 @@ body{
  .opcion__casa{
     display: flex;
     flex-direction: column; 
-    justify-content: center;
-   /*  align-content: ; */
-    padding: 0px 0px;
+    font-size: 0.8rem;
+    color: white; 
     height: 70px;
+    justify-content: center;
+    
 } 
+
+.boton__entrar{
+    align-self: center;
+    margin-top:5%;
+    margin-bottom: 5%;
+    font-size: 0.9rem;
+}
 
 /* 
   Hide radio button (the round disc)
@@ -121,18 +118,14 @@ body{
 
 input[type=radio] {
     display:none; 
-    margin:10px;
 }
 /* 
   Change the look'n'feel of labels (which are adjacent to radio buttons).
   Add some margin, padding to label */
 
 input[type=radio]+label {
-    display:inline-block;
-    margin:0px;
-    padding: 0px 25px;
-    background-color: black;
-    border-color: #ddd;
+    display:flex;
+    background-color: black;    
 }
 
  /* Change background color for label next to checked radio button
@@ -141,5 +134,178 @@ input[type=radio]+label {
 input[type=radio]:checked+label { 
    background-image: none;
     background-color:grey;
+}
+
+/* MediaQueries Breakpoint */
+/* X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    body{
+        width:100%;
+        background-position-x: center;
+        /* justify-content: center; */
+    }
+    .body__mask{
+        width:100%;
+    }
+    .encabezado{
+        width: 100%;
+        height:12%;
+        align-content:center;
+    }
+    .encabezado__escudo img{
+        display:none;
+    }
+     .encabezado__logotipo img{
+        align-self: center;
+        max-width:160%;
+        height:100%;
+    } 
+    .formulario{
+        margin-top:15px;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .formulario__titulos{      
+        font-size: 1rem;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .titulos__subtitulo{           
+        font-size: 0.95rem;
+    }
+    .formulario__datos{
+        display: flex;
+        flex-direction: column;
+        margin-top:15px;
+        width:90%;
+        padding-left: 10%;
+        padding-right:-10%;
+    }
+
+    .formulario__datos--campos{
+        justify-content: center;
+        width: 100%;
+    }
+    .formulario__boton--recuperacion{
+        font-size: 0.9rem;
+    }
+    .datos__casa--check{
+        display: flex;
+        justify-self: center;
+        flex-direction: row;
+        color:white;
+        justify-content:center;
+        width: 90%;
+        padding-left:45px;
+    }
+     .opcion__casa{
+        display: flex;
+        flex-direction: column; 
+        font-size: 0.6rem;
+        color: white; 
+        justify-content: center;
+    } 
+     
+ }
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+    body{
+        width:100%;
+        background-position-x: center;
+        justify-content: center;
+    }
+    .body__mask{
+        width:100%;
+    }
+    .encabezado{
+        width: 100%;
+        height:12%;
+        align-content:center;
+    }
+    .encabezado__escudo img{
+        display:none;
+    }
+     .encabezado__logotipo img{
+        align-self: center;
+        max-width:160%;
+        height:100%;
+    } 
+    .formulario{
+        margin-top:30px;
+        width:90%;
+        justify-content: center;
+    }
+
+    .formulario__titulos{      
+        font-size: 1rem;
+        justify-content: flex-start;
+    }
+    .titulos__subtitulo{           
+        font-size: 0.95rem;
+    }
+    .formulario__datos{
+        display: flex;
+        flex-direction: column;
+        margin-top:15px;
+        width:90%;
+        padding-left: 10%;
+        padding-right:-10%;
+    }
+
+    .formulario__datos--campos{
+        justify-content: center;
+        width: 100%;
+    }
+    .formulario__boton--recuperacion{
+        font-size: 0.9rem;
+    }
+    .datos__casa--check{
+        display: flex;
+        justify-self: center;
+        flex-direction: row;
+        color:white;
+        justify-content:center;
+        width: 90%;
+        padding-left:45px;
+    }
+     .opcion__casa{
+        display: flex;
+        flex-direction: column; 
+        font-size: 0.6rem;
+        color: white; 
+        justify-content: center;
+    } 
+    
+}
+
+ /*Medium devices (tablets, less than 992px)*/
+
+@media (max-width: 1199.98px) { 
+    body{
+        width: 100%;
+        background-position-x: center;
+        justify-content: center;
+        background-size: cover;
+    }
+
+    .body__mask{
+        width: 100%;
+    }
+
+    .formulario{
+        margin-top:30px;
+        width:60%;
+        justify-content: center;
+    }
+    
+    .formulario__datos{
+        display: flex;
+        flex-direction: row nowrap;
+        margin-top:20px;
+        width: 90%;
+    } 
+ 
 }
 

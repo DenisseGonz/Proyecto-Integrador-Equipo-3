@@ -1,4 +1,4 @@
-const $border = document.querySelector("border");
+const $border = document.querySelector(".border");
 const $selectorColor = document.querySelector("#colors");
 
 $selectorColor.addEventListener("change", (e) => {

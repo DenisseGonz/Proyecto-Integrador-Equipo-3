@@ -2,7 +2,11 @@
 
 body{
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: rgb(41, 37, 37);
+}
+
+#contacto{
+    color:rgb(233, 233, 233);
 }
 
 h1 {
@@ -18,30 +22,35 @@ h1 {
     font-size: 40px;
 }
 
+
+/* input {
+    width:100%;
+    padding: 12px 20px;
+    margin: 16px 0;
+    text-align: center;
+} */
+
+textarea{
+    background-color: #e8e5e4;
+    color: rgb(9, 0, 0);
+}
+
+::placeholder {
+    color: rgb(113, 113, 113);
+}
+
 .container2{
     padding-top: 100px;
-    display:flex;
     justify-content: space-around;
     font-size: 40px;
     text-align: center;
 }
 
-input {
-    width:100%;
-    padding: 12px 20px;
-    margin: 16px 0;
-    text-align: center;
-}
-
-/* textarea{
-    height: 50px;
-    padding: 100px;
-} */
-
 .mensaje{
-   width: 100%;
    height: 200px;
    padding: 10px;
+   border-radius: 15px; 
+   width: 80%;
 }
 
 .contenedorPrincipal{
@@ -51,6 +60,31 @@ input {
 
 .borde
 {
-    background-image: url(https://www.wallpapertip.com/wmimgs/42-423433_hogwarts-harry-potter.jpg);
+    background-image: url("../img/contacto_fondo.svg");
     text-align: center;
+    opacity: 0.93;
+    z-index: -1;
+    border-radius: 15px; 
+}
+
+.form{
+    z-index: 100;
+}
+
+.nombre{
+    border-radius: 15px;
+}
+
+.familia{
+    border-radius: 15px;
+}
+
+.btn-enviar {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.btn{
+    font-size: 25px;
 }

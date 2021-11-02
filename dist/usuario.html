@@ -11,6 +11,11 @@
     <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
     <link rel="preload" href="../src/assets/css/usersty.css" as="style">
     <link rel="stylesheet" href="../src/assets/css/usersty.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Alegreya+Sans:ital,wght@1,100;1,400&family=IM+Fell+English+SC&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <title>Mi Perfil</title>
 </head>
 
@@ -93,11 +98,10 @@
 
 
     <!-- Inserte los elementos que compondran su página dentro de este div -->
-    <div class="container-fluid">
+    <div class="container">
         <div id="user__banner">
             <img src="../src/assets/img/banner-slytherin.jpg" class="user__foto__banner" />
-            <h2 class="user__titulo text-center font-weight-bolder">Bienvenido, mago Draco Malfoy a tu perfil de
-                Slytherin</h2>
+            <h2 class="user__titulo text-center font-weight-bolder">Bienvenido, mago Draco Malfoy a tu perfil de Slytherin</h2>
         </div>
 
         <h3 class="text-center user__indicaciones">Aquí puedes ver tu información de usuario, pedidos y formas de pago.
@@ -110,7 +114,7 @@
                 <div class="card bg-dark">
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0">
-                            <button class="btn btn-outline-warning btn-block text-left" type="button"
+                            <button class="btn btn-outline-warning btn-block text-left texto-formulario" type="button"
                                 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                                 aria-controls="collapseOne">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -151,8 +155,8 @@
                                         <label for="">Cambiar contraseña</label> <br />
                                         <input type="password" placeholder="Nueva contraseña"> <br />
                                         <label for="">Confirmar contraseña</label> <br />
-                                        <input type="password" placeholder="Ingresa otra vez"> <br />
-                                        <button class="btn btn-primary">Confirmar</button>
+                                        <input type="password" placeholder="Ingresa otra vez"> <br/>
+                                        <button class="btn btn-warning">Confirmar</button>
                                     </form>
                                 </div>
 
@@ -161,10 +165,10 @@
                                 <div class="tab-pane fade" role="tabpanel" id="camcor" aria-labelledby="nav-add-tab">
                                     <form action="" method="POST">
                                         <label for="">Cambiar correo</label> <br />
-                                        <input type="text" placeholder="alguien@example.com"> <br />
+                                        <input type="text" placeholder="algo@hogwarts.com"> <br />
                                         <label for="">Confirmar correo</label> <br />
                                         <input type="" placeholder="Ingresa otra vez"> <br />
-                                        <button class="btn btn-primary">Confirmar</button>
+                                        <button class="btn btn-warning"> Confirmar</button>
                                     </form>
                                 </div>
 
@@ -183,7 +187,7 @@
                                         <label for="">Respuesta</label> <br />
                                         <input type="text"> <br />
                                         <br />
-                                        <button class="btn btn-primary">Confirmar</button>
+                                        <button class="btn btn-warning">Confirmar</button>
                                     </form>
                                 </div>
 
@@ -198,7 +202,7 @@
                 <div class="card bg-dark">
                     <div class="card-header" id="headingTwo">
                         <h2 class="mb-0">
-                            <button class="btn btn-outline-warning btn-block text-left collapsed" type="button"
+                            <button class="btn btn-outline-warning btn-block text-left collapsed texto-formulario" type="button"
                                 data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                                 aria-controls="collapseTwo">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -267,7 +271,7 @@
                 <div class="card bg-dark">
                     <div class="card-header" id="headingThree">
                         <h2 class="mb-0">
-                            <button class="btn btn-outline-warning btn-block text-left collapsed" type="button"
+                            <button class="btn btn-outline-warning btn-block text-left collapsed texto-formulario" type="button"
                                 data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                                 aria-controls="collapseThree">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -292,7 +296,7 @@
                         data-parent="#accordionExample">
                         <div class="card-body">
 
-                            <p>Bienvenido, aquí puedes añadir, ver, modificar o eliminar tus formas de pago. Aceptamos
+                            <p> Bienvenido, aquí puedes añadir, ver, modificar o eliminar tus formas de pago. Aceptamos
                                 las tarjetas mágicas de Gringotts, así como las de muggles de Visa y American Express.
                                 ¿Qué quieres hacer?</p>
                             <!-- VER FORMA DE PAGO -->
@@ -445,7 +449,7 @@
 
     <!-- Este bloque de codigo controla el footer dejar aqui -->
     <footer class="footer ">
-        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
+        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal ® 2021</h2>
         <div class="row mt-4 justify-content-center align-items-center">
             <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
                 <div class=" col-lg-6 col-md-12 col-sm-12">

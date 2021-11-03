@@ -4,6 +4,10 @@ body{
     background-size: cover;
 }
 
+.mask{
+    background-color: rgba(0,0,0,0.45);
+
+}
 .contenedor__baul{
     display: flex;
     width:100%;

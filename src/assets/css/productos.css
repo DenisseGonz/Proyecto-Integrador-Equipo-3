@@ -3,7 +3,7 @@
   color: black;
   font-size: 20px;
   height: 100px;
-  width: 20%;
+  margin-top: 20px;
 }
 
 .titulo_armando {
@@ -514,4 +514,206 @@
   
 .contenedor-productos {
   width: 65%;
+}
+
+/* cards2 */
+
+:root{
+  --blackchest:url('https://api.iconify.design/mdi/treasure-chest.svg?color=black') no-repeat center center / contain;
+  --pinkchest: url('https://api.iconify.design/mdi/treasure-chest.svg?color=%23fe302f');
+}
+
+.chest{
+  background:var(--blackchest);
+}
+
+.contenedor-productos{
+  padding-top: 3.5em;
+  margin: 0 auto;
+}
+
+.producto{
+  margin-bottom: 26px;
+  width: 75%;
+}
+
+producto:hover{
+  transform: scale(1.2,1.2) rotate(5deg);
+}
+
+.producto__parte-1{
+  position: relative;
+  height: 290px;
+  max-height: 290px;
+  overflow: hidden;
+  border-radius: 10% 10% 0% 0%;
+}
+
+.producto__parte-1::before{
+  position: absolute;
+content: " ";
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+transition: all 0.3s;
+}
+
+.producto__parte-1--img{
+  margin: 0 auto;
+  width: 110%;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.producto:hover .producto__parte-1--img{
+  transform:scale(1.2,1.2) rotate(5deg);
+}
+
+.producto__parte-1--descuento, 
+.producto__parte-1--nuevo{
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #ffffff;
+  background-color: #fe302f;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  z-index: 99;
+}
+
+.producto__parte-1--nuevo{
+  left: 0;
+  background-color: #444444;
+}
+
+.producto__parte-1--ul{
+  position: absolute;
+  bottom: -41px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  transition: bottom 0.5s, opacity 0.5s;
+}
+
+.producto:hover .producto__parte-1--ul{
+  bottom: 30px;
+  opacity: 1;
+}
+
+.producto__parte-1--ul li{
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.producto__parte-1--ul li a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+  transition: color 0.2s;
+}
+
+.producto__parte-1--ul li a:hover{
+  content: var(--pinkchest);
+}
+
+.producto__parte-2{
+  background-image: url(https://c.tenor.com/ll3rQ9a_zqYAAAAC/galaxy.gif);
+  padding: 20px;
+  border-radius: 0% 0% 10px 10px;
+}
+
+
+.producto__parte-2--titulo{
+  font-size: 1rem;
+  color: white;
+}
+
+.producto__parte-2 h4{
+  display: inline-block;
+  font-size: 1rem;
+  color: white;
+}
+
+.producto__parte-2--precio{
+  color: white;
+}
+
+.producto__parte-2--viejo-precio{
+  position: relative;
+  padding: 0 7px;
+  margin-right: 2px;
+  opacity: 0.6;
+  color: white;
+}
+
+.producto__parte-2--viejo-precio::after{
+  position: absolute;
+  content: " ";
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #444444;
+  transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 600px) {
+  .producto {
+    width: 100%;
+  }
+}
+
+/* Tipografía */
+h3 {
+  font-family: 'Adamina', serif;
+  font-weight: 400px;
+  font-size: 43px;
+}
+
+h4{
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight:900;
+  font-size: 27px;
+  color:FCFCFC;
+  text-decoration: overline#977f1e;
+}
+
+h5{
+  font-family: 'Adamina', serif;
+  font-size: 23px;
+  font-weight:800;
+}
+
+h6 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 30px;
+  text-shadow:10cm;
+  color:#9f8932;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.footer__titulo{
+  font-family: 'IM Fell English SC', serif;
+}
+
+.card-title{
+  font-family: 'Adamina', serif;
+}
+
+.card-text{
+  font-family: 'Open Sans', sans-serif;
 }

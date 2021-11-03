@@ -13,47 +13,26 @@
   -webkit-text-stroke: white 3px;
 }
 
-/* Carrusel */
 .carousel-inner {
   height: 500px;
   width: 100%;
 }
 
-/* teeeeeeeeeeeeeeeest */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  body {
+  /* body {
     font-family: "Poppins", sans-serif;
-  }
+  } */
   
-  .navbar {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-  }
-  nav {
-    flex: 1;
-    text-align: right;
-  }
-  
-  nav ul {
-    display: inline-block;
-    list-style-type: none;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  a {
+  /* a {
     text-decoration: none;
     color: #555;
-  }
+  } */
   
   p {
     color: white;
@@ -246,33 +225,6 @@
     color: #555;
   }
   
-  .testimonial {
-    padding-top: 100px;
-  }
-  
-  .testimonial .col-3 {
-    text-align: center;
-    padding: 40px 20px;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.5s;
-  }
-  
-  .testimonial .col-3 img {
-    width: 50px;
-    margin-top: 20px;
-    border-radius: 50%;
-  }
-  
-  .testimonial .col-3:hover {
-    transform: translateY(-10px);
-  }
-  
-  .fas.fa-quote-left {
-    font-size: 34px;
-    color: #ff523b;
-  }
-  
   .col-3 p {
     font-size: 12px;
     margin: 12px 0;
@@ -303,50 +255,6 @@
     filter: grayscale(0%);
   }
   
-  .footer {
-    background: #000;
-    color: #8a8a8a;
-    font-size: 14px;
-    padding: 60px 0 20px;
-  }
-  
-  .footer p {
-    color: #8a8a8a;
-  }
-  
-  .footer h3 {
-    color: #fff;
-    margin-bottom: 20px;
-  }
-  
-  .footer-col-1,
-  .footer-coll-2,
-  .footer-col-3,
-  .footer-col-4 {
-    min-width: 250px;
-    margin-bottom: 20px;
-  }
-  
-  .footer-col-1 {
-    flex-basis: 30%;
-  }
-  
-  .footer-coll-2 {
-    flex: 1;
-    text-align: center;
-  }
-  
-  .footer-coll-2 img {
-    width: 180px;
-    margin-bottom: 20px;
-  }
-  
-  .footer-col-3,
-  .footer-col-4 {
-    flex-basis: 12%;
-    text-align: center;
-  }
-  
   ul {
     list-style-type: none;
   }
@@ -359,13 +267,7 @@
     width: 140px;
   }
   
-  .footer hr {
-    border: none;
-    background: #b5b5b5;
-    height: 1px;
-    margin: 20px 0;
-  }
-  
+
   .copyright {
     text-align: center;
   }
@@ -466,30 +368,6 @@
     cursor: pointer;
   }
   
-  @media only screen and (max-width: 800px) {
-    nav ul {
-      position: absolute;
-      top: 70px;
-      left: 0;
-      background: #333;
-      width: 100%;
-      overflow: hidden;
-      transition: max-height 0.5s;
-    }
-    nav ul li {
-      display: block;
-      margin-right: 50px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-    nav ul li a {
-      color: #fff;
-    }
-    .menu-icon {
-      display: block;
-      cursor: pointer;
-    }
-  }
   
   @media only screen and (max-width: 600px) {
     .roww {
@@ -516,12 +394,88 @@
   width: 65%;
 }
 
-/* cards2 */
+/* cards */
 
-:root{
+ :root{
   --blackchest:url('https://api.iconify.design/mdi/treasure-chest.svg?color=black') no-repeat center center / contain;
   --pinkchest: url('https://api.iconify.design/mdi/treasure-chest.svg?color=%23fe302f');
 }
+
+.contenedorPrincipal{
+  margin: 0 auto;
+  width: 90%; 
+  z-index: 99;
+}
+
+.carrusel__text{
+  padding:3em;
+  background-color: black;
+  color:white;
+}
+
+.padding-0{
+  padding-right:0;
+  padding-left:0;
+}
+
+#carruseleventos{
+  margin-top: 2.5em;
+}
+
+/* Tipografía */
+h3 {
+  font-family: 'Adamina', serif;
+  font-weight: 400px;
+  font-size: 43px;
+}
+
+h4{
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight:900;
+  font-size: 27px;
+  color:FCFCFC;
+  text-decoration: overline#977f1e;
+}
+
+h5{
+  font-family: 'Adamina', serif;
+  font-size: 23px;
+  font-weight:800;
+}
+
+h6 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 30px;
+  text-shadow:10cm;
+  color:#9f8932;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.footer__titulo{
+  font-family: 'IM Fell English SC', serif;
+}
+
+.card-title{
+  font-family: 'Adamina', serif;
+}
+
+.card-text{
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Paleta de Colores */
+/* detalles azul color:#21267A
+detalles gris color:#363859
+blanco color:#FCFCFC
+dorado color:#9f8932;
+negro color:#292100 */
+
+/*las clases que se encuentran abajo de este punto son necesarias para que las cards funcionen siguen casi por completo la metodología BEM
+solo no se siguio estrictamente para algunas subclases asegurese de incluir el :root con al menos --blackchest y -pinkchest*/
 
 .chest{
   background:var(--blackchest);
@@ -565,6 +519,13 @@ transition: all 0.3s;
   width: 110%;
   height: 100%;
   transition: all 0.3s;
+}
+
+.producto__parte-1--img-pop{
+  margin: 0 auto;
+  max-height: 250px;
+  border-radius: 18px;
+  margin-bottom: 15px;
 }
 
 .producto:hover .producto__parte-1--img{
@@ -634,18 +595,31 @@ transition: all 0.3s;
 
 
 .producto__parte-2--titulo{
-  font-size: 1rem;
+  font-size: 1.1rem;
+  color: white;
+  margin-top: 0px;
+}
+
+.producto__parte-2--titulo-des{
+  font-size: 1.5rem;
   color: white;
 }
 
+
 .producto__parte-2 h4{
   display: inline-block;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: white;
 }
 
 .producto__parte-2--precio{
   color: white;
+}
+
+.producto__parte-2--precioDes{
+  font-size:20px;
+  color: white;
+  margin-bottom: 25px;
 }
 
 .producto__parte-2--viejo-precio{
@@ -654,6 +628,14 @@ transition: all 0.3s;
   margin-right: 2px;
   opacity: 0.6;
   color: white;
+}
+
+.producto__parte-2--descripcion{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  color: white;
+  text-decoration: none;
 }
 
 .producto__parte-2--viejo-precio::after{
@@ -667,53 +649,63 @@ transition: all 0.3s;
   transform: translateY(-50%);
 }
 
-@media only screen and (max-width: 600px) {
-  .producto {
-    width: 100%;
+/*clases no tan necesarias solo para el carrusel vista móvil*/
+
+#productosvistamovil{
+  width: 70%;
+  margin: 3.5em auto;
+}
+
+@media (min-width:744px){
+  #productosvistamovil{
+      display:none;
+      height: 0;
+      overflow: hidden;
+  }
+  .producto__parte-2--boton{
+      display: none;
   }
 }
 
-/* Tipografía */
-h3 {
-  font-family: 'Adamina', serif;
-  font-weight: 400px;
-  font-size: 43px;
+@media (max-width:743px) {
+  #productos{
+      display: none;
+      height: 0;
+      overflow: hidden;
+  }
+
+  .producto__parte-2--boton{
+      background-color: #9f8932;
+      border-radius: 5px;
+      margin: 10px 0px;
+  }
+  
+  .producto__parte-2--boton a{
+      margin:10px;
+     color:white;
+  }
+.carousel-control-next,
+.carousel-control-prev{
+  filter: url(resources.svg#c1);
+} 
 }
 
-h4{
-  font-family: 'Alegreya Sans', sans-serif;
-  font-weight:900;
-  font-size: 27px;
-  color:FCFCFC;
-  text-decoration: overline#977f1e;
+.carousel-control-next{
+  right:-6%;
 }
 
-h5{
-  font-family: 'Adamina', serif;
-  font-size: 23px;
-  font-weight:800;
+.carousel-control-prev{
+  left:-6%;
 }
 
-h6 {
-  font-family: 'Alegreya Sans', sans-serif;
-  font-size: 30px;
-  text-shadow:10cm;
-  color:#9f8932;
+.carousel-control-next-icon{
+  background-image: url('https://api.iconify.design/ls/next.svg?color=%239f8932&height=22')!important;
 }
 
-p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+
+.swal2-popup {
+  font-size: 1rem !important;
+  font-family: Adamina, serif;
+  color: #ffffff;
 }
 
-.footer__titulo{
-  font-family: 'IM Fell English SC', serif;
-}
-
-.card-title{
-  font-family: 'Adamina', serif;
-}
-
-.card-text{
-  font-family: 'Open Sans', sans-serif;
-}

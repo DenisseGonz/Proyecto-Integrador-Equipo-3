@@ -1,0 +1,131 @@
+/* :root { */
+  /* tipografia */
+  /* --titulo: 'Adamina', serif;
+  --texto: 'Open Sans', sans-serif;
+  --texto-detalles: 'Alegreya Sans', sans-serif;
+  --detalles: 'IM Fell English SC', serif; */
+  /* colores */
+  /* --dorado: #9f8932;
+  --gris: #363859;
+  --blanco: #FCFCFC;
+  --negro: #292100;
+  --amarillo: #FAEAA6;
+  --fondo-cards: rgba(133, 108, 12, 0.5);
+} */
+
+.imagen__superior{
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+  height:350px;
+}
+
+.contenedor__acerca{
+  margin:2rem 1rem 2rem 1rem;
+}
+
+.info{
+  color:white;
+  font-size: large;
+}
+
+p{
+  font-family: var(--texto);
+  font-weight: 400;
+}
+
+.pequeñas{
+  font-family: var(--texto);
+  font-size:12px;
+  font-style: italic;
+  
+}
+
+h3{
+  font-family:var(--titulo)
+}
+
+/* Marca el ancho y altura  */
+.carta {
+    background-color: var(--fondo-cards);
+    width: 250px;
+    height: 400px;
+    border: 5px solid var(--negro);
+    border-radius: 20px;
+    perspective: 1000px;
+  }
+  
+  .carta img{
+  width: 100%;
+  height: 80%;
+  }
+
+/* posicionamiento */
+  .carta-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+ /* flip horizontal */
+  .carta:hover .carta-inner {
+    transform: rotateY(180deg);
+  }
+  
+ /* posicion de frente */
+  .carta-front, .carta-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    -webkit-backface-visibility: hidden; 
+    /* Safari */
+    backface-visibility: hidden;
+  }
+  
+/* Parte frontal */
+  .carta-front {
+    color: var(--blanco);
+    padding: 20px;
+  }
+  
+/* Parte trasera */
+  .carta-back {
+    transform: rotateY(180deg);
+  }
+
+  .pie_de_carta{
+    font-family:var(--texto);
+    color:var(--blanco);
+    padding: 20px;
+    font-size:300;
+    font-size: larger;
+    font-weight:400;
+  }
+
+  .carta-back h1{
+    font-family:var(--titulo);
+    font-weight:400;
+    color:var(--blanco);
+  }
+
+  .carta__casa {
+    font-family:var(--texto-detalles);
+    font-size:2rem;
+    color:var(--blanco);
+  }
+
+  .carta-back span{
+    font-family:var(--texto);
+    color: var(--blanco);
+    font-weight:400;
+  }
+
+  @media (min-width:250px) and (max-width: 768px){
+    .imagen__superior{
+      margin: 0,10rem;
+    }
+  }

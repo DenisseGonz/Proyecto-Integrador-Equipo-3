@@ -1,0 +1,92 @@
+.user__titulo {
+    font-family: 'IM Fell English SC', sans-serif;
+    color: gold;
+    transform: translate(0%,-150%);
+    font-size: 2.3em;
+}
+.user__foto__banner {
+    width: 100%;
+    height: 75vh;
+    border: rgb(58, 133, 51) 10px solid;
+}
+.user__indicaciones{
+    font-size: 32px;
+    color: gold;
+}
+
+.btn-outline-warning{
+    border: none;
+}
+.accordion {
+    width: 75%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.nav__pago {
+    color: goldenrod;
+    font-family: 'Adamina', sans-serif;
+    font-size:14px;
+    /* -webkit-text-stroke: rgb(0, 0, 0) 0.5px; */
+}
+.user__fadd {
+    margin: 3%;
+}
+
+.accordion{
+    width:  80vw;
+}
+
+h3 {
+    font-family: 'Adamina', serif;
+    font-weight: 400px;
+    font-size: 43px;
+}
+
+h4{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight:900;
+    font-size: 27px;
+    color:FCFCFC;
+    text-decoration: overline#977f1e;
+}
+
+h5{
+    font-family: 'Adamina', serif;
+    font-size: 20px;
+    font-weight:800;
+}
+
+h6 {
+    font-family: 'Adamina', sans-serif;
+    font-size: 22px;
+    text-shadow:10cm;
+    color:#9f8932;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.footer__titulo{
+    font-family: 'IM Fell English SC', serif;
+}
+
+.card-title{
+    font-family: 'Adamina', serif;
+}
+
+.card-text{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.texto-formulario{
+    font-size: 15px;
+    font-family: 'Adamina', sans-serif;
+}
+
+.btn-warning{
+    margin-top: 10px;
+}
+
+  

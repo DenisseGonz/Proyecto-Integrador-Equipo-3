@@ -1,0 +1,126 @@
+/* contacto */
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    font-weight:500;
+    font-family:var(--titulo);
+    color:var(--blanco);
+    margin:35px;
+    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
+}
+
+p {
+    text-align: center;
+    font-size: 23px;
+    font-weight:700;
+    font-family:var(--texto);
+    color:var(--blanco);
+    margin-bottom:3rem;
+}
+
+span {
+    font-family:var(--texto-detalles);
+    font-size: 26px;
+    font-weight:800;
+    text-decoration:solid;
+    color:var(--amarillo);
+}
+
+.container1{
+    padding-top: 100px;
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    color:var(--blanco);
+}
+
+.container2{
+    padding-top:3rem;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    color:var(--blanco);
+}
+
+.contenedorPrincipal{
+    width: 80%;
+}
+
+.borde
+{
+    border-style: solid;
+    border-width: 10px;
+    padding: 2rem;
+    color: var(--negro);
+    background-origin: content-box;
+    border-radius: 25px;
+    font-family: var(--texto);
+    box-shadow: 0 0 0 5px var(--negro),
+    0 0 0 5px var(--negro);
+    background-color: rgba(41, 33, 0, 0.25);
+}
+
+
+.nombre{
+    border-radius: 15px;
+}
+
+.familia{
+    border-radius: 15px;
+}
+
+label{
+    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
+    font-family:var(--texto);
+    font-size:3rem;
+}
+
+.mensaje{
+    height: 200px;
+    border-radius: 20px; 
+    width: 80%;
+    margin-bottom:2rem;
+ }
+
+
+textarea{
+    background-color: var(--blanco);
+    color: var(--gris);
+    font-size:2rem;
+    width:100%;
+}
+
+
+.btn-enviar {
+    padding: 10px 20px;
+    border-radius: 15px;
+    padding:1rem;
+    margin-top:1rem;
+    
+}
+
+.btn{
+    width:30%;
+    font-size:2rem;
+}
+
+@media (min-width:250px) and (max-width: 768px) {
+
+    .contenedor{
+        margin: 0 15px;
+    }
+
+    .container1{
+        flex-direction:column;
+    }
+
+    .nombre__textarea{
+        width:100%;
+    } 
+
+    .btn{
+        width:100%;
+    }
+}

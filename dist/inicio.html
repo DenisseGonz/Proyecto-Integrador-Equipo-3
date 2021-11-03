@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css">
+    <link rel="preload" href="../src/assets/css/normalize.css" as="style">
+    <link rel="stylesheet" href="../src/assets/css/normalize.css">
+    <link rel="preload" href="../src/assets/css/gencomps.css" as="style">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
+    <link rel="preload" href="../src/assets/css/iniciosty.css" as="style">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/iniciosty.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Alegreya+Sans:ital,wght@1,100;1,400&family=IM+Fell+English+SC&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <audio src="../src/assets/audio/01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
+    <!-- El seguiente bloque de codigo controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
+    <div id="particles-js">
+        <img id="fondo" src="../src/assets/img/hogwarts-fondo.png" />
+    </div>
+
+    <!-- Este bloque de codigo despliega el header dejar aqui -->
+    <div id="header">
+        <div id="logo">
+            <img src="../src/assets/img/logo.png" alt="" width="250px" />
+        </div>
+        <nav class="navbar navbar-expand-lg" id="encabezado">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <svg id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="white" />
+                </svg>
+            </button>
+
+            <div id="logo2">
+                <img src="../src/assets/img/logo.png" alt="" width="120px" />
+            </div>
+
+            <a class="navbar-brand order-lg-12 p-0 me-2" href="baul-compras.html">
+                <svg class="d-block my-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M5 4h14a3 3 0 0 1 3 3v4h-7v-1H9v1H2V7a3 3 0 0 1 3-3m6 7h2v2h-2v-2m-9 1h7v1l2 2h2l2-2v-1h7v8H2v-8z"
+                        fill="white" />
+                </svg>
+            </a>
+
+            <div class="collapse navbar-collapse nav-item" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="inicio.html">Inicio<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="usuario.html">Mi Perfil <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Salas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../dist/griffindor.html">Gryffindor</a>
+                            <a class="dropdown-item" href="../dist/hufflepuff.html">Hufflepuff</a>
+                            <div class="dropdown-item" href="../dist/slytherin.html">Slytherin</div>
+                            <a class="dropdown-item" href="../dist/ravenclaw.html">Ravenclaw</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="delivery.html">Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Inserte los elementos que compondran su página dentro de este div -->
+    <div class="contenedorPrincipal">
+
+        <!-- Carrusel para eventos-->
+
+        <div id="carruseleventos" class="carousel slide" data-ride="carousel" data-interval="9000">
+            <ol class="carousel-indicators">
+                <li data-target="#carruseleventos" data-slide-to="0" class="active"></li>
+                <li data-target="#carruseleventos" data-slide-to="1"></li>
+                <li data-target="#carruseleventos" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <img src="https://img.ecartelera.com/noticias/fotos/50300/50316/1.jpg"
+                            class="d-block col padding-0" alt="...">
+                        <div class="col carrusel__text">
+                            <div>
+                                <h3>
+                                    Discurso del director
+                                </h3>
+                                <h4>
+                                    Viernes 5
+                                </h4>
+                                <p>
+                                    El siguiente martes 9 de noviembre tendremos
+                                    un
+                                    importante anuncio. A todos los estudiantes del instituto se les solicita de la manera más atenta
+                                    asistir al evento donde se anunciará la fundación de La Orden del Fénix® 2021. Se esperan sorpresas con la integración de este nuevo equipo en Hogwarts. No habrá justificación de faltas bajo ninguna circunstancia.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <img src="https://img.ecartelera.com/noticias/fotos/34400/34410/1.jpg"
+                            class="d-block col padding-0" alt="...">
+                        <div class="col carrusel__text">
+                            <div>
+                                <h3>
+                                    Visita de Jefes del Ministerio de Magia
+                                </h3>
+                                <h4>
+                                    Miércoles 10
+                                </h4>
+                                <p>
+                                    El mes de noviembre será especial ya que recibiremos a algunos representantes del
+                                    Ministerio
+                                    de
+                                    Magia. Se cree que el máximo órgano de gobierno del Reino Unido estará presente en el Instituto para reclutar a los magos de último año que estén listos para combatir en lo que se cree, será el desencadenamiento de una nueva Guerra Mágica. El Instituto Hogwarts se siente orgulloso de estar presente en esta nueva lucha contra la corrupción.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <img src="https://super-ficcion.com/wp-content/uploads/2020/04/1-1-1.jpg"
+                            class="d-block col padding-0" alt="...">
+                        <div class="col carrusel__text">
+                            <div>
+                                <h3>
+                                    Clase magistral profesor Lockhart
+                                </h3>
+                                <h4>
+                                    Lunes 15
+                                </h4>
+                                <p>
+                                    A todos los estudiantes interesados en la inicialización avanzada de Defensa de las Artes Oscuras los
+                                    invitamos a asistir a la clase magistral que tendrá el profesor invitado Gilderoy
+                                    Lockhart la cual tendrá una duración de cuatro horas por la tarde del viernes al finalizar el horario regular de clases. Favor de presentar con su mentora la inscripción al curso para recibir los requerimientos y los útiles escolares.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carruseleventos" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carruseleventos" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+
+
+        <!-- Cards para los productos destacados -->
+        <section id="productos" class="contenedor-productos row justify-content-center">
+
+        </section>
+
+        
+        <!-- Carrusel productos destacados en vista móvil -->
+        <div id="productosvistamovil" class="carousel slide" data-ride="carousel">
+            <div id="carrusel" class="carousel-inner">
+
+            </div>
+            <a class="carousel-control-prev" href="#productosvistamovil" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#productosvistamovil" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+    <!-- Este bloque de codigo controla el footer dejar aqui -->
+    <footer class="footer ">
+        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal ® 2021</h2>
+        <div class="row mt-4 justify-content-center align-items-center">
+            <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
+                <div class=" col-lg-6 col-md-12 col-sm-12">
+                    <ul class="footer__menu_1">
+                        <li class="nav-item footer__item">
+                            <a class=" nav-link" href="inicio.html">Inicio</a>
+                        </li>
+                        <li class="nav-item footer__item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item footer__item ">
+                            <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="linea"></div>
+                <div class=" col-lg-3 col-md-12 col-sm-12">
+                    <ul class="">
+                        <li class="nav-item footer__item ">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item footer__item">
+                            <a class="nav-link"
+                                href="https://github.com/DenisseGonz/Proyecto-Integrador-Equipo-3">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class=" col-lg-3  col-md-6 col-sm-6 col-6">
+                <div class="footer__imagen">
+                    <img src="../src/assets/img/Hogwartscrest.png" alt="hogwarts">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Se importa la librería de las partículas primero antes del script de configuración -->
+    <!-- <script src="node_modules\particles.js\particles.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="../src/assets/js/cargador-particulas.js"></script>
+
+    <!-- Comportamientos de Bootstrap -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/assets/js/bootstrap.min.js"></script>
+    <script type="module" src="../bundle.js"></script>
+</body>
+
+</html>

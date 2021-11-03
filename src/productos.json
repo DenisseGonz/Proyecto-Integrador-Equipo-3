@@ -1,0 +1,42 @@
+[
+    {
+        "destacado": "si",
+        "nombre": "Partido de Quidditch",
+        "descuento": " ",
+        "tipo": " ",
+        "antiguoPrecio": "$79.99",
+        "precio": "$49.99",
+        "img": "../src/assets/img/bolquid.jpg",
+        "descripcion": "Asiste al partido inaugural de la Copa de Quidditch 2021-2022 este sábado 20 de noviembre. ¡No te lo puedes perder!"
+    },
+    {
+        "destacado": "si",
+        "nombre": "Nimbus 2000",
+        "descuento": "15% de descuento",
+        "tipo": " ",
+        "antiguoPrecio": " ",
+        "precio": "$49.99",
+        "img": "../src/assets/img/nimbus200.jpg",
+        "descripcion": "La escoba más rápida de la actualidad. Con este elegante color dorado y su mango de caoba serás invencible en el equipo de Quidditch. ¡Cómprala ya!"
+    },
+    {
+        "destacado": "si",
+        "nombre": "Mandragoras",
+        "descuento": " ",
+        "tipo": " ",
+        "antiguoPrecio": "$79.99",
+        "precio": "$49.99",
+        "img": "../src/assets/img/mandragora.jpg",
+        "descripcion": "Consigue la nueva colección de la planta más sensible de Hogwarts. Se recomienda el uso de protección auditiva."
+    },
+    {
+        "destacado": "si",
+        "nombre": "Hierbas mágicas y hongos",
+        "descuento": " ",
+        "tipo": "nuevo",
+        "antiguoPrecio": " ",
+        "precio": "$49.99",
+        "img": "../src/assets/img/libro.webp",
+        "descripcion": "Nueva edición del libro de Phyllida Spore que reúne las pociones básicas de herbología para los alumnos de nuevo ingreso."
+    }
+]

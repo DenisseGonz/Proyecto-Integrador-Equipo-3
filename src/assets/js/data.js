@@ -1,48 +1,50 @@
-{
-    "Gryffindor": {
-        "configuracion": {
-            "color_principal": "rgba(174,0,1,0.9)",
-            "color_secundario": "dorado",
-            "escudo": "img/Gryffindor.png",
-            "img_fondo_principal": "img/gryffindor-wallpaper.jpg",
-            "img_fondo_casa": "img/Sala_Griffindor.jpg",
-            "creador": "Godric Gryffindor",
-            "img_creador": "img/Godric_Griff.jpg",
-            "info_creador": "Godric Gryffindor fue un mago que vivió en la época medieval y uno de los cuatro fundadores del Colegio Hogwarts de Magia y Hechicería. Era amigo de Salazar Slytherin, pero se opuso a él cuando éste pensaba que no se debía aceptar a los nacidos de muggles como estudiantes de Hogwarts. Se desconoce la fecha de su muerte. El lugar de nacimiento de Godric Gryffindor se conoce como Valle de Godric, en su honor. El retrato de Godric Gryffindor sigue estando en Hogwarts, en el pasillo del séptimo piso."
+const data = [{
+    Gryffindor:{
+        configuracion: {
+            color_principal: "rgba(174,0,1,0.9)",
+            color_secundario: "dorado",
+            escudo: "img/Gryffindor.png",
+            img_fondo_principal: "img/gryffindor-wallpaper.jpg",
+            img_fondo_casa: "img/Sala_Griffindor.jpg",
+            creador: "Godric Gryffindor",
+            img_creador: "img/Godric_Griff.jpg",
+            info_creador: "Godric Gryffindor fue un mago que vivió en la época medieval y uno de los cuatro fundadores del Colegio Hogwarts de Magia y Hechicería. Era amigo de Salazar Slytherin, pero se opuso a él cuando éste pensaba que no se debía aceptar a los nacidos de muggles como estudiantes de Hogwarts. Se desconoce la fecha de su muerte. El lugar de nacimiento de Godric Gryffindor se conoce como Valle de Godric, en su honor. El retrato de Godric Gryffindor sigue estando en Hogwarts, en el pasillo del séptimo piso."
         },
-        "curiosidades": [
+        curiosidades: [
             {
-                "no": "1",
-                "titulo": "Reliquias de la casa",
-                "img_curiosidad": "https://c.tenor.com/YEPii0Pgd-kAAAAC/sorting-hat.gif",
-                "texto": "El sombrero Seleccionador y la espada de Gryffindor son las reliquias que el fundador de la casa, Godric Griffindor, dejó como su legado además de su coraje y opinión inclusiva para todos aquellos magos. El primero se ha convertido en un símbolo indiscutible de Hogwarts, pues cada año pasan por él las cabezas de decenas de nuevos alumnos que esperan a que el famoso Sombrero les diga a qué casa van a pertenecer durante el tiempo que estén en el colegio"
+                no: "1",
+                titulo: "Reliquias de la casa",
+                img_curiosidad: "https://c.tenor.com/YEPii0Pgd-kAAAAC/sorting-hat.gif",
+                texto: "El sombrero Seleccionador y la espada de Gryffindor son las reliquias que el fundador de la casa, Godric Griffindor, dejó como su legado además de su coraje y opinión inclusiva para todos aquellos magos. El primero se ha convertido en un símbolo indiscutible de Hogwarts, pues cada año pasan por él las cabezas de decenas de nuevos alumnos que esperan a que el famoso Sombrero les diga a qué casa van a pertenecer durante el tiempo que estén en el colegio"
             },
             {
-                "no": "2",
-                "titulo": "Uso de la espada",
-                "img_curiosidad": "https://img.buzzfeed.com/buzzfeed-static/static/2017-01/19/13/enhanced/buzzfeed-prod-web-09/enhanced-17779-1484848975-1.jpg?output-format=jpg&output-quality=auto",
-                "texto": "La leyenda cuenta que es una espada forjada por duendes que fue regalada al mago experto pero los duendes niegan esta versión diciendo que Gryffindor se la robó. No obstante, los duende tienen un sentido distinto a la propiedad que los seres humanos. Pero es, precisamente, esta cualidad la que permite que la espada absorba propiedades de los objetos o criaturas a las que se enfrenta. Se dice que solo un verdadero Gryffindor la puede utilizar."
+                no: "2",
+                titulo: "Uso de la espada",
+                img_curiosidad: "https://img.buzzfeed.com/buzzfeed-static/static/2017-01/19/13/enhanced/buzzfeed-prod-web-09/enhanced-17779-1484848975-1.jpg?output-format=jpg&output-quality=auto",
+                texto: "La leyenda cuenta que es una espada forjada por duendes que fue regalada al mago experto pero los duendes niegan esta versión diciendo que Gryffindor se la robó. No obstante, los duende tienen un sentido distinto a la propiedad que los seres humanos. Pero es, precisamente, esta cualidad la que permite que la espada absorba propiedades de los objetos o criaturas a las que se enfrenta. Se dice que solo un verdadero Gryffindor la puede utilizar."
             },
             {
-                "no": "3",
-                "titulo": "El fantasma de Gryffindor",
-                "img_curiosidad": "https://media.giphy.com/media/13eJdsEnw7dM1W/giphy.gif",
-                "texto": "La casa tiene a su propio fantasma, Nick Casi Decapitado, cuyo verdadero nombre Sir Nicholas de Mimsy-Porpington y obtiene su sobrenombre después de ser condenado a muerte en vida por decapitación."
+                no: "3",
+                titulo: "El fantasma de Gryffindor",
+                img_curiosidad: "https://media.giphy.com/media/13eJdsEnw7dM1W/giphy.gif",
+                texto: "La casa tiene a su propio fantasma, Nick Casi Decapitado, cuyo verdadero nombre Sir Nicholas de Mimsy-Porpington y obtiene su sobrenombre después de ser condenado a muerte en vida por decapitación."
             },
             {
-                "no": "4",
-                "titulo": "Acceso a la sala común",
-                "img_curiosidad": "http://www.sopitas.com/wp-content/uploads/2016/08/harru-potter-retratos-1.gif",
-                "texto": "Para entrar en la sala común de Gryffindor se ha de pasar por una puerta custodiada por el cuadro de la Señora Gorda, a la que le encanta hacer demostraciones de canto. Hubo una ocasión donde fue brevemente sustituida por Sir Cadogan, después de que Sirius Black intente colarse en las habitaciones de los alumnos."
+                no: "4",
+                titulo: "Acceso a la sala común",
+                img_curiosidad: "http://www.sopitas.com/wp-content/uploads/2016/08/harru-potter-retratos-1.gif",
+                texto: "Para entrar en la sala común de Gryffindor se ha de pasar por una puerta custodiada por el cuadro de la Señora Gorda, a la que le encanta hacer demostraciones de canto. Hubo una ocasión donde fue brevemente sustituida por Sir Cadogan, después de que Sirius Black intente colarse en las habitaciones de los alumnos."
             },
             {
-                "no": "5",
-                "titulo": "Dormitorios",
-                "img_curiosidad": "https://pa1.narvii.com/6358/6cc32c6396ac8578842c600de3919b84cd315f3a_hq.gif",
-                "texto": "Cuando los chicos intentaban ir al dormitorio de las chicas las escaleras se convertian en un tipo resbaladilla y en cambio si las chicas cuando querian ir al dormitorio de los chicos si podian hacerlo."
-            }
+                no: "5",
+                titulo: "Dormitorios",
+                img_curiosidad: "https://pa1.narvii.com/6358/6cc32c6396ac8578842c600de3919b84cd315f3a_hq.gif",
+                texto: "Cuando los chicos intentaban ir al dormitorio de las chicas las escaleras se convertian en un tipo resbaladilla y en cambio si las chicas cuando querian ir al dormitorio de los chicos si podian hacerlo."
+            },
         ]
-    },
+    }
+}
+    [
     "Slytherin": {
         "configuracion": {
             "color_principal": "#06640c",
@@ -86,9 +88,12 @@
                 "texto": "Cuando Salazar se fue de Hogwarts, dejó atrás la Cámara de los Secretos con el propósito de que un heredero la abriera y desatara un monstruo para purgar al colegio de aquellos que, en opinión de Slytherin, eran indignos de estudiar magia: los hijos de muggles. La cámara se abrió dos veces y el monstruo fue asesinado la segunda vez por Harry Potter en 1993. Las opiniones de Salazar en ese momento podrían atribuirse a la persecución de las brujas y magos de la mano de los muggles durante ese siglo."
             }
         ]
-    },
-    "Hufflepuff": {
-        "configuracion": {
+    }],
+    
+    
+    [
+    Hufflepuff: {
+        configuracion: {
             "color_principal": "#d2b207",
             "color_secundario": "#fff",
             "color_tercero": "#000",
@@ -131,7 +136,11 @@
                 "texto": "La profesora Sprout, quien fue la Jefa de la Casa de Hufflepuff durante décadas, sobrevivió a la guerra de Hogwarts y se había retirado en 2017, con la sustitución de Neville Longbottom que ella misma le dio el puesto de profesor de Herbología."
             }
         ]
-    },
+    }],
+    
+    
+    
+    [
     "Ravenclaw": {
         "configuracion": {
             "color_principal": "#035b78",
@@ -175,5 +184,7 @@
                 "texto": "Ignatia Wildsmith, que inventó el polvo de floo. La invención del polvo de floo es particularmente notable, ya que este polvo de transporte es mucho más rápido que viajar en escoba, y no requiere licencia, como lo hace la apparating. La fórmula del polvo de Floo es también un secreto muy bien guardado, y aunque muchos otros han intentado hacer el suyo propio, el secreto de Ignatia Wildsmith sigue siendo sólo eso. De hecho, varias brujas y magos han terminado en el hospital tratando de replicarlo a lo largo de los años."
             }
         ]
-    }
-}
+    }]]
+
+
+console.log(data);

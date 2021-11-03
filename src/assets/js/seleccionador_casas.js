@@ -1,5 +1,5 @@
 //export function gryffindor() {
-    //fetch('../src/casas.json')
+    /*fetch('../src/casas.json')
         .then((response) => response.json())
         .then((data) => {
             console.log(data);
@@ -22,7 +22,7 @@
             console.log(json);
         })
         .catch((err) => console.log(err));
-}//termina el fetch
+}*/
 
 
 export function slytherin() {}

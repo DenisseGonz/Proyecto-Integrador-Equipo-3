@@ -1,64 +1,64 @@
 {
     "Gryffindor":{
         "configuracion":{
-            "color-principal":"rojo",
-            "color-secundario":"dorado",
+            "color_principal":"rgba(174,0,1,0.9)",
+            "color_secundario":"dorado",
             "escudo":"img/Gryffindor.png",
-            "img-fondo-principal":"img/gryffindor-wallpaper.jpg",
-            "img-fondo-casa":"img/Sala_Griffindor.jpg",
+            "img_fondo_principal":"img/gryffindor-wallpaper.jpg",
+            "img_fondo_casa":"img/Sala_Griffindor.jpg",
             "creador": "Godric Gryffindor",
-            "img-creador":"img/Godric_Griff.jpg",
-            "info-creador":"Godric Gryffindor fue un mago que vivió en la época medieval y uno de los cuatro fundadores del Colegio Hogwarts de Magia y Hechicería. Era amigo de Salazar Slytherin, pero se opuso a él cuando éste pensaba que no se debía aceptar a los nacidos de muggles como estudiantes de Hogwarts. Se desconoce la fecha de su muerte. El lugar de nacimiento de Godric Gryffindor se conoce como Valle de Godric, en su honor. El retrato de Godric Gryffindor sigue estando en Hogwarts, en el pasillo del séptimo piso."
+            "img_creador":"img/Godric_Griff.jpg",
+            "info_creador":"Godric Gryffindor fue un mago que vivió en la época medieval y uno de los cuatro fundadores del Colegio Hogwarts de Magia y Hechicería. Era amigo de Salazar Slytherin, pero se opuso a él cuando éste pensaba que no se debía aceptar a los nacidos de muggles como estudiantes de Hogwarts. Se desconoce la fecha de su muerte. El lugar de nacimiento de Godric Gryffindor se conoce como Valle de Godric, en su honor. El retrato de Godric Gryffindor sigue estando en Hogwarts, en el pasillo del séptimo piso."
         },
         "curiosidades":[
             {
                 "no":"1",
                 "titulo":"Reliquias de la casa",
-                "img-curiosidad":"https://c.tenor.com/YEPii0Pgd-kAAAAC/sorting-hat.gif",
+                "img_curiosidad":"https://c.tenor.com/YEPii0Pgd-kAAAAC/sorting-hat.gif",
                 "texto":"El sombrero Seleccionador y la espada de Gryffindor son las reliquias que el fundador de la casa, Godric Griffindor, dejó como su legado además de su coraje y opinión inclusiva para todos aquellos magos. El primero se ha convertido en un símbolo indiscutible de Hogwarts, pues cada año pasan por él las cabezas de decenas de nuevos alumnos que esperan a que el famoso Sombrero les diga a qué casa van a pertenecer durante el tiempo que estén en el colegio"
             },
             {
                 "no":"2",
                 "titulo":"Uso de la espada",
-                "img-curiosidad":"https://img.buzzfeed.com/buzzfeed-static/static/2017-01/19/13/enhanced/buzzfeed-prod-web-09/enhanced-17779-1484848975-1.jpg?output-format=jpg&output-quality=auto",
+                "img_curiosidad":"https://img.buzzfeed.com/buzzfeed-static/static/2017-01/19/13/enhanced/buzzfeed-prod-web-09/enhanced-17779-1484848975-1.jpg?output-format=jpg&output-quality=auto",
                 "texto":"La leyenda cuenta que es una espada forjada por duendes que fue regalada al mago experto pero los duendes niegan esta versión diciendo que Gryffindor se la robó. No obstante, los duende tienen un sentido distinto a la propiedad que los seres humanos. Pero es, precisamente, esta cualidad la que permite que la espada absorba propiedades de los objetos o criaturas a las que se enfrenta. Se dice que solo un verdadero Gryffindor la puede utilizar."    
             },
             {
                 "no":"3",
                 "titulo":"El fantasma de Gryffindor",
-                "img-curiosidad":"https://media.giphy.com/media/13eJdsEnw7dM1W/giphy.gif",
+                "img_curiosidad":"https://media.giphy.com/media/13eJdsEnw7dM1W/giphy.gif",
                 "texto":"La casa tiene a su propio fantasma, Nick Casi Decapitado, cuyo verdadero nombre Sir Nicholas de Mimsy-Porpington y obtiene su sobrenombre después de ser condenado a muerte en vida por decapitación."    
             },
             {
                 "no":"4",
                 "titulo":"Acceso a la sala común",
-                "img-curiosidad":"http://www.sopitas.com/wp-content/uploads/2016/08/harru-potter-retratos-1.gif",
+                "img_curiosidad":"http://www.sopitas.com/wp-content/uploads/2016/08/harru-potter-retratos-1.gif",
                 "texto":"Para entrar en la sala común de Gryffindor se ha de pasar por una puerta custodiada por el cuadro de la Señora Gorda, a la que le encanta hacer demostraciones de canto. Hubo una ocasión donde fue brevemente sustituida por Sir Cadogan, después de que Sirius Black intente colarse en las habitaciones de los alumnos."
             },
             {
                 "no":"5",
                 "titulo":"Acceso a la sala común",
-                "img-curiosidad":"http://www.sopitas.com/wp-content/uploads/2016/08/harru-potter-retratos-1.gif",
+                "img_curiosidad":"http://www.sopitas.com/wp-content/uploads/2016/08/harru-potter-retratos-1.gif",
                 "texto":"Para entrar en la sala común de Gryffindor se ha de pasar por una puerta custodiada por el cuadro de la Señora Gorda, a la que le encanta hacer demostraciones de canto. Hubo una ocasión donde fue brevemente sustituida por Sir Cadogan, después de que Sirius Black intente colarse en las habitaciones de los alumnos."
             }
         ]
     }, 
     "Slytherin":{
-        "color-principal":"verde",
-        "color-secundario":"plata",
+        "color_principal":"verde",
+        "color_secundario":"plata",
         "creador": "Salazar Slytherin",
-        "info-creador":"Salazar Slytherin fue un famoso mago de sangre pura de la Edad Media. Hablaba la lengua pársel y era extremadamente hábil en el uso de la Legeremancia. Es uno de los cuatro fundadores del Colegio Hogwarts de Magia y Hechicería y el mejor amigo de Godric Gryffindor hasta los problemas que hubo entre los fundadores. Slytherin no confiaba en los mestizos debido a la persecución de muggles contra magos. Esto provocó que él deseara que Hogwarts sólo enseñara a aquellos de sangre pura. Como los otros tres fundadores no lo aceptaron, Slytherin abandonó el colegio, no sin antes construir la Cámara de los Secretos con el basilisco en su interior."
+        "info_creador":"Salazar Slytherin fue un famoso mago de sangre pura de la Edad Media. Hablaba la lengua pársel y era extremadamente hábil en el uso de la Legeremancia. Es uno de los cuatro fundadores del Colegio Hogwarts de Magia y Hechicería y el mejor amigo de Godric Gryffindor hasta los problemas que hubo entre los fundadores. Slytherin no confiaba en los mestizos debido a la persecución de muggles contra magos. Esto provocó que él deseara que Hogwarts sólo enseñara a aquellos de sangre pura. Como los otros tres fundadores no lo aceptaron, Slytherin abandonó el colegio, no sin antes construir la Cámara de los Secretos con el basilisco en su interior."
     },
     "Hufflepuff":{
-        "color-principal":"amarillo",
-        "color-secundario":"blanco",
+        "color_principal":"amarillo",
+        "color_secundario":"blanco",
         "creador": "Helga Hufflepuff",
-        "info-creador":"Helga Hufflepuff fue una de los cuatro fundadores del Colegio Hogwarts de Magia y Hechicería y ayudó a construir la escuela. Cuando se conocieron Godric Gryffindor y Salazar Slytherin, hablaron sobre la posibilidad de un colegio de hechicería, mientras que Gryffindor se puso en contacto con Rowena Ravenclaw, Slytherin buscó a su amiga Helga Hufflepuff y así fundaron el colegio. Helga admitió estudiantes a su casa que no tuvieran miedo a trabajar duro. Mientras los otros fundadores tomaban estudiantes basándose en sus ambiciones, valentía, o inteligencia, Helga Hufflepuff tomó al resto de ellos, tratándolos a todos por igual y enseñándoles todo lo que sabía."
+        "info_creador":"Helga Hufflepuff fue una de los cuatro fundadores del Colegio Hogwarts de Magia y Hechicería y ayudó a construir la escuela. Cuando se conocieron Godric Gryffindor y Salazar Slytherin, hablaron sobre la posibilidad de un colegio de hechicería, mientras que Gryffindor se puso en contacto con Rowena Ravenclaw, Slytherin buscó a su amiga Helga Hufflepuff y así fundaron el colegio. Helga admitió estudiantes a su casa que no tuvieran miedo a trabajar duro. Mientras los otros fundadores tomaban estudiantes basándose en sus ambiciones, valentía, o inteligencia, Helga Hufflepuff tomó al resto de ellos, tratándolos a todos por igual y enseñándoles todo lo que sabía."
     },
     "Ravenclaw":{
-        "color-principal":"azul",
-        "color-secundario":"cafe",
+        "color_principal":"azul",
+        "color_secundario":"cafe",
         "creador": "Rowena Ravenclaw",
-        "info-creador":"La Profesora Rowena Ravenclaw era una bruja escocesa que vivía en la Edad Media. Destaca por su inteligencia y creatividad, y es considerada como una de las más grandes brujas de la época, Ravenclaw fue una de los cuatro fundadores del Colegio Hogwarts de Magia y Hechicería, junto a Godric Gryffindor, Helga Hufflepuff y Salazar Slytherin, así como el homónimo de la casa de Ravenclaw. Ravenclaw era hermosa pero un poco intimidante. Rowena murió en algún momento en el siglo XI, después de caer fatalmente enferma. La leyenda decía que un corazón roto contribuyó a su temprana muerte."
+        "info_creador":"La Profesora Rowena Ravenclaw era una bruja escocesa que vivía en la Edad Media. Destaca por su inteligencia y creatividad, y es considerada como una de las más grandes brujas de la época, Ravenclaw fue una de los cuatro fundadores del Colegio Hogwarts de Magia y Hechicería, junto a Godric Gryffindor, Helga Hufflepuff y Salazar Slytherin, así como el homónimo de la casa de Ravenclaw. Ravenclaw era hermosa pero un poco intimidante. Rowena murió en algún momento en el siglo XI, después de caer fatalmente enferma. La leyenda decía que un corazón roto contribuyó a su temprana muerte."
     }
 }

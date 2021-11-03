@@ -7,6 +7,7 @@ h1 {
     font-family:var(--titulo);
     color:var(--blanco);
     margin:35px;
+    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
 }
 
 p {
@@ -24,8 +25,6 @@ span {
     font-weight:800;
     text-decoration:solid;
     color:var(--amarillo);
-    
-
 }
 
 .container1{
@@ -34,7 +33,7 @@ span {
     display:flex;
     justify-content: space-around;
     font-size: 2.5rem;
-    font-weight: 800;
+    color:var(--blanco);
 }
 
 .container2{
@@ -42,7 +41,7 @@ span {
     text-align: center;
     justify-content: space-around;
     font-size: 2.5rem;
-    font-weight: 800;
+    color:var(--blanco);
 }
 
 .contenedorPrincipal{
@@ -51,14 +50,16 @@ span {
 
 .borde
 {
-    background-image: url("../img/contacto_fondo_2.png");
-    border-radius: 15px; 
-    box-shadow: 0 0 0 15px var(--negro),
-    0 0 0 5px var(--negro);
+    border-style: solid;
+    border-width: 10px;
+    padding: 2rem;
+    color: var(--negro);
+    background-origin: content-box;
+    border-radius: 25px;
     font-family: var(--texto);
-    font-size: 4rem;
-    font-weight:700;
-    background-repeat: round;
+    box-shadow: 0 0 0 5px var(--negro),
+    0 0 0 5px var(--negro);
+    background-color: rgba(41, 33, 0, 0.25);
 }
 
 
@@ -70,6 +71,12 @@ span {
     border-radius: 15px;
 }
 
+label{
+    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
+    font-family:var(--texto);
+    font-size:3rem;
+}
+
 .mensaje{
     height: 200px;
     border-radius: 20px; 
@@ -77,15 +84,10 @@ span {
     margin-bottom:2rem;
  }
 
- ::placeholder {
-    color: var(--gris);
-    font-weight: 300;
-}
 
 textarea{
     background-color: var(--blanco);
     color: var(--gris);
-    font-family: var(--texto);
     font-size:2rem;
     width:100%;
 }
@@ -96,12 +98,12 @@ textarea{
     border-radius: 15px;
     padding:1rem;
     margin-top:1rem;
+    
 }
 
 .btn{
     width:30%;
     font-size:2rem;
-    font-family: var(--texto);
 }
 
 @media (min-width:250px) and (max-width: 768px) {

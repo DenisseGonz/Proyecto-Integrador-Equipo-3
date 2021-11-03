@@ -3,20 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Delivery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css">
     <link rel="preload" href="../src/assets/css/normalize.css" as="style">
     <link rel="stylesheet" href="../src/assets/css/normalize.css">
-    <link rel="preload" href="../src/assets/css/delivery.css" as="style">
-    <link rel="stylesheet" href="../src/assets/css/delivery.css">
     <link rel="preload" href="../src/assets/css/gencomps.css" as="style">
-    <link rel="stylesheet" href="../src/assets/css/gencomps.css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
+    <link rel="preload" href="../src/assets/css/productos.css" as="style">
+    <link rel="stylesheet" href="../src/assets/css/productos.css">
+    <title>Productos</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
 </head>
 
 <body>
     <audio src="../src/assets/audio/01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
-    <!-- El seguiente bloque de código controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
+    <!-- El seguiente bloque de codigo controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
     <div id="particles-js">
         <img id="fondo" src="../src/assets/img/hogwarts-fondo.png" />
     </div>
@@ -52,8 +62,8 @@
 
             <div class="collapse navbar-collapse nav-item" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="inicio.html">Inicio</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="inicio.html">Inicio<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="usuario.html">Mi Perfil <span class="sr-only"></span></a>
@@ -90,74 +100,110 @@
         </nav>
     </div>
 
+<!-- Regresar -->
+<a href="../dist/productos.html" class="buy-btn">Regresar</a>
 
-
-    <!-- Inserte los elementos que compondran su página dentro de este div -->
-    <!-- <div class="contenedorPrincipal"> -->
-    <div>
-        <div class="fondo">
-            <main>
-            <h1>¡Llevamos tu producto gratis!</h1>
-            <p>Gracias a nuestro sistema de lechuzas especializadas podrás recibir tu producto dentro de los siguientes cinco días. <br> El 100% de la propina será para tu <span>repartidor mágico.</span></p>
-            </main>
-            <!-- Borde que cambia de color -->
-            <div class="borde justify-content-center container">
-                <form class="post" action="post">
-                    <div class="container1">
-                        <div class="nombre">
-                            <label for="Nombre">Nombre</label><br>
-                            <textarea class="nombre__textarea" placeholder="Ronald"></textarea>
-                        </div>
-                        <div class="div-fam">
-                            <label for="apellido">Apellido</label><br>
-                            <textarea class="nombre__textarea" placeholder="Wesley"></textarea>
-                        </div>
+    <!-- detalle de producto -->
+    <div class="small-container single-product">
+        <div class="roww">
+            <div class="coll-2">
+                <img src="../src/assets/img/gryffindor-wallpaper.jpg" width="100%" id="ProductImg">
+                <div class="small-img-roww">
+                    <div class="small-img-col">
+                        <img src="../src/assets/img/gryffindor-wallpaper.jpg" width="100%" class="small-img">
                     </div>
-                    <div class="container2">
-                        <div class="form-group">
-                            <label for="inputPregunta" class="label">¿A qué casa perteneces?</label>
-                            <div>
-                                <select name="pregunta" id="inputPregunta" class="form-control">
-                                    <option value="1">Gryffindor</option>
-                                    <option value="2">Hufflepuff</option>
-                                    <option value="3">Ravenclaw</option>
-                                    <option value="4">Slytherin</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="div-fam">
-                            <label for="ubicacion">Ubicación</label><br>
-                            <textarea class="nombre__textarea" placeholder="#239"></textarea>
-                        </div>
+                    <div class="small-img-col">
+                        <img src="../src/assets/img/hufflepuff-wallpaper.jpg" width="100%" class="small-img">
                     </div>
-                    <div class="btn-enviar ">
-                        <button type="button" class="btn btn-secondary btn-lg">Enviar</button>
+                    <div class="small-img-col">
+                        <img src="../src/assets/img/slytherin-wallpaper.jpg" width="100%" class="small-img">
                     </div>
-                </form>
+                    <div class="small-img-col">
+                        <img src="../src/assets/img/ravenclaw-wallpaper.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
             </div>
-            <br>
-            <div class="terminos">
-                <p class="terminos-texto">
-                    *Aplican términos y condiciones.<br>No aplica para alumnos de las siguientes instituciones: Academia
-                    Beauxbatons e Instituto Durmstrang.
-                </p>
+            <div class="coll-2">
+                <p>Home / Test</p>
+                <h1>Test</h1>
+                <h4>$50.00</h4>
+                <button class="buy-btn">Agregar al baúl</button>
+                <h3>Detalles del prodcuto <i class="fas fa-indent"></i></h3>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, maiores. Repudiandae sed animi
+                    minima corporis laudantium rem cupiditate dolores voluptas soluta magni non maiores optio ipsum
+                    similique vel, debitis quisquam.</p>
             </div>
-
-
         </div>
     </div>
 
+    <!-- titulo -->
+    <div class="small-container">
+        <div class="roww row-2">
+            <h2>Productos Relacionados</h2>
+            <p>Ver Mas</p>
+        </div>
+    </div>
 
-
-
-
-
+    <!-- productos -->
+    <div class="small-container">
+        <div class="roww">
+            <div class="col-4">
+                <img src="../src/assets/img/bolquid.jpg">
+                <h4>Test</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>$199.00</p>
+            </div>
+            <div class="col-4">
+                <img src="../src/assets/img/bolquid.jpg">
+                <h4>Test</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$499.00</p>
+            </div>
+            <div class="col-4">
+                <img src="../src/assets/img/bolquid.jpg">
+                <h4>Test</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>$399.00</p>
+            </div>
+            <div class="col-4">
+                <img src="../src/assets/img/bolquid.jpg">
+                <h4>Test</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$999999.00</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Este bloque de codigo controla el footer dejar aqui -->
-    <footer class="footer">
+    <footer class="footer ">
         <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
-        <div class="row mt-4 justify-content-center align-items-center">
-            <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
+        <div class="roww mt-4 justify-content-center align-items-center">
+            <div class="roww col-lg-9 col-md-6 col-sm-6 col-6">
                 <div class=" col-lg-6 col-md-12 col-sm-12">
                     <ul class="footer__menu_1">
                         <li class="nav-item footer__item">
@@ -197,6 +243,8 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="../src/assets/js/cargador-particulas.js"></script>
 
+    <script src="../src/assets/js/productos.js"></script>
+
     <!-- Comportamientos de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -204,7 +252,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
     <script src="../src/assets/js/bootstrap.min.js"></script>
-    <script src="../src/assets/js/delivery.js"></script>
 </body>
 
 </html>

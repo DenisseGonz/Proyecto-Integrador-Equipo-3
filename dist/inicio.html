@@ -20,7 +20,6 @@
 <body>
     <audio src="../src/assets/audio/01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
     <!-- El seguiente bloque de codigo controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
-    <audio src="../src/assets/audio/01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
     <div id="particles-js">
         <img id="fondo" src="../src/assets/img/hogwarts-fondo.png" />
     </div>
@@ -28,7 +27,7 @@
     <!-- Este bloque de codigo despliega el header dejar aqui -->
     <div id="header">
         <div id="logo">
-            <img src="../src/assets/img/logo.png" alt="" width="180px" />
+            <img src="../src/assets/img/logo.png" alt="" width="250px" />
         </div>
         <nav class="navbar navbar-expand-lg" id="encabezado">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -99,21 +98,21 @@
 
         <!-- Carrusel para eventos-->
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="9000">
+        <div id="carruseleventos" class="carousel slide" data-ride="carousel" data-interval="9000">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carruseleventos" data-slide-to="0" class="active"></li>
+                <li data-target="#carruseleventos" data-slide-to="1"></li>
+                <li data-target="#carruseleventos" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row row-cols-1 row-cols-md-2">
                         <img src="https://img.ecartelera.com/noticias/fotos/50300/50316/1.jpg"
                             class="d-block col padding-0" alt="...">
-                        <div class="col cartext">
+                        <div class="col carrusel__text">
                             <div>
                                 <h3>
-                                    Discurso del director Albus Dumbledore
+                                    Discurso del director
                                 </h3>
                                 <h4>
                                     Viernes 5
@@ -121,7 +120,7 @@
                                 <p>
                                     El siguiente martes 9 de noviembre tendremos
                                     un
-                                    importante anuncio del profesor Dumbledore. A todos los estudiantes del instituto se les solicita de la manera más atenta
+                                    importante anuncio. A todos los estudiantes del instituto se les solicita de la manera más atenta
                                     asistir al evento donde se anunciará la fundación de La Orden del Fénix® 2021. Se esperan sorpresas con la integración de este nuevo equipo en Hogwarts. No habrá justificación de faltas bajo ninguna circunstancia.
                                 </p>
                             </div>
@@ -135,7 +134,7 @@
                     <div class="row row-cols-1 row-cols-md-2">
                         <img src="https://img.ecartelera.com/noticias/fotos/34400/34410/1.jpg"
                             class="d-block col padding-0" alt="...">
-                        <div class="col cartext">
+                        <div class="col carrusel__text">
                             <div>
                                 <h3>
                                     Visita de Jefes del Ministerio de Magia
@@ -157,7 +156,7 @@
                     <div class="row row-cols-1 row-cols-md-2">
                         <img src="https://super-ficcion.com/wp-content/uploads/2020/04/1-1-1.jpg"
                             class="d-block col padding-0" alt="...">
-                        <div class="col cartext">
+                        <div class="col carrusel__text">
                             <div>
                                 <h3>
                                     Clase magistral profesor Lockhart
@@ -175,101 +174,35 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carruseleventos" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Anterior</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carruseleventos" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Siguiente</span>
             </a>
         </div>
+
+
         <!-- Cards para los productos destacados -->
-        <div class="cardgroup">
-            <div class=" row row-col-md-3 card-deck">
-                <div class="card">
-                    <img src="../src/assets/img/nimbus200.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Nimbus 2001</h5>
-                        <h6>4150ʛ</h6>
-                        <p class="card-text">La escoba más rápida de la actualidad. Con este elegante color dorado y su mango de caoba serás invencible en el equipo de Quidditch. ¡Cómprala ya!</p>
+        <section id="productos" class="contenedor-productos row justify-content-center">
 
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../src/assets/img/quidditch_ticket.jpeg" height="323px" width="300px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Copa Interescolar: Slytherin vs Hufflepuff</h5>
-                        <h6>14.99ʛ</h6>
-                        <p class="card-text">Asiste al partido inaugural de la Copa de Quidditch 2021-2022 este sábado 20 de noviembre. ¡No te lo puedes perder!</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../src/assets/img/mandragora.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Mandrágoras</h5>
-                        <h6>7.50ʛ</h6>
-                        <p class="card-text">Consigue la nueva colección de la planta más sensible de Hogwarts. Se recomienda el uso de protección auditiva.
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../src/assets/img/libro.webp" class="card-img-top" height="400px" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Mil hierbas mágicas y hongos</h5>
-                        <h6>2ʛ</h6>
-                        <p class="card-text">Nueva edición del libro de Phyllida Spore que reúne las pociones básicas
-                            de herbología para los alumnos de nuevo ingreso.
-                        </p>
-                    </div>
-                </div>
+        </section>
 
-            </div>
-        </div>
+        
         <!-- Carrusel productos destacados en vista móvil -->
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card">
-                        <img src="../src/assets/img/mandragora.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Mandrágoras</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
+        <div id="productosvistamovil" class="carousel slide" data-ride="carousel">
+            <div id="carrusel" class="carousel-inner">
 
-                    <div class="card">
-                        <img src="../src/assets/img/bolquid.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Boletos partido de Quidditch</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <img src="../src/assets/img/nimbus200.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Nimbus 2000</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#productosvistamovil" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="sr-only">Anterior</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#productosvistamovil" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="sr-only">Siguiente</span>
             </a>
         </div>
     </div>
@@ -324,6 +257,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
     <script src="../src/assets/js/bootstrap.min.js"></script>
+    <script type="module" src="../bundle.js"></script>
 </body>
 
 </html>

@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="../src/assets/css/normalize.css">
     <link rel="preload" href="../src/assets/css/login.css" as="style">
     <link href="../src/assets/css/login.css" rel="stylesheet" type="text/css" />
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Alegreya+Sans:ital,wght@0,300;1,300&family=IM+Fell+English+SC&display=swap');
+        </style>
     <title>login</title>
 
 </head>
@@ -35,21 +39,21 @@
         </div>
         
         <form method="POST">
-            <div class="formulario__datos">
-                <label for="inputEmail" class="col-lg-6 col-sm-10 col-form- label formulario__datos--etiquetas">Correo
+            <div class="formulario__datos col justify-content-md-around">
+                <label for="inputEmail" class="col-lg-6 col-md-10 col-sm-10 col-form- label formulario__datos--etiquetas ">Correo
                     electrónico:</label>
-                <input type="email" class="form-control col-lg-5 col-sm-10 formulario__datos--campos " id="inputEmail" placeholder="algo@hogwarts.com">
+                <input type="email" class="form-control col-lg-5 col-md-11 col-sm-10 formulario__datos--campos " id="inputEmail" placeholder="algo@hogwarts.com">
             </div>
 
-            <div class="formulario__datos">
+            <div class="formulario__datos col justify-content-md-around">
                 <label for="inputContraseña"
-                    class="col-lg-6 col-md-6 col-form- col-sm-10 label formulario__datos--etiquetas">Contraseña:</label>
-                <input type="password" class="form-control col-lg-5 col-sm-10  formulario__datos--campos" id="inputContraseña"
+                    class="col-lg-6 col-form- col-md-8 col-sm-10 label formulario__datos--etiquetas">Contraseña:</label>
+                <input type="password" class="form-control col-md-11 col-lg-5 col-sm-10  formulario__datos--campos" id="inputContraseña"
                     placeholder="8 caracteres alfanuméricos">
             </div>
 
             <div class="formulario__boton--recuperacion">
-                <button type="button" class="btn btn-outline-secondary">¿Olvidaste tu contraseña?</button>
+                <button type="button" class="btn btn-outline-secondary" id="btn__olvidar">¿Olvidaste tu contraseña?</button>
             </div>
 
             <div class="formulario__boton--recuperacion">
@@ -65,7 +69,9 @@
             <img src="../src/assets/img/sombrero-login.png" alt="Sombrero seleccionador" class="registro__img" width="150">
         </section>
     </main>
+    
     <script type="module" src="../src/assets/js/recordadora.js"></script>
+    
 
 </body>
 

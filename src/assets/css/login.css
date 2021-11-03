@@ -63,6 +63,7 @@ body{
     padding-bottom: 45px;
     border-radius: 25px;
     color:white;
+    font-family: 'Adamina', serif;
     -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
     font-size: 1.5rem;   
 }
@@ -78,6 +79,7 @@ body{
     color:white;
     -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
     font-size: 1.3rem;
+    font-family: 'Alegreya Sans', sans-serif;
 
 }
 
@@ -151,15 +153,19 @@ body{
     .formulario__datos{
         display: flex;
         flex-direction: column;
-        margin-top:-20px;
+        width: 100%;
+        margin:auto;
         
     }
     .formulario__datos--etiquetas{
         font-size: 1rem;
+        width:100%;
+        margin-bottom: 0px;
     }
     .formulario__datos--campos{
         justify-content: center;
         width: 100% !important;
+        margin-bottom:5% ;
     }
     .formulario__boton--recuperacion{
         font-size: 0.9rem;
@@ -217,15 +223,18 @@ body{
     .formulario__datos{
         display: flex;
         flex-direction: row nowrap;
-        margin-top:-20px;
-        width: 80%;
+        width: 100%;
+        justify-content: center !important;
     } 
     .formulario__datos--etiquetas{
         font-size: 1rem;  
-    
+        width: 100%;
+        justify-content: center;
+       
     }
     .formulario__boton--recuperacion{
         font-size: 0.9rem;
+
     }
     .registro{
         justify-content: center;
@@ -266,7 +275,7 @@ body{
     } 
     .formulario{
         margin-top:30px;
-        width:70%;
+        width:70%;/*
         justify-content: center;
     }
     .formulario__titulos{      

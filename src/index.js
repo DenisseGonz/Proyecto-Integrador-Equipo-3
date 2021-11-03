@@ -5,28 +5,32 @@
 //     'Ya accediste',
 //     'success'
 // );
-import {gryffindor,slytherin,hufflepuff,ravenclaw} from './assets/js/seleccionador_casas.js';
-import {agprodini} from './assets/js/inicio-incluye-productos.js';
+import { gryffindor, slytherin, hufflepuff, ravenclaw } from './assets/js/seleccionador_casas.js';
+import { agprodini } from './assets/js/inicio-incluye-productos.js';
+import { productos } from './assets/js/productos.js';
+
 
 let url = window.location.href;
 let index = parseInt(url.slice(-1));
 console.log(index);
 
-switch(index){
+switch (index) {
     case 1:
         gryffindor();
-    break;
+        break;
     case 2:
         slytherin();
-    break;
+        break;
     case 3:
         hufflepuff();
-    break;
+        break;
     case 4:
         ravenclaw();
-    break;
+        break;
     default:
-    break;
+        break;
 }
 
 agprodini();
+
+productos();

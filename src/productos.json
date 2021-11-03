@@ -1,13 +1,13 @@
 [
     {
         "destacado": "si",
-        "nombre": "Boletos partido de Quidditch",
+        "nombre": "Partido de Quidditch",
         "descuento": " ",
         "tipo": " ",
         "antiguoPrecio": "$79.99",
         "precio": "$49.99",
-        "img": "../src/assets/img/bolquid.jpg", 
-        "descripcion":"Asiste al partido inaugural de la Copa de Quidditch 2021-2022 este sábado 20 de noviembre. ¡No te lo puedes perder!"
+        "img": "../src/assets/img/bolquid.jpg",
+        "descripcion": "Asiste al partido inaugural de la Copa de Quidditch 2021-2022 este sábado 20 de noviembre. ¡No te lo puedes perder!"
     },
     {
         "destacado": "si",
@@ -17,7 +17,7 @@
         "antiguoPrecio": " ",
         "precio": "$49.99",
         "img": "../src/assets/img/nimbus200.jpg",
-        "descripcion":"La escoba más rápida de la actualidad. Con este elegante color dorado y su mango de caoba serás invencible en el equipo de Quidditch. ¡Cómprala ya!"
+        "descripcion": "La escoba más rápida de la actualidad. Con este elegante color dorado y su mango de caoba serás invencible en el equipo de Quidditch. ¡Cómprala ya!"
     },
     {
         "destacado": "si",
@@ -27,13 +27,13 @@
         "antiguoPrecio": "$79.99",
         "precio": "$49.99",
         "img": "../src/assets/img/mandragora.jpg",
-        "descripcion":"Consigue la nueva colección de la planta más sensible de Hogwarts. Se recomienda el uso de protección auditiva."
+        "descripcion": "Consigue la nueva colección de la planta más sensible de Hogwarts. Se recomienda el uso de protección auditiva."
     },
     {
         "destacado": "si",
-        "nombre": "1000 Hierbas mágicas y hongos",
+        "nombre": "Hierbas mágicas y hongos",
         "descuento": " ",
-        "tipo": "nuevo",    
+        "tipo": "nuevo",
         "antiguoPrecio": " ",
         "precio": "$49.99",
         "img": "../src/assets/img/libro.webp",

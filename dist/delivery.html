@@ -11,7 +11,7 @@
     <link rel="preload" href="../src/assets/css/delivery.css" as="style">
     <link rel="stylesheet" href="../src/assets/css/delivery.css">
     <link rel="preload" href="../src/assets/css/gencomps.css" as="style">
-    <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
+    <link rel="stylesheet" href="../src/assets/css/gencomps.css">
 </head>
 
 <body>
@@ -96,22 +96,21 @@
     <!-- <div class="contenedorPrincipal"> -->
     <div>
         <div class="fondo">
-            <h1>¡Indícanos tu lugar y llevamos tu producto!</h1>
-            <br>
-            <br>
-            <br>
+            <main>
+            <h1>¡Llevamos tu producto gratis!</h1>
+            <p>Gracias a nuestro sistema de lechuzas especializadas podrás recibir tu producto dentro de los siguientes cinco días. <br> El 100% de la propina será para tu <span>repartidor mágico.</span></p>
+            </main>
             <!-- Borde que cambia de color -->
             <div class="borde justify-content-center container">
-            <!-- Borde que cambia de color -->
-                <form action="post">
+                <form class="post" action="post">
                     <div class="container1">
                         <div class="nombre">
                             <label for="Nombre">Nombre</label><br>
-                            <textarea class="nombre" placeholder="Ronald"></textarea>
+                            <textarea class="nombre__textarea" placeholder="Ronald"></textarea>
                         </div>
                         <div class="div-fam">
                             <label for="familia">Familia</label><br>
-                            <textarea class="familia" placeholder="Wesley"></textarea>
+                            <textarea class="nombre__textarea" placeholder="Wesley"></textarea>
                         </div>
                     </div>
                     <div class="container2">
@@ -127,8 +126,8 @@
                             </div>
                         </div>
                         <div class="div-fam">
-                            <label for="cuarto">Cuarto</label><br>
-                            <textarea class="cuarto" placeholder="#239"></textarea>
+                            <label for="ubicacion">Ubicación</label><br>
+                            <textarea class="nombre__textarea" placeholder="#239"></textarea>
                         </div>
                     </div>
                     <div class="btn-enviar">
@@ -137,11 +136,10 @@
                 </form>
             </div>
             <br>
-            <br>
             <div class="terminos">
-                <p>
+                <p class="terminos-texto">
                     *Aplican términos y condiciones.<br>No aplica para alumnos de las siguientes instituciones: Academia
-                    Beauxbatons e Instituto Durmstrang
+                    Beauxbatons e Instituto Durmstrang.
                 </p>
             </div>
 
@@ -156,7 +154,7 @@
 
 
     <!-- Este bloque de codigo controla el footer dejar aqui -->
-    <footer class="footer ">
+    <footer class="footer">
         <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
         <div class="row mt-4 justify-content-center align-items-center">
             <div class="row col-lg-9 col-md-6 col-sm-6 col-6">

@@ -58,14 +58,9 @@ body{
     padding: 20px 25px;
     border-radius: 25px;
     font-size: 1.3rem;
+    font-family: 'Adamina', serif;
     color:white;
     -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
-}
-
-.titulos__subtitulo{
-    color:white;
-    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
-    font-size: 1.2rem;
 }
 
 .formulario__filas{
@@ -87,14 +82,14 @@ body{
 }
 
 .formulario__datos--etiquetas{
-    font-size: 1.2rem;
+    font-size: 0.85rem;
     justify-content: flex-start;
     align-content: flex-end;
     color:white;
     width:100%;
     -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
     margin-bottom:-0.5%;
-    margin-top:6%
+    margin-top:6%;
 }
 .formulario__datos--campos{
     display: flex;
@@ -114,10 +109,10 @@ body{
  .opcion__casa{
     display: flex;
     flex-direction: column; 
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     color: white; 
-    height: 7%;
-    justify-content: center;  
+    justify-content: center; 
+    align-content: flex-end; 
 } 
 
 
@@ -143,7 +138,8 @@ input[type=radio] {
 input[type=radio]+label {
     display:flex;
     background-color: black;
-    justify-content: center;    
+    justify-content: center; 
+    width:25%;   
 }
 
  /* Change background color for label next to checked radio button
@@ -154,11 +150,12 @@ input[type=radio]:checked+label {
     background-color:grey;
     justify-content: center;
     border-radius: 5px;
+    width: 25%;
 }
 
 /* MediaQueries Breakpoint */
 /* Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) { 
+ @media (max-width: 767.98px) { 
     body{
         width:100%;
         background-position-x: center;
@@ -191,17 +188,18 @@ input[type=radio]:checked+label {
         flex-direction: column;
         width: 90%;
         margin-bottom: -4%;
+        margin-top:4%;
     }
     
     .formulario__datos--etiquetas{
-        font-size: 1.2rem;
+        font-size:0.8rem;
         justify-content: flex-start;
         align-content: flex-end;
         color:white;
         width:100%;
         -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
         margin-bottom:-0.5%;
-        margin-top:-0.5%;
+        /* margin-top:-0.5%; */
     }
     .formulario__datos--campos{
         display: flex;
@@ -214,26 +212,27 @@ input[type=radio]:checked+label {
     
     .datos__casa--check{
         display: flex;
-        flex-direction:row ;
+        flex-direction:row;
         color:white;
         justify-content:space-around;
-        margin-top:12% !important;
+        margin-top:2% !important;
     }
      .opcion__casa{
         display: flex;
         flex-direction: column; 
         font-size: 0.8rem;
         color: white; 
-        height: 5%;
+        /* height: 10%; */
         width: 30%;
         justify-content: center;  
-        margin-bottom: -4%;
+        /* margin-bottom: %; */
     } 
+
 }
 
  /*Medium devices (tablets, less than 992px)*/
 
-@media (max-width: 1199.98px) { 
+@media (min-width: 767.98px) and (max-width: 1199.98) { 
     body{
         width: 100%;
         background-position-x: center;
@@ -247,7 +246,7 @@ input[type=radio]:checked+label {
 
     .formulario{
         margin-top:30px;
-        width:80%;
+        width:80% !important;
         justify-content: center;
     }
     
@@ -258,9 +257,12 @@ input[type=radio]:checked+label {
     }
     
     .formulario__datos--etiquetas{
-        font-size: 1rem;
+        font-size: 0.8rem;
         width:95%;
         margin-bottom:-0.5%;
+    }
+    .etiquetas--especial{
+        font-size: 0.5rem;
     }
     .formulario__datos--campos{
         display: flex;
@@ -278,6 +280,7 @@ input[type=radio]:checked+label {
         justify-content:space-around;
         margin-top:2% !important;
         margin-bottom: 2% !important;
+        
     }
      .opcion__casa{
         display: flex;
@@ -286,10 +289,10 @@ input[type=radio]:checked+label {
         color: white; 
         height: 5%;
         width: 30%;
-        justify-content: center;  
+        justify-content: center; 
+        align-content: center; 
         margin-bottom: -4%;
     } 
-
- 
 }
 
+ 

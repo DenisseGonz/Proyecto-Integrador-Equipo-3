@@ -1,4 +1,16 @@
-:root{
+:root {
+    /* tipografia */
+    --titulo: 'Adamina', serif;
+    --texto: 'Open Sans', sans-serif;
+    --texto-detalles: 'Alegreya Sans', sans-serif;
+    --detalles: 'IM Fell English SC', serif;
+    /* colores */
+    --dorado: #9f8932;
+    --gris: #363859;
+    --blanco: #FCFCFC;
+    --negro: #292100;
+    --azul: #21267A;
+    /*Colores de botón del baúl*/
     --blackchest:url('https://api.iconify.design/mdi/treasure-chest.svg?color=black') no-repeat center center / contain;
     --pinkchest: url('https://api.iconify.design/mdi/treasure-chest.svg?color=%23fe302f');
 }
@@ -15,7 +27,62 @@
     color:white;
 }
 
-.padding-0{
+.cardgroup{
+    margin: 5em;
+}
+
+@media (min-width:992px){
+    #carouselExampleControls{
+        display: none;
+    }
+
+    .card:hover{
+        transform: translateY(-15px);
+        transition: 0.5s;
+        box-shadow: 0.5em 0.5em 10px rgba(240,240, 240, 0.3);
+    }
+
+    .card{
+        background-image: url(https://c.tenor.com/ll3rQ9a_zqYAAAAC/galaxy.gif);
+    }
+
+    .card-img-top{
+        padding: 0.5em;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .card-body{
+        overflow: hidden;
+        color: white;
+    }
+    
+    .card-text{
+        visibility: hidden;
+        height: 0;
+    }
+    
+    .card:hover .card-text{
+        visibility: visible;
+        height: auto;
+    }
+}
+
+@media (max-width:991px){
+    .cardgroup{
+        display:none;
+    }
+}
+
+#carouselExampleControls{
+    margin: 5em;
+}
+
+.cartext div{
+    padding:3em;
+ }
+
+ .padding-0{
     padding-right:0;
     padding-left:0;
 }
@@ -26,13 +93,13 @@
 
 /* Tipografía */
 h3 {
-    font-family: 'Adamina', serif;
-    font-weight: 400px;
-    font-size: 43px;
+    font-family: var(--titulo);
+    font-weight: 400px; 
+    font-size: 33px;
 }
 
 h4{
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: var(--texto-detalles);
     font-weight:900;
     font-size: 27px;
     color:FCFCFC;
@@ -40,41 +107,36 @@ h4{
 }
 
 h5{
-    font-family: 'Adamina', serif;
-    font-size: 23px;
+    font-family: var(--titulo);
+    font-size: 21px;
     font-weight:800;
 }
 
 h6 {
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: var(--texto-detalles);
     font-size: 30px;
     text-shadow:10cm;
-    color:#9f8932;
+    color: var(--dorado);
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-family: var(--texto);
+    font-size: 20px;
 }
 
 .footer__titulo{
-    font-family: 'IM Fell English SC', serif;
+    font-family: var(--detalles);
 }
 
 .card-title{
-    font-family: 'Adamina', serif;
+    font-family: var(--titulo);
 }
 
 .card-text{
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--texto);
 }
 
-/* Paleta de Colores */
-/* detalles azul color:#21267A
-detalles gris color:#363859
-blanco color:#FCFCFC
-dorado color:#9f8932;
-negro color:#292100 */
+
 
 /*las clases que se encuentran abajo de este punto son necesarias para que las cards funcionen siguen casi por completo la metodología BEM
 solo no se siguio estrictamente para algunas subclases asegurese de incluir el :root con al menos --blackchest y -pinkchest*/
@@ -121,6 +183,13 @@ producto:hover{
     width: 110%;
     height: 100%;
     transition: all 0.3s;
+}
+
+.producto__parte-1--img-pop{
+    margin: 0 auto;
+    max-height: 250px;
+    border-radius: 18px;
+    margin-bottom: 15px;
 }
 
 .producto:hover .producto__parte-1--img{
@@ -190,18 +259,30 @@ producto:hover{
 
 
 .producto__parte-2--titulo{
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: white;
 }
 
+.producto__parte-2--titulo-des{
+    font-size: 1.5rem;
+    color: white;
+}
+
+
 .producto__parte-2 h4{
     display: inline-block;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: white;
 }
 
 .producto__parte-2--precio{
     color: white;
+}
+
+.producto__parte-2--precioDes{
+    font-size:20px;
+    color: white;
+    margin-bottom: 25px;
 }
 
 .producto__parte-2--viejo-precio{
@@ -210,6 +291,14 @@ producto:hover{
     margin-right: 2px;
     opacity: 0.6;
     color: white;
+}
+
+.producto__parte-2--descripcion{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    color: white;
+    text-decoration: none;
 }
 
 .producto__parte-2--viejo-precio::after{
@@ -227,54 +316,59 @@ producto:hover{
 
 #productosvistamovil{
     width: 70%;
-    margin: 0 auto;
+    margin: 3.5em auto;
 }
 
 @media (min-width:744px){
     #productosvistamovil{
-        visibility: hidden;
+        display:none;
         height: 0;
         overflow: hidden;
+    }
+    .producto__parte-2--boton{
+        display: none;
     }
 }
 
 @media (max-width:743px) {
     #productos{
-        visibility: hidden;
+        display: none;
         height: 0;
         overflow: hidden;
     }
 
-    .producto__parte-2--ul{
-        position: absolute;
-        bottom: 25px;
-        right: 50px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        opacity: 1;
-        transition: bottom 0.5s, opacity 0.5s;
+    .producto__parte-2--boton{
+        background-color: #9f8932;
+        border-radius: 5px;
+        margin: 10px 0px;
     }
     
-    .producto__parte-2--ul li{
-        display: inline-block;
-        margin-right: 4px;
-    }
-    
-    .producto__parte-2--ul li a{
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        background-color: #ffffff;
-        color: #444444;
-        text-align: center;
-        box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+    .producto__parte-2--boton a{
+        margin:10px;
+       color:white;
     }
 .carousel-control-next,
 .carousel-control-prev{
-    filter: invert(100%);
-}
+    filter: url(resources.svg#c1);
+} 
 }
 
+.carousel-control-next{
+    right:-6%;
+}
+
+.carousel-control-prev{
+    left:-6%;
+}
+
+.carousel-control-next-icon{
+    background-image: url('https://api.iconify.design/ls/next.svg?color=%239f8932&height=22')!important;
+}
+
+
+.swal2-popup {
+    font-size: 1rem !important;
+    font-family: Adamina, serif;
+    color: #ffffff;
+  }
 

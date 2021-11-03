@@ -1,65 +1,99 @@
 /* delivery */
-body{
-    background-color: rgb(0, 0, 0);
-    color: white;
+main{
+    text-align: center;
+    font-weight:800;
+    margin-bottom:3rem;
+    color:var(--blanco);
+    margin-left:2.5rem;
+    margin-right:2.5rem;
+    color:var(--blanco);
 }
 
 h1 {
-    text-align: center;
-    font-size: 75px;
+    font-size: 3.5rem;
+    font-family:var(--titulo);
+    margin:30px;
+}
+
+p{
+  font-family:var(--texto);
+  font-size: 1.5rem; 
+}
+
+span{
+    font-family:var(--texto-detalles);
+    color:var(--amarillo);
+    font-size: 1.6rem; 
 }
 
 .borde{
     border-style: solid;
     border-width: 10px;
-    padding: 50px;
-    background-image: url("../img/delivery_buho.png");
-    color: black;
-    background-size:80%;
+    padding: 2rem;
+    background-image: url("../img/delivery_buho_3.png");
+    color: var(--negro);
+    background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
     background-origin: content-box;
-    border-radius: 15px;
+    border-radius: 25px;
+    font-family: var(--texto);
+    box-shadow: 0 0 0 5px var(--negro),
+    0 0 0 5px var(--negro);
+    background-color: rgba(62, 54, 20, 0.17);
 }
 
 .container1{
-    padding-top: 100px;
+    font-family: var(--texto-detalles);
+    color:var(--blanco);
+    font-weight:500;
+    padding-top: 40px;
     display:flex;
     justify-content: space-around;
     font-size: 40px;
     text-align: center;
-    color: white;
- 
+    text-shadow: 2px 2px var(--gris);
+
 }
 
 .container2{
+    font-family: var(--texto-detalles);
+    color:var(--blanco);
+    font-weight:500;
     padding-top: 100px;
     display:flex;
     justify-content: space-around;
     font-size: 40px;
     text-align: center;
-    color: white;
+    color: var(--blanco);
+    text-shadow: 2px 2px var(--gris);
 }
-
 
 .terminos{
     text-align: center;
-    text-shadow: 2px 2px #2323b5
+    color:var(--blanco);
+    text-shadow: 2px 2px var(--gris);
 }
 
-/* .form-group{
-   height: 100px;
-} */
+.terminos-texto{
+    font-family:var(--texto);
+    font-size:1rem;
+    padding-bottom: 1rem;
+}
 
 #inputPregunta {
-    padding: 10px;
     border-radius: 15px;
-    background-color: #faf6f6;
+    background-color:var(--blanco);
   }
 
 .btn-enviar{
     text-align: center;
     font-size: 100px;
+}
+
+.btn{
+    width:50%;
+    font-size:1.8rem;
 }
 
 .nombre{
@@ -74,13 +108,60 @@ h1 {
     border-radius: 15px;
 }
 
+.nombre__textarea{
+    width:100%;
+    border-radius: 15px;
+} 
 
-.btn{
-    font-size: 25px;
+
+
+@media (min-width:250px) and (max-width: 768px) {
+
+    .container1{
+         display:flex;
+         flex-direction:column;
+    }
+
+    .container2{
+         display:flex;
+         flex-direction:column;
+         margin-top:3rem;
+    }
+
+    .post{
+         display:flex;
+         flex-direction:column;
+    }
+
+    /* .borde{
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    } */
+
+    .btn{
+        font-size:1.8rem;
+        width:100%;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+    
+    p{
+        font-size: 1.2rem;
+      }
+
+    main{
+        width:80%;
+    }
+
+    span{
+        font-size: 1rem; 
+    }
+
+    ::placeholder {
+        font-size: 1.5rem;
+    }
+
 }
-
-
-/* .colores{
-
-} */
-

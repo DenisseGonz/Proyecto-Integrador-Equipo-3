@@ -1,3 +1,17 @@
+:root {
+    /* tipografia */
+    --titulo: 'Adamina', serif;
+    --texto: 'Open Sans', sans-serif;
+    --texto-detalles: 'Alegreya Sans', sans-serif;
+    --detalles: 'IM Fell English SC', serif;
+    /* colores */
+    --dorado: #9f8932;
+    --gris: #363859;
+    --blanco: #FCFCFC;
+    --negro: #292100;
+    --azul: #21267A;
+}
+
 .contenedorPrincipal{
     margin: 0 auto;
     width: 90%; 
@@ -8,7 +22,6 @@
     background-color: black;
     color:white;
 }
-
 
 .cardgroup{
     margin: 5em;
@@ -73,13 +86,13 @@
 
 /* Tipografía */
 h3 {
-    font-family: 'Adamina', serif;
-    font-weight: 400px;
-    font-size: 43px;
+    font-family: var(--titulo);
+    font-weight: 400px; 
+    font-size: 33px;
 }
 
 h4{
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: var(--texto-detalles);
     font-weight:900;
     font-size: 27px;
     color:FCFCFC;
@@ -87,39 +100,34 @@ h4{
 }
 
 h5{
-    font-family: 'Adamina', serif;
-    font-size: 23px;
+    font-family: var(--titulo);
+    font-size: 21px;
     font-weight:800;
 }
 
 h6 {
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: var(--texto-detalles);
     font-size: 30px;
     text-shadow:10cm;
-    color:#9f8932;
+    color: var(--dorado);
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--texto);
     font-size: 20px;
 }
 
 .footer__titulo{
-    font-family: 'IM Fell English SC', serif;
+    font-family: var(--detalles);
 }
 
 .card-title{
-    font-family: 'Adamina', serif;
+    font-family: var(--titulo);
 }
 
 .card-text{
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--texto);
 }
 
-/* Paleta de Colores */
-/* detalles azul color:#21267A
-detalles gris color:#363859
-blanco color:#FCFCFC
-dorado color:#9f8932;
-negro color:#292100 */
+
 

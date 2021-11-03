@@ -1,3 +1,18 @@
+:root {
+    /* tipografia */
+    --titulo: 'Adamina', serif;
+    --texto: 'Open Sans', sans-serif;
+    --texto-detalles: 'Alegreya Sans', sans-serif;
+    --detalles: 'IM Fell English SC', serif;
+    /* colores */
+    --dorado: #9f8932;
+    --gris: #363859;
+    --blanco: #FCFCFC;
+    --negro: #292100;
+    --amarillo: #FAEAA6;
+    --fondo-cards: rgba(133, 108, 12, 0.5);
+  }
+
 * {
     margin: 0;
 }
@@ -114,6 +129,11 @@ ul {
     margin-left: -3px;
     top: 8px;
 }
+
+.footer__titulo {
+    font-family: var(--detalles);
+}
+
 
 @media (min-width: 300px) and (max-width: 650px) {
     .footer__titulo {

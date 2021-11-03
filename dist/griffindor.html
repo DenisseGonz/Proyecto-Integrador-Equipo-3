@@ -60,15 +60,18 @@
                                 <a class="nav-menu nav-link dropdown-toggle" role="button" data-toggle="dropdown"
                                     aria-expanded="false">Salas</a>
                                 <ul class="dropdown-menu w-100 text-center" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item hufflepuff" href="../dist/hufflepuff.html">Hufflepuff</a></li>
+                                    <li><a class="dropdown-item hufflepuff"
+                                            href="../dist/hufflepuff.html">Hufflepuff</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item ravenclaw" href="../dist/ravenclaw.html">Ravenclaw</a></li>
+                                    <li><a class="dropdown-item ravenclaw" href="../dist/ravenclaw.html">Ravenclaw</a>
+                                    </li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item slytherin" href="../dist/slytherin.html">Slytherin</a></li>
+                                    <li><a class="dropdown-item slytherin" href="../dist/slytherin.html">Slytherin</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="nav__li nav-item">
@@ -93,7 +96,7 @@
         </div>
     </header>
     <section class="seccion " id="degradado">
-        <div class="container">
+        <div class="contenedor__gryffindor">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12 order-12 order-lg-1 d-flex ">
                     <div class="seccion__texto ">
@@ -120,13 +123,85 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-center align-items-center">
-                <div class="seccion__curiosidades col-lg-9 col-md-9 col-sm-9">
 
+            <!-- Inicia el carusel de la curiosidades -->
+
+            <div id="carouselExampleInterval" class="carousel slide carrusel__slider" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="7000">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <img src="../src/assets/img/ravenclaw-wallpaper.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio
+                                    totam voluptate
+                                    quae commodi mollitia vitae atque consectetur eos animi!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="7000">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <img src="../src/assets/img/ravenclaw-wallpaper.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio
+                                    totam voluptate
+                                    quae commodi mollitia vitae atque consectetur eos animi!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="7000">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <img src="../src/assets/img/ravenclaw-wallpaper.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio
+                                    totam voluptate
+                                    quae commodi mollitia vitae atque consectetur eos animi!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="7000">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <img src="../src/assets/img/ravenclaw-wallpaper.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio
+                                    totam voluptate
+                                    quae commodi mollitia vitae atque consectetur eos animi!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="7000">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <img src="../src/assets/img/ravenclaw-wallpaper.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio distinctio
+                                    totam voluptate
+                                    quae commodi mollitia vitae atque consectetur eos animi!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleInterval"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleInterval"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
             </div>
         </div>
-        <footer class="footer ">
+        <footer class="footer fixed-bottom position-relative ">
             <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
             <div class="row mt-4 justify-content-center align-items-center">
                 <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
@@ -173,7 +248,8 @@
     <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
     <script src="../src/assets/js/bootstrap.min.js"></script>
     <script src="../src/assets/js/loader.js"></script>
-
+    <script type="module" src="../bundle.js"></script>
+    <script src="../src/assets/js/data.js"></script>
 </body>
 
 </html>

@@ -4,10 +4,10 @@ body{
     justify-content: center;
     width:100%;
     height:1024px;
-    background-image: url(../img/Gawalpop-login-registro.jpg);
+    background-image: url(../img/plataforma.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    background-blend-mode:lighten; 
+    background-blend-mode: overlay ;
     
 }
 
@@ -16,7 +16,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgb(65, 64, 64); 
+    background-color: rgb(68, 53, 19); 
 }
 
 .encabezado{
@@ -63,6 +63,7 @@ body{
     padding-bottom: 45px;
     border-radius: 25px;
     color:white;
+    font-family: 'Adamina', serif;
     -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
     font-size: 1.5rem;   
 }
@@ -78,14 +79,16 @@ body{
     color:white;
     -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
     font-size: 1.3rem;
+    font-family: 'Alegreya Sans', sans-serif;
 
 }
 
 .formulario__boton--recuperacion{
     display: flex;
+    color:white;
     justify-content: center;
     padding-bottom:30px;
-    justify-content: center; 
+    justify-content: center; ;
 }
 .registro{
     display: flex;
@@ -93,16 +96,22 @@ body{
     justify-content: center;
     align-content: center;
 }
+.formulario__boton--recuperacion a{
+    color:white;
+}
 .registro__boton{
     display: flex;
     align-self: center;
     align-content: center;
-    height:35%;   
+    height:35%;       
+}
+.registro__boton a{
+    color:white;
 }
 
 /* MediaQueries Breakpoint */
 /* X-Small devices (portrait phones, less than 576px)*/
-@media (max-width: 576px) { 
+@media (min-width: 320px) and (max-width:768px ) { 
     body{
         width: 100%;
         background-position-x: center;
@@ -130,7 +139,8 @@ body{
     } 
     .formulario{
         margin-top:30px;
-        width:80%;
+        width:90% !important;
+    
     }
     .formulario__titulos{      
         font-size: 1rem;
@@ -142,15 +152,20 @@ body{
     }
     .formulario__datos{
         display: flex;
-        flex-direction: row;
-        margin-top:-20px;
+        flex-direction: column;
+        width: 100%;
+        margin:auto;
+        
     }
     .formulario__datos--etiquetas{
         font-size: 1rem;
+        width:100%;
+        margin-bottom: 0px;
     }
     .formulario__datos--campos{
         justify-content: center;
-        width: 85%;
+        width: 100% !important;
+        margin-bottom:5% ;
     }
     .formulario__boton--recuperacion{
         font-size: 0.9rem;
@@ -170,7 +185,7 @@ body{
  }
 
 /* Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) { 
+@media (min-width: 767.98px) and (max-width:991px) { 
     body{
         width: 100%;
         background-position-x: center;
@@ -208,15 +223,18 @@ body{
     .formulario__datos{
         display: flex;
         flex-direction: row nowrap;
-        margin-top:-20px;
-        width: 80%;
+        width: 100%;
+        justify-content: center !important;
     } 
     .formulario__datos--etiquetas{
         font-size: 1rem;  
-    
+        width: 100%;
+        justify-content: center;
+       
     }
     .formulario__boton--recuperacion{
         font-size: 0.9rem;
+
     }
     .registro{
         justify-content: center;
@@ -228,7 +246,7 @@ body{
 }
 
  /*Medium devices (tablets, less than 992px)*/
-
+/* 
 @media (max-width: 991.98px) { 
     body{
         width: 100%;
@@ -257,7 +275,7 @@ body{
     } 
     .formulario{
         margin-top:30px;
-        width:70%;
+        width:70%;/*
         justify-content: center;
     }
     .formulario__titulos{      
@@ -287,4 +305,4 @@ body{
         width:fit-content;
         height: fit-content;
     }
-}
+} */

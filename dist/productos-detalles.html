@@ -9,12 +9,19 @@
     <link rel="stylesheet" href="../src/assets/css/normalize.css">
     <link rel="preload" href="../src/assets/css/gencomps.css" as="style">
     <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
-    <link rel="preload" href="../src/assets/css/iniciosty.css" as="style">
-    <link rel="stylesheet" type="text/css" href="../src/assets/css/iniciosty.css">
+    <link rel="preload" href="../src/assets/css/productos.css" as="style">
+    <link rel="stylesheet" href="../src/assets/css/productos.css">
+    <title>Productos</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Alegreya+Sans:ital,wght@1,100;1,400&family=IM+Fell+English+SC&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <title>Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
 </head>
 
 <body>
@@ -27,7 +34,7 @@
     <!-- Este bloque de codigo despliega el header dejar aqui -->
     <div id="header">
         <div id="logo">
-            <img src="../src/assets/img/logo.png" alt="" width="250px" />
+            <img src="../src/assets/img/logo.png" alt="" width="180px" />
         </div>
         <nav class="navbar navbar-expand-lg" id="encabezado">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -93,124 +100,110 @@
         </nav>
     </div>
 
-    <!-- Inserte los elementos que compondran su página dentro de este div -->
-    <div class="contenedorPrincipal">
+<!-- Regresar -->
+<a href="../dist/productos.html" class="buy-btn">Regresar</a>
 
-        <!-- Carrusel para eventos-->
-
-        <div id="carruseleventos" class="carousel slide" data-ride="carousel" data-interval="9000">
-            <ol class="carousel-indicators">
-                <li data-target="#carruseleventos" data-slide-to="0" class="active"></li>
-                <li data-target="#carruseleventos" data-slide-to="1"></li>
-                <li data-target="#carruseleventos" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row row-cols-1 row-cols-md-2">
-                        <img src="https://img.ecartelera.com/noticias/fotos/50300/50316/1.jpg"
-                            class="d-block col padding-0" alt="...">
-                        <div class="col carrusel__text">
-                            <div>
-                                <h3>
-                                    Discurso del director
-                                </h3>
-                                <h4>
-                                    Viernes 5
-                                </h4>
-                                <p>
-                                    El siguiente martes 9 de noviembre tendremos
-                                    un
-                                    importante anuncio. A todos los estudiantes del instituto se les solicita de la manera más atenta
-                                    asistir al evento donde se anunciará la fundación de La Orden del Fénix® 2021. Se esperan sorpresas con la integración de este nuevo equipo en Hogwarts. No habrá justificación de faltas bajo ninguna circunstancia.
-                                </p>
-                            </div>
-                        </div>
-
+    <!-- detalle de producto -->
+    <div class="small-container single-product">
+        <div class="roww">
+            <div class="coll-2">
+                <img src="../src/assets/img/gryffindor-wallpaper.jpg" width="100%" id="ProductImg">
+                <div class="small-img-roww">
+                    <div class="small-img-col">
+                        <img src="../src/assets/img/gryffindor-wallpaper.jpg" width="100%" class="small-img">
                     </div>
-
-
-                </div>
-                <div class="carousel-item">
-                    <div class="row row-cols-1 row-cols-md-2">
-                        <img src="https://img.ecartelera.com/noticias/fotos/34400/34410/1.jpg"
-                            class="d-block col padding-0" alt="...">
-                        <div class="col carrusel__text">
-                            <div>
-                                <h3>
-                                    Visita de Jefes del Ministerio de Magia
-                                </h3>
-                                <h4>
-                                    Miércoles 10
-                                </h4>
-                                <p>
-                                    El mes de noviembre será especial ya que recibiremos a algunos representantes del
-                                    Ministerio
-                                    de
-                                    Magia. Se cree que el máximo órgano de gobierno del Reino Unido estará presente en el Instituto para reclutar a los magos de último año que estén listos para combatir en lo que se cree, será el desencadenamiento de una nueva Guerra Mágica. El Instituto Hogwarts se siente orgulloso de estar presente en esta nueva lucha contra la corrupción.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="small-img-col">
+                        <img src="../src/assets/img/hufflepuff-wallpaper.jpg" width="100%" class="small-img">
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row row-cols-1 row-cols-md-2">
-                        <img src="https://super-ficcion.com/wp-content/uploads/2020/04/1-1-1.jpg"
-                            class="d-block col padding-0" alt="...">
-                        <div class="col carrusel__text">
-                            <div>
-                                <h3>
-                                    Clase magistral profesor Lockhart
-                                </h3>
-                                <h4>
-                                    Lunes 15
-                                </h4>
-                                <p>
-                                    A todos los estudiantes interesados en la inicialización avanzada de Defensa de las Artes Oscuras los
-                                    invitamos a asistir a la clase magistral que tendrá el profesor invitado Gilderoy
-                                    Lockhart la cual tendrá una duración de cuatro horas por la tarde del viernes al finalizar el horario regular de clases. Favor de presentar con su mentora la inscripción al curso para recibir los requerimientos y los útiles escolares.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="small-img-col">
+                        <img src="../src/assets/img/slytherin-wallpaper.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../src/assets/img/ravenclaw-wallpaper.jpg" width="100%" class="small-img">
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carruseleventos" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carruseleventos" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Siguiente</span>
-            </a>
-        </div>
-
-
-        <!-- Cards para los productos destacados -->
-        <section id="productos" class="contenedor-productos row justify-content-center">
-
-        </section>
-
-        
-        <!-- Carrusel productos destacados en vista móvil -->
-        <div id="productosvistamovil" class="carousel slide" data-ride="carousel">
-            <div id="carrusel" class="carousel-inner">
-
+            <div class="coll-2">
+                <p>Home / Test</p>
+                <h1>Test</h1>
+                <h4>$50.00</h4>
+                <button class="buy-btn">Agregar al baúl</button>
+                <h3>Detalles del prodcuto <i class="fas fa-indent"></i></h3>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, maiores. Repudiandae sed animi
+                    minima corporis laudantium rem cupiditate dolores voluptas soluta magni non maiores optio ipsum
+                    similique vel, debitis quisquam.</p>
             </div>
-            <a class="carousel-control-prev" href="#productosvistamovil" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#productosvistamovil" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Siguiente</span>
-            </a>
         </div>
     </div>
+
+    <!-- titulo -->
+    <div class="small-container">
+        <div class="roww row-2">
+            <h2>Productos Relacionados</h2>
+            <p>Ver Mas</p>
+        </div>
+    </div>
+
+    <!-- productos -->
+    <div class="small-container">
+        <div class="roww">
+            <div class="col-4">
+                <img src="../src/assets/img/bolquid.jpg">
+                <h4>Test</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>$199.00</p>
+            </div>
+            <div class="col-4">
+                <img src="../src/assets/img/bolquid.jpg">
+                <h4>Test</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$499.00</p>
+            </div>
+            <div class="col-4">
+                <img src="../src/assets/img/bolquid.jpg">
+                <h4>Test</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>$399.00</p>
+            </div>
+            <div class="col-4">
+                <img src="../src/assets/img/bolquid.jpg">
+                <h4>Test</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$999999.00</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Este bloque de codigo controla el footer dejar aqui -->
     <footer class="footer ">
-        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal ® 2021</h2>
-        <div class="row mt-4 justify-content-center align-items-center">
-            <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
+        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
+        <div class="roww mt-4 justify-content-center align-items-center">
+            <div class="roww col-lg-9 col-md-6 col-sm-6 col-6">
                 <div class=" col-lg-6 col-md-12 col-sm-12">
                     <ul class="footer__menu_1">
                         <li class="nav-item footer__item">
@@ -244,20 +237,21 @@
             </div>
         </div>
     </footer>
+
     <!-- Se importa la librería de las partículas primero antes del script de configuración -->
     <!-- <script src="node_modules\particles.js\particles.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="../src/assets/js/cargador-particulas.js"></script>
 
-    <!-- Comportamientos de Bootstrap -->
+    <script src="../src/assets/js/productos.js"></script>
 
+    <!-- Comportamientos de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
     <script src="../src/assets/js/bootstrap.min.js"></script>
-    <script type="module" src="../bundle.js"></script>
 </body>
 
 </html>

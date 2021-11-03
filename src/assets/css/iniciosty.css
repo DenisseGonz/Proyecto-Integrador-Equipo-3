@@ -10,6 +10,9 @@
     --blanco: #FCFCFC;
     --negro: #292100;
     --azul: #21267A;
+    /*Colores de botón del baúl*/
+    --blackchest:url('https://api.iconify.design/mdi/treasure-chest.svg?color=black') no-repeat center center / contain;
+    --pinkchest: url('https://api.iconify.design/mdi/treasure-chest.svg?color=%23fe302f');
 }
 
 .contenedorPrincipal{
@@ -18,7 +21,8 @@
     z-index: 99;
 }
 
-.cartext{
+.carrusel__text{
+    padding:3em;
     background-color: black;
     color:white;
 }
@@ -83,6 +87,9 @@
     padding-left:0;
 }
 
+#carruseleventos{
+    margin-top: 2.5em;
+}
 
 /* Tipografía */
 h3 {
@@ -130,4 +137,238 @@ p {
 }
 
 
+
+/*las clases que se encuentran abajo de este punto son necesarias para que las cards funcionen siguen casi por completo la metodología BEM
+solo no se siguio estrictamente para algunas subclases asegurese de incluir el :root con al menos --blackchest y -pinkchest*/
+
+.chest{
+    background:var(--blackchest);
+}
+
+.contenedor-productos{
+    padding-top: 3.5em;
+    margin: 0 auto;
+}
+
+.producto{
+    margin-bottom: 26px;
+    width: 75%;
+}
+
+producto:hover{
+    transform: scale(1.2,1.2) rotate(5deg);
+}
+
+.producto__parte-1{
+    position: relative;
+    height: 290px;
+    max-height: 290px;
+    overflow: hidden;
+    border-radius: 10% 10% 0% 0%;
+}
+
+.producto__parte-1::before{
+    position: absolute;
+	content: " ";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	transition: all 0.3s;
+}
+
+.producto__parte-1--img{
+    margin: 0 auto;
+    width: 110%;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+.producto__parte-1--img-pop{
+    margin: 0 auto;
+    max-height: 250px;
+    border-radius: 18px;
+    margin-bottom: 15px;
+}
+
+.producto:hover .producto__parte-1--img{
+    transform:scale(1.2,1.2) rotate(5deg);
+}
+
+.producto__parte-1--descuento, 
+.producto__parte-1--nuevo{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #ffffff;
+    background-color: #fe302f;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    z-index: 99;
+}
+
+.producto__parte-1--nuevo{
+    left: 0;
+    background-color: #444444;
+}
+
+.producto__parte-1--ul{
+    position: absolute;
+    bottom: -41px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.producto:hover .producto__parte-1--ul{
+    bottom: 30px;
+    opacity: 1;
+}
+
+.producto__parte-1--ul li{
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.producto__parte-1--ul li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+    transition: color 0.2s;
+}
+
+.producto__parte-1--ul li a:hover{
+    content: var(--pinkchest);
+}
+
+.producto__parte-2{
+    background-image: url(https://c.tenor.com/ll3rQ9a_zqYAAAAC/galaxy.gif);
+    padding: 20px;
+    border-radius: 0% 0% 10px 10px;
+}
+
+
+.producto__parte-2--titulo{
+    font-size: 1.1rem;
+    color: white;
+}
+
+.producto__parte-2--titulo-des{
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+.producto__parte-2 h4{
+    display: inline-block;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.producto__parte-2--precio{
+    color: white;
+}
+
+.producto__parte-2--precioDes{
+    font-size:20px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.producto__parte-2--viejo-precio{
+    position: relative;
+    padding: 0 7px;
+    margin-right: 2px;
+    opacity: 0.6;
+    color: white;
+}
+
+.producto__parte-2--descripcion{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    color: white;
+    text-decoration: none;
+}
+
+.producto__parte-2--viejo-precio::after{
+    position: absolute;
+    content: " ";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #444444;
+    transform: translateY(-50%);
+}
+
+/*clases no tan necesarias solo para el carrusel vista móvil*/
+
+#productosvistamovil{
+    width: 70%;
+    margin: 3.5em auto;
+}
+
+@media (min-width:744px){
+    #productosvistamovil{
+        display:none;
+        height: 0;
+        overflow: hidden;
+    }
+    .producto__parte-2--boton{
+        display: none;
+    }
+}
+
+@media (max-width:743px) {
+    #productos{
+        display: none;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .producto__parte-2--boton{
+        background-color: #9f8932;
+        border-radius: 5px;
+        margin: 10px 0px;
+    }
+    
+    .producto__parte-2--boton a{
+        margin:10px;
+       color:white;
+    }
+.carousel-control-next,
+.carousel-control-prev{
+    filter: url(resources.svg#c1);
+} 
+}
+
+.carousel-control-next{
+    right:-6%;
+}
+
+.carousel-control-prev{
+    left:-6%;
+}
+
+.carousel-control-next-icon{
+    background-image: url('https://api.iconify.design/ls/next.svg?color=%239f8932&height=22')!important;
+}
+
+
+.swal2-popup {
+    font-size: 1rem !important;
+    font-family: Adamina, serif;
+    color: #ffffff;
+  }
 

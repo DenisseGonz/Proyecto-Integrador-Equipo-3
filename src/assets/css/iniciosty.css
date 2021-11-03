@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 918768406e55abccb5c51e672ffeb6646ad62f8b
 :root {
     /* tipografia */
     --titulo: 'Adamina', serif;
@@ -14,17 +10,9 @@
     --blanco: #FCFCFC;
     --negro: #292100;
     --azul: #21267A;
-<<<<<<< HEAD
-=======
-:root{
-    --blackchest:url('https://api.iconify.design/mdi/treasure-chest.svg?color=black') no-repeat center center / contain;
-    --pinkchest: url('https://api.iconify.design/mdi/treasure-chest.svg?color=%23fe302f');
->>>>>>> a32f8af20fa468ec785b9098bb6fa11080f041d4
-=======
     /*Colores de botón del baúl*/
     --blackchest:url('https://api.iconify.design/mdi/treasure-chest.svg?color=black') no-repeat center center / contain;
     --pinkchest: url('https://api.iconify.design/mdi/treasure-chest.svg?color=%23fe302f');
->>>>>>> 918768406e55abccb5c51e672ffeb6646ad62f8b
 }
 
 .contenedorPrincipal{
@@ -39,10 +27,6 @@
     color:white;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 918768406e55abccb5c51e672ffeb6646ad62f8b
 .cardgroup{
     margin: 5em;
 }
@@ -99,12 +83,6 @@
  }
 
  .padding-0{
-<<<<<<< HEAD
-=======
-.padding-0{
->>>>>>> a32f8af20fa468ec785b9098bb6fa11080f041d4
-=======
->>>>>>> 918768406e55abccb5c51e672ffeb6646ad62f8b
     padding-right:0;
     padding-left:0;
 }
@@ -142,18 +120,8 @@ h6 {
 }
 
 p {
-<<<<<<< HEAD
-<<<<<<< HEAD
     font-family: var(--texto);
     font-size: 20px;
-=======
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
->>>>>>> a32f8af20fa468ec785b9098bb6fa11080f041d4
-=======
-    font-family: var(--texto);
-    font-size: 20px;
->>>>>>> 918768406e55abccb5c51e672ffeb6646ad62f8b
 }
 
 .footer__titulo{

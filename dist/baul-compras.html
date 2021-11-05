@@ -10,11 +10,12 @@
     <link rel="preload" href="../src/assets/css/gencomps.css" as="style">
     <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
     <link rel="preload" href="../src/assets/css/baul.css" as="style">
+    <link href="../src/assets/css/ihover.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../src/assets/css/baul.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Alegreya+Sans:ital,wght@0,300;1,300&family=IM+Fell+English+SC&display=swap');
-        </style>
+    </style>
     <title>Baúl de compras</title>
 </head>
 
@@ -24,6 +25,9 @@
     <!--  <div id="particles-js">
         <img id="fondo" src="./src/assets/img/hogwarts-fondo.png" />
     </div> -->
+    <div id="particles-js">
+        <img id="fondo" src="../src/assets/img/hogwarts-fondo.png" />
+    </div>
 
     <!-- Este bloque de codigo despliega el header dejar aqui -->
     <header id="header">
@@ -40,14 +44,14 @@
                 </svg>
             </button>
 
-            <div class="navegacion__usuario order-lg-12 order-sm-1">
+            <!--       <div class="navegacion__usuario order-lg-12 order-sm-1">
                 <div id="logo-user">
                     <img src="../src/assets/img/logo-user.png" alt="Imagen usuario" width="60" />
                 </div>
                 <div class="navegacion__usuario--texto">
                     <a href="usuario.html"> ¡hola, Usuario!</a>
                 </div>
-            </div>
+            </div> -->
 
             <div id="logo2">
                 <img src="../src/assets/img/logo.png" alt="" width="120" />
@@ -98,11 +102,13 @@
 
 
 
+
     <!-- Inserte los elementos que compondran su página dentro de este div -->
-    <main class="contenedor__baul mask">
+    <main class="contenedor__baul">
         <section class="baul__compras">
-            <section class="baul__compras--detalle">
-                <p class="detalle__titulo"> Detalle </p>
+            <section class="mask baul__compras--detalle fondo__div">
+                <h3 class="detalle__titulo"> Detalle de compras</h3>
+                <p class="detalle__descripcion">Da click sobre tus productos para ver la información</p>
                 <div class="detalle__encabezados">
                     <p class="col-5">Artículos</p>
                     <p class="col-4">Precio</p>
@@ -111,16 +117,23 @@
 
                 <div class="detalle__producto">
                     <div class="detalle__producto--informacion col-4 ">
-                        <img class="detalle__imagen" src="../src/assets/img/mandragora_baul.jpg" width="100">
-                        <span class="producto__informacion--descripcion">Mandrágora joven.</br> Departamento:
-                            Herbología</span>
+                        <!-- From left and right-->
+                         <!-- normal -->
+                            <div class="ih-item square effect6 from_left_and_right "><a href="#">
+                                    <div class="img"><img src="../src/assets/img/mandragora_baul.jpg" alt="Mandrágora" width="100"></div>
+                                    <div class="info">
+                                        <h3>Mandrágora joven</h3>
+                                        <p>Departamento:
+                                            Herbología</p>
+                                    </div> </a></div>
+                            <!-- end normal -->
                     </div>
                     <span class="detalle__producto--seccion">
-                        <span class="detalle__producto--precio col-4 ">
+                        <span class="detalle__producto--precio col-4 align-items-center">
                             <p class="my-5">$$$</p>
                         </span>
 
-                        <div class="detalle__producto--contador col-3 col-sm-12 justify-content-end">
+                        <div class="detalle__producto--contador col-3 col-sm-12 justify-content-center">
                             <div class="number contador align-items-center">
                                 <span class="minus">-</span>
                                 <input class="mx-1" type="text" value="1" />
@@ -131,7 +144,7 @@
                 </div>
             </section>
 
-            <section class="compras__resumen">
+            <section class="compras__resumen mask fondo__div">
                 <span class="detalle__titulo detalle__encabezados"> Resumen </span>
                 <div class="resumen__producto row">
                     <span class="col-2"> 1 </span>
@@ -148,12 +161,14 @@
             </section>
         </section>
         <!-- Carrusel -->
-        <section class="container text-center my-5 carrusel">
-            <h2 class="detalle__titulo detalle__encabezados mb-5 justify-content-start mx-5 animate__animated animate__heartBeat">Te puede interesar: </h2>
-            <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-                <div class="carousel-inner w-100 mx-3 justify-content-around" role="listbox">
+        <section class="container text-center my-5 carrusel mask fondo__div">
+            <h2
+                class="detalle__titulo detalle__encabezados mb-5 justify-content-start mx-5 animate__animated animate__heartBeat">
+                Te puede interesar: </h2>
+            <div id="recipeCarousel" class="carousel slide w-100 d-flex justify-content-center" data-ride="carousel">
+                <div class="carousel-inner w-100 mx-3 " role="listbox">
                     <div class="carousel-item active">
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="card card-body">
                                 <img class="img-fluid" src="../src/assets/img/nimbus200.jpg" width="200px"
                                     height="170px">
@@ -162,7 +177,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="card card-body">
                                 <img class="img-fluid" src="../src/assets/img/libro.webp" width="200px" height="170px">
                                 <p class="cardText">Mil hierbas mágicas y hongos </p>
@@ -170,7 +185,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="card card-body">
                                 <img class="img-fluid" src="../src/assets/img/bolquid.jpg" width="200px" height="170px">
                                 <p class="cardText"> Boletos Quiditch</p>
@@ -178,7 +193,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="card card-body">
                                 <img class="img-fluid" src="../src/assets/img/mandragora.jpg" width="200px"
                                     height="170px">
@@ -187,7 +202,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="card card-body">
                                 <img class="img-fluid" src="../src/assets/img/varita.jpg" width="200px" height="170px">
                                 <p class="cardText"> Varita de cedro</p>
@@ -195,7 +210,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="card card-body">
                                 <img class="img-fluid" src="../src/assets/img/caldero.jpg" width="200px" height="170px">
                                 <p class="cardText"> Caldero mediano</p>
@@ -256,7 +271,7 @@
     </footer>
 
     <!-- Se importa la librería de las partículas primero antes del script de configuración -->
-    <script src="node_modules\particles.js\particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="../src/assets/js/cargador-particulas.js"></script>
 
     <!-- Comportamientos de Bootstrap -->
@@ -266,6 +281,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
     <script src="../src/assets/js/bootstrap.min.js"></script>
+    <script type="module" src="../bundle.js"></script>
     <script src="../src/assets/js/contador.js"></script>
     <script src="../src/assets/js/carrusel_baul.js"></script>
 </body>

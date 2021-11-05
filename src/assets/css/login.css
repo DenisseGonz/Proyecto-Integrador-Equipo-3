@@ -1,3 +1,18 @@
+:root {
+    /* tipografia */
+    --titulo: 'Adamina', serif;
+    --texto: 'Open Sans', sans-serif;
+    --texto-detalles: 'Alegreya Sans', sans-serif;
+    --detalles: 'IM Fell English SC', serif;
+    /* colores */
+    --dorado: #9f8932;
+    --gris: #363859;
+    --blanco: #FCFCFC;
+    --negro: #292100;
+    --amarillo: #FAEAA6;
+    --fondo-cards: rgba(133, 108, 12, 0.5);
+  }
+
 body{
     display:flex;
     flex-direction:column nowrap;    
@@ -66,9 +81,13 @@ body{
     padding-bottom: 45px;
     border-radius: 25px;
     color:white;
-    font-family: 'Adamina', serif;
+    font-family: var(--titulo);
     -webkit-text-stroke: 1.2px rgba(84, 102, 165, 0.85);
     font-size: 1.5rem;   
+}
+
+h2{
+    font-family:var(--texto);
 }
 
 .formulario__datos{
@@ -79,29 +98,35 @@ body{
     
 }
 .formulario__datos--etiquetas{
-    color:white;
+    color:var(--blanco);
     -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
     font-size: 1.3rem;
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: var(--texto);
 
 }
 
-.formulario__boton--recuperacion{
-    display: flex;
-    color:white;
-    justify-content: center;
-    padding-bottom:30px;
-    justify-content: center; ;
-}
 .registro{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    
+}
+
+.formulario__boton--recuperacion{
+    display: flex;
+    color: var(--blanco);
+    justify-content: center;
+    padding-bottom:30px;
+    justify-content: center;
+    font-family: var(--texto);
+
 }
 .formulario__boton--recuperacion a{
     color:white;
+    font-family: var(--texto-detalles);
 }
+
 .registro__boton{
     display: flex;
     align-self: center;
@@ -111,6 +136,7 @@ body{
 }
 .registro__boton a{
     color:white;
+        font-family: var(--texto-detalles);
 }
 
 /* MediaQueries Breakpoint */

@@ -40,7 +40,7 @@ span{
     font-family: var(--texto);
     box-shadow: 0 0 0 5px var(--negro),
     0 0 0 5px var(--negro);
-    background-color: rgba(62, 54, 20, 0.17);
+    background-color: rgba(41, 33, 0, 0.25);
 }
 
 .container1{
@@ -53,7 +53,6 @@ span{
     font-size: 40px;
     text-align: center;
     text-shadow: 2px 2px var(--gris);
-
 }
 
 .container2{
@@ -68,6 +67,13 @@ span{
     color: var(--blanco);
     text-shadow: 2px 2px var(--gris);
 }
+
+label{
+    color:var(--blanco);
+    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
+    font-family: var(--texto);
+}
+
 
 .terminos{
     text-align: center;
@@ -161,7 +167,7 @@ span{
     }
 
     ::placeholder {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
 }

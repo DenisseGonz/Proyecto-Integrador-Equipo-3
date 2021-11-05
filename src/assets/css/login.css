@@ -19,7 +19,7 @@ body{
     justify-content: center;
     width:100%;
     height:1024px;
-    background-image: url(../img/plataforma.jpg);
+    background-image: url(../img/Gawalpop-login-registro.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-blend-mode: overlay ;
@@ -31,7 +31,8 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgb(68, 53, 19); 
+    background-color: rgba(71, 71, 69,1); 
+    
 }
 
 .encabezado{
@@ -41,6 +42,7 @@ body{
     height:140px;
     background-color: black; 
 }
+
 .encabezado__escudo{
     display:flex;
     width:25%;
@@ -61,7 +63,9 @@ body{
     justify-content: center;
     width:40%;
     height:70%;
-    background-color: rgb(0, 0, 0, 0.8);
+    background-color:#0806069f;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(2px);
     margin-top: 25px;
     border-radius: 25px;
 }
@@ -73,12 +77,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(41, 33, 0, 0.05);
+    background-color: rgba(0, 0, 0,0.05);
     padding-bottom: 45px;
     border-radius: 25px;
     color:white;
     font-family: var(--titulo);
-    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
+    -webkit-text-stroke: 1.2px rgba(84, 102, 165, 0.85);
     font-size: 1.5rem;   
 }
 
@@ -127,7 +131,8 @@ h2{
     display: flex;
     align-self: center;
     align-content: center;
-    height:35%;       
+    height:35%;  
+    height:auto;    
 }
 .registro__boton a{
     color:white;
@@ -270,64 +275,4 @@ h2{
     }
 }
 
- /*Medium devices (tablets, less than 992px)*/
-/* 
-@media (max-width: 991.98px) { 
-    body{
-        width: 100%;
-        background-position-x: center;
-        justify-content: center;
-    }
-    .body__mask{
-        width: 100%;
-    }
-    .encabezado{
-        width: 100%;
-        height: 12%;
-        align-content: center;
-    }
-    .encabezado__escudo img{
-        display:none;
-        align-self: center;
-        max-width: 100%;
-        width: 50%;
-        height: 50%;
-    }
-     .encabezado__logotipo img{
-        align-self: center;
-        max-width:160%;
-        height:100%;
-    } 
-    .formulario{
-        margin-top:30px;
-        width:70%;/*
-        justify-content: center;
-    }
-    .formulario__titulos{      
-        font-size: 1rem;
-        justify-content: flex-start;
-        margin-top: -40px;
-    }
-    .formulario__titulos h2{           
-        font-size: 0.95rem;
-    } 
-    .formulario__datos{
-        display: flex;
-        flex-direction: row nowrap;
-        margin-top:-20px;
-        width: 80%;
-    } 
-    .formulario__datos--etiquetas{
-        font-size: 1rem;     
-    }
-    .formulario__boton--recuperacion{
-        font-size: 0.9rem;
-    }
-    .registro{
-        justify-content: center;
-    }
-    .registro__boton{
-        width:fit-content;
-        height: fit-content;
-    }
-} */
+ 

@@ -43,8 +43,9 @@ body{
     flex-direction:column ;
     justify-content: space-around;
     width:65%;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.9;
+    background-color:#0806069f;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(2px);
     margin: 45px;
     border-radius: 25px;
 }
@@ -53,7 +54,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color:rgba(0,0,0,0.05);
     margin: auto;
     padding: 20px 25px;
     border-radius: 25px;
@@ -137,7 +138,7 @@ input[type=radio] {
 
 input[type=radio]+label {
     display:flex;
-    background-color: black;
+    background-color:rgba(0,0,0,0.05);
     justify-content: center; 
     width:25%;   
 }
@@ -147,7 +148,9 @@ input[type=radio]+label {
 
 input[type=radio]:checked+label { 
    background-image: none;
-    background-color:grey;
+   background-color:#918c8c81;
+   backdrop-filter: blur(12px);
+   -webkit-backdrop-filter: blur(2px);
     justify-content: center;
     border-radius: 5px;
     width: 25%;

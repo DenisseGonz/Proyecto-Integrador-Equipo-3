@@ -39,6 +39,69 @@ body,a,a:hover {
     z-index: -1;
     filter: brightness(60%);
 }
+.music{
+    font-size: 1.5em;
+    background-color: #9f893281;
+    color: black;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+.music:hover{
+    background-color: black;
+}
+.music:focus {
+    outline: none;
+    color: white;
+    box-shadow: none;
+    background-color: black;
+}
+.reproductor{
+    position:fixed;
+    z-index: 9999;
+    bottom: 3%;
+    right: 1.5%;
+}
+#play,#vol-btn,#siguiente{
+    display:none;
+}
+.vol-range{
+    display:none;
+}
+ 
+.slider {
+    appearance: none;
+    background: black;
+    outline: none;
+    height: 7px;
+    transform: translateY(-7px);
+    border-radius: 10px;   
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+    border-radius: 15px;  
+}
+.slider:hover {
+    opacity: 1;
+    background-color: white;
+  }
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    opacity: 1;
+    width: 30px;
+    height: 45px;
+    border: 0;
+    background: url("../img/escudo-login.png") no-repeat center;
+    background-size: 1.75em;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    border: 0;
+    background: url("../img/escudo-login.png");
+    cursor: pointer;
+  }
+
 
 /*Estos cambios los estoy realizando para unir las versiones hare una prueba elemental*/
 

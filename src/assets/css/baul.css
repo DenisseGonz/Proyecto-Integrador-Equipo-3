@@ -202,14 +202,14 @@ input{
 }
 
 /* This only changes this particular animation duration */
-.animate__animated.animate__bounce {
-    --animate-duration: 25s;
+.animate__animated.animate_pulse {
+    --animate-duration: 10s;
   }
   
   /* This changes all the animations globally */
   :root {
-    --animate-duration: 1600ms;
-    --animate-delay: 0.15s;
+    --animate-duration: 60ms;
+    --animate-delay: 5s;
   }
 
 @media (max-width: 768px) {
@@ -323,7 +323,8 @@ body{
     justify-content:center;
     text-justify: center;
     width:100% !important;
-    margin:auto;
+    margin: auto !important;;
+    padding: 0%;
 }
 .detalle__imagen{
     margin:auto;
@@ -333,7 +334,7 @@ body{
     display:flex;
     color:white;
     font-size: 1.2rem;
-    margin:auto;
+    margin:auto !important;
     padding: 0%;
     width: 90%;
     justify-content: center;

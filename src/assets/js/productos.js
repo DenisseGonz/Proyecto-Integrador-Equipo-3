@@ -21,7 +21,7 @@
 
 import { max } from "lodash";
 import Swal from "sweetalert2";
-export function prodcutos() {
+export function productos() {
   const $contenedor = document.querySelector("#productos-2");
 
   fetch("../src/productos.json")

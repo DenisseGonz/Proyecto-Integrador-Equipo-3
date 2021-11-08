@@ -1,17 +1,9 @@
 import Swal from 'sweetalert2';
+export function recordadora() {
 
-Swal.fire({
-  title: 'Error!',
-  text: 'Do you want to continue',
-  icon: 'error',
-  confirmButtonText: 'Cool'
-})
+const $recordar=document.querySelector('#btn__olvidar');
 
-/* 
-
-const $recordadora=document.querySelector('#btn__olvidar');
-
-$recordadora.addEventListener('click',()=>{
+$recordar.addEventListener('click',()=>{
    Swal.fire({
     title: 'Sweet!',
     text: 'Modal with a custom image.',
@@ -21,4 +13,6 @@ $recordadora.addEventListener('click',()=>{
     imageAlt: 'Custom image',
   }); 
   console.log("Hay conexión");
-}); */
+});
+
+}

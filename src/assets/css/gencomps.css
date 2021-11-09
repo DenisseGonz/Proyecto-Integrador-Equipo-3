@@ -7,25 +7,28 @@
     /* colores */
     --dorado: #9f8932;
     --gris: #363859;
-    --blanco: #FCFCFC;
+    --blanco: #fcfcfc;
     --negro: #292100;
-    --amarillo: #FAEAA6;
+    --amarillo: #faeaa6;
     --fondo-cards: rgba(133, 108, 12, 0.5);
-  }
+}
 
 * {
     margin: 0;
 }
 
-html,body{
+html,
+body {
     overflow-x: hidden;
 }
 
-body,a,a:hover {
+body,
+a,
+a:hover {
     cursor: url(http://cur.cursors-4u.net/user/use-1/use160.cur), progress;
 }
-#particles-js{
-    background-color:  #000511;
+#particles-js {
+    background-color: #000511;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -86,7 +89,7 @@ body,a,a:hover {
     padding-left: 30px;
 }
 .footer__item {
-    background-color:transparent;
+    background-color: transparent;
     text-align: start;
 }
 
@@ -97,13 +100,18 @@ body,a,a:hover {
 /*Codigo para el footer*/
 
 .footer {
-    background-color: rgba(0, 0, 0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .footer h2,
 .nav-link {
-    color: #fff;
+    color: var(--blanco);
     font-weight: 700;
+}
+
+.nav-link:hover {
+    color: var(--dorado);
+    transition: all 0.3s ease;
 }
 
 .footer img {
@@ -133,7 +141,6 @@ ul {
 .footer__titulo {
     font-family: var(--detalles);
 }
-
 
 @media (min-width: 300px) and (max-width: 650px) {
     .footer__titulo {

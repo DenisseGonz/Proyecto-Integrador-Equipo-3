@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../src/assets/css/loader.css">
     <link rel="preload" href="../src/assets/css/normalize.css" as="style">
     <link rel="stylesheet" href="../src/assets/css/normalize.css">
+    <link rel="preload" href="../src/assets/css/gencomps.css" as="style">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
     <link rel="preload" href="../src/assets/css/hufflepuff.css" as="style">
     <link rel="stylesheet" href="../src/assets/css/hufflepuff.css">
 
@@ -31,67 +33,72 @@
         </div>
     </div>
     <!-- Inicio de la barra de navegacion -->
-    <header class="header">
-        <div class="navegacion">
-            <nav class="nav-principal navbar navbar-expand-md navbar-light bg-faded">
-                <!-- Boton de hamburguesa -->
-                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#nav-principal"
-                    aria-label="Mostrar Navegacion">
-                    <span class="navbar-toggler-icon "></span>
-                </button>
-                <span class="d-lg-none d-md-none">
-                    <img src="../src/assets/img/logo_header.png" alt="Logo HarryPotter">
-                </span>
-                <!-- Boton de baul de compras -->
-                <button class="nav__btn d-md-none d-lg-block">
-                    <a href="baul-compras.html" class="nav__baul navbar-brand d-md-none d-lg-none">
-                        <img src="../src/assets/img/baul.png" alt="">
-                    </a>
-                </button>
-                <!-- Elementos de la navegacion -->
-                <div class="container">
-                    <div class="collapse navbar-collapse w-100" id="nav-principal">
-                        <ul class="nav nav-justified w-100 flex-column flex-sm-row">
-                            <li class="nav__li nav-item">
-                                <a href="inicio.html" class="nav-menu nav-link ">Inicio</a>
-                            </li>
-                            <!-- Inicio del dropdown o sub-menu -->
-                            <li class="nav__li nav-item dropdown">
-                                <a class="nav-menu nav-link dropdown-toggle" role="button" data-toggle="dropdown"
-                                    aria-expanded="false">Salas</a>
-                                <ul class="dropdown-menu w-100 text-center" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item griffindor" href="../dist/griffindor.html">Griffindor</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item ravenclaw" href="../dist/ravenclaw.html">Ravenclaw</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item slytherin" href="../dist/slytherin.html">Slytherin</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav__li nav-item">
-                                <a href="eventos.html" class="nav-menu nav-link  ">Eventos</a>
-                            </li>
-                            <li class="nav__li nav-item">
-                                <a href="productos.html" class="nav-menu nav-link ">Productos</a>
-                            </li>
-                            <li class="nav__li nav-item">
-                                <a href="usuario.html" class="nav-menu nav-link ">Perfil</a>
-                            </li>
-                        </ul>
-                    </div><!-- accion del menu en responsive -->
-
-                </div><!-- Termino del contenedor -->
-                <span class="nav__btn__2 d-md-none d-lg-block">
-                    <a href="baul-compras.html" class="nav__baul__2 navbar-brand">
-                        <img src="../src/assets/img/Hufflepuff_ClearBG.png" alt="">
-                    </a>
-                </span>
-            </nav>
+    <div id="header">
+        <div id="logo">
+            <img src="../src/assets/img/logo.png" alt="" width="250px" />
         </div>
-    </header>
+        <nav class="navbar navbar-expand-lg" id="encabezado">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <svg id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="white" />
+                </svg>
+            </button>
+
+            <div id="logo2">
+                <img src="../src/assets/img/logo.png" alt="" width="120px" />
+            </div>
+
+            <a class="navbar-brand order-lg-12 p-0 me-2" href="baul-compras.html">
+                <svg class="d-block my-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M5 4h14a3 3 0 0 1 3 3v4h-7v-1H9v1H2V7a3 3 0 0 1 3-3m6 7h2v2h-2v-2m-9 1h7v1l2 2h2l2-2v-1h7v8H2v-8z"
+                        fill="white" />
+                </svg>
+            </a>
+
+            <div class="collapse navbar-collapse nav-item" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="inicio.html">Inicio<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="usuario.html">Mi Perfil <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Salas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item griffindor" href="griffindor.html">Gryffindor</a>
+                            <a class="dropdown-item slytherin" href="slytherin.html">Slytherin</a>
+                            <a class="dropdown-item ravenclaw" href="ravenclaw.html">Ravenclaw</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="delivery.html">Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     <section class="seccion " id="degradado">
         <div class="container">
             <div class="row">

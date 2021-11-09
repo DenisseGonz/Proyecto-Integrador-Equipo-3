@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../src/assets/css/loader.css">
     <link rel="preload" href="../src/assets/css/normalize.css" as="style">
     <link rel="stylesheet" href="../src/assets/css/normalize.css">
+    <link rel="preload" href="../src/assets/css/gencomps.css" as="style">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
     <link rel="preload" href="../src/assets/css/gryffindor.css" as="style">
     <link rel="stylesheet" href="../src/assets/css/gryffindor.css">
 
@@ -19,7 +21,13 @@
 </head>
 
 <body>
+    <!-- Linea del audio -->
     <audio src="../src/assets/audio/01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
+    <!-- Linea de las particulas -->
+    <div id="particles-js">
+        <img id="fondo" src="../src/assets/img/hogwarts-fondo.png" />
+    </div>
+    <!-- linea del loader -->
     <div id="pageloader-overlay" class="visible incoming">
         <div class="loader-wrapper-outer">
             <div class="loader-wrapper-inner">
@@ -31,71 +39,74 @@
         </div>
     </div>
     <!-- Inicio de la barra de navegacion -->
-    <header class="header">
-        <div class="navegacion">
-            <nav class="nav-principal navbar navbar-expand-md navbar-light bg-faded">
-                <!-- Boton de hamburguesa -->
-                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#nav-principal"
-                    aria-label="Mostrar Navegacion">
-                    <span class="navbar-toggler-icon "></span>
-                </button>
-                <span class="d-lg-none d-md-none">
-                    <img src="../src/assets/img/logo_header.png" alt="Logo HarryPotter">
-                </span>
-                <!-- Boton de baul de compras -->
-                <button class="nav__btn d-md-none d-lg-block">
-                    <a href="baul-compras.html" class="nav__baul navbar-brand d-md-none d-lg-none">
-                        <img src="../src/assets/img/baul.png" alt="">
-                    </a>
-                </button>
-                <!-- Elementos de la navegacion -->
-                <div class="container">
-                    <div class="collapse navbar-collapse w-100" id="nav-principal">
-                        <ul class="nav nav-justified w-100 flex-column flex-sm-row">
-                            <li class="nav__li nav-item">
-                                <a href="inicio.html" class="nav-menu nav-link ">Inicio</a>
-                            </li>
-                            <!-- Inicio del dropdown o sub-menu -->
-                            <li class="nav__li nav-item dropdown">
-                                <a class="nav-menu nav-link dropdown-toggle" role="button" data-toggle="dropdown"
-                                    aria-expanded="false">Salas</a>
-                                <ul class="dropdown-menu w-100 text-center" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item hufflepuff"
-                                            href="../dist/hufflepuff.html">Hufflepuff</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item ravenclaw" href="../dist/ravenclaw.html">Ravenclaw</a>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item slytherin" href="../dist/slytherin.html">Slytherin</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav__li nav-item">
-                                <a href="eventos.html" class="nav-menu nav-link  ">Eventos</a>
-                            </li>
-                            <li class="nav__li nav-item">
-                                <a href="productos.html" class="nav-menu nav-link ">Productos</a>
-                            </li>
-                            <li class="nav__li nav-item">
-                                <a href="usuario.html" class="nav-menu nav-link ">Perfil</a>
-                            </li>
-                        </ul>
-                    </div><!-- accion del menu en responsive -->
-
-                </div><!-- Termino del contenedor -->
-                <span class="nav__btn__2 d-md-none d-lg-block">
-                    <a href="baul-compras.html" class="nav__baul__2 navbar-brand">
-                        <img src="../src/assets/img/Gryffindor.png" alt="">
-                    </a>
-                </span>
-            </nav>
+    <div id="header">
+        <div id="logo">
+            <img src="../src/assets/img/logo.png" alt="" width="250px" />
         </div>
-    </header>
-    <section class="seccion " id="degradado">
+        <nav class="navbar navbar-expand-lg" id="encabezado">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <svg id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="white" />
+                </svg>
+            </button>
+
+            <div id="logo2">
+                <img src="../src/assets/img/logo.png" alt="" width="120px" />
+            </div>
+
+            <a class="navbar-brand order-lg-12 p-0 me-2" href="baul-compras.html">
+                <svg class="d-block my-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M5 4h14a3 3 0 0 1 3 3v4h-7v-1H9v1H2V7a3 3 0 0 1 3-3m6 7h2v2h-2v-2m-9 1h7v1l2 2h2l2-2v-1h7v8H2v-8z"
+                        fill="white" />
+                </svg>
+            </a>
+
+            <div class="collapse navbar-collapse nav-item" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="inicio.html">Inicio<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="usuario.html">Mi Perfil <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Salas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item hufflepuff" href="hufflepuff.html">Hufflepuff</a>
+                            <a class="dropdown-item slytherin" href="slytherin.html">Slytherin</a>
+                            <a class="dropdown-item ravenclaw" href="ravenclaw.html">Ravenclaw</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="delivery.html">Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- seccion info casa -->
+    <section class="seccion color_principal" id="degradado">
         <div class="contenedor__gryffindor">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12 order-12 order-lg-1 d-flex ">
@@ -103,15 +114,14 @@
                         <p>Godric Gryffindor fue un mago que vivió en la época medieval y uno de los cuatro fundadores
                             del Colegio Hogwarts de Magia y Hechicería. Era amigo de Salazar Slytherin, pero se opuso a
                             él cuando éste pensaba que no se debía aceptar a los nacidos de muggles como estudiantes de
-                            Hogwarts. Se desconoce la fecha de su muerte. El lugar de nacimiento de Godric Gryffindor se
+                            Hogwarts. <br> <br> Se desconoce la fecha de su muerte. El lugar de nacimiento de Godric
+                            Gryffindor se
                             conoce como Valle de Godric, en su honor. El retrato de Godric Gryffindor sigue estando en
-                            Hogwarts, en el pasillo del séptimo piso. <br> <br> Godric Gryffindor fue un mago de sangre
-                            pura, nacido en un día de junio, en el Valle de Godric hace más o menos mil años. Él y su
-                            familia vivieron en África por algún tiempo, lejos de la cacería de brujas en Inglaterra.
-                            Esto hizo que Godric descubriera la vida salvaje de África, la cual le comenzaba a agradar.
+                            Hogwarts, en el pasillo del séptimo piso. <br> <br>
                             Disfrutaba especialmente observando a los leones. Godric era aventurero, por eso no era
                             difícil saber que se metió en líos. Sin embargo, él era tan noble que sus padres casi no lo
-                            tenían que retar. Godric aprendió todo lo que sabía de magia por medio de su padre, quien
+                            tenían que retar. <br> <br> Godric aprendió todo lo que sabía de magia por medio de su
+                            padre, quien
                             solía ser profesor, y quien siempre pensó que tendría que haber una escuela de magia para
                             los niños con habilidades mágicas. </p>
                     </div>
@@ -201,6 +211,7 @@
                 </button>
             </div>
         </div>
+        <!-- seccion del footer -->
         <footer class="footer fixed-bottom position-relative ">
             <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
             <div class="row mt-4 justify-content-center align-items-center">
@@ -208,24 +219,24 @@
                     <div class=" col-lg-6 col-md-12 col-sm-12">
                         <ul class="footer__menu_1">
                             <li class="nav-item footer__item">
-                                <a class=" nav-link" href="inicio.html">Inicio</a>
+                                <a class="nav-link nav-enlace" href="inicio.html">Inicio</a>
                             </li>
                             <li class="nav-item footer__item">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
+                                <a class="nav-link nav-enlace" href="contacto.html">Contacto</a>
                             </li>
                             <li class="nav-item footer__item ">
-                                <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
+                                <a class="nav-link nav-enlace" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
                             </li>
                         </ul>
                     </div>
                     <div class="linea"></div>
                     <div class=" col-lg-3 col-md-12 col-sm-12">
-                        <ul class="">
+                        <ul class="footer__menu_2">
                             <li class="nav-item footer__item ">
-                                <a class="nav-link" href="productos.html">Productos</a>
+                                <a class="nav-link nav-enlace" href="productos.html">Productos</a>
                             </li>
                             <li class="nav-item footer__item">
-                                <a class="nav-link"
+                                <a class="nav-link nav-enlace"
                                     href="https://github.com/DenisseGonz/Proyecto-Integrador-Equipo-3">GitHub</a>
                             </li>
                         </ul>
@@ -240,6 +251,10 @@
         </footer>
 
     </section>
+    <!-- Se importa la librería de las partículas primero antes del script de configuración -->
+    <!-- <script src="node_modules\particles.js\particles.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="../src/assets/js/cargador-particulas.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -249,7 +264,6 @@
     <script src="../src/assets/js/bootstrap.min.js"></script>
     <script src="../src/assets/js/loader.js"></script>
     <script type="module" src="../bundle.js"></script>
-    <script src="../src/assets/js/data.js"></script>
 </body>
 
 </html>

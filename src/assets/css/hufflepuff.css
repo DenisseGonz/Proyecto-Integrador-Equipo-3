@@ -38,118 +38,40 @@ body {
 }
 
 /* NAVEGACION */
-.navegacion {
-    background-color: var(--black-dg);
-    padding: 2rem;
-}
-
-@media (max-width: 500px) {
-    .navegacion__logo {
-        visibility: hidden;
-    }
-    .navegacion {
-        padding: 0.1rem;
-    }
-}
-.nav__btn {
-    width: 12%;
-    border: none;
-    background: none;
-}
-.nav__baul img {
-    width: 100%;
-}
-.nav__btn__2 {
-    width: 12%;
-    border: none;
-    background: none;
-    margin: 0 -2rem 0 5rem;
-}
-.nav__baul__2 img {
-    width: 55%;
-}
-
-.navbar-toggler {
-    font-size: 2rem;
-}
-.nav__li {
-    background-image: url(../img/hufflepuff-registro.png);
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 2rem;
-    border: 2px solid var(--hufflepuff);
-    margin-left: 1.5rem;
-    margin-bottom: 0.8rem;
-    padding-bottom: 6.3rem;
-    border-radius: 2rem;
-}
-
-.nav-menu {
-    color: var(--hufflepuff);
-    -webkit-text-stroke: 2px var(--black);
-    font-weight: 700;
-    font-size: 3.6rem;
-}
-
-@media (min-width: 300px) and (max-width: 500px) {
-    .nav__btn__2 {
-        visibility: hidden;
-    }
-    .navegacion {
-        background-color: var(--hufflepuff);
-    }
-    .nav__li {
-        border: 2px solid var(--black);
-        background-image: none;
-    }
-    .nav-menu {
-        color: var(--white);
-        -webkit-text-stroke: transparent;
-        font-weight: 700;
-    }
-}
-
-.nav-menu:hover {
-    color: var(--white);
-    -webkit-text-stroke: 2px var(--black);
-    transition: 0.5s all;
-}
-
 .hufflepuff,
 .ravenclaw,
 .slytherin,
 .griffindor {
+    color: var(--white);
+    font-size: 1.5rem;
     font-weight: 700;
-    font-size: 2.5rem;
-    color: var(--hufflepuff);
     border-radius: 0.5rem;
 }
 .hufflepuff:hover {
     background-color: var(--hufflepuff);
-    color: var(--white);
+    color: var(--black);
 }
 
 .ravenclaw:hover {
     background-color: var(--ravenclaw);
-    color: var(--white);
+    color: var(--black);
 }
 
 .slytherin:hover {
     background-color: var(--slytherin);
-    color: var(--white);
+    color: var(--black);
 }
 .griffindor:hover {
     background-color: var(--griffindor);
-    color: var(--white);
+    color: var(--black);
 }
 
 .dropdown-menu {
-    background-color: var(--black-dg);
+    background-color: var(--black);
     border-radius: 1rem;
 }
 
-/* GRIFFINDOR */
+/* HUFFLEPUFF */
 .header {
     background-image: url(../img/hufflepuff-wallpaper.jpg);
     background-repeat: no-repeat;

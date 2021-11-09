@@ -7,14 +7,15 @@
 // );
 import { gryffindor, slytherin, hufflepuff, ravenclaw } from './assets/js/seleccionador_casas.js';
 import { agprodini } from './assets/js/inicio-incluye-productos.js';
-import { productos } from './assets/js/productos.js';
-
+/* import { productos } from './assets/js/productos.js'; */
+import { recordadora } from './assets/js/recordadora.js';
+import { bienvenida } from './assets/js/bienvenida.js';
 
 let url = window.location.href;
 let index = parseInt(url.slice(-1));
-console.log(index);
+/* console.log(index); */
 
-switch (index) {
+/* switch (index) {
     case 1:
         gryffindor();
         break;
@@ -29,8 +30,19 @@ switch (index) {
         break;
     default:
         break;
-}
+} */
 
 agprodini();
 
-productos();
+/* productos(); */
+
+
+
+
+
+
+
+if (url.includes('/index.html')) {
+    bienvenida();    
+    recordadora();
+};

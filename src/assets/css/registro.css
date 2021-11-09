@@ -98,6 +98,23 @@ body{
     width: 95%;  
     padding: 2%;
     border-radius: 5px;
+    background-color:#42393960;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(2px);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+ 
+input[type=password]:focus, input[type=email]:focus, input[type=text]:focus,select[name="pregunta"]:focus{
+    outline: none;     /* Remove default outline and use border or box-shadow */
+    box-shadow: 0 0 0 2px rgba(84, 102, 165, 0.85); /* Full freedom. (works also with border-radius) */
+    background-color:#31252548;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(2px);
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 .datos__casa--check{

@@ -9,6 +9,8 @@ import { gryffindor, slytherin, hufflepuff, ravenclaw } from './assets/js/selecc
 import { agprodini } from './assets/js/inicio-incluye-productos.js';
 import { productos } from './assets/js/productos.js';
 import { mostrarControlador, siguienteCancion, playPause, mostrarRange, cambiarVolumen, saltarCancion } from './assets/js/audio.js';
+import { recordadora } from './assets/js/recordadora.js';
+import { bienvenida } from './assets/js/bienvenida.js';
 
 let url = window.location.href;
 let index = parseInt(url.slice(-1));
@@ -58,3 +60,7 @@ if (url.includes('productos.html') || url.includes('inicio.html')) {
     agprodini();
     productos();
 }
+if (url.includes('/index.html')) {
+    bienvenida();    
+    recordadora();
+};

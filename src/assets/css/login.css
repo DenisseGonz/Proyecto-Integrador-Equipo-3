@@ -32,7 +32,6 @@ body{
     justify-content: flex-start;
     align-items: center;
     background-color: rgba(71, 71, 69,1); 
-    
 }
 
 .encabezado{
@@ -102,7 +101,6 @@ h2{
     -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
     font-size: 1.3rem;
     font-family: var(--texto);
-
 }
 
 .registro{
@@ -112,6 +110,26 @@ h2{
     align-content: center;
     
 }
+.formulario__datos--campos{
+    background-color:#271d1d9f;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(2px);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color:var(--blanco);
+}
+input[type=password]:focus, input[type=email]:focus{
+    /* outline: none;  */     /* Remove default outline and use border or box-shadow */
+    box-shadow: 0 0 0 2px rgba(84, 102, 165, 0.85); /* Full freedom. (works also with border-radius) */
+    background-color:#271d1d9f;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(2px);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color:var(--blanco);
+  }
 
 .formulario__boton--recuperacion{
     display: flex;
@@ -139,9 +157,16 @@ h2{
         font-family: var(--texto-detalles);
 }
 
+.pregunta__seguridad{
+    color:var(--blanco);
+    -webkit-text-stroke: 1px var(--dorado);
+    font-size: 1.6rem;
+    font-family: var(--texto);
+}
+
 /* MediaQueries Breakpoint */
 /* X-Small devices (portrait phones, less than 576px)*/
-@media (min-width: 320px) and (max-width:768px ) { 
+@media (min-width: 300px) and (max-width:768px ) { 
     body{
         width: 100%;
         background-position-x: center;

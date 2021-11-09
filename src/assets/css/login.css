@@ -101,7 +101,6 @@ h2{
     -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
     font-size: 1.3rem;
     font-family: var(--texto);
-
 }
 
 .registro{
@@ -118,6 +117,7 @@ h2{
     border-top: none;
     border-left: none;
     border-right: none;
+    color:var(--blanco);
 }
 input[type=password]:focus, input[type=email]:focus{
     /* outline: none;  */     /* Remove default outline and use border or box-shadow */
@@ -128,6 +128,7 @@ input[type=password]:focus, input[type=email]:focus{
     border-top: none;
     border-left: none;
     border-right: none;
+    color:var(--blanco);
   }
 
 .formulario__boton--recuperacion{
@@ -154,6 +155,13 @@ input[type=password]:focus, input[type=email]:focus{
 .registro__boton a{
     color:white;
         font-family: var(--texto-detalles);
+}
+
+.pregunta__seguridad{
+    color:var(--blanco);
+    -webkit-text-stroke: 1px var(--dorado);
+    font-size: 1.6rem;
+    font-family: var(--texto);
 }
 
 /* MediaQueries Breakpoint */

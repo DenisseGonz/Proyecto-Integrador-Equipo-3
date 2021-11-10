@@ -14,19 +14,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Alegreya+Sans:ital,wght@1,100;1,400&family=IM+Fell+English+SC&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Adamina&family=Alegreya+Sans:ital,wght@1,100;1,400&family=IM+Fell+English+SC&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
     <title>Mi Perfil</title>
 </head>
 
 <body>
     <audio preload="auto" autoplay>
-        <source src="../src/assets/audio/Prologue.mp3" id="cancion1"/>
-        <source src="../src/assets/audio/Fireworks.mp3" id="cancion2"/>
-        <source src="../src/assets/audio/Quidditch.mp3" id="cancion3"/>
-        <source src="../src/assets/audio/Requirements.mp3" id="cancion4"/>
-        <source src="../src/assets/audio/Wondrous World.mp3" id="cancion5"/>
+        <source src="../src/assets/audio/Prologue.mp3" id="cancion1" />
+        <source src="../src/assets/audio/Fireworks.mp3" id="cancion2" />
+        <source src="../src/assets/audio/Quidditch.mp3" id="cancion3" />
+        <source src="../src/assets/audio/Requirements.mp3" id="cancion4" />
+        <source src="../src/assets/audio/Wondrous World.mp3" id="cancion5" />
     </audio>
     <div class="btn-group reproductor" role="group">
         <button type="button" class="btn btn-outline-dark music" id="play">
@@ -35,8 +35,8 @@
         <button type="button" class="btn btn-outline-dark music" id="vol-btn">
             <label class="bi-volume-up-fill"></label>
         </button>
-        <button type="button" class="btn btn-outline-dark music vol-range"> 
-            <input type="range" class="slider" id="volumen" value="0.8" min="0" max="1" step="0.1"/>
+        <button type="button" class="btn btn-outline-dark music vol-range">
+            <input type="range" class="slider" id="volumen" value="0.8" min="0" max="1" step="0.1" />
         </button>
         <button type="button" class="btn btn-outline-dark music" id="siguiente">
             <label class="bi-skip-end-fill"></label>
@@ -44,7 +44,7 @@
         <button type="button" class="btn btn-outline-dark music" id="encapsulador">
             <label class="bi-music-note-list"></label>
         </button>
-      </div>
+    </div>
     <!-- El seguiente bloque de codigo controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
     <div id="particles-js">
         <img id="fondo" src="../src/assets/img/hogwarts-fondo.png" />
@@ -66,7 +66,7 @@
             </button>
 
             <div id="logo2">
-                <img src="../src/assets/img/logo.png" alt="" width="120px" />
+                <img src="../src/assets/img/logo.png" alt="" width="250px" />
             </div>
 
             <a class="navbar-brand order-lg-12 p-0 me-2" href="baul-compras.html">
@@ -93,10 +93,10 @@
                             Salas
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="griffindor.html">Gryffindor</a>
-                            <a class="dropdown-item" href="../dist/hufflepuff.html">Hufflepuff</a>
-                            <div class="dropdown-item" href="../dist/slytherin.html">Slytherin</div>
-                            <a class="dropdown-item" href="../dist/ravenclaw.html">Ravenclaw</a>
+                            <a class="dropdown-item griffindor" href="../dist/casas_base.html?casa=1">Gryffindor</a>
+                            <a class="dropdown-item hufflepuff" href="../dist/casas_base.html?casa=3">Hufflepuff</a>
+                            <a class="dropdown-item slytherin" href="../dist/casas_base.html?casa=2">Slytherin</a>
+                            <a class="dropdown-item ravenclaw" href="../dist/casas_base.html?casa=4">Ravenclaw</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -120,19 +120,21 @@
     </div>
 
 
-
+    <div class="text-center ">
+        <h3 class="user__indicaciones">Aquí puedes ver tu información de usuario, pedidos y formas de pago.
+        </h3>
+    </div>
     <!-- Inserte los elementos que compondran su página dentro de este div -->
-    <div class="container">
-        <div id="user__banner">
+    <div class="contenedor__perfil d-lg-flex">
+        <div id="user__banner col-lg-4 col-md-12 col-sm-12">
             <img src="../src/assets/img/banner-slytherin.jpg" class="user__foto__banner" />
-            <h2 class="user__titulo text-center font-weight-bolder">Bienvenido, mago Draco Malfoy a tu perfil de Slytherin</h2>
+            <h2 class="user__titulo text-center font-weight-bolder">Bienvenido, mago Draco Malfoy a tu perfil de
+                Slytherin</h2>
         </div>
 
-        <h3 class="text-center user__indicaciones">Aquí puedes ver tu información de usuario, pedidos y formas de pago.
-        </h3>
 
         <!-- Menu colapsable con opciones  -->
-        <center>
+        <section class="col-lg-7 col-md-12 col-sm-12">
             <div class="accordion text-white" id="accordionExample">
                 <!-- EDITAR USUARIO -->
                 <div class="card bg-dark">
@@ -179,7 +181,7 @@
                                         <label for="">Cambiar contraseña</label> <br />
                                         <input type="password" placeholder="Nueva contraseña"> <br />
                                         <label for="">Confirmar contraseña</label> <br />
-                                        <input type="password" placeholder="Ingresa otra vez"> <br/>
+                                        <input type="password" placeholder="Ingresa otra vez"> <br />
                                         <button class="btn btn-warning">Confirmar</button>
                                     </form>
                                 </div>
@@ -226,8 +228,8 @@
                 <div class="card bg-dark">
                     <div class="card-header" id="headingTwo">
                         <h2 class="mb-0">
-                            <button class="btn btn-outline-warning btn-block text-left collapsed texto-formulario" type="button"
-                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            <button class="btn btn-outline-warning btn-block text-left collapsed texto-formulario"
+                                type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                                 aria-controls="collapseTwo">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     aria-hidden="true" role="img" width="1.5em" height="1.5em"
@@ -252,15 +254,18 @@
 
                         <div class="card-body">
                             <p class="card-text text-left row justify-content-around">
-                                <strong class="col-lg-3 col-sm-6"> Nombre:</strong><span class="col-lg-2 col-sm-6">Draco </span><strong
-                                    class="col-lg-3 col-sm-6"> Familia: </strong><span class="col-lg-2 col-sm-6">Malfoy</span>
-                                <strong class="col-lg-3 col-sm-6">Casa: </strong><span class="col-lg-2 col-sm-6">Slytherin</span><strong
-                                    class="col-lg-3 col-sm-6"> Cuarto: </strong><span class="col-lg-2 col-sm-6">#234</span>
-                                <strong class="col-lg-3 col-sm-6">No. de Pedido: </strong><span class="col-lg-2 col-sm-6">000001</span><strong
-                                    class="col-lg-3 col-sm-6"> Fecha de Entrega: </strong><span class="col-lg-2 col-sm-6">18/10/2018</span>
+                                <strong class="col-lg-3 col-sm-6"> Nombre:</strong><span class="col-lg-2 col-sm-6">Draco
+                                </span><strong class="col-lg-3 col-sm-6"> Familia: </strong><span
+                                    class="col-lg-2 col-sm-6">Malfoy</span>
+                                <strong class="col-lg-3 col-sm-6">Casa: </strong><span
+                                    class="col-lg-2 col-sm-6">Slytherin</span><strong class="col-lg-3 col-sm-6"> Cuarto:
+                                </strong><span class="col-lg-2 col-sm-6">#234</span>
+                                <strong class="col-lg-3 col-sm-6">No. de Pedido: </strong><span
+                                    class="col-lg-2 col-sm-6">000001</span><strong class="col-lg-3 col-sm-6"> Fecha de
+                                    Entrega: </strong><span class="col-lg-2 col-sm-6">18/10/2018</span>
                                 <strong class="col-lg-3 col-sm-6">Forma de Pago: </strong><span
-                                    class="col-lg-2 col-sm-6">VISA-XXXX</span><strong class="col-lg-3 col-sm-6"> ID-Lechuza: </strong><span
-                                    class="col-lg-2 col-sm-6">02342</span>
+                                    class="col-lg-2 col-sm-6">VISA-XXXX</span><strong class="col-lg-3 col-sm-6">
+                                    ID-Lechuza: </strong><span class="col-lg-2 col-sm-6">02342</span>
                             <table class="table table-responsive-md my-2">
                                 <thead class="thead-light">
                                     <tr>
@@ -295,8 +300,8 @@
                 <div class="card bg-dark">
                     <div class="card-header" id="headingThree">
                         <h2 class="mb-0">
-                            <button class="btn btn-outline-warning btn-block text-left collapsed texto-formulario" type="button"
-                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            <button class="btn btn-outline-warning btn-block text-left collapsed texto-formulario"
+                                type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                                 aria-controls="collapseThree">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     aria-hidden="true" role="img" width="1.5em" height="1.5em"
@@ -466,14 +471,12 @@
 
                 </div>
             </div>
-    </div>
-    </div>
-    </center>
+            </>
     </div>
 
     <!-- Este bloque de codigo controla el footer dejar aqui -->
     <footer class="footer ">
-        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal ® 2021</h2>
+        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal® 2021</h2>
         <div class="row mt-4 justify-content-center align-items-center">
             <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
                 <div class=" col-lg-6 col-md-12 col-sm-12">

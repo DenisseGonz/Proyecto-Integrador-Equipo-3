@@ -14,17 +14,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Alegreya+Sans:ital,wght@1,100;1,400&family=IM+Fell+English+SC&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Adamina&family=Alegreya+Sans:ital,wght@1,100;1,400&family=IM+Fell+English+SC&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
     <title>Acerca de nosotros</title>
 </head>
 
 <body>
     <audio preload="auto" autoplay>
-        <source src="../src/assets/audio/Prologue.mp3" id="cancion1"/>
-        <source src="../src/assets/audio/Fireworks.mp3" id="cancion2"/>
-        <source src="../src/assets/audio/Quidditch.mp3" id="cancion3"/>
-        <source src="../src/assets/audio/Requirements.mp3" id="cancion4"/>
-        <source src="../src/assets/audio/Wondrous World.mp3" id="cancion5"/>
+        <source src="../src/assets/audio/Prologue.mp3" id="cancion1" />
+        <source src="../src/assets/audio/Fireworks.mp3" id="cancion2" />
+        <source src="../src/assets/audio/Quidditch.mp3" id="cancion3" />
+        <source src="../src/assets/audio/Requirements.mp3" id="cancion4" />
+        <source src="../src/assets/audio/Wondrous World.mp3" id="cancion5" />
     </audio>
     <div class="btn-group reproductor" role="group">
         <button type="button" class="btn btn-outline-dark music" id="play">
@@ -33,8 +35,8 @@
         <button type="button" class="btn btn-outline-dark music" id="vol-btn">
             <label class="bi-volume-up-fill"></label>
         </button>
-        <button type="button" class="btn btn-outline-dark music vol-range"> 
-            <input type="range" class="slider" id="volumen" value="0.8" min="0" max="1" step="0.1"/>
+        <button type="button" class="btn btn-outline-dark music vol-range">
+            <input type="range" class="slider" id="volumen" value="0.8" min="0" max="1" step="0.1" />
         </button>
         <button type="button" class="btn btn-outline-dark music" id="siguiente">
             <label class="bi-skip-end-fill"></label>
@@ -42,7 +44,7 @@
         <button type="button" class="btn btn-outline-dark music" id="encapsulador">
             <label class="bi-music-note-list"></label>
         </button>
-      </div>
+    </div>
     <!-- El siguiente bloque de codigo controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
     <div id="particles-js">
         <img id="fondo" src="../src/assets/img/hogwarts-fondo.png" />
@@ -51,7 +53,7 @@
     <!-- Este bloque de codigo despliega el header dejar aqui -->
     <div id="header">
         <div id="logo">
-            <img src="../src/assets/img/logo.png" alt="" width="200px" />
+            <img src="../src/assets/img/logo.png" alt="" width="250px" />
         </div>
         <nav class="navbar navbar-expand-lg" id="encabezado">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -64,7 +66,7 @@
             </button>
 
             <div id="logo2">
-                <img src="../src/assets/img/logo.png" alt="" width="200px" />
+                <img src="../src/assets/img/logo.png" alt="" width="250px" />
             </div>
 
             <a class="navbar-brand order-lg-12 p-0 me-2" href="baul-compras.html">
@@ -79,11 +81,11 @@
 
             <div class="collapse navbar-collapse nav-item" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="inicio.html">Inicio</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="inicio.html">Inicio<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="usuario.html">Mi Perfil</a>
+                        <a class="nav-link" href="usuario.html">Mi Perfil <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -91,10 +93,10 @@
                             Salas
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="../dist/griffindor.html">Gryffindor</a>
-                            <a class="dropdown-item" href="../dist/hufflepuff.html">Hufflepuff</a>
-                            <div class="dropdown-item" href="../dist/slytherin.html">Slytherin</div>
-                            <a class="dropdown-item" href="../dist/ravenclaw.html">Ravenclaw</a>
+                            <a class="dropdown-item griffindor" href="../dist/casas_base.html?casa=1">Gryffindor</a>
+                            <a class="dropdown-item hufflepuff" href="../dist/casas_base.html?casa=3">Hufflepuff</a>
+                            <a class="dropdown-item slytherin" href="../dist/casas_base.html?casa=2">Slytherin</a>
+                            <a class="dropdown-item ravenclaw" href="../dist/casas_base.html?casa=4">Ravenclaw</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -134,7 +136,10 @@
                         <p>Nuestra misión es hacer la experiencia estudiantil en Hogwarts íntegra y completa. Nos
                             interesa la funcionalidad de un sitio que promueva el intercambio de ideas, eventos e
                             información
-                            y galeones. Nuestra visión es llevar la fantasía más allá del aula, ser un respaldo escolar para los alumnos y satisfacer la necesidad económica de los pequeños emprendedores del instituto. Hemos mantenido nuestra misma meta y usando los mismos estándares de calidad desde hace cuatro siglos. <br>Ubicados
+                            y galeones. Nuestra visión es llevar la fantasía más allá del aula, ser un respaldo escolar
+                            para los alumnos y satisfacer la necesidad económica de los pequeños emprendedores del
+                            instituto. Hemos mantenido nuestra misma meta y usando los mismos estándares de calidad
+                            desde hace cuatro siglos. <br>Ubicados
                             en el Mundo Mágico, Escocia, 2021.</p>
                         <p class="pequeñas">No estamos asociados de ninguna manera con Callejón Diagon®.</p>
                     </div>
@@ -231,60 +236,60 @@
                 </div>
             </section>
         </div>
-        
 
-            <!-- Este bloque de codigo controla el footer dejar aqui -->
-            <footer class="footer">
-                <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal®</h2>
-                <div class="row mt-4 justify-content-center align-items-center">
-                    <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
-                        <div class=" col-lg-6 col-md-12 col-sm-12">
-                            <ul class="footer__menu_1">
-                                <li class="nav-item footer__item">
-                                    <a class=" nav-link" href="inicio.html">Inicio</a>
-                                </li>
-                                <li class="nav-item footer__item">
-                                    <a class="nav-link" href="contacto.html">Contacto</a>
-                                </li>
-                                <li class="nav-item footer__item ">
-                                    <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="linea"></div>
-                        <div class=" col-lg-3 col-md-12 col-sm-12">
-                            <ul class="">
-                                <li class="nav-item footer__item ">
-                                    <a class="nav-link" href="productos.html">Productos</a>
-                                </li>
-                                <li class="nav-item footer__item">
-                                    <a class="nav-link"
-                                        href="https://github.com/DenisseGonz/Proyecto-Integrador-Equipo-3">GitHub</a>
-                                </li>
-                            </ul>
-                        </div>
+
+        <!-- Este bloque de codigo controla el footer dejar aqui -->
+        <footer class="footer">
+            <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal® 2021</h2>
+            <div class="row mt-4 justify-content-center align-items-center">
+                <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
+                    <div class=" col-lg-6 col-md-12 col-sm-12">
+                        <ul class="footer__menu_1">
+                            <li class="nav-item footer__item">
+                                <a class=" nav-link" href="inicio.html">Inicio</a>
+                            </li>
+                            <li class="nav-item footer__item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item footer__item ">
+                                <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class=" col-lg-3  col-md-6 col-sm-6 col-6">
-                        <div class="footer__imagen">
-                            <img src="../src/assets/img/Hogwartscrest.png" alt="hogwarts">
-                        </div>
+                    <div class="linea"></div>
+                    <div class=" col-lg-3 col-md-12 col-sm-12">
+                        <ul class="">
+                            <li class="nav-item footer__item ">
+                                <a class="nav-link" href="productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item footer__item">
+                                <a class="nav-link"
+                                    href="https://github.com/DenisseGonz/Proyecto-Integrador-Equipo-3">GitHub</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </footer>
+                <div class=" col-lg-3  col-md-6 col-sm-6 col-6">
+                    <div class="footer__imagen">
+                        <img src="../src/assets/img/Hogwartscrest.png" alt="hogwarts">
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-            <!-- Se importa la librería de las partículas primero antes del script de configuración -->
-            <!-- <script src="node_modules\particles.js\particles.js"></script> -->
-            <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-            <script src="../src/assets/js/cargador-particulas.js"></script>
+        <!-- Se importa la librería de las partículas primero antes del script de configuración -->
+        <!-- <script src="node_modules\particles.js\particles.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script src="../src/assets/js/cargador-particulas.js"></script>
 
-            <!-- Comportamientos de Bootstrap -->
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous"></script>
-                <script type="module" src="../bundle.js" defer></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-            <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
-            <script src="../src/assets/js/bootstrap.min.js"></script>
+        <!-- Comportamientos de Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script type="module" src="../bundle.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../src/assets/js/bootstrap.min.js"></script>
 
 </body>
 

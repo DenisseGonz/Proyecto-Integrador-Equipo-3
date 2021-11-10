@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../src/assets/css/acerca-de-nosotros.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Adamina&family=Alegreya+Sans:ital,wght@1,100;1,400&family=IM+Fell+English+SC&family=Open+Sans:wght@300;400&display=swap"
         rel="stylesheet">
@@ -20,7 +21,30 @@
 </head>
 
 <body>
-    <audio src="../src/assets/audio/01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
+    <audio preload="auto" autoplay>
+        <source src="../src/assets/audio/Prologue.mp3" id="cancion1" />
+        <source src="../src/assets/audio/Fireworks.mp3" id="cancion2" />
+        <source src="../src/assets/audio/Quidditch.mp3" id="cancion3" />
+        <source src="../src/assets/audio/Requirements.mp3" id="cancion4" />
+        <source src="../src/assets/audio/Wondrous World.mp3" id="cancion5" />
+    </audio>
+    <div class="btn-group reproductor" role="group">
+        <button type="button" class="btn btn-outline-dark music" id="play">
+            <label class="bi-pause-fill"></label>
+        </button>
+        <button type="button" class="btn btn-outline-dark music" id="vol-btn">
+            <label class="bi-volume-up-fill"></label>
+        </button>
+        <button type="button" class="btn btn-outline-dark music vol-range">
+            <input type="range" class="slider" id="volumen" value="0.8" min="0" max="1" step="0.1" />
+        </button>
+        <button type="button" class="btn btn-outline-dark music" id="siguiente">
+            <label class="bi-skip-end-fill"></label>
+        </button>
+        <button type="button" class="btn btn-outline-dark music" id="encapsulador">
+            <label class="bi-music-note-list"></label>
+        </button>
+    </div>
     <!-- El siguiente bloque de codigo controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
     <div id="particles-js">
         <img id="fondo" src="../src/assets/img/hogwarts-fondo.png" />
@@ -110,14 +134,13 @@
                     <div class="info text-justify col-sm-12 col-md-8 col-lg-9">
                         <h3>La Orden del Fénix</h3>
                         <p>Nuestra misión es hacer la experiencia estudiantil en Hogwarts íntegra y completa. Nos
-                            interesa la funcionalidad de un sitio que promueva el intercambio de ideas, eventos,
+                            interesa la funcionalidad de un sitio que promueva el intercambio de ideas, eventos e
                             información
-                            y galeones. Nuestra visión es llevar la magia del instituto más allá del aula. Apoyar a los
-                            alumnos blabla Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, officia
-                            atque non velit aliquam rem consequatur consectetur nesciunt sequi officiis minima
-                            asperiores qui quod, hic harum veritatis esse facilis nemo.<br>Ubicados
-                            en Ciudad
-                            de México, 2021.</p>
+                            y galeones. Nuestra visión es llevar la fantasía más allá del aula, ser un respaldo escolar
+                            para los alumnos y satisfacer la necesidad económica de los pequeños emprendedores del
+                            instituto. Hemos mantenido nuestra misma meta y usando los mismos estándares de calidad
+                            desde hace cuatro siglos. <br>Ubicados
+                            en el Mundo Mágico, Escocia, 2021.</p>
                         <p class="pequeñas">No estamos asociados de ninguna manera con Callejón Diagon®.</p>
                     </div>
                 </div>
@@ -263,6 +286,7 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
+        <script type="module" src="../bundle.js" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
         <script src="../src/assets/js/bootstrap.min.js"></script>

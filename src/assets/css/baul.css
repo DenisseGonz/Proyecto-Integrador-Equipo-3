@@ -1,18 +1,24 @@
 body{
-    background-image: url(../img/baul-compras.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+ 
 }
 
 .mask{
-    background-color: rgba(0,0,0,0.45);
-
+    background-color: rgba(31, 19, 3, 0.5);
+    background-blend-mode:darken ;
 }
+
 .contenedor__baul{
     display: flex;
     width:100%;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.fondo__div{
+    background-image: url(../img/baul-compras.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.85;
 }
 
 .navegacion__usuario{
@@ -35,7 +41,6 @@ body{
 .baul__compras--detalle{
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, rgba(76,54,3,1), rgba(76,54,3,0.4));
     align-content: space-around;
     align-items: center;
     width:55%;
@@ -44,8 +49,16 @@ body{
     margin-top: 50px;
 }
 .detalle__titulo{
-    display: none;
     font-family: 'Adamina', serif;
+    color: white;
+    font-weight: 700;
+}
+.detalle__descripcion{
+    margin-top: 1%;
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+    font-family: --detalles;
 }
 .detalle__encabezados{
     display: flex;
@@ -63,7 +76,7 @@ body{
     display:flex;
     flex-direction: row;
     width:100%;
-    justify-content:center;
+    justify-content:space-around;
     align-content: center;
 }
 
@@ -71,7 +84,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content:center;
-    width:40%;
+    margin-left: -50px;
 }
 
 .producto__informacion--descripcion{
@@ -81,14 +94,16 @@ body{
     justify-content: center;
     font-size: large;
     font-family: 'Alegreya Sans', sans-serif;
-    padding-left: 10px;
+    margin-left: -250px;
+    width: 50px !important;
 }
 .detalle__producto--precio{
     display:flex; 
     align-content: center;
     justify-content: center;
     color:white;
-    font-size:1.4rem;
+    font-size:1.8rem;
+    font-weight: 600;
     font-family: 'Alegreya Sans', sans-serif;
 }
 
@@ -147,7 +162,7 @@ input{
 .compras__resumen{
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, rgb(182, 148, 11), rgba(241,196,15,0.2));
+    /* background-image: linear-gradient(to bottom, rgb(182, 148, 11), rgba(241,196,15,0.2)); */
     width:35%;
     border-radius: 25px;
     padding: 50px;
@@ -179,7 +194,6 @@ input{
 /* Carrusel */
 
 .carrusel{
-    background-image: linear-gradient(to bottom, rgba(76,54,3,1), rgba(76,54,3,0.4));
     justify-self: center;
     width:90%;
     border-radius: 25px;
@@ -188,14 +202,14 @@ input{
 }
 
 /* This only changes this particular animation duration */
-.animate__animated.animate__bounce {
-    --animate-duration: 25s;
+.animate__animated.animate_pulse {
+    --animate-duration: 10s;
   }
   
   /* This changes all the animations globally */
   :root {
-    --animate-duration: 1600ms;
-    --animate-delay: 0.15s;
+    --animate-duration: 60ms;
+    --animate-delay: 5s;
   }
 
 @media (max-width: 768px) {
@@ -203,7 +217,8 @@ input{
         display: none;
     }
     .carousel-inner .carousel-item > div:first-child {
-        display: block;
+        display: flex;
+        justify-content:space-around;
     }
 }
 
@@ -249,7 +264,7 @@ input{
 /* Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) { 
 body{
-    background-image: url(../img/baul-compras.png);
+    background-image: url(../img/baul-compras.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x:center ;
@@ -308,7 +323,8 @@ body{
     justify-content:center;
     text-justify: center;
     width:100% !important;
-    margin:auto;
+    margin: auto !important;;
+    padding: 0%;
 }
 .detalle__imagen{
     margin:auto;
@@ -318,7 +334,7 @@ body{
     display:flex;
     color:white;
     font-size: 1.2rem;
-    margin:auto;
+    margin:auto !important;
     padding: 0%;
     width: 90%;
     justify-content: center;

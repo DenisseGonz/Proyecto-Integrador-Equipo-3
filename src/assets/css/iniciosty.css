@@ -161,6 +161,9 @@ producto:hover{
 
 .producto__parte-1{
     position: relative;
+    background-color:#271d1d9f;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(2px);
     height: 290px;
     max-height: 290px;
     overflow: hidden;
@@ -369,6 +372,8 @@ producto:hover{
 .swal2-popup {
     font-size: 1rem !important;
     font-family: Adamina, serif;
-    color: #ffffff;
+    background-color:#271d1d9f;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(2px);
   }
 

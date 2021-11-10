@@ -39,6 +39,82 @@ body,a,a:hover {
     z-index: -1;
     filter: brightness(60%);
 }
+.btn.music{
+    height: 10vh;
+}
+.music{
+    font-size: 1.65rem;
+    background-color: #9f893281;
+    color: black;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+.music label{   
+    font-size: 1.65rem;
+    color: black;
+    -webkit-text-stroke: 0px;
+}
+.music:hover{
+    background-color: black;
+    color: white;
+}
+.music:hover label{
+    background-color: black;
+    color: white;
+}
+.music:focus {
+    outline: none;
+    box-shadow: none;
+}
+.reproductor{
+    position:fixed;
+    z-index: 9999;
+    bottom: 3%;
+    right: 1.5%;
+}
+#play,#vol-btn,#siguiente{
+    display:none;
+}
+.vol-range{
+    display:none;
+    width: fit-content;
+}
+ 
+.slider {
+    appearance: none;
+    width: 10vw;
+    background: black;
+    outline: none;
+    height: 7px;
+    transform: translateY(-5px);
+    border-radius: 10px;   
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+    border-radius: 15px;  
+}
+.slider:hover {
+    opacity: 1;
+    background-color: white;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    opacity: 1;
+    width: 30px;
+    height: 45px;
+    border: 0;
+    background: url("../img/escudo-login.png") no-repeat center;
+    background-size: 1.75em;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    border: 0;
+    background: url("../img/escudo-login.png");
+    cursor: pointer;
+  }
+
 
 /*Estos cambios los estoy realizando para unir las versiones hare una prueba elemental*/
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css">
     <link rel="preload" href="../src/assets/css/normalize.css" as="style">
     <link rel="stylesheet" href="../src/assets/css/normalize.css">
@@ -13,11 +13,35 @@
     <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
     <link rel="preload" href="../src/assets/css/eventos.css" as="style">
     <link rel="stylesheet" href="../src/assets/css/eventos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 
 </head>
 
 <body>
-    <audio src="../src/assets/audio/01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
+    <audio preload="auto" autoplay>
+        <source src="../src/assets/audio/Prologue.mp3" id="cancion1" />
+        <source src="../src/assets/audio/Fireworks.mp3" id="cancion2" />
+        <source src="../src/assets/audio/Quidditch.mp3" id="cancion3" />
+        <source src="../src/assets/audio/Requirements.mp3" id="cancion4" />
+        <source src="../src/assets/audio/Wondrous World.mp3" id="cancion5" />
+    </audio>
+    <div class="btn-group reproductor" role="group">
+        <button type="button" class="btn btn-outline-dark music" id="play">
+            <label class="bi-pause-fill"></label>
+        </button>
+        <button type="button" class="btn btn-outline-dark music" id="vol-btn">
+            <label class="bi-volume-up-fill"></label>
+        </button>
+        <button type="button" class="btn btn-outline-dark music vol-range">
+            <input type="range" class="slider" id="volumen" value="0.8" min="0" max="1" step="0.1" />
+        </button>
+        <button type="button" class="btn btn-outline-dark music" id="siguiente">
+            <label class="bi-skip-end-fill"></label>
+        </button>
+        <button type="button" class="btn btn-outline-dark music" id="encapsulador">
+            <label class="bi-music-note-list"></label>
+        </button>
+    </div>
     <!-- El particle-js contiene las partículas para que se explayen en todo el html, dejar como primer elemento siempre -->
     <div id="particles-js">
         <img id="fondo" src="../src/assets/img/hogwarts-fondo.png" />
@@ -93,30 +117,40 @@
     <!-- Inserte los elementos generales aquí (no es necesario el header o footer en esta parte) -->
     <main class="container-fluid">
         <section class="eventos__banner container-fluid text-center animate__animated animate__tada">
-            <img class="eventos__img img-fluid rounded" src="../src/assets/img/baile-harry-potter-cdmx.jpg"/>
+            <img class="eventos__img img-fluid rounded" src="../src/assets/img/baile-harry-potter-cdmx.jpg" />
             <h1 class="eventos__titulo text-center font-weight-bolder">Eventos</h1>
         </section>
-        
+
         <p class="eventos__info">
-            Bienvenidx alumnx. Aquí encontrarás los últimos eventos como aviso de tus profesores y el director. ¡No te pierdas ninguno! 
+            Bienvenidx alumnx. Aquí encontrarás los últimos eventos como aviso de tus profesores y el director. ¡No te
+            pierdas ninguno!
         </p>
         <!-- Publicaciones con cards -->
 
-        <div id="eventos__publicaciones" class="container-fluid mx-0 row justify-content-around animate__animated animate__backInUp">
+        <div id="eventos__publicaciones"
+            class="container-fluid mx-0 row justify-content-around animate__animated animate__backInUp">
             <div class="card col-12 col-lg-5">
-                <div class="card-header">
-                    <img src="../src/assets/img/albus.jpg" class="rounded-circle eventos__perfil" />
-                    <label class="eventos__card-titulo"> Albus <span class="eventos__card-siglas">P.W.B.</span> Dumbledore</label>
+                <div class="card-header row">
+                    <section class="col-8">
+                        <img src="../src/assets/img/albus.jpg" class="rounded-circle eventos__perfil" />
+                        <label class="eventos__card-titulo"> Albus Dumbledore</label>
+                    </section>
+                    <section class="col-4 eventos__card-fecha">Hace 3 horas</section>
                 </div>
                 <div class="card-body">
-                    <img src="https://img.ecartelera.com/noticias/fotos/34400/34410/1.jpg" class="eventos__foto rounded" />
+                    <img src="https://img.ecartelera.com/noticias/fotos/34400/34410/1.jpg"
+                        class="eventos__foto rounded" />
                     <h3 class="my-3 card-title px-4">Visita de Jefes del Ministerio de Magia</h3>
                     <h4 class="px-4">Miércoles 10</h4>
-                    <p class="card-text text-justify px-4">El mes de noviembre será especial ya que recibiremos a algunos representantes del Ministerio de Magia. Se cree que el máximo órgano de gobierno del Reino Unido estará presente en el Instituto para reclutar a los magos de último año que estén listos para combatir en lo que se cree, será el desencadenamiento de una nueva Guerra Mágica. El Instituto Hogwarts se siente orgulloso de estar presente en esta nueva lucha contra la corrupción.</p>
+                    <p class="card-text text-justify px-4">El mes de noviembre será especial ya que recibiremos a
+                        algunos representantes del Ministerio de Magia. Se cree que el máximo órgano de gobierno del
+                        Reino Unido estará presente en el Instituto para reclutar a los magos de último año que estén
+                        listos para combatir en lo que se cree, será el desencadenamiento de una nueva Guerra Mágica. El
+                        Instituto Hogwarts se siente orgulloso de estar presente en esta nueva lucha contra la
+                        corrupción.</p>
                 </div>
                 <div class="card-footer container row justify-content-between">
-                    <div class="col-5 eventos__card-fecha">Hace 3 horas</div>
-                    <div class="col-6 text-right">
+                    <div class="col-12 text-right px-4">
                         <label for="checkbox__estrella" class="eventos__estrellas">★</label>
                         <input type="checkbox" id="checkbox__estrella" class="eventos__checkbox" />
                         <span id="eventos__card-puntuaciones">Me gusta</span>
@@ -125,18 +159,25 @@
             </div>
             <div class="card col-12 col-lg-5">
                 <div class="card-header">
-                    <img src="../src/assets/img/albus.jpg" class="rounded-circle eventos__perfil" />
-                    <label class="eventos__card-titulo"> Albus <span class="eventos__card-siglas">P.W.B.</span> Dumbledore</label>
+                    <section class="col-8">
+                        <img src="../src/assets/img/albus.jpg" class="rounded-circle eventos__perfil" />
+                        <label class="eventos__card-titulo"> Albus Dumbledore</label>
+                    </section>
+                    <section class="col-4 eventos__card-fecha">Ayer</section>
                 </div>
                 <div class="card-body">
                     <img src="https://img.ecartelera.com/noticias/fotos/50300/50316/1.jpg"
                         class="eventos__foto rounded" />
                     <h3 class="my-3 px-4 card-title">Discurso del director</h3>
                     <h4 class="px-4">Martes 9</h4>
-                    <p class="card-text px-4 text-justify"> El siguiente martes 9 de noviembre tendremos un importante anuncio. A todos los estudiantes del instituto se les solicita de la manera más atenta asistir al evento donde se anunciará la fundación de La Orden del Fénix® 2021. Se esperan sorpresas con la integración de este nuevo equipo en Hogwarts. No habrá justificación de faltas bajo ninguna circunstancia.</p>
+                    <p class="card-text px-4 text-justify"> El siguiente martes 9 de noviembre tendremos un importante
+                        anuncio. A todos los estudiantes del instituto se les solicita de la manera más atenta asistir
+                        al evento donde se anunciará la fundación de La Orden del Fénix® 2021. Se esperan sorpresas con
+                        la integración de este nuevo equipo en Hogwarts. No habrá justificación de faltas bajo ninguna
+                        circunstancia.</p>
                 </div>
                 <div class="card-footer container row justify-content-between">
-                    <div class="col-5 eventos__card-fecha">Ayer</div>
+
                     <div class="col-6 text-right">
                         <label for="checkbox__estrella" class="eventos__estrellas">★</label>
                         <input type="checkbox" id="checkbox__estrella" class="eventos__checkbox" />
@@ -147,13 +188,19 @@
             <div class="card col-12 col-lg-5">
                 <div class="card-header">
                     <img src="../src/assets/img/albus.jpg" class="rounded-circle eventos__perfil" />
-                    <label class="eventos__card-titulo"> Albus <span class="eventos__card-siglas">P.W.B.</span> Dumbledore</label>
+                    <label class="eventos__card-titulo"> Albus <span class="eventos__card-siglas">P.W.B.</span>
+                        Dumbledore</label>
                 </div>
                 <div class="card-body">
-                    <img src="https://super-ficcion.com/wp-content/uploads/2020/04/1-1-1.jpg" class="eventos__foto rounded" />
+                    <img src="https://super-ficcion.com/wp-content/uploads/2020/04/1-1-1.jpg"
+                        class="eventos__foto rounded" />
                     <h3 class="my-3 card-title px-4">Clase magistral profesor Lockhart</h3>
                     <h4 class="px-4">Lunes 15</h4>
-                    <p class="card-text text-justify px-4">A todos los estudiantes interesados en la inicialización avanzada de Defensa de las Artes Oscuras los invitamos a asistir a la clase magistral que tendrá el profesor invitado Gilderoy Lockhart la cual tendrá una duración de cuatro horas por la tarde del viernes al finalizar el horario regular de clases. Favor de presentar con su mentora la inscripción al curso para recibir los requerimientos y los útiles escolares.</p>
+                    <p class="card-text text-justify px-4">A todos los estudiantes interesados en la inicialización
+                        avanzada de Defensa de las Artes Oscuras los invitamos a asistir a la clase magistral que tendrá
+                        el profesor invitado Gilderoy Lockhart la cual tendrá una duración de cuatro horas por la tarde
+                        del viernes al finalizar el horario regular de clases. Favor de presentar con su mentora la
+                        inscripción al curso para recibir los requerimientos y los útiles escolares.</p>
                 </div>
                 <div class="card-footer container row justify-content-between">
                     <div class="col-5 eventos__card-fecha">Hace 2 días</div>
@@ -167,13 +214,15 @@
             <div class="card col-12 col-md-5">
                 <div class="card-header">
                     <img src="../src/assets/img/albus.jpg" class="rounded-circle eventos__perfil" />
-                    <label class="eventos__card-titulo"> Albus <span class="eventos__card-siglas">P.W.B.</span> Dumbledore</label>
+                    <label class="eventos__card-titulo"> Albus <span class="eventos__card-siglas">P.W.B.</span>
+                        Dumbledore</label>
                 </div>
                 <div class="card-body">
                     <img src="../src/assets/img/copa-eventos.jpg" class="eventos__foto rounded" />
                     <h3 class="my-3 px-4 card-title">Torneo de los Tres Magos</h3>
                     <h4 class="px-4">Jueves 21</h4>
-                    <p class="card-text px-4 text-justify"> Este es otro año para el evento del Torneo de los Tres Magos.
+                    <p class="card-text px-4 text-justify"> Este es otro año para el evento del Torneo de los Tres
+                        Magos.
                         Como es costumbre se realizará entre las escuelas de magia de la <strong>Academia
                             Beauxbatons</strong>, el <strong>Instituto Durmstrang</strong> y nosotros. Queridos alumnos
                         y aspirantes a campeones, esperemos que como en cada torneo den lo mejor de sí y que sea una
@@ -257,7 +306,7 @@
     <!-- <script src="node_modules\particles.js\particles.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="..\src\assets\js\cargador-particulas.js"></script>
-    <script type="module" src="../bundle.js"></script>
+    <script type="module" src="../bundle.js" defer></script>
     <!-- Complementos de Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

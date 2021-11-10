@@ -6,13 +6,13 @@ h1{
 h3 {
     font-family: 'Adamina', serif;
     font-weight: 400px;
-    font-size: 43px;
+    font-size: 36px;
 }
 
 h4{
     font-family: 'Alegreya Sans', sans-serif;
     font-weight:900;
-    font-size: 27px;
+    font-size: 20px;
     color:#FCFCFC;
     text-decoration: overline#977f1e;
 }
@@ -123,10 +123,11 @@ label{
     margin:0
 }
 .eventos__card-fecha{
-    padding-right: 0;
-    padding-left: 5%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    transform: translateY(40%);
+    font-size: 18px;
+    font-family: 'Alegreya Sans', sans-serif;
+    text-shadow:10cm;
+    color:#9f8932;
 }
 .eventos__checkbox{
     display:none;
@@ -187,7 +188,7 @@ label{
 
 @media (min-width: 1200px) { 
     .eventos__card-titulo{
-        font-size: 30px;
+        font-size: 24px;
         font-style:bold;
         margin-left: 10px;
         transform: translateY(25%);

@@ -1,10 +1,13 @@
+.root{
+    --gris: #363859;
+    --blanco: #FCFCFC;
+}
 .contenedor__perfil {
     max-width: 1200px;
     width: 95%;
     margin: 0 auto;
     /* margin-bottom: -5rem; */
 }
-
 .user__titulo {
     font-family: 'IM Fell English SC', sans-serif;
     color: var(--blanco);
@@ -99,6 +102,65 @@ p {
     font-family: 'Adamina', sans-serif;
 }
 
-.btn-warning {
+.btn-secondary{
     margin-top: 10px;
 }
+
+
+.color-fondo{
+   background-color:#271d1d9f;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(2px);
+} 
+
+.color-boton{
+    background-color: #c4c4c4f9;
+}
+  
+.custom-button{
+    color:#977f1e;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px auto;
+}
+
+.custom-button:hover{
+    color:#363859;
+}
+
+.custom-button2{
+    color:white;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+}
+
+.formulario__datos--campos{
+    background-color:#271d1d9f; 
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 30px;
+    border-radius: 6px;
+    color:var(--blanco);
+}
+input[type=password]:focus, input[type=email]:focus{
+    box-shadow: 0 0 0 2px rgba(84, 102, 165, 0.85);
+    background-color:#271d1d9f;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(2px);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color:var(--blanco);
+}
+
+label.formulario{
+      margin: 15px;
+}
+

@@ -11,6 +11,7 @@ import {
     hufflepuff,
     ravenclaw,
 } from './assets/js/seleccionador_casas.js';
+import { agprodini } from './assets/js/inicio-incluye-productos.js';
 import { productos } from './assets/js/productos.js';
 import {
     mostrarControlador,

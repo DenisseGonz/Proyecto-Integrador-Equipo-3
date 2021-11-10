@@ -9,11 +9,23 @@
     --ravenclaw: #035b78;
     --griffindor: #ae0001;
     --glas: #00000050;
+    /* tipografia */
+    --titulo: 'Adamina', serif;
+    --texto: 'Open Sans', sans-serif;
+    --texto-detalles: 'Alegreya Sans', sans-serif;
+    --detalles: 'IM Fell English SC', serif;
+    /* colores */
+    --dorado: #9f8932;
+    --gris: #363859;
+    --blanco: #fcfcfc;
+    --negro: #292100;
+    --amarillo: #faeaa6;
+    --fondo-cards: rgba(133, 108, 12, 0.5);
 }
 
 html {
     overflow-x: hidden;
-    font-size: 62.5%;
+
     box-sizing: border-box;
     /*ayuda a mejorar el box model*/
 }
@@ -31,20 +43,20 @@ a:hover {
 }
 /* -------------- */
 body {
-    font-size: 1.6rem;
     overflow-x: hidden;
     /*1rem=10px*/
 }
 
-/* NAVEGACION */
+/* NAVEGACION SALAS*/
 .hufflepuff,
 .ravenclaw,
 .slytherin,
 .griffindor {
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 700;
     border-radius: 0.5rem;
+    font-family: var(--texto-detalles);
 }
 .hufflepuff:hover {
     background-color: var(--hufflepuff);
@@ -70,7 +82,7 @@ body {
     border-radius: 1rem;
 }
 
-/* GRIFFINDOR */
+/* SALAS */
 
 .contenedor__gryffindor {
     max-width: 1200px;
@@ -83,7 +95,8 @@ body {
     backdrop-filter: blur(75px);
     -webkit-backdrop-filter: blur(75px);
     color: var(--white);
-    font-size: 2.5rem;
+    font-family: var(--texto);
+    font-size: 1.6rem;
     font-weight: 600;
     text-align: justify;
     padding: 2rem;
@@ -110,10 +123,12 @@ body {
 }
 
 .seccion__fundador p {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--white);
     font-weight: 700;
     margin-bottom: 3rem;
+    text-align: center;
+    font-family: var(--texto-detalles);
 }
 
 @media (min-width: 300px) and (max-width: 700px) {
@@ -122,23 +137,51 @@ body {
     }
 }
 
+/* CARRUSEL */
+.curiosidad__imagen {
+    width: 40rem;
+    height: 30rem;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
     background-color: transparent;
     border: none;
+    width: 2%;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #000;
+    background-color: transparent;
 }
 
 .carrusel__slider {
     background-color: var(--black-dg);
+    height: fit-content;
 }
 
-.carousel-item p {
+.info__1,
+.info__2 {
     color: var(--white);
+    text-align: justify;
+}
+
+.info__1 {
+    padding: 2rem 2.5rem 0.5rem 2.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--titulo);
+}
+
+.info__2 {
+    padding: 0 2.5rem 0 2.5rem;
+    font-family: var(--texto);
+    font-size: 1.2rem;
+}
+@media (min-width: 300px) and (max-width: 900px) {
+    .curiosidad__imagen {
+        height: 25rem;
+    }
 }
 
 /* FOOTER */

@@ -1,8 +1,9 @@
 export const data = [
+    //Se creo una constante data donde se crearon objetos los cuales usariamos para no repetir codigo de cada una de las salas y con javascript
     [
-        //        Gryffindor
+        //Gryffindor
+        // configuracion:
         [
-            // configuracion:
             // color_principal:
             'rgba(174,0,1,0.9)',
             // color_secundario:
@@ -20,8 +21,8 @@ export const data = [
             // info_creador:
             'Godric Gryffindor fue un mago que vivió en la época medieval y uno de los cuatro fundadores del Colegio Hogwarts de Magia y Hechicería. Era amigo de Salazar Slytherin, pero se opuso a él cuando éste pensaba que no se debía aceptar a los nacidos de muggles como estudiantes de Hogwarts. Se desconoce la fecha de su muerte. El lugar de nacimiento de Godric Gryffindor se conoce como Valle de Godric, en su honor. El retrato de Godric Gryffindor sigue estando en Hogwarts, en el pasillo del séptimo piso.',
         ],
+        // curiosidades:
         [
-            // curiosidades:
             [
                 //no: '1',
                 //titulo:
@@ -71,8 +72,8 @@ export const data = [
     ],
 
     [
-        //Slytherin: {
-        //configuracion: {
+        //Slytherin:
+        //configuracion:
         [
             //color_principal:
             '#06640c',
@@ -91,7 +92,7 @@ export const data = [
             //info_creador:
             'Salazar Slytherin fue un famoso mago de sangre pura de la Edad Media. Hablaba la lengua pársel y era extremadamente hábil en el uso de la Legeremancia. Es uno de los cuatro fundadores del Colegio Hogwarts de Magia y Hechicería y el mejor amigo de Godric Gryffindor hasta los problemas que hubo entre los fundadores. Slytherin no confiaba en los mestizos debido a la persecución de muggles contra magos. Esto provocó que él deseara que Hogwarts sólo enseñara a aquellos de sangre pura. Como los otros tres fundadores no lo aceptaron, Slytherin abandonó el colegio, no sin antes construir la Cámara de los Secretos con el basilisco en su interior.',
         ],
-        //curiosidades: [
+        //curiosidades:
         [
             [
                 //no: '1',
@@ -132,7 +133,7 @@ export const data = [
             [
                 //no: '5',
                 //titulo:
-                'La cámara de los secretos.',
+                'La cámara de los secretos',
                 //img_curiosidad:
                 'https://64.media.tumblr.com/ead3b61809ae7aa3f3dc6945b0b36418/tumblr_pe5hce2QYK1vxmkixo4_540.gifv',
                 //texto:
@@ -142,9 +143,9 @@ export const data = [
     ],
 
     [
-        //Hufflepuff: {
+        //Hufflepuff:
+        //configuracion:
         [
-            //configuracion: {
             //color_principal:
             '#d2b207',
             //color_secundario:
@@ -162,7 +163,7 @@ export const data = [
             //info_creador:
             'Helga Hufflepuff fue una de los cuatro fundadores del Colegio Hogwarts de Magia y Hechicería y ayudó a construir la escuela. Cuando se conocieron Godric Gryffindor y Salazar Slytherin, hablaron sobre la posibilidad de un colegio de hechicería, mientras que Gryffindor se puso en contacto con Rowena Ravenclaw, Slytherin buscó a su amiga Helga Hufflepuff y así fundaron el colegio. Helga admitió estudiantes a su casa que no tuvieran miedo a trabajar duro. Mientras los otros fundadores tomaban estudiantes basándose en sus ambiciones, valentía, o inteligencia, Helga Hufflepuff tomó al resto de ellos, tratándolos a todos por igual y enseñándoles todo lo que sabía.',
         ],
-        //curiosidades: [
+        //curiosidades:
         [
             [
                 //no: '1',
@@ -180,7 +181,7 @@ export const data = [
                 //img_curiosidad:
                 'https://www.gifmaniacos.es/wp-content/uploads/2019/10/elemento-tierra-gifmaniacos.es-28.gif',
                 //texto:
-                'Aunque sus colores son un poco invasivos (amarillo y negro) esta casa responde a los elementos de la Tierra.',
+                'Aunque sus colores son un poco invasivos (amarillo y negro) esta casa responde a los elementos de la Tierra. La Tierra y sus características, también influirá en el individuo a través de una serie de rasgos físicos, de personalidad y comportamientos que pueden estar relacionados con nuestra salud también. Nos ayuda a trabajar en nuestros objetivos y generar abundancia. Nos da la visión sensata y sabia para establecer objetivos, y la disciplina y la constancia para caminar hacia ellos.',
             ],
             [
                 //no: '3',
@@ -196,14 +197,14 @@ export const data = [
                 //titulo:
                 'Acceso a la sala común',
                 //img_curiosidad:
-                'https://2img.net/h/img3.wikia.nocookie.net/__cb20130505121455/dumbledoresarmyroleplay/images/a/c/HCR2.png',
+                'https://infoliteraria.com/wp-content/uploads/2020/03/Slytherin-common.jpg',
                 //texto:
                 'A la Sala Común de Hufflepuff se accede desde el mismo pasillo que a las cocinas de Hogwarts. Pasando delante del bodegón que forma la entrada a las cocinas, se encontrará una gran pila de barriles en un hueco oscuro en la piedra a la derecha del corredor. El segundo barril empezando por abajo, en medio de la segunda fila, se abrirá si se golpea al ritmo de Helga Hufflepuff. Como método de seguridad para disuadir a los estudiantes que no son de Hufflepuff, si se golpea el barril incorrecto o se golpea un número incorrecto la tapa de uno de los otros barriles se abre y ducha a la persona con vinagre.',
             ],
             [
                 //no: '5',
                 //titulo:
-                'La profesora Sprout se retiró en 2017.',
+                'La profesora Sprout se retiró en 2017',
                 //img_curiosidad:
                 'https://pa1.narvii.com/6781/2b57443c8a1b149f8426145407e45cd4d30be8b3_hq.gif',
                 //texto:
@@ -212,8 +213,8 @@ export const data = [
         ],
     ],
     [
-        //Ravenclaw: {
-        //configuracion: {
+        //Ravenclaw:
+        //configuracion:
         [
             //color_principal:
             '#035b78',
@@ -273,7 +274,7 @@ export const data = [
             [
                 //no: '5',
                 //titulo:
-                'Ravenclaw inventó el polvo de floo.',
+                'Ravenclaw inventó el polvo de floo',
                 //img_curiosidad:
                 'https://thumbs.gfycat.com/WideThreadbareFunnelweaverspider-max-1mb.gif',
                 //texto:
@@ -282,5 +283,3 @@ export const data = [
         ],
     ],
 ];
-
-// console

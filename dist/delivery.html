@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="../src/assets/css/delivery.css">
     <link rel="preload" href="../src/assets/css/gencomps.css" as="style">
     <link rel="stylesheet" href="../src/assets/css/gencomps.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Adamina&family=Alegreya+Sans:ital,wght@1,100;1,400&family=IM+Fell+English+SC&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +29,7 @@
     <!-- Este bloque de codigo despliega el header dejar aqui -->
     <div id="header">
         <div id="logo">
-            <img src="../src/assets/img/logo.png" alt="" width="180px" />
+            <img src="../src/assets/img/logo.png" alt="" width="250px" />
         </div>
         <nav class="navbar navbar-expand-lg" id="encabezado">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -37,7 +42,7 @@
             </button>
 
             <div id="logo2">
-                <img src="../src/assets/img/logo.png" alt="" width="120px" />
+                <img src="../src/assets/img/logo.png" alt="" width="250px" />
             </div>
 
             <a class="navbar-brand order-lg-12 p-0 me-2" href="baul-compras.html">
@@ -52,8 +57,8 @@
 
             <div class="collapse navbar-collapse nav-item" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="inicio.html">Inicio</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="inicio.html">Inicio<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="usuario.html">Mi Perfil <span class="sr-only"></span></a>
@@ -64,10 +69,10 @@
                             Salas
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="../dist/griffindor.html">Gryffindor</a>
-                            <a class="dropdown-item" href="../dist/hufflepuff.html">Hufflepuff</a>
-                            <div class="dropdown-item" href="../dist/slytherin.html">Slytherin</div>
-                            <a class="dropdown-item" href="../dist/ravenclaw.html">Ravenclaw</a>
+                            <a class="dropdown-item griffindor" href="../dist/casas_base.html?casa=1">Gryffindor</a>
+                            <a class="dropdown-item hufflepuff" href="../dist/casas_base.html?casa=3">Hufflepuff</a>
+                            <a class="dropdown-item slytherin" href="../dist/casas_base.html?casa=2">Slytherin</a>
+                            <a class="dropdown-item ravenclaw" href="../dist/casas_base.html?casa=4">Ravenclaw</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -97,8 +102,9 @@
     <div>
         <div class="fondo">
             <main>
-            <h1>¡Llevamos tu producto gratis!</h1>
-            <p>Gracias a nuestro sistema de lechuzas especializadas podrás recibir tu producto dentro de los siguientes cinco días. <br> El 100% de la propina será para tu <span>repartidor mágico.</span></p>
+                <h1>¡Llevamos tu producto gratis!</h1>
+                <p>Gracias a nuestro sistema de lechuzas especializadas podrás recibir tu producto dentro de los
+                    siguientes cinco días. <br> El 100% de la propina será para tu <span>repartidor mágico.</span></p>
             </main>
             <!-- Borde que cambia de color -->
             <div class="borde justify-content-center container">
@@ -155,7 +161,7 @@
 
     <!-- Este bloque de codigo controla el footer dejar aqui -->
     <footer class="footer">
-        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
+        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal® 2021</h2>
         <div class="row mt-4 justify-content-center align-items-center">
             <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
                 <div class=" col-lg-6 col-md-12 col-sm-12">

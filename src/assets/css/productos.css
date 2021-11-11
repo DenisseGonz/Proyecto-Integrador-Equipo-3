@@ -585,6 +585,9 @@ producto:hover{
   max-height: 290px;
   overflow: hidden;
   border-radius: 10% 10% 0% 0%;
+  background-color:#271d1d9f;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .producto__parte-1::before{
@@ -790,5 +793,7 @@ transition: all 0.3s;
 .swal2-popup {
   font-size: 1rem !important;
   font-family: Adamina, serif;
-  color: #ffffff;
+  background-color:#271d1d9f;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(10px);
 }

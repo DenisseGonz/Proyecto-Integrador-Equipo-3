@@ -13,14 +13,40 @@
     <link href="../src/assets/css/ihover.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../src/assets/css/baul.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Alegreya+Sans:ital,wght@0,300;1,300&family=IM+Fell+English+SC&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Adamina&family=Alegreya+Sans:ital,wght@1,100;1,400&family=IM+Fell+English+SC&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+
     <title>Baúl de compras</title>
 </head>
 
 <body>
-    <audio src="../src/assets/audio/01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
+    <audio preload="auto" autoplay>
+        <source src="../src/assets/audio/Prologue.mp3" id="cancion1" />
+        <source src="../src/assets/audio/Fireworks.mp3" id="cancion2" />
+        <source src="../src/assets/audio/Quidditch.mp3" id="cancion3" />
+        <source src="../src/assets/audio/Requirements.mp3" id="cancion4" />
+        <source src="../src/assets/audio/Wondrous World.mp3" id="cancion5" />
+    </audio>
+    <div class="btn-group reproductor" role="group">
+        <button type="button" class="btn btn-outline-dark music" id="play">
+            <label class="bi-pause-fill"></label>
+        </button>
+        <button type="button" class="btn btn-outline-dark music" id="vol-btn">
+            <label class="bi-volume-up-fill"></label>
+        </button>
+        <button type="button" class="btn btn-outline-dark music vol-range">
+            <input type="range" class="slider" id="volumen" value="0.8" min="0" max="1" step="0.1" />
+        </button>
+        <button type="button" class="btn btn-outline-dark music" id="siguiente">
+            <label class="bi-skip-end-fill"></label>
+        </button>
+        <button type="button" class="btn btn-outline-dark music" id="encapsulador">
+            <label class="bi-music-note-list"></label>
+        </button>
+    </div>
     <!-- El seguiente bloque de codigo controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
     <!--  <div id="particles-js">
         <img id="fondo" src="./src/assets/img/hogwarts-fondo.png" />
@@ -30,11 +56,11 @@
     </div>
 
     <!-- Este bloque de codigo despliega el header dejar aqui -->
-    <header id="header">
+    <div id="header">
         <div id="logo">
-            <img src="../src/assets/img/logo.png" alt="Callejón Diagonal" width="300" />
+            <img src="../src/assets/img/logo.png" alt="" width="250px" />
         </div>
-        <nav class="navbar navbar-expand-lg" id="encabezado" .d-flex>
+        <nav class="navbar navbar-expand-lg" id="encabezado">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <svg id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -44,25 +70,24 @@
                 </svg>
             </button>
 
-            <!--       <div class="navegacion__usuario order-lg-12 order-sm-1">
-                <div id="logo-user">
-                    <img src="../src/assets/img/logo-user.png" alt="Imagen usuario" width="60" />
-                </div>
-                <div class="navegacion__usuario--texto">
-                    <a href="usuario.html"> ¡hola, Usuario!</a>
-                </div>
-            </div> -->
-
             <div id="logo2">
-                <img src="../src/assets/img/logo.png" alt="" width="120" />
+                <img src="../src/assets/img/logo.png" alt="" width="250px" />
             </div>
 
-
+            <a class="navbar-brand order-lg-12 p-0 me-2" href="baul-compras.html">
+                <svg class="d-block my-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M5 4h14a3 3 0 0 1 3 3v4h-7v-1H9v1H2V7a3 3 0 0 1 3-3m6 7h2v2h-2v-2m-9 1h7v1l2 2h2l2-2v-1h7v8H2v-8z"
+                        fill="white" />
+                </svg>
+            </a>
 
             <div class="collapse navbar-collapse nav-item" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="inicio.html">Inicio</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="inicio.html">Inicio<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="usuario.html">Mi Perfil <span class="sr-only"></span></a>
@@ -73,10 +98,10 @@
                             Salas
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="../dist/griffindor.html">Gryffindor</a>
-                            <a class="dropdown-item" href="../dist/hufflepuff.html">Hufflepuff</a>
-                            <div class="dropdown-item" href="../dist/slytherin.html">Slytherin</div>
-                            <a class="dropdown-item" href="../dist/ravenclaw.html">Ravenclaw</a>
+                            <a class="dropdown-item griffindor" href="../dist/casas_base.html?casa=1">Gryffindor</a>
+                            <a class="dropdown-item hufflepuff" href="../dist/casas_base.html?casa=3">Hufflepuff</a>
+                            <a class="dropdown-item slytherin" href="../dist/casas_base.html?casa=2">Slytherin</a>
+                            <a class="dropdown-item ravenclaw" href="../dist/casas_base.html?casa=4">Ravenclaw</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -96,9 +121,8 @@
                     </li>
                 </ul>
             </div>
-
         </nav>
-    </header>
+    </div>
 
 
 
@@ -268,30 +292,31 @@
 
     </main>
     <!-- Este bloque de codigo controla el footer dejar aqui -->
-    <footer class="footer ">
-        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal</h2>
+    <footer class="footer">
+        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal® 2021</h2>
         <div class="row mt-4 justify-content-center align-items-center">
             <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
                 <div class=" col-lg-6 col-md-12 col-sm-12">
                     <ul class="footer__menu_1">
                         <li class="nav-item footer__item">
-                            <a class=" nav-link" href="inicio.html">Inicio</a>
+                            <a class="nav-link nav-enlace" href="inicio.html">Inicio</a>
                         </li>
                         <li class="nav-item footer__item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link nav-enlace" href="contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item footer__item ">
-                            <a class="nav-link" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
+                            <a class="nav-link nav-enlace" href="acerca-de-nosotros.html">Acerca de Nosotros</a>
                         </li>
                     </ul>
                 </div>
+                <div class="linea"></div>
                 <div class=" col-lg-3 col-md-12 col-sm-12">
-                    <ul class="">
+                    <ul class="footer__menu_2">
                         <li class="nav-item footer__item ">
-                            <a class="nav-link" href="productos.html">Productos</a>
+                            <a class="nav-link nav-enlace" href="productos.html">Productos</a>
                         </li>
                         <li class="nav-item footer__item">
-                            <a class="nav-link"
+                            <a class="nav-link nav-enlace"
                                 href="https://github.com/DenisseGonz/Proyecto-Integrador-Equipo-3">GitHub</a>
                         </li>
                     </ul>

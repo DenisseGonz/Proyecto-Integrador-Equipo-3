@@ -34,6 +34,7 @@ span {
     justify-content: space-around;
     font-size: 2.5rem;
     color:var(--blanco);
+    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
 }
 
 .container2{
@@ -42,57 +43,49 @@ span {
     justify-content: space-around;
     font-size: 2.5rem;
     color:var(--blanco);
+    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
 }
-
 .contenedorPrincipal{
     width: 80%;
 }
-
 .borde
 {
-    border-style: solid;
-    border-width: 10px;
-    padding: 2rem;
-    color: var(--negro);
-    background-origin: content-box;
-    border-radius: 25px;
-    font-family: var(--texto);
-    box-shadow: 0 0 0 5px var(--negro),
-    0 0 0 5px var(--negro);
     background-color: rgba(41, 33, 0, 0.25);
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom:5rem;
+    padding: 2rem;
+    -webkit-backdrop-filter: blur(2px);
 }
-
-
 .nombre{
     border-radius: 15px;
 }
-
 .familia{
     border-radius: 15px;
 }
-
-label{
-    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
-    font-family:var(--texto);
-    font-size:3rem;
-}
-
 .mensaje{
     height: 200px;
     border-radius: 20px; 
     width: 80%;
     margin-bottom:2rem;
  }
-
-
-textarea{
-    background-color: var(--blanco);
-    color: var(--gris);
-    font-size:2rem;
-    width:100%;
+label{
+    -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
+    font-family:var(--texto);
+    font-size:3rem;
 }
-
-
+textarea{
+    background-color:#271d1d9f;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(2px);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: var(--blanco);
+}
 .btn-enviar {
     padding: 10px 20px;
     border-radius: 15px;
@@ -100,7 +93,6 @@ textarea{
     margin-top:1rem;
     
 }
-
 .btn{
     width:30%;
     font-size:2rem;

@@ -1,4 +1,14 @@
 :root {
+    --black-dg: rgba(0, 0, 0, 0.8);
+    --black: #000;
+    --red-bg: rgba(174, 0, 1, 0.9);
+    --white: #fff;
+    --gold: #dfa507;
+    --hufflepuff: #d2b207;
+    --slytherin: #0b360e;
+    --ravenclaw: #035b78;
+    --griffindor: #ae0001;
+    --glas: #00000050;
     /* tipografia */
     --titulo: 'Adamina', serif;
     --texto: 'Open Sans', sans-serif;
@@ -7,25 +17,28 @@
     /* colores */
     --dorado: #9f8932;
     --gris: #363859;
-    --blanco: #FCFCFC;
+    --blanco: #fcfcfc;
     --negro: #292100;
-    --amarillo: #FAEAA6;
+    --amarillo: #faeaa6;
     --fondo-cards: rgba(133, 108, 12, 0.5);
-  }
+}
 
 * {
     margin: 0;
 }
 
-html,body{
+html,
+body {
     overflow-x: hidden;
 }
 
-body,a,a:hover {
+body,
+a,
+a:hover {
     cursor: url(http://cur.cursors-4u.net/user/use-1/use160.cur), progress;
 }
-#particles-js{
-    background-color:  #000511;
+#particles-js {
+    background-color: #000511;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -39,6 +52,82 @@ body,a,a:hover {
     z-index: -1;
     filter: brightness(60%);
 }
+.btn.music{
+    height: 10vh;
+}
+.music{
+    font-size: 1.65rem;
+    background-color: #9f893281;
+    color: black;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+.music label{   
+    font-size: 1.65rem;
+    color: black;
+    -webkit-text-stroke: 0px;
+}
+.music:hover{
+    background-color: black;
+    color: white;
+}
+.music:hover label{
+    background-color: black;
+    color: white;
+}
+.music:focus {
+    outline: none;
+    box-shadow: none;
+}
+.reproductor{
+    position:fixed;
+    z-index: 9999;
+    bottom: 3%;
+    right: 1.5%;
+}
+#play,#vol-btn,#siguiente{
+    display:none;
+}
+.vol-range{
+    display:none;
+    width: fit-content;
+}
+ 
+.slider {
+    appearance: none;
+    width: 10vw;
+    background: black;
+    outline: none;
+    height: 7px;
+    transform: translateY(-5px);
+    border-radius: 10px;   
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+    border-radius: 15px;  
+}
+.slider:hover {
+    opacity: 1;
+    background-color: white;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    opacity: 1;
+    width: 30px;
+    height: 45px;
+    border: 0;
+    background: url("../img/escudo-login.png") no-repeat center;
+    background-size: 1.75em;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    border: 0;
+    background: url("../img/escudo-login.png");
+    cursor: pointer;
+  }
+
 
 /*Estos cambios los estoy realizando para unir las versiones hare una prueba elemental*/
 
@@ -64,29 +153,55 @@ body,a,a:hover {
     }
 }
 
-/*#logo{
-    display:flex;
-    justify-content: center;
-    background-color: black;
-}*/
+/* NAVEGACION SALAS*/
+.hufflepuff,
+.ravenclaw,
+.slytherin,
+.griffindor {
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    font-family: var(--detalles);
+}
+.hufflepuff:hover {
+    background-color: var(--hufflepuff);
+    color: var(--black);
+}
+
+.ravenclaw:hover {
+    background-color: var(--ravenclaw);
+    color: var(--black);
+}
+
+.slytherin:hover {
+    background-color: var(--slytherin);
+    color: var(--black);
+}
+.griffindor:hover {
+    background-color: var(--griffindor);
+    color: var(--black);
+}
+
+.dropdown-menu {
+    background-color: var(--black);
+    border-radius: 1rem;
+}
 
 #encabezado {
     display: flex;
     height: 90px;
     background-color: black;
     z-index: 100;
+    font-family: var(--detalles);
 }
-
-/*.nav-link{
- color:white;   
-}*/
 
 .nav-item {
     background-color: black;
     padding-left: 30px;
 }
 .footer__item {
-    background-color:transparent;
+    background-color: transparent;
     text-align: start;
 }
 
@@ -97,13 +212,20 @@ body,a,a:hover {
 /*Codigo para el footer*/
 
 .footer {
-    background-color: rgba(0, 0, 0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .footer h2,
 .nav-link {
-    color: #fff;
+    color: var(--blanco);
     font-weight: 700;
+    font-size: 1.1rem;
+    font-family: var(--detalles);
+}
+
+.nav-link:hover {
+    color: var(--dorado);
+    transition: all 0.3s ease;
 }
 
 .footer img {
@@ -133,7 +255,6 @@ ul {
 .footer__titulo {
     font-family: var(--detalles);
 }
-
 
 @media (min-width: 300px) and (max-width: 650px) {
     .footer__titulo {

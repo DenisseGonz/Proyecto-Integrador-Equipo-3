@@ -14,7 +14,7 @@ export function recordadora(){
 
       html:
       '<label for="inputPregunt" class="col pregunta__seguridad">Respuesta a tu pregunta de seguridad:</label>'+
-      '<input type="text" class="formulario__datos--campos w-50 my-2" id="inputRespuesta"'+
+      '<input type="text" class="formulario__datos--campos col-lg-3 col-sm-6   my-2" id="inputRespuesta"'+
           'placeholder="Respuesta">',
  
       showCloseButton: true,

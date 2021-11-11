@@ -293,6 +293,12 @@ ul {
 
     #logo2 {
         display: flex;
-        width: 180px;
+        width: 40vw;
+    }
+    .navbar-toggler{
+        font-size: 0.9em;
+    }
+    .navbar-brand{
+        font-size: 00.9em;
     }
 }

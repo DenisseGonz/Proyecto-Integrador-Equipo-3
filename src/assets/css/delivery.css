@@ -26,9 +26,7 @@ span {
     font-size: 1.6rem;
 }
 
-.borde {
-    border-style: solid;
-    border-width: 10px;
+.borde{
     padding: 2rem;
     background-image: url('../img/delivery_buho_3.png');
     color: var(--negro);
@@ -38,8 +36,15 @@ span {
     background-origin: content-box;
     border-radius: 25px;
     font-family: var(--texto);
-    box-shadow: 0 0 0 5px var(--negro), 0 0 0 5px var(--negro);
-    background-color: rgba(41, 33, 0, 0.25);
+    box-shadow: 0 0 0 5px var(--negro),
+    0 0 0 5px var(--negro);
+    background-color:#271d1d9f;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(2px);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color:var(--blanco);
 }
 
 .container1 {
@@ -71,6 +76,7 @@ label {
     color: var(--blanco);
     -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
     font-family: var(--texto);
+    font-size:3rem;
 }
 
 .terminos {
@@ -86,9 +92,14 @@ label {
 }
 
 #inputPregunta {
-    border-radius: 15px;
-    background-color: var(--blanco);
-}
+ background-color:#271d1d9f;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(2px);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color:var(--blanco);
+  }
 
 .btn-enviar {
     text-align: center;
@@ -115,7 +126,15 @@ label {
 .nombre__textarea {
     width: 100%;
     border-radius: 15px;
-}
+    background-color:#271d1d9f;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(2px);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color:var(--blanco);
+} 
+
 
 @media (min-width: 250px) and (max-width: 768px) {
     .container1 {
@@ -163,5 +182,6 @@ label {
 
     ::placeholder {
         font-size: 2rem;
+        
     }
 }

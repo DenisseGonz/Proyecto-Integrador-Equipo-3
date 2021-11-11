@@ -78,10 +78,11 @@ document.addEventListener('DOMContentLoaded', function () {
     $siguiente.addEventListener('click', saltarCancion());
 });
 
-if (url.includes('productos.html') || url.includes('inicio.html')) {
+if (url.includes('productos.html') || url.includes('inicio.html') || url.includes('baul-compras.html')) {
     agprodini();
     productos();
 }
+
 if (url.includes('/index.html')) {
     bienvenida();
     recordadora();

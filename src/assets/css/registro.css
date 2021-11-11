@@ -104,6 +104,7 @@ body{
     border-top: none;
     border-left: none;
     border-right: none;
+    color:white;
 }
  
 input[type=password]:focus, input[type=email]:focus, input[type=text]:focus,select[name="pregunta"]:focus{
@@ -115,6 +116,7 @@ input[type=password]:focus, input[type=email]:focus, input[type=text]:focus,sele
     border-top: none;
     border-left: none;
     border-right: none;
+    color:white;
 }
 
 .datos__casa--check{
@@ -182,7 +184,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   border: 1px solid rgba(84, 102, 165, 0.85);
-  -webkit-text-fill-color:#271d1d9f;
+  -webkit-text-fill-color:var(--blan);
   transition: background-color 5000s ease-in-out 0s;
   color:var(--blanco);
 }

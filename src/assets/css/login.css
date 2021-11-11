@@ -107,9 +107,28 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-content: center;
-    
+    align-content: center; 
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid rgba(84, 102, 165, 0.85);
+  -webkit-text-fill-color:#271d1d9f;
+  transition: background-color 5000s ease-in-out 0s;
+  color:var(--blanco);
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: var(--blanco) !important;
+}
+
 .formulario__datos--campos{
     background-color:#271d1d9f;
     backdrop-filter: blur(12px);

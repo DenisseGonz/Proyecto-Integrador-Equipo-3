@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="../src/assets/css/normalize.css">
     <link rel="preload" href="../src/assets/css/registro.css" as="style">
     <link href="../src/assets/css/registro.css" rel="stylesheet" type="text/css" />
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Alegreya+Sans:ital,wght@0,300;1,300&family=IM+Fell+English+SC&display=swap');
-        </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Adamina&family=Alegreya+Sans:ital,wght@1,100;1,400&family=IM+Fell+English+SC&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
     <title>Registro</title>
 
 </head>
@@ -33,7 +35,7 @@
     <form method="POST" class="formulario">
         <div class="formulario__titulos">
             <h1>¡Bienvenido!</h1>
-            <h2 >Regístrate</h2>
+            <h2>Regístrate</h2>
         </div>
 
         <span class="formulario__filas col">
@@ -54,7 +56,9 @@
                     placeholder="algo@hogwarts.com">
             </div>
             <div class="formulario__datos col-lg-4 col-md-4 col-sm-6">
-                <label for="inputContraseña" class="col-lg-11  formulario__datos--etiquetas etiquetas--especial">Contraseña:<span class="d-lg-none">.</span></label>
+                <label for="inputContraseña"
+                    class="col-lg-11  formulario__datos--etiquetas etiquetas--especial">Contraseña:<span
+                        class="d-lg-none">.</span></label>
                 <input type="password" class="col-lg-11  formulario__datos--campos" id="inputContraseña"
                     placeholder="8 caracteres alfanuméricos">
             </div>
@@ -72,8 +76,8 @@
 
                     <input type="radio" id="radio1" name="radios" value="gryffindor" checked>
                     <label for="radio1" class="opcion__casa col-lg-3 col-sm-6 col-md-3 col-xs-3">
-                            <img class="d-flex align-self-center" src="../src/assets/img/Gryffindor.png" width="40">
-                            <span class="d-flex align-self-center">Gryffindor</span>
+                        <img class="d-flex align-self-center" src="../src/assets/img/Gryffindor.png" width="40">
+                        <span class="d-flex align-self-center">Gryffindor</span>
                     </label>
 
                     <input type="radio" id="radio2" name="radios" value="hufflepuff">
@@ -83,15 +87,15 @@
                     </label>
 
                     <input type="radio" id="radio3" name="radios" value="ravenclaw">
-                    <label for="radio3" class="opcion__casa col-lg-3 col-sm-6 col-md-3 col-xs-3">                     
-                            <img class="d-flex align-self-center" src="../src/assets/img/RavenclawCrest.png" width="45">
-                            <span class="d-flex align-self-center">Ravenclaw</span>                       
+                    <label for="radio3" class="opcion__casa col-lg-3 col-sm-6 col-md-3 col-xs-3">
+                        <img class="d-flex align-self-center" src="../src/assets/img/RavenclawCrest.png" width="45">
+                        <span class="d-flex align-self-center">Ravenclaw</span>
                     </label>
 
                     <input type="radio" id="radio4" name="radios" value="slytherin">
-                    <label for="radio4" class="opcion__casa col-lg-3 col-sm-6 col-md-3 col-xs-3">                       
-                            <img class="d-flex align-self-center" src="../src/assets/img/slytherin-crests.png" width="40">
-                            <span class="d-flex align-self-center">Slytherin</span>                       
+                    <label for="radio4" class="opcion__casa col-lg-3 col-sm-6 col-md-3 col-xs-3">
+                        <img class="d-flex align-self-center" src="../src/assets/img/slytherin-crests.png" width="40">
+                        <span class="d-flex align-self-center">Slytherin</span>
                     </label>
 
                 </div>

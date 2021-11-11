@@ -1,0 +1,249 @@
+:root {
+    --black-dg: rgba(0, 0, 0, 0.8);
+    --black: #000;
+    --red-bg: rgba(174, 0, 1, 0.9);
+    --white: #fff;
+    --gold: #dfa507;
+    --hufflepuff: #d2b207;
+    --slytherin: #0b360e;
+    --ravenclaw: #035b78;
+    --griffindor: #ae0001;
+    --glas: #00000050;
+    /* tipografia */
+    --titulo: 'Adamina', serif;
+    --texto: 'Open Sans', sans-serif;
+    --texto-detalles: 'Alegreya Sans', sans-serif;
+    --detalles: 'IM Fell English SC', serif;
+    /* colores */
+    --dorado: #9f8932;
+    --gris: #363859;
+    --blanco: #fcfcfc;
+    --negro: #292100;
+    --amarillo: #faeaa6;
+    --fondo-cards: rgba(133, 108, 12, 0.5);
+}
+
+html {
+    overflow-x: hidden;
+
+    box-sizing: border-box;
+    /*ayuda a mejorar el box model*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/* Den: Te añadi esto para el cursor */
+body,
+a,
+a:hover {
+    cursor: url(http://cur.cursors-4u.net/user/use-1/use160.cur), progress;
+}
+/* -------------- */
+body {
+    overflow-x: hidden;
+    /*1rem=10px*/
+}
+
+/* NAVEGACION SALAS*/
+.hufflepuff,
+.ravenclaw,
+.slytherin,
+.griffindor {
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    font-family: var(--texto-detalles);
+}
+.hufflepuff:hover {
+    background-color: var(--hufflepuff);
+    color: var(--black);
+}
+
+.ravenclaw:hover {
+    background-color: var(--ravenclaw);
+    color: var(--black);
+}
+
+.slytherin:hover {
+    background-color: var(--slytherin);
+    color: var(--black);
+}
+.griffindor:hover {
+    background-color: var(--griffindor);
+    color: var(--black);
+}
+
+.dropdown-menu {
+    background-color: var(--black);
+    border-radius: 1rem;
+}
+
+/* SALAS */
+
+.contenedor__gryffindor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.seccion__texto {
+    background-color: var(--glas);
+    backdrop-filter: blur(75px);
+    -webkit-backdrop-filter: blur(75px);
+    color: var(--white);
+    font-family: var(--texto);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: justify;
+    padding: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    border-radius: 2rem;
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+    .seccion__texto {
+        max-width: 100%;
+    }
+    .header {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+.seccion__fundador img {
+    margin-top: 5rem;
+    border-radius: 10rem;
+    width: 70%;
+    height: 50rem;
+}
+
+.seccion__fundador p {
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-family: var(--texto-detalles);
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+    .seccion__fundador p {
+        font-size: 3rem;
+    }
+}
+
+/* CARRUSEL */
+.curiosidad__imagen {
+    width: 40rem;
+    height: 30rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent;
+    border: none;
+    width: 2%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent;
+}
+
+.carrusel__slider {
+    background-color: var(--black-dg);
+    height: fit-content;
+}
+
+.info__1,
+.info__2 {
+    color: var(--white);
+    text-align: justify;
+}
+
+.info__1 {
+    padding: 2rem 2.5rem 0.5rem 2.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--titulo);
+}
+
+.info__2 {
+    padding: 0 2.5rem 0 2.5rem;
+    font-family: var(--texto);
+    font-size: 1.2rem;
+}
+@media (min-width: 300px) and (max-width: 900px) {
+    .curiosidad__imagen {
+        height: 25rem;
+    }
+}
+
+/* FOOTER */
+.footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 8rem;
+}
+
+.footer h2,
+.nav-enlace {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.footer img {
+    width: 55%;
+    height: 55%;
+}
+
+.footer__imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.linea {
+    border-left: 1px solid var(--white);
+    height: 75px;
+    position: relative;
+    right: -3%;
+    margin-left: -3px;
+    top: 8px;
+}
+
+.footer__titulo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer__menu_1,
+.footer__menu_2 {
+    text-align: start;
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+    .footer__titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .linea {
+        visibility: hidden;
+    }
+    .footer__imagen img {
+        width: 65%;
+        height: 75%;
+    }
+    .footer__menu_1 {
+        margin: 0;
+    }
+}

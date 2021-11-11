@@ -11,16 +11,41 @@
     <link rel="stylesheet" type="text/css" href="../src/assets/css/gencomps.css">
     <link rel="preload" href="../src/assets/css/usersty.css" as="style">
     <link rel="stylesheet" href="../src/assets/css/usersty.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Alegreya+Sans:ital,wght@1,100;1,400&family=IM+Fell+English+SC&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="../src/assets/css/hover.css" rel="stylesheet" media="all" />
     <title>Mi Perfil</title>
 </head>
 
 <body>
-    <audio src="../src/assets/audio/01 - Prologue.mp3" autoplay="autoplay" loop="loop"></audio>
+    <audio preload="auto" autoplay>
+        <source src="../src/assets/audio/Prologue.mp3" id="cancion1" />
+        <source src="../src/assets/audio/Fireworks.mp3" id="cancion2" />
+        <source src="../src/assets/audio/Quidditch.mp3" id="cancion3" />
+        <source src="../src/assets/audio/Requirements.mp3" id="cancion4" />
+        <source src="../src/assets/audio/Wondrous World.mp3" id="cancion5" />
+    </audio>
+    <div class="btn-group reproductor" role="group">
+        <button type="button" class="btn btn-outline-dark music" id="play">
+            <label class="bi-pause-fill"></label>
+        </button>
+        <button type="button" class="btn btn-outline-dark music" id="vol-btn">
+            <label class="bi-volume-up-fill"></label>
+        </button>
+        <button type="button" class="btn btn-outline-dark music vol-range">
+            <input type="range" class="slider" id="volumen" value="0.8" min="0" max="1" step="0.1" />
+        </button>
+        <button type="button" class="btn btn-outline-dark music" id="siguiente">
+            <label class="bi-skip-end-fill"></label>
+        </button>
+        <button type="button" class="btn btn-outline-dark music" id="encapsulador">
+            <label class="bi-music-note-list"></label>
+        </button>
+    </div>
     <!-- El seguiente bloque de codigo controla las particulas en movimiento por conveniencia es mejor que quede al inicio del body -->
     <div id="particles-js">
         <img id="fondo" src="../src/assets/img/hogwarts-fondo.png" />
@@ -42,7 +67,7 @@
             </button>
 
             <div id="logo2">
-                <img src="../src/assets/img/logo.png" alt="" width="120px" />
+                <img src="../src/assets/img/logo.png" alt="" width="250px" />
             </div>
 
             <a class="navbar-brand order-lg-12 p-0 me-2" href="baul-compras.html">
@@ -69,10 +94,10 @@
                             Salas
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="griffindor.html">Gryffindor</a>
-                            <a class="dropdown-item" href="../dist/hufflepuff.html">Hufflepuff</a>
-                            <div class="dropdown-item" href="../dist/slytherin.html">Slytherin</div>
-                            <a class="dropdown-item" href="../dist/ravenclaw.html">Ravenclaw</a>
+                            <a class="dropdown-item griffindor" href="../dist/casas_base.html?casa=1">Gryffindor</a>
+                            <a class="dropdown-item hufflepuff" href="../dist/casas_base.html?casa=3">Hufflepuff</a>
+                            <a class="dropdown-item slytherin" href="../dist/casas_base.html?casa=2">Slytherin</a>
+                            <a class="dropdown-item ravenclaw" href="../dist/casas_base.html?casa=4">Ravenclaw</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -96,22 +121,24 @@
     </div>
 
 
-
+    <div class="text-center ">
+        <h3 class="user__indicaciones">Aquí puedes ver tu información de usuario, pedidos y formas de pago.
+        </h3>
+    </div>
     <!-- Inserte los elementos que compondran su página dentro de este div -->
-    <div class="container">
-        <div id="user__banner">
+    <div class="contenedor__perfil d-lg-flex">
+        <div id="user__banner col-lg-4 col-md-12 col-sm-12">
             <img src="../src/assets/img/banner-slytherin.jpg" class="user__foto__banner" />
-            <h2 class="user__titulo text-center font-weight-bolder">Bienvenido, mago Draco Malfoy a tu perfil de Slytherin</h2>
+            <h2 class="user__titulo text-center font-weight-bolder">Bienvenido, mago Draco Malfoy a tu perfil de
+                Slytherin</h2>
         </div>
 
-        <h3 class="text-center user__indicaciones">Aquí puedes ver tu información de usuario, pedidos y formas de pago.
-        </h3>
 
         <!-- Menu colapsable con opciones  -->
-        <center>
+        <section class="col-lg-7 col-md-12 col-sm-12">
             <div class="accordion text-white" id="accordionExample">
                 <!-- EDITAR USUARIO -->
-                <div class="card bg-dark">
+                <div class="card color-fondo">
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0">
                             <button class="btn btn-outline-warning btn-block text-left texto-formulario" type="button"
@@ -122,7 +149,7 @@
                                     preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
                                     <path
                                         d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65A.488.488 0 0 0 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"
-                                        fill="black">
+                                        fill="#977f1e">
                                         <animateTransform attributeName="transform" attributeType="XML" type="rotate"
                                             from="0 12 12" to="360 12 12" dur="10s" repeatCount="indefinite" />
                                     </path>
@@ -144,51 +171,62 @@
                                     <a class="nav-link nav__pago" data-toggle="tab" href="#campre" role="tab"
                                         aria-controls="nav-update" aria-selected="false">Cambiar pregunta de
                                         seguridad</a>
+                                    <a class="nav-link nav__pago" data-toggle="tab" href="#camcuent" role="tab"
+                                        aria-controls="nav-update" aria-selected="false">Borrar cuenta</a>
                                 </div>
                             </nav>
 
 
                             <div class="tab-content">
-                                <div class="tab-pane fade show active" id="camcont" role="tabpanel"
+                                <div class="tab-pane fade show active text-center" id="camcont" role="tabpanel"
                                     aria-labelledby="nav-ver-tab">
                                     <form action="" method="POST">
-                                        <label for="">Cambiar contraseña</label> <br />
-                                        <input type="password" placeholder="Nueva contraseña"> <br />
-                                        <label for="">Confirmar contraseña</label> <br />
-                                        <input type="password" placeholder="Ingresa otra vez"> <br/>
-                                        <button class="btn btn-warning">Confirmar</button>
+                                        <label class="formulario" for="">Cambiar contraseña</label> <br />
+                                        <input class="formulario__datos--campos col-lg-5 col-sm-5" type="password" placeholder="Nueva contraseña"> <br />
+                                        <label class="formulario" for="">Confirmar contraseña</label> <br />
+                                        <input class="formulario__datos--campos col-lg-5 col-sm-5" type="password" placeholder="Ingresa otra vez"> <br/>
+                                        <button class="btn btn-secondary">Confirmar</button>
                                     </form>
                                 </div>
 
 
 
-                                <div class="tab-pane fade" role="tabpanel" id="camcor" aria-labelledby="nav-add-tab">
+                                <div class="tab-pane fade text-center" role="tabpanel" id="camcor" aria-labelledby="nav-add-tab">
                                     <form action="" method="POST">
-                                        <label for="">Cambiar correo</label> <br />
-                                        <input type="text" placeholder="algo@hogwarts.com"> <br />
-                                        <label for="">Confirmar correo</label> <br />
-                                        <input type="" placeholder="Ingresa otra vez"> <br />
-                                        <button class="btn btn-warning"> Confirmar</button>
+                                        <label class="formulario" for="">Cambiar correo</label> <br />
+                                        <input class="formulario__datos--campos col-lg-5 col-sm-5" type="text" placeholder="algo@hogwarts.com"> <br />
+                                        <label class="formulario" for="">Confirmar correo</label> <br />
+                                        <input class="formulario__datos--campos col-lg-5 col-sm-5" type="" placeholder="Ingresa otra vez"> <br />
+                                        <button class="btn btn-secondary"> Confirmar</button>
                                     </form>
                                 </div>
 
-
-
-                                <div class="tab-pane fade" id="campre" role="tabpanel" aria-labelledby="nav-update-tab">
+                                <div class="tab-pane fade text-center" id="campre" role="tabpanel" aria-labelledby="nav-update-tab">
                                     <form action="" method="POST">
-                                        <label for="">Pregunta de seguridad</label> <br />
-                                        <select name="" id="">
+                                        <label class="formulario"   for="">Pregunta de seguridad</label> <br />
+                                        <select class="formulario__datos--campos col-lg-5 col-sm-5" name="" id="">
                                             <option value=""></option>
                                             <option value="1">Nombre de tu primera mascota</option>
                                             <option value="2">Hechizo favorito</option>
                                             <option value="3">¿De qué es el núcleo de tu varita?</option>
+                                            <option value="4">¿Quién es tu profesor favorito?</option>
+                                            <option value="5">¿Quién es el mago al que más admiras?</option>
                                         </select>
                                         <br />
-                                        <label for="">Respuesta</label> <br />
-                                        <input type="text"> <br />
+                                        <label class="formulario" for="">Respuesta</label> <br />
+                                        <input class="formulario__datos--campos col-lg-5 col-sm-5" type="text"> <br />
                                         <br />
-                                        <button class="btn btn-warning">Confirmar</button>
+                                        <button class="btn btn-secondary">Confirmar</button>
                                     </form>
+                                </div>
+
+                                <div class="tab-pane fade show text-center" id="camcuent" role="tabpanel"
+                                    aria-labelledby="nav-update-tab">
+                                    <p>
+                                        Querido alumno: Si tienes la intención de eliminar tu cuenta está no podrá recuperarse y tus historiales de compra, eventos a los que asististe o te interesaron se eliminarán. Es importante tener la cabeza fría en esas situaciones, porque, el dejarnos llevar por el pánico puede llevarnos a optar por la decisión equivocada.
+                                    </p>
+
+                                    <button id="btnborrar" class=" custom-button2 btn-secondary hvr-float-shadow" type="button">Borrar Cuenta</button>
                                 </div>
 
 
@@ -199,16 +237,16 @@
                     </div>
                 </div>
                 <!-- HISTORIAL DE PEDIDOS -->
-                <div class="card bg-dark">
+                <div class="card color-fondo">
                     <div class="card-header" id="headingTwo">
                         <h2 class="mb-0">
-                            <button class="btn btn-outline-warning btn-block text-left collapsed texto-formulario" type="button"
-                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            <button class="btn btn-outline-warning btn-block text-left collapsed texto-formulario"
+                                type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                                 aria-controls="collapseTwo">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     aria-hidden="true" role="img" width="1.5em" height="1.5em"
                                     preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
-                                    <g fill="black">
+                                    <g fill="#977f1e">
                                         <path
                                             d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z" />
                                         <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z" />
@@ -228,15 +266,18 @@
 
                         <div class="card-body">
                             <p class="card-text text-left row justify-content-around">
-                                <strong class="col-lg-3 col-sm-6"> Nombre:</strong><span class="col-lg-2 col-sm-6">Draco </span><strong
-                                    class="col-lg-3 col-sm-6"> Familia: </strong><span class="col-lg-2 col-sm-6">Malfoy</span>
-                                <strong class="col-lg-3 col-sm-6">Casa: </strong><span class="col-lg-2 col-sm-6">Slytherin</span><strong
-                                    class="col-lg-3 col-sm-6"> Cuarto: </strong><span class="col-lg-2 col-sm-6">#234</span>
-                                <strong class="col-lg-3 col-sm-6">No. de Pedido: </strong><span class="col-lg-2 col-sm-6">000001</span><strong
-                                    class="col-lg-3 col-sm-6"> Fecha de Entrega: </strong><span class="col-lg-2 col-sm-6">18/10/2018</span>
+                                <strong class="col-lg-3 col-sm-6"> Nombre:</strong><span class="col-lg-2 col-sm-6">Draco
+                                </span><strong class="col-lg-3 col-sm-6"> Familia: </strong><span
+                                    class="col-lg-2 col-sm-6">Malfoy</span>
+                                <strong class="col-lg-3 col-sm-6">Casa: </strong><span
+                                    class="col-lg-2 col-sm-6">Slytherin</span><strong class="col-lg-3 col-sm-6"> Cuarto:
+                                </strong><span class="col-lg-2 col-sm-6">#234</span>
+                                <strong class="col-lg-3 col-sm-6">No. de Pedido: </strong><span
+                                    class="col-lg-2 col-sm-6">000001</span><strong class="col-lg-3 col-sm-6"> Fecha de
+                                    Entrega: </strong><span class="col-lg-2 col-sm-6">18/10/2018</span>
                                 <strong class="col-lg-3 col-sm-6">Forma de Pago: </strong><span
-                                    class="col-lg-2 col-sm-6">VISA-XXXX</span><strong class="col-lg-3 col-sm-6"> ID-Lechuza: </strong><span
-                                    class="col-lg-2 col-sm-6">02342</span>
+                                    class="col-lg-2 col-sm-6">VISA-XXXX</span><strong class="col-lg-3 col-sm-6">
+                                    ID-Lechuza: </strong><span class="col-lg-2 col-sm-6">02342</span>
                             <table class="table table-responsive-md my-2">
                                 <thead class="thead-light">
                                     <tr>
@@ -268,16 +309,16 @@
                     </div>
                 </div>
                 <!-- FORMA DE PAGO -->
-                <div class="card bg-dark">
+               <!--  <div class="card color-fondo">
                     <div class="card-header" id="headingThree">
                         <h2 class="mb-0">
-                            <button class="btn btn-outline-warning btn-block text-left collapsed texto-formulario" type="button"
-                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            <button class="btn btn-outline-warning btn-block text-left collapsed texto-formulario"
+                                type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                                 aria-controls="collapseThree">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     aria-hidden="true" role="img" width="1.5em" height="1.5em"
                                     preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
-                                    <g fill="black">
+                                    <g fill="#977f1e">
                                         <path fill-rule="evenodd"
                                             d="M11 15a4 4 0 1 0 0-8a4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0a5 5 0 0 1 10 0z" />
                                         <path
@@ -299,7 +340,7 @@
                             <p> Bienvenido, aquí puedes añadir, ver, modificar o eliminar tus formas de pago. Aceptamos
                                 las tarjetas mágicas de Gringotts, así como las de muggles de Visa y American Express.
                                 ¿Qué quieres hacer?</p>
-                            <!-- VER FORMA DE PAGO -->
+                             VER FORMA DE PAGO
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <a class="nav-link active nav__pago" id="nav-ver-tab" data-toggle="tab"
@@ -328,7 +369,7 @@
                                 <div class="tab-pane fade" style="position: relative;" id="nav-add" role="tabpanel"
                                     aria-labelledby="nav-add-tab">
 
-                                    <!-- AÑADIR FORMA DE PAGO -->
+                                    AÑADIR FORMA DE PAGO
 
                                     <form class="user__fadd">
                                         <div class="form-group row">
@@ -381,7 +422,7 @@
                                     </form>
                                 </div>
 
-                                <!-- ACTUALIZAR FORMA DE PAGO -->
+                                ACTUALIZAR FORMA DE PAGO 
                                 <div class="tab-pane fade" id="nav-update" role="tabpanel"
                                     aria-labelledby="nav-update-tab">
                                     <h5 class="card-title">Tarjeta terminación XXXX</h5>
@@ -439,17 +480,22 @@
                             </div>
                         </div>
                     </div>
-
-                </div>
+                </div> -->
             </div>
-    </div>
+        </section>
     </div>
     </center>
     </div>
 
+    <center>
+        <button class="color-fondo custom-button" name="logout" type="button">Cerrar Sesión</button>
+    </center>
+
+ 
+
     <!-- Este bloque de codigo controla el footer dejar aqui -->
     <footer class="footer ">
-        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal ® 2021</h2>
+        <h2 class="footer__titulo mt-3  ml-5 pt-4">Callejón Diagonal® 2021</h2>
         <div class="row mt-4 justify-content-center align-items-center">
             <div class="row col-lg-9 col-md-6 col-sm-6 col-6">
                 <div class=" col-lg-6 col-md-12 col-sm-12">
@@ -490,7 +536,7 @@
     <!-- <script src="node_modules\particles.js\particles.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="../src/assets/js/cargador-particulas.js"></script>
-
+    <script type="module" src="../bundle.js"></script>
     <!-- Comportamientos de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

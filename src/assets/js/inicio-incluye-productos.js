@@ -73,7 +73,7 @@ fetch("../src/productos.json")
                         confirmButtonColor:'#9f8932',
                         showCancelButton:true,
                         cancelButtonColor: '#363859',
-                        cancelButtonText:"regresar",
+                        cancelButtonText:"Regresar",
                         background: 'rgba(0,0,0,0.8)',
                     })
                 }) 

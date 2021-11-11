@@ -21,7 +21,7 @@
 
 import { max } from "lodash";
 import Swal from "sweetalert2";
-export function prodcutos() {
+export function productos() {
   const $contenedor = document.querySelector("#productos-2");
 
   fetch("../src/productos.json")
@@ -82,7 +82,7 @@ export function prodcutos() {
               confirmButtonColor: '#9f8932',
               showCancelButton: true,
               cancelButtonColor: '#363859',
-              cancelButtonText: "regresar",
+              cancelButtonText: "Regresar",
               background: 'rgba(0,0,0,0.8)',
             })
           })
@@ -90,10 +90,10 @@ export function prodcutos() {
       });
     })
     .catch(e => {
-      console.log(e);
+      console.log(e + ' productos a secas');
     });
 }
 
-prodcutos();
-prodcutos();
-prodcutos();
+productos();
+productos();
+productos();

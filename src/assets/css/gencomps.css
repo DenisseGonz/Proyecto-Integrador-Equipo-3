@@ -127,6 +127,11 @@ a:hover {
     background: url("../img/escudo-login.png");
     cursor: pointer;
   }
+  .ubicacion__logo{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+  }
 
 
 /*Estos cambios los estoy realizando para unir las versiones hare una prueba elemental*/
@@ -136,20 +141,24 @@ a:hover {
         display: flex;
         justify-content: center;
         background-color: black;
+        width: 250px;
     }
 
     #logo2 {
         display: none;
+        width: 180px;
     }
 }
 
 @media (max-width: 991px) {
     #logo {
         display: none;
+        width: 250px;
     }
 
     #logo2 {
         display: flex;
+        width: 180px;
     }
 }
 
@@ -238,7 +247,9 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
-
+.slider{
+    width: 15vw;
+}
 ul {
     list-style: none;
 }
@@ -271,5 +282,17 @@ ul {
     }
     .footer__menu_1 {
         margin: 0;
+    }
+    .slider{
+        width: 25vw;
+    }
+    #logo {
+        display: none;
+        width: 250px;
+    }
+
+    #logo2 {
+        display: flex;
+        width: 180px;
     }
 }

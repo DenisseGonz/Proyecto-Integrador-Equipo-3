@@ -115,6 +115,7 @@ input[type=password]:focus, input[type=email]:focus, input[type=text]:focus,sele
     border-top: none;
     border-left: none;
     border-right: none;
+    color: white;
 }
 
 .datos__casa--check{

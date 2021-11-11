@@ -99,6 +99,7 @@ label {
     border-left: none;
     border-right: none;
     color:var(--blanco);
+    font-family:var(--texto);
   }
 
 .btn-enviar {
@@ -133,6 +134,7 @@ label {
     border-left: none;
     border-right: none;
     color:var(--blanco);
+    font-family:var(--texto);
 } 
 
 
@@ -153,11 +155,11 @@ label {
         flex-direction: column;
     }
 
-    /* .borde{
+    .borde{
         background-size: 60%;
         background-repeat: no-repeat;
         background-origin: content-box;
-    } */
+    }
 
     .btn {
         font-size: 1.8rem;
@@ -182,6 +184,5 @@ label {
 
     ::placeholder {
         font-size: 2rem;
-        
     }
 }

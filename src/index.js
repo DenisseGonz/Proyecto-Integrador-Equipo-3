@@ -37,11 +37,6 @@ agprodini();
 /* productos(); */
 
 
-
-
-
-
-
 if (url.includes('/index.html')) {
     bienvenida();    
     recordadora();

@@ -128,7 +128,7 @@
     <!-- Inserte los elementos que compondran su página dentro de este div -->
     <div class="contenedor__perfil d-lg-flex">
         <div id="user__banner col-lg-4 col-md-12 col-sm-12">
-            <img src="../src/assets/img/banner-slytherin.jpg" class="user__foto__banner" />
+            <img src="../src/assets/img/banner-slytherin.jpg" alt="Animal de la casa" class="user__foto__banner" />
             <h2 class="user__titulo text-center font-weight-bolder">Bienvenido, mago Draco Malfoy a tu perfil de
                 Slytherin</h2>
         </div>
@@ -180,32 +180,33 @@
                             <div class="tab-content">
                                 <div class="tab-pane fade show active text-center" id="camcont" role="tabpanel"
                                     aria-labelledby="nav-ver-tab">
-                                    <form action="" method="POST">
-                                        <label class="formulario" for="">Cambiar contraseña</label> <br />
-                                        <input class="formulario__datos--campos col-lg-5 col-sm-5" type="password" placeholder="Nueva contraseña"> <br />
-                                        <label class="formulario" for="">Confirmar contraseña</label> <br />
-                                        <input class="formulario__datos--campos col-lg-5 col-sm-5" type="password" placeholder="Ingresa otra vez"> <br/>
-                                        <button class="btn btn-secondary">Confirmar</button>
+                                    <form id="usuario__cambiar-contraseña" autocomplete="off">
+                                        <p class="my-3 mx-4">
+                                            Recuerda que para cambiar tu contraseña está debe ser de 8 a 16 carácteres sin espacios. La contraseña debe incluir al menos una mayúscula, una minúscula y un número.
+                                        </p>
+                                        <label class="formulario">Cambiar contraseña</label> <br />
+                                        <input id="input__contraseña-1" class="formulario__datos--campos col-lg-5 col-sm-5" type="password" placeholder="Nueva contraseña"> <br />
+                                        <label class="formulario">Confirmar contraseña</label> <br />
+                                        <input id="input__contraseña-2" class="formulario__datos--campos col-lg-5 col-sm-5" type="password" placeholder="Ingresa otra vez"> <br/>
+                                        <button id="usuario__boton-contraseña" class="btn btn-secondary">Confirmar</button>
                                     </form>
                                 </div>
 
-
-
                                 <div class="tab-pane fade text-center" role="tabpanel" id="camcor" aria-labelledby="nav-add-tab">
-                                    <form action="" method="POST">
-                                        <label class="formulario" for="">Cambiar correo</label> <br />
-                                        <input class="formulario__datos--campos col-lg-5 col-sm-5" type="text" placeholder="algo@hogwarts.com"> <br />
-                                        <label class="formulario" for="">Confirmar correo</label> <br />
-                                        <input class="formulario__datos--campos col-lg-5 col-sm-5" type="" placeholder="Ingresa otra vez"> <br />
-                                        <button class="btn btn-secondary"> Confirmar</button>
+                                    <form id="usuario__cambiar-correo" autocomplete="off">
+                                        <label class="formulario">Cambiar correo</label> <br />
+                                        <input id="input__correo-1" class="formulario__datos--campos col-lg-5 col-sm-5" type="text" placeholder="algo@hogwarts.com"> <br />
+                                        <label class="formulario">Confirmar correo</label> <br />
+                                        <input id="input__correo-2" class="formulario__datos--campos col-lg-5 col-sm-5" type="text" placeholder="Ingresa otra vez"> <br />
+                                        <button id="usuario__boton-correo" class="btn btn-secondary"> Confirmar</button>
                                     </form>
                                 </div>
 
                                 <div class="tab-pane fade text-center" id="campre" role="tabpanel" aria-labelledby="nav-update-tab">
-                                    <form action="" method="POST">
-                                        <label class="formulario"   for="">Pregunta de seguridad</label> <br />
-                                        <select class="formulario__datos--campos col-lg-5 col-sm-5" name="" id="">
-                                            <option value=""></option>
+                                    <form id="usuario__cambiar-pregunta" autocomplete="off">
+                                        <label class="formulario">Pregunta de seguridad</label> <br />
+                                        <select class="formulario__datos--campos col-lg-5 col-sm-5" id="input__pregunta">
+                                            <option value="0">Escoge una opción</option>
                                             <option value="1">Nombre de tu primera mascota</option>
                                             <option value="2">Hechizo favorito</option>
                                             <option value="3">¿De qué es el núcleo de tu varita?</option>
@@ -214,9 +215,9 @@
                                         </select>
                                         <br />
                                         <label class="formulario" for="">Respuesta</label> <br />
-                                        <input class="formulario__datos--campos col-lg-5 col-sm-5" type="text"> <br />
+                                        <input id="input__respuesta" class="formulario__datos--campos col-lg-5 col-sm-5" type="text"> <br />
                                         <br />
-                                        <button class="btn btn-secondary">Confirmar</button>
+                                        <button id="usuario__boton-pregunta" class="btn btn-secondary">Confirmar</button>
                                     </form>
                                 </div>
 
@@ -226,7 +227,7 @@
                                         Querido alumno: Si tienes la intención de eliminar tu cuenta está no podrá recuperarse y tus historiales de compra, eventos a los que asististe o te interesaron se eliminarán. Es importante tener la cabeza fría en esas situaciones, porque, el dejarnos llevar por el pánico puede llevarnos a optar por la decisión equivocada.
                                     </p>
 
-                                    <button id="btnborrar" class=" custom-button2 btn-secondary hvr-float-shadow" type="button">Borrar Cuenta</button>
+                                    <button id="usuario__boton-borrar" class=" custom-button2 btn-secondary hvr-float-shadow" type="button">Borrar Cuenta</button>
                                 </div>
 
 

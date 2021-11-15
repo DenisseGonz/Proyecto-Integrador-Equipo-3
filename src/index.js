@@ -63,7 +63,7 @@ const cancion1 = document.querySelector('#cancion1');
 // ESTO ES PARA LA MÚSICA
 document.addEventListener('DOMContentLoaded', function () {
     $audio.setAttribute('src', cancion1.src);
-    $audio.volume = 0.7;
+    $audio.volume = 0.3;
     //Mostrar controlador
     $btnMusica.addEventListener('click', mostrarControlador());
     //Cuando una canción se acaba, esta sigue

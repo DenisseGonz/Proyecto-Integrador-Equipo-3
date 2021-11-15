@@ -146,6 +146,10 @@ span {
     font-size: larger;
     font-weight: 800;
 }
+.contenedor-productos {
+    padding-top: 3.5em;
+    margin: 0 auto;
+}
 
 input{
 	height:30px;
@@ -185,11 +189,14 @@ input{
     color: white;
     padding-right: 15%;
     margin-top: 10%;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 .resumen__boton--comprar{
     background-color: rgb(255, 217, 0);
-    color:grey;
+    color:rgb(85, 84, 84);
     font-weight: bolder;
+    font-size: 1rem;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 /* Carrusel */
 

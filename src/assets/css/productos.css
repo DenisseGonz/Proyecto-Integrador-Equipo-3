@@ -478,6 +478,18 @@ input:focus {
   width: 65%;
 }
 
+.card-prov {
+  position: relative;
+  background-color:#271d1d9f;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(2px);
+  height: 290px;
+  max-height: 290px;
+  overflow: hidden;
+  border-radius: 10% 10% 0% 0%;
+}
+
+
 /* cards */
 
  :root{

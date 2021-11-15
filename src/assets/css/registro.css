@@ -116,7 +116,11 @@ input[type=password]:focus, input[type=email]:focus, input[type=text]:focus,sele
     border-top: none;
     border-left: none;
     border-right: none;
+<<<<<<< HEAD
     color:white;
+=======
+    color: white;
+>>>>>>> 7a3e7cebabced823abadc2708169d0ea29fd76c6
 }
 
 .datos__casa--check{

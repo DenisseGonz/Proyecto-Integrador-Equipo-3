@@ -12,6 +12,7 @@
     <link rel="preload" href="../src/assets/css/baul.css" as="style">
     <link href="../src/assets/css/ihover.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../src/assets/css/baul.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,8 +58,8 @@
 
     <!-- Este bloque de codigo despliega el header dejar aqui -->
     <div id="header">
-        <div id="logo">
-            <img src="../src/assets/img/logo.png" alt="" width="250px" />
+        <div class="ubicacion__logo">
+            <img src="../src/assets/img/logo.png" id="logo"/>
         </div>
         <nav class="navbar navbar-expand-lg" id="encabezado">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -70,11 +71,11 @@
                 </svg>
             </button>
 
-            <div id="logo2">
-                <img src="../src/assets/img/logo.png" alt="" width="250px" />
+            <div class="ubicacion__logo">
+                <img src="../src/assets/img/logo.png" id="logo2"/>
             </div>
 
-            <a class="navbar-brand order-lg-12 p-0 me-2" href="baul-compras.html">
+            <!-- <a class="navbar-brand order-lg-12 p-0 me-2" href="baul-compras.html">
                 <svg class="d-block my-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet"
                     viewBox="0 0 24 24">
@@ -82,7 +83,7 @@
                         d="M5 4h14a3 3 0 0 1 3 3v4h-7v-1H9v1H2V7a3 3 0 0 1 3-3m6 7h2v2h-2v-2m-9 1h7v1l2 2h2l2-2v-1h7v8H2v-8z"
                         fill="white" />
                 </svg>
-            </a>
+            </a> -->
 
             <div class="collapse navbar-collapse nav-item" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -217,15 +218,6 @@
             </section>
         </section>
         <!-- Carrusel -->
-        <section id="productos" class="contenedor-productos row justify-content-center">
-
-        </section>
-        <section id="productos" class="contenedor-productos row justify-content-center">
-
-        </section>
-        <section id="productos" class="contenedor-productos row justify-content-center">
-
-        </section>
 
         <section class="container text-center my-5 carrusel mask fondo__div">
             <h2
@@ -236,7 +228,7 @@
                     <div class="carousel-item active">
                         <div class="col-lg-3">
                             <div class="card card-body">
-                                <img class="img-fluid" src="../src/assets/img/nimbus200.jpg" width="200px"
+                                <img class="img-fluid card-prov" src="../src/assets/img/nimbus200.png" width="200px"
                                     height="170px">
                                 <p class="cardText"> Nimbus 200</p>
                             </div>
@@ -245,7 +237,7 @@
                     <div class="carousel-item">
                         <div class="col-lg-3">
                             <div class="card card-body">
-                                <img class="img-fluid" src="../src/assets/img/libro.webp" width="200px" height="170px">
+                                <img class="img-fluid" src="../src/assets/img/libro.png" width="200px" height="170px">
                                 <p class="cardText">Mil hierbas mágicas y hongos </p>
                             </div>
                         </div>
@@ -253,7 +245,7 @@
                     <div class="carousel-item">
                         <div class="col-lg-3">
                             <div class="card card-body">
-                                <img class="img-fluid" src="../src/assets/img/bolquid.jpg" width="200px" height="170px">
+                                <img class="img-fluid" src="../src/assets/img/quidditch_ticket.png" width="200px" height="170px">
                                 <p class="cardText"> Boletos Quiditch</p>
                             </div>
                         </div>
@@ -261,16 +253,16 @@
                     <div class="carousel-item">
                         <div class="col-lg-3">
                             <div class="card card-body">
-                                <img class="img-fluid" src="../src/assets/img/mandragora.jpg" width="200px"
+                                <img class="img-fluid" src="../src/assets/img/plumaescribir.png" width="200px"
                                     height="170px">
-                                <p class="cardText"> Mandrágoras en grupo</p>>
+                                <p class="cardText"> Plumas</p>>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="col-lg-3">
                             <div class="card card-body">
-                                <img class="img-fluid" src="../src/assets/img/varita.jpg" width="200px" height="170px">
+                                <img class="img-fluid" src="../src/assets/img/varita.png" width="200px" height="170px">
                                 <p class="cardText"> Varita de cedro</p>
                             </div>
                         </div>
@@ -278,7 +270,7 @@
                     <div class="carousel-item">
                         <div class="col-lg-3">
                             <div class="card card-body">
-                                <img class="img-fluid" src="../src/assets/img/caldero.jpg" width="200px" height="170px">
+                                <img class="img-fluid" src="../src/assets/img/caldero.png" width="200px" height="170px">
                                 <p class="cardText"> Caldero mediano</p>
                             </div>
                         </div>

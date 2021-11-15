@@ -43,6 +43,7 @@ export function siguienteCancion() {
             $audio.setAttribute('src', cancion1.src);
         }
         $audio.play();
+        $audio.volume=0.3;
     });
 };
 

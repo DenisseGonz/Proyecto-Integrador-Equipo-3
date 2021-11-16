@@ -1,0 +1,665 @@
+[
+    {
+        "id": 1,
+        "nombre": "Fertilizante de estiércol de dragón",
+        "descuento": 0,
+        "precio": 30.5,
+        "img": "../src/assets/img/fertilizante.png",
+        "stock": 35,
+        "descripcion": "¿Plantas de lento crecimiento? Consigue este fantástico fertilizante para asegurarte de cosechar en la siguiente temporada.",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 1,
+            "categoria": "Herbología"
+        }
+    },
+    {
+        "id": 2,
+        "nombre": "Guantes de piel de dragón",
+        "descuento": 10,
+        "precio": 80.0,
+        "img": "../src/assets/img/guantesdragon.png",
+        "stock": 5,
+        "descripcion": "Tocar algunas plantas puede ser peligroso, con esta nueva edición de guantes no hay qué temer.",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 1,
+            "categoria": "Herbología"
+        }
+    },
+    {
+        "id": 3,
+        "nombre": "1000 hierbas mágicas y hongos",
+        "descuento": 5,
+        "precio": 69.99,
+        "img": "../src/assets/img/mandragora_baul.png",
+        "stock": 10,
+        "descripcion": "Nueva edición del libro de Phyllida Spore que reúne las pociones básicas de herbología para los alumnos de nuevo ingreso.",
+        "estadoProductos": {
+            "id": 4,
+            "nombre": "nuevo y destacado"
+        },
+        "categoriaProducto": {
+            "id": 1,
+            "categoria": "Herbología"
+        }
+    },
+    {
+        "id": 4,
+        "nombre": "Lavanda",
+        "descuento": 0,
+        "precio": 10.5,
+        "img": "../src/assets/img/pociones_lavanda.png",
+        "stock": 15,
+        "descripcion": "Fragancia relajante que con su bello color puedes crear pociones para dormir o de aliento del fuego.",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 1,
+            "categoria": "Herbología"
+        }
+    },
+    {
+        "id": 5,
+        "nombre": "Muérdago",
+        "descuento": 0,
+        "precio": 5.5,
+        "img": "../src/assets/img/muerdago.png",
+        "stock": 200,
+        "descripcion": "Adquiere la histórica decoración de 1996 para resaltar el espiritu navideño en esta nueva temporada de invierno 2021.",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 1,
+            "categoria": "Herbología"
+        }
+    },
+    {
+        "id": 6,
+        "nombre": "Orejeras",
+        "descuento": 10,
+        "precio": 30.0,
+        "img": "../src/assets/img/Orejeras.png",
+        "stock": 20,
+        "descripcion": "Nuevo casco diseñado para proteger los oídos de los gritos de las mandrágoras jóvenes. Adquiere el equipo esencial para la clase en Contra de las Artes Oscuras.",
+        "estadoProductos": {
+            "id": 2,
+            "nombre": "nuevo"
+        },
+        "categoriaProducto": {
+            "id": 1,
+            "categoria": "Herbología"
+        }
+    },
+    {
+        "id": 7,
+        "nombre": "Plantas acuáticas",
+        "descuento": 0,
+        "precio": 70.0,
+        "img": "../src/assets/img/plantasacuaticas.png",
+        "stock": 15,
+        "descripcion": "Con estas maravillosas plantas del Mediterráneo podrás crear branquialgas  además de tener una increíble decoración en tu cuarto. ",
+        "estadoProductos": {
+            "id": 2,
+            "nombre": "nuevo"
+        },
+        "categoriaProducto": {
+            "id": 1,
+            "categoria": "Herbología"
+        }
+    },
+    {
+        "id": 9,
+        "nombre": "Corno francés",
+        "descuento": 0,
+        "precio": 500.0,
+        "img": "../src/assets/img/cornofrances.png",
+        "stock": 5,
+        "descripcion": "Elegante instrumento de metal con el que podrás ser el nuevo integrante de la Orquesta Sinfónica de Hogwarts.",
+        "estadoProductos": {
+            "id": 2,
+            "nombre": "nuevo"
+        },
+        "categoriaProducto": {
+            "id": 2,
+            "categoria": "Instrumentos"
+        }
+    },
+    {
+        "id": 10,
+        "nombre": "Atril",
+        "descuento": 0,
+        "precio": 150.0,
+        "img": "../src/assets/img/musica_atril.png",
+        "stock": 10,
+        "descripcion": "Lleva tu atril para poder practicar donde quieras y colocar tus partituras. Contamos con diferentes alturas para alumnos y para enanos. ",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 2,
+            "categoria": "Instrumentos"
+        }
+    },
+    {
+        "id": 11,
+        "nombre": "Banco",
+        "descuento": 0,
+        "precio": 100.0,
+        "img": "../src/assets/img/musica_banquito.png",
+        "stock": 35,
+        "descripcion": "Nuevo banco completamente hecho de madera oriental importada para sentarte a practicar lo que más te gusta.",
+        "estadoProductos": {
+            "id": 2,
+            "nombre": "nuevo"
+        },
+        "categoriaProducto": {
+            "id": 2,
+            "categoria": "Instrumentos"
+        }
+    },
+    {
+        "id": 12,
+        "nombre": "Flauta",
+        "descuento": 0,
+        "precio": 90.0,
+        "img": "../src/assets/img/musica_flautas.png",
+        "stock": 8,
+        "descripcion": "Flauta sencilla de tocar con un timbre suave característico de la edad Medieval Mágica.",
+        "estadoProductos": {
+            "id": 2,
+            "nombre": "nuevo"
+        },
+        "categoriaProducto": {
+            "id": 2,
+            "categoria": "Instrumentos"
+        }
+    },
+    {
+        "id": 13,
+        "nombre": "Oboe",
+        "descuento": 0,
+        "precio": 110.0,
+        "img": "../src/assets/img/musica_oboe.png",
+        "stock": 5,
+        "descripcion": "Instrumento de madera conviértete en el nuevo solita de la Orquesta con este increíble oboe.",
+        "estadoProductos": {
+            "id": 2,
+            "nombre": "nuevo"
+        },
+        "categoriaProducto": {
+            "id": 2,
+            "categoria": "Instrumentos"
+        }
+    },
+    {
+        "id": 14,
+        "nombre": "Tambor",
+        "descuento": 0,
+        "precio": 100.0,
+        "img": "../src/assets/img/musica_tambor.png",
+        "stock": 5,
+        "descripcion": "Instrumento de percusión con el que podrás destacar en tu clase de música. No nos hacemos responsables por el daño auditivo por el exceso de uso.",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 2,
+            "categoria": "Instrumentos"
+        }
+    },
+    {
+        "id": 15,
+        "nombre": "Hojas para partituras",
+        "descuento": 10,
+        "precio": 5.0,
+        "img": "../src/assets/img/musica_partitura.png",
+        "stock": 100,
+        "descripcion": "¿Eres el próximo gran compositor que hará el nuevo himno que sonará por todas las aulas? Pasa a la historia con esta bella partitura en hoja de papiro.",
+        "estadoProductos": {
+            "id": 2,
+            "nombre": "nuevo"
+        },
+        "categoriaProducto": {
+            "id": 2,
+            "categoria": "Instrumentos"
+        }
+    },
+    {
+        "id": 16,
+        "nombre": "Saxofón",
+        "descuento": 0,
+        "precio": 30.5,
+        "img": "../src/assets/img/saxofon.png",
+        "stock": 5,
+        "descripcion": "Instrumento de metal importado directamente del Nuevo Mundo. La boquilla se vende por separado.",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 1,
+            "categoria": "Herbología"
+        }
+    },
+    {
+        "id": 17,
+        "nombre": "Alas de hada",
+        "descuento": 0,
+        "precio": 30.5,
+        "img": "../src/assets/img/pociones_Alashada.png",
+        "stock": 10,
+        "descripcion": " Consigue estas extravagantes alas para tus pociones embellecedoras o vigorizantes. Ninguna hada fue dañada en la recopilación de este producto. ",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 3,
+            "categoria": "Pociones"
+        }
+    },
+    {
+        "id": 18,
+        "nombre": "Cerebro de perezoso",
+        "descuento": 0,
+        "precio": 150.0,
+        "img": "../src/assets/img/pociones_cerebro.png",
+        "stock": 2,
+        "descripcion": "Lleva tu mucosa del cerebro de perezcoso para tu poción herbovitalizante o el filtro de muertos en vida.",
+        "estadoProductos": {
+            "id": 2,
+            "nombre": "nuevo"
+        },
+        "categoriaProducto": {
+            "id": 3,
+            "categoria": "Pociones"
+        }
+    },
+    {
+        "id": 19,
+        "nombre": "Poción embellecedora",
+        "descuento": 0,
+        "precio": 50.0,
+        "img": "../src/assets/img/pociones_embellecedora.png",
+        "stock": 2,
+        "descripcion": "¡Consigue ser la persona más atractiva del colegio! Cásate con tu persona favorita como Malodora Grymm. Poción lista para utilizarse.",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 3,
+            "categoria": "Pociones"
+        }
+    },
+    {
+        "id": 20,
+        "nombre": "Pluma de fénix",
+        "descuento": 0,
+        "precio": 100.0,
+        "img": "../src/assets/img/pociones_hoja-fenix.png",
+        "stock": 1,
+        "descripcion": "Única pieza disponible. Consigue esta inigualable hoja roja y dorada para la creación de varitas o púas de escritura.",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 3,
+            "categoria": "Pociones"
+        }
+    },
+    {
+        "id": 21,
+        "nombre": "Poción Covid-19",
+        "descuento": 0,
+        "precio": 30.5,
+        "img": "../src/assets/img/pociones_lana-murcielago-covid.png",
+        "stock": 1,
+        "descripcion": "¿Tu pueblo sigue en pandemia? ¡Lleva esta poción y regala a tu familia y amigos una Navidad como las de antes!",
+        "estadoProductos": {
+            "id": 2,
+            "nombre": "nuevo"
+        },
+        "categoriaProducto": {
+            "id": 3,
+            "categoria": "Pociones"
+        }
+    },
+    {
+        "id": 22,
+        "nombre": "Mortero",
+        "descuento": 0,
+        "precio": 24.0,
+        "img": "../src/assets/img/mortero.png",
+        "stock": 100,
+        "descripcion": "Las pociones perfectas necesitan los instrumentos adecuados, ¡no lo pienses más adquiere tu nuevo mortero!",
+        "estadoProductos": {
+            "id": 2,
+            "nombre": "nuevo"
+        },
+        "categoriaProducto": {
+            "id": 3,
+            "categoria": "Pociones"
+        }
+    },
+    {
+        "id": 23,
+        "nombre": "Ojos de pez globo",
+        "descuento": 10,
+        "precio": 180.0,
+        "img": "../src/assets/img/pociones_ojos-de-pez-globo.png",
+        "stock": 2,
+        "descripcion": "Haga su propia solución agrandadora con los relucientes ojos de pez globo.",
+        "estadoProductos": {
+            "id": 2,
+            "nombre": "nuevo"
+        },
+        "categoriaProducto": {
+            "id": 3,
+            "categoria": "Pociones"
+        }
+    },
+    {
+        "id": 24,
+        "nombre": "Solución de hipo",
+        "descuento": 0,
+        "precio": 30.5,
+        "img": "../src/assets/img/pociones_solucion-de-hipo.png",
+        "stock": 10,
+        "descripcion": "¿Aburrido? Compra esta solución de hipo y pasa un buen rato de diversión con tus amigos (los efectos pueden tardar en desaparecer consulte a su profesor).",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 3,
+            "categoria": "Pociones"
+        }
+    },
+    {
+        "id": 25,
+        "nombre": "Ajedrez mágico",
+        "descuento": 10,
+        "precio": 40.0,
+        "img": "../src/assets/img/ajedrezmagico.png",
+        "stock": 10,
+        "descripcion": "Ponga a prueba su habilidad mental y desafie a sus amigos con esta versión mágica del tablero de ajedrez.",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 4,
+            "categoria": "Deportes"
+        }
+    },
+    {
+        "id": 26,
+        "nombre": "Bate golpeador",
+        "descuento": 0,
+        "precio": 25.0,
+        "img": "../src/assets/img/bategolpeador.png",
+        "stock": 15,
+        "descripcion": "Mande lejos las bludger con este fantástico bate hecho de madera de sauce boxeador, ¡sus encantamientos impedirán que se rompa!",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 4,
+            "categoria": "Deportes"
+        }
+    },
+    {
+        "id": 27,
+        "nombre": "Bludger",
+        "descuento": 0,
+        "precio": 40.0,
+        "img": "../src/assets/img/bludger.png",
+        "stock": 10,
+        "descripcion": "Mejores sus habilidades como golpeador con esta bludger para prácticas. No nos hacemos responsables por ninguna lesión causada por este producto. Use bajo su propia responsabilidad.",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 4,
+            "categoria": "Deportes"
+        }
+    },
+    {
+        "id": 28,
+        "nombre": "Cera para escobas",
+        "descuento": 0,
+        "precio": 15.0,
+        "img": "../src/assets/img/ceraparaescoba.png",
+        "stock": 8,
+        "descripcion": "Un mago de nuestro instituto siempre porta su vehículo limpio y reluciente. Nueva cera hecha con material biodegradable.",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 4,
+            "categoria": "Deportes"
+        }
+    },
+    {
+        "id": 29,
+        "nombre": "Combo de equipo para quidditch",
+        "descuento": 0,
+        "precio": 280.0,
+        "img": "../src/assets/img/equipocompleto.png",
+        "stock": 7,
+        "descripcion": "Nuevo equipo de protección para continuar practicando el máximo deporte del mundo Mágico.",
+        "estadoProductos": {
+            "id": 2,
+            "nombre": "nuevo"
+        },
+        "categoriaProducto": {
+            "id": 4,
+            "categoria": "Deportes"
+        }
+    },
+    {
+        "id": 30,
+        "nombre": "Protección para brazos",
+        "descuento": 0,
+        "precio": 80.0,
+        "img": "../src/assets/img/guantesquidditch.png",
+        "stock": 30,
+        "descripcion": "¡Cuidado con las lesiones! Asegúrate de estar preparado con estas elegantes protecciones.",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 4,
+            "categoria": "Deportes"
+        }
+    },
+    {
+        "id": 31,
+        "nombre": "Protección para piernas",
+        "descuento": 0,
+        "precio": 90.0,
+        "img": "../src/assets/img/piernasquidditch.png",
+        "stock": 30,
+        "descripcion": "¡Cuidado con las lesiones! El quidditch puede ser un deporte muy rudo, con estas protecciones no tendrás nada de qué preocuparte.",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 4,
+            "categoria": "Deportes"
+        }
+    },
+    {
+        "id": 32,
+        "nombre": "Quaffle",
+        "descuento": 0,
+        "precio": 50.0,
+        "img": "../src/assets/img/quaffle.png",
+        "stock": 10,
+        "descripcion": "Los grandes jugadores nunca dejan de entrenar. Compra esta quaffle para prácticas y conviértete en el número uno.",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 4,
+            "categoria": "Deportes"
+        }
+    },
+    {
+        "id": 33,
+        "nombre": "Snitch dorada",
+        "descuento": 0,
+        "precio": 80.0,
+        "img": "../src/assets/img/snitchdorada.png",
+        "stock": 1,
+        "descripcion": "¿Problemas para seguir la snitch en los juegos? Practica con esta versión especial que es un poco más lenta. ",
+        "estadoProductos": {
+            "id": 2,
+            "nombre": "nuevo"
+        },
+        "categoriaProducto": {
+            "id": 4,
+            "categoria": "Deportes"
+        }
+    },
+    {
+        "id": 34,
+        "nombre": "Caldero",
+        "descuento": 0,
+        "precio": 20.0,
+        "img": "../src/assets/img/caldero.png",
+        "stock": 50,
+        "descripcion": "Los mejores magos practican en horas extracurriculares. No dependas de que los salones estén abiertos y adquiere tu propio caldero.",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 3,
+            "categoria": "Pociones"
+        }
+    },
+    {
+        "id": 35,
+        "nombre": "Mandrágoras",
+        "descuento": 0,
+        "precio": 30.5,
+        "img": "../src/assets/img/mandragora_baul.png",
+        "stock": 30,
+        "descripcion": "Consigue la nueva colección de la planta más sensible de Hogwarts. Se recomienda el uso de protección auditiva.",
+        "estadoProductos": {
+            "id": 3,
+            "nombre": "destacado"
+        },
+        "categoriaProducto": {
+            "id": 1,
+            "categoria": "Herbología"
+        }
+    },
+    {
+        "id": 36,
+        "nombre": "Nimbus 2000",
+        "descuento": 0,
+        "precio": 2500.0,
+        "img": "../src/assets/img/nimbus200.png",
+        "stock": 2,
+        "descripcion": "La escoba más rápida de la actualidad. Con este elegante color dorado y su mango de caoba serás invencible en el equipo de Quidditch. ¡Cómprala ya!",
+        "estadoProductos": {
+            "id": 4,
+            "nombre": "nuevo y destacado"
+        },
+        "categoriaProducto": {
+            "id": 4,
+            "categoria": "Deportes"
+        }
+    },
+    {
+        "id": 37,
+        "nombre": "Nimbus 2001",
+        "descuento": 0,
+        "precio": 2800.0,
+        "img": "../src/assets/img/nimbus2001.png",
+        "stock": 2,
+        "descripcion": "Nuevo modelo de la escoba Nimbus con el doble de velocidad y más espacio para tus piernas. ¡Conviértete en invencible!",
+        "estadoProductos": {
+            "id": 2,
+            "nombre": "nuevo"
+        },
+        "categoriaProducto": {
+            "id": 4,
+            "categoria": "Deportes"
+        }
+    },
+    {
+        "id": 38,
+        "nombre": "Pluma y tintero",
+        "descuento": 0,
+        "precio": 15.99,
+        "img": "../src/assets/img/plumaescribir.png",
+        "stock": 30,
+        "descripcion": "¡Compra tu próxima pluma que escriba para las siguientes generaciones! Permite trazos más suaves y un tintero grande.",
+        "estadoProductos": {
+            "id": 2,
+            "nombre": "nuevo"
+        },
+        "categoriaProducto": {
+            "id": 3,
+            "categoria": "Pociones"
+        }
+    },
+    {
+        "id": 39,
+        "nombre": "Boletos partido de quidditch",
+        "descuento": 10,
+        "precio": 40.0,
+        "img": "../src/assets/img/quidditch_ticket.png",
+        "stock": 300,
+        "descripcion": "Asiste al partido inaugural de la Copa de Quidditch 2021-2022 este sábado 20 de noviembre. ¡No te lo puedes perder!",
+        "estadoProductos": {
+            "id": 3,
+            "nombre": "destacado"
+        },
+        "categoriaProducto": {
+            "id": 3,
+            "categoria": "Pociones"
+        }
+    },
+    {
+        "id": 40,
+        "nombre": "Varita de cedro",
+        "descuento": 0,
+        "precio": 30.5,
+        "img": "../src/assets/img/varita.png",
+        "stock": 5,
+        "descripcion": "¿Quieres ser Ollivander por un día? Compra este kit y aprenda a crear una varita mágica desde cero",
+        "estadoProductos": {
+            "id": 1,
+            "nombre": "no nuevo"
+        },
+        "categoriaProducto": {
+            "id": 3,
+            "categoria": "Pociones"
+        }
+    }
+]

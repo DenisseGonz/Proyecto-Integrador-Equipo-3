@@ -4,7 +4,7 @@ import { productos } from './assets/js/productos.js';
 import { mostrarControlador, siguienteCancion, playPause, cambiarVolumen, saltarCancion } from './assets/js/audio.js';
 import { recordadora } from './assets/js/recordadora.js';
 import { bienvenida } from './assets/js/bienvenida.js';
-import { cambiarContraseña, cambiarCorreo, cambiarPregunta, borrarCuenta, inicioCorreo, registroUsuario } from './assets/js/validaciones.js';
+import { cambiarContraseña, cambiarCorreo, cambiarPregunta, borrarCuenta, inicioCorreo, registroUsuario, contacto, delivery } from './assets/js/validaciones.js';
 
 document.addEventListener('DOMContentLoaded', function () {
     let url = window.location.href;
@@ -67,6 +67,12 @@ document.addEventListener('DOMContentLoaded', function () {
         cambiarCorreo();
         cambiarPregunta();
         borrarCuenta();
+    }
+    else if (url.includes('/contacto.html')){
+        contacto();
+    }
+    else if (url.includes('/delivery.html')){
+        delivery();
     }
 });
 

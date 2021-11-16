@@ -24,22 +24,18 @@ import Swal from "sweetalert2";
 export function productos() {
   const $contenedor = document.querySelector("#productos-2");
 
-  fetch("../src/productos.json")
+  fetch("../src/todosLosProductos.json")
     .then(resp => resp.json())
     .then(data => {
       var j = 0;
       data.forEach(i => {
-        if (i.destacado == "si") {
           let $singleProduct = document.createElement("div");
-          var id = `img${j + 1}`;
+          var ij = `img${j + 1}`;
           $singleProduct.className = "producto col-md-6 col-lg-4 col-xl-3";
           var a = `<div class="producto__parte-1">
-                        <img id="${id}" class="producto__parte-1--img" src="${i.img}">`
-          if (i.descuento != " ") {
-            a = a + `<span class="producto__parte-1--descuento">${i.descuento}</span>`
-          }
-          if (i.tipo != " ") {
-            a = a + `<span class="producto__parte-1--nuevo">${i.tipo}</span>`
+                        <img id="${ij}" class="producto__parte-1--img" src="${i.img}">`
+          if (i.estadoProductos.nombre== "nuevo" || i.estadoProductos.nombre== "nuevo y destacado") {
+            a = a + `<span class="producto__parte-1--nuevo">Nuevo</span>`
           }
           a = a + `<ul class="producto__parte-1--ul">
                     <li><a href="#" class="chest"></a></li>
@@ -47,10 +43,10 @@ export function productos() {
                 </div>
                 <div class="producto__parte-2">
                 <h3 class="producto__parte-2--titulo">${i.nombre}</h3>`
-          if (i.antiguoPrecio !== " ") {
+          /* if (i.antiguoPrecio !== " ") {
             a = a + `<h4 class="producto__parte-2--viejo-precio">${i.antiguoPrecio}</h4>`
-          }
-          a = a + `<h4 class="producto__parte-2--precio">${i.precio}</h4></br>
+          } */
+          a = a + `<h4 class="producto__parte-2--precio">$${i.precio}</h4></br>
                 <span class="btn producto__parte-2--boton">
                     <a href="#">Agregar al baúl</a>
                 </span>
@@ -69,7 +65,7 @@ export function productos() {
           // $carrusel.appendChild($caritem);
           j++;
           /*esta parte del codigo genera las vistas detalladas*/
-          let $img = document.querySelector(`#${id}`);
+          let $img = document.querySelector(`#${ij}`);
           $img.addEventListener("click", () => {
             Swal.fire({
               html:
@@ -86,7 +82,6 @@ export function productos() {
               background: 'rgba(0,0,0,0.8)',
             })
           })
-        }
       });
     })
     .catch(e => {
@@ -94,6 +89,3 @@ export function productos() {
     });
 }
 
-productos();
-productos();
-productos();

@@ -60,11 +60,8 @@ span {
     padding: 2rem;
     -webkit-backdrop-filter: blur(2px);
 }
-.nombre{
-    border-radius: 15px;
-}
-.familia{
-    border-radius: 15px;
+.nombre__textarea{
+    border-radius: 20px; 
 }
 .mensaje{
     height: 200px;
@@ -96,7 +93,7 @@ textarea{
 .btn{
     width:30%;
     font-size:2rem;
-    font-family: var(--texto-detalles);
+    font-family: var(--texto);
 }
 
 @media (min-width:250px) and (max-width: 768px) {
@@ -111,6 +108,7 @@ textarea{
 
     .nombre__textarea{
         width:100%;
+        border-radius: 20px; 
     } 
 
     .btn{

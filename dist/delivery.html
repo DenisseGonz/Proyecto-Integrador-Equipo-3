@@ -135,11 +135,11 @@
                     <div class="container1">
                         <div class="nombre">
                             <label for="Nombre">Nombre</label><br>
-                            <textarea class="nombre__textarea" placeholder="Ronald"></textarea>
+                            <textarea id="delivery__nombre" class="nombre__textarea" placeholder="Ronald"></textarea>
                         </div>
-                        <div class="div-fam">
+                        <div class="familia">
                             <label for="familia">Familia</label><br>
-                            <textarea class="nombre__textarea" placeholder="Wesley"></textarea>
+                            <textarea id="delivery__familia" class="nombre__textarea" placeholder="Wesley"></textarea>
                         </div>
                     </div>
                     <div class="container2">
@@ -147,6 +147,7 @@
                             <label for="inputPregunta" class="label">¿A qué casa perteneces?</label>
                             <div>
                                 <select name="pregunta" id="inputPregunta" class="form-control">
+                                    <option value="0"></option>
                                     <option value="1">Gryffindor</option>
                                     <option value="2">Hufflepuff</option>
                                     <option value="3">Ravenclaw</option>
@@ -154,13 +155,13 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="div-fam">
+                        <div class="ubicacion">
                             <label for="ubicacion">Ubicación</label><br>
-                            <textarea class="nombre__textarea" placeholder="#239"></textarea>
+                            <textarea id="delivery__ubicacion" class="nombre__textarea" placeholder="#239"></textarea>
                         </div>
                     </div>
                     <div class="btn-enviar ">
-                        <button type="button" class="btn btn-secondary btn-lg">Enviar</button>
+                        <button id="delivery__boton" type="button" class="btn btn-secondary btn-lg">Enviar</button>
                     </div>
                 </form>
             </div>

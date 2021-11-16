@@ -28,7 +28,7 @@ span {
 
 .borde{
     padding: 2rem;
-    background-image: url('../img/delivery_buho_3.png');
+    background-image: url('../img/delivery_buho_4.png');
     color: var(--negro);
     background-size: 60%;
     background-position: center;
@@ -110,7 +110,7 @@ label {
 .btn{
     width:50%;
     font-size:1.8rem;
-    font-family: var(--texto-detalles);
+    font-family: var(--texto);
 }
 
 .nombre {

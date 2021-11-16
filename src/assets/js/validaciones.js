@@ -289,6 +289,7 @@ export function inicioCorreo() {
         let password = document.getElementById('inputContrasenia').value;    
         //Validación correo y contraseña por una expresión regular
         let cumpleEmail = expRegCorreo.test(correo);
+
         let cumplePass = expRegContraseña.test(password);
 
         if (correo == '' || password == '') {
@@ -455,3 +456,136 @@ export function registroUsuario() {
         }
     });
 }
+
+//PAGINA DE CONTACTO    
+export function contacto(){
+
+const $boton_pregunta = document.getElementById('contacto__boton');
+$boton_pregunta.addEventListener('click', (ev) => {
+    ev.preventDefault();
+    let nombre = document.getElementById('contacto__nombre').value;
+    let familia = document.getElementById('contacto__familia').value;
+    let mensaje = document.getElementById('contacto__mensaje').value;
+    let cumpleNombre = expRegLetras.test(nombre);
+    let cumpleFamilia = expRegLetras.test(familia);
+    let cumpleMensaje = expRegLetras.test(mensaje);
+
+
+    if (nombre == '' || familia == '' || mensaje == '') {
+        //Valores vacíos
+        Swal.fire({
+            html: '<h2 class="text-white">Algo salió mal</h2><p class="text-white">Algún campo está vacío, verifica la información<p>',
+            showCloseButton: true,
+            confirmButtonColor: '#363859',
+            background: 'rgba(0,0,0,0.8)',
+            icon: 'error',
+            iconColor: '#9f8932'
+        });
+    } else if (nombre.includes('drop ') || nombre.includes('delete ') || familia.includes('drop ') || familia.includes('delete ')|| mensaje.includes('drop ') || mensaje.includes('delete ')) {
+        Swal.fire({
+            html: '<h2 class="text-white">Algo salió mal</h2><p class="text-white">Haz encontrado una palabra prohibida. Reformula tu respuesta<p>',
+            showCloseButton: true,
+            confirmButtonColor: '#363859',
+            background: 'rgba(0,0,0,0.8)',
+            icon: 'error',
+            iconColor: '#9f8932'
+        });
+    } else if (!cumpleNombre || !cumpleFamilia || !cumpleMensaje) {
+        Swal.fire({
+            html: '<h2 class="text-white">Algo salió mal</h2><p class="text-white">Para tu nombre y tu familia solo utiliza letras.</p>',
+            showCloseButton: true,
+            confirmButtonColor: '#363859',
+            background: 'rgba(0,0,0,0.8)',
+            icon: 'error',
+            iconColor: '#9f8932'
+        });
+    }  else {
+        //Falta registrar el mensaje en la base de datos
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 1500,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        });
+
+        Toast.fire({
+            background: 'rgba(0,0,0,0.8)',
+            icon: 'success',
+            iconColor: '#9f8932',
+            title: '<h2 class="text-white">Tu mensaje ha sido enviado.</h2>'
+        });
+    }
+}
+)
+}
+
+//PAGINA DE DELIVERY    
+export function delivery(){
+const $boton_pregunta = document.getElementById('delivery__boton');
+$boton_pregunta.addEventListener('click', (ev) => {
+    ev.preventDefault();
+    let nombre = document.getElementById('delivery__nombre').value;
+    let familia = document.getElementById('delivery__familia').value;
+    let ubicacion = document.getElementById('delivery__ubicacion').value;
+    let pregunta = document.getElementById('inputPregunta').value;
+    let cumpleNombre = expRegLetras.test(nombre);
+    let cumpleFamilia = expRegLetras.test(familia);
+
+
+    if (nombre == '' || familia == '' || ubicacion == '' || pregunta == '0') {
+        //Valores vacíos
+        Swal.fire({
+            html: '<h2 class="text-white">Algo salió mal</h2><p class="text-white">Algún campo está vacío, verifica la información<p>',
+            showCloseButton: true,
+            confirmButtonColor: '#363859',
+            background: 'rgba(0,0,0,0.8)',
+            icon: 'error',
+            iconColor: '#9f8932'
+        });
+    } else if (nombre.includes('drop ') || nombre.includes('delete ') || familia.includes('drop ') || familia.includes('delete ')|| ubicacion.includes('drop ') || ubicacion.includes('delete ')) {
+        Swal.fire({
+            html: '<h2 class="text-white">Algo salió mal</h2><p class="text-white">Haz encontrado una palabra prohibida. Reformula tu respuesta<p>',
+            showCloseButton: true,
+            confirmButtonColor: '#363859',
+            background: 'rgba(0,0,0,0.8)',
+            icon: 'error',
+            iconColor: '#9f8932'
+        });
+    } else if (!cumpleNombre || !cumpleFamilia) {
+        Swal.fire({
+            html: '<h2 class="text-white">Algo salió mal</h2><p class="text-white">Para tu nombre y tu familia solo utiliza letras.</p>',
+            showCloseButton: true,
+            confirmButtonColor: '#363859',
+            background: 'rgba(0,0,0,0.8)',
+            icon: 'error',
+            iconColor: '#9f8932'
+        });
+    }  else {
+        //Falta registrar el mensaje en la base de datos
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 1500,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        });
+
+        Toast.fire({
+            background: 'rgba(0,0,0,0.8)',
+            icon: 'success',
+            iconColor: '#9f8932',
+            title: '<h2 class="text-white">Tu mensaje ha sido enviado.</h2>'
+        });
+    }
+    }
+    );
+    }

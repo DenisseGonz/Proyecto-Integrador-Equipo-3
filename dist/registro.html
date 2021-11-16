@@ -35,7 +35,7 @@
         </div>
     </header>
 
-    <form method="POST" autocomplete="false" class="formulario">
+    <form method="POST" class="formulario" autocomplete="off">
         <div class="formulario__titulos">
             <h1>¡Bienvenidx!</h1>
             <h2>Regístrate</h2>
@@ -82,25 +82,25 @@
                 <label for="inputCasa" class="col-lg-6 formulario__datos--etiquetas mt-3">Casa de Hogwarts:</label>
                 <div class="datos__casa--check col-lg-12 col-md-12 col-xs-10 mt-2">
 
-                    <input type="radio" id="radio1" name="radios" value="gryffindor" checked>
+                    <input type="radio" id="radio1" name="radios" value="1" checked>
                     <label for="radio1" class="opcion__casa col-lg-3 col-sm-6 col-md-3 col-xs-3">
                         <img class="d-flex align-self-center" src="../src/assets/img/Gryffindor.png" width="40">
                         <span class="d-flex align-self-center">Gryffindor</span>
                     </label>
 
-                    <input type="radio" id="radio2" name="radios" value="hufflepuff">
+                    <input type="radio" id="radio2" name="radios" value="3">
                     <label for="radio2" class="opcion__casa col-lg-3 col-sm-6 col-md-3 col-xs-3">
                         <img class="d-flex align-self-center" src="../src/assets/img/Hufflepuff_ClearBG.png" width="45">
                         <span class="d-flex align-self-center">Hufflepuff</span>
                     </label>
 
-                    <input type="radio" id="radio3" name="radios" value="ravenclaw">
+                    <input type="radio" id="radio3" name="radios" value="4">
                     <label for="radio3" class="opcion__casa col-lg-3 col-sm-6 col-md-3 col-xs-3">
                         <img class="d-flex align-self-center" src="../src/assets/img/RavenclawCrest.png" width="45">
                         <span class="d-flex align-self-center">Ravenclaw</span>
                     </label>
 
-                    <input type="radio" id="radio4" name="radios" value="slytherin">
+                    <input type="radio" id="radio4" name="radios" value="2">
                     <label for="radio4" class="opcion__casa col-lg-3 col-sm-6 col-md-3 col-xs-3">
                         <img class="d-flex align-self-center" src="../src/assets/img/slytherin-crests.png" width="40">
                         <span class="d-flex align-self-center">Slytherin</span>
@@ -113,8 +113,8 @@
             <div class="formulario__datos col-lg-6">
                 <label for="inputPregunta" class="col formulario__datos--etiquetas">Pregunta de
                     seguridad:</label>
-                <select name="pregunta" id="inputPregunta" class="col-lg-12 formulario__datos--campos">
-                    <option value=""> </option>
+                <select name="pregunta" id="inputPregunta" class="col-lg-12 text-muted formulario__datos--campos">
+                    <option value="0"> Escoge una opción</option>
                     <option value="1"> Nombre de tu primera mascota</option>
                     <option value="2"> Hechizo favorito</option>
                     <option value="3"> ¿De qué es el núcleo de tu varita? </option>
@@ -132,7 +132,7 @@
 
         </span>
         <div class="col-lg- boton__entrar">
-            <a href="./index.html" class="btn btn-secondary btn-lg" tabindex="-1" role="button"
+            <a id="botonRegistrar" class="btn btn-secondary btn-lg" tabindex="-1" role="button"
                 aria-disabled="true">Regístrate</a>
         </div>
 
@@ -141,6 +141,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
+        <script type="module" src="../bundle.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
     <script src="../src/assets/js/bootstrap.min.js"></script>

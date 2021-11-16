@@ -1,5 +1,19 @@
-body{
- 
+:root {
+    /* tipografia */
+    --titulo: 'Adamina', serif;
+    --texto: 'Open Sans', sans-serif;
+    --texto-detalles: 'Alegreya Sans', sans-serif;
+    --detalles: 'IM Fell English SC', serif;
+    /* colores */
+    --dorado: #9f8932;
+    --gris: #363859;
+    --blanco: #fcfcfc;
+    --negro: #292100;
+    --azul: #21267a;
+    /*Colores de botón del baúl*/
+    --blackchest: url('https://api.iconify.design/mdi/treasure-chest.svg?color=black')
+        no-repeat center center / contain;
+    --pinkchest: url('https://api.iconify.design/mdi/treasure-chest.svg?color=%23fe302f');
 }
 
 .mask{
@@ -220,8 +234,44 @@ input{
   }
 
 
-  /*Cards*/
+ /*Cards*/
   
+h3 {
+    font-family: var(--titulo);
+    font-weight: 400px;
+    font-size: 0.9rem !important;
+}
+
+h4 {
+    font-family: var(--texto-detalles);
+    font-weight: 900;
+    font-size: 27px;
+    color: #fcfcfc;
+    text-decoration: overline#977f1e;
+}
+
+h5 {
+    font-family: var(--titulo);
+    font-size: 21px;
+    font-weight: 800;
+}
+
+h6 {
+    font-family: var(--texto-detalles);
+    font-size: 30px;
+    text-shadow: 10cm;
+    color: var(--dorado);
+}
+
+p {
+    font-family: var(--texto);
+    font-size: 20px;
+}
+
+.footer__titulo {
+    font-family: var(--detalles);
+}
+
 .card-title {
     font-family: var(--titulo);
 }
@@ -229,7 +279,6 @@ input{
 .card-text {
     font-family: var(--texto);
 }
-
 /*las clases que se encuentran abajo de este punto son necesarias para que las cards funcionen siguen casi por completo la metodología BEM
 solo no se siguio estrictamente para algunas subclases asegurese de incluir el :root con al menos --blackchest y -pinkchest*/
 
@@ -244,7 +293,8 @@ solo no se siguio estrictamente para algunas subclases asegurese de incluir el :
 
 .producto {
     margin-bottom: 26px;
-    width: 75%;
+    /* width: 75%; */
+    flex-direction: column;
 }
 
 producto:hover {
@@ -407,34 +457,6 @@ producto:hover {
 
 /*clases no tan necesarias solo para el carrusel vista móvil*/
 
-#productosvistamovil {
-    width: 70%;
-    margin: 3.5em auto;
-}
-
-
-@media (max-width: 768px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: flex;
-        justify-content:space-around;
-    }
-}
-
-.card{
-    display: flex;
-    width: 200px;
-    height: 250px;
-    background-color: grey;
-    background-image: url(https://c.tenor.com/ll3rQ9a_zqYAAAAC/galaxy.gif);  
-}
-
-.cardText{
-    color:white;
-    margin-top:10%;
-}
 
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
@@ -550,16 +572,3 @@ body{
 }
 
 }
-
- /*Medium devices (tablets, less than 992px)*/
-
-/*@media (max-width: 1199.98px) { 
-    body{
-        width: 100%;
-        background-position-x: center;
-        justify-content: center;
-        background-size: cover;
-    }
- 
-}
-

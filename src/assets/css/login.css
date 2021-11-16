@@ -26,6 +26,14 @@ body{
     
 }
 
+.texto{
+    justify-self: center;
+    justify-content: center;
+    color:white;
+    font-size: 0.8rem;
+    align-content:flex-end;
+}
+
 .body__mask{
     display: flex;
     flex-direction: column;
@@ -169,7 +177,9 @@ input[type=password]:focus, input[type=email]:focus{
     align-self: center;
     align-content: center;
     height:35%;  
-    height:auto;    
+    height:auto;  
+    margin-top: 3%;  
+    font-family: 'Alegreya Sans', sans-serif;
 }
 .registro__boton a{
     color:white;

@@ -19,7 +19,7 @@
 
 </head>
 
-<body class="body__mask" >
+<body class="body__mask">
 
 
     <header class="encabezado">
@@ -43,18 +43,20 @@
 
         <form method="POST" autocomplete="false">
             <div class="formulario__datos col justify-content-md-around">
-                <label for="inputEmail" 
+                <label for="inputEmail"
                     class="col-lg-6 col-md-10 col-sm-10 col-form- label formulario__datos--etiquetas ">Correo
                     electrónico:</label>
-                <input type="email" autocomplete="off" class="form-control col-lg-5 col-md-11 col-sm-10 formulario__datos--campos "
-                    id="inputEmail" placeholder="algo@hogwarts.com">
+                <input type="email" autocomplete="off"
+                    class="form-control col-lg-5 col-md-11 col-sm-10 formulario__datos--campos " id="inputEmail"
+                    placeholder="algo@hogwarts.com">
             </div>
 
             <div class="formulario__datos col justify-content-md-around">
                 <label for="inputContrasenia"
                     class="col-lg-6 col-form- col-md-8 col-sm-10 label formulario__datos--etiquetas">Contraseña:</label>
-                <input type="password" autocomplete="off" class="form-control col-md-11 col-lg-5 col-sm-10  formulario__datos--campos"
-                    id="inputContrasenia" placeholder="8 caracteres alfanuméricos">
+                <input type="password" autocomplete="off"
+                    class="form-control col-md-11 col-lg-5 col-sm-10  formulario__datos--campos" id="inputContrasenia"
+                    placeholder="8 caracteres alfanuméricos">
             </div>
 
             <div class="formulario__boton--recuperacion">
@@ -63,15 +65,20 @@
             </div>
 
             <div class="formulario__boton--recuperacion">
-                <button type="button" class="btn btn-secondary btn-lg hvr-float-shadow" tabindex="-1" role="button"
-                    aria-disabled="true"><a href="inicio.html">Entrar</a></button>
+                <button type="button" id="btnEntrar" class="btn btn-secondary btn-lg hvr-float-shadow" tabindex="-1"
+                    role="button" aria-disabled="true">Entrar</button>
             </div>
         </form>
 
+
         <section class="registro justify-self-center">
+
             <img src="../src/assets/img/sombrero-login.png" alt="Sombrero seleccionador" width="150">
-            <button type="button" class="btn btn-dark registro__boton " tabindex="-1" role="button"
-                aria-disabled="true"><a href="registro.html">¿Eres nuevo? Regístrate</a></button>
+            
+                <label class="texto">¿Eres nuevo?
+                <button type="button" class="btn btn-dark registro__boton" tabindex="-1" role="button"
+                    aria-disabled="true"><a href="registro.html"> Regístrate</a></button></label>
+        
             <img src="../src/assets/img/sombrero-login.png" alt="Sombrero seleccionador" class="registro__img"
                 width="150">
         </section>
@@ -84,8 +91,6 @@
     <script src="../src/assets/js/bootstrap.bundle.min.js"></script>
     <script src="../src/assets/js/bootstrap.min.js"></script>
     <script type="module" src="../bundle.js"></script>
-    <script type="module" src="../src/assets/js/recordadora.js"></script>
-
 
 </body>
 

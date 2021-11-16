@@ -59,7 +59,7 @@ body{
     padding: 20px 25px;
     border-radius: 25px;
     font-size: 1.3rem;
-    font-family: 'Adamina', serif;
+    font-family: 'IM Fell English SC', serif;
     color:white;
     -webkit-text-stroke: 1.5px rgba(84, 102, 165, 0.85);
 }
@@ -104,6 +104,7 @@ body{
     border-top: none;
     border-left: none;
     border-right: none;
+    color:white;
 }
  
 input[type=password]:focus, input[type=email]:focus, input[type=text]:focus,select[name="pregunta"]:focus{
@@ -115,7 +116,7 @@ input[type=password]:focus, input[type=email]:focus, input[type=text]:focus,sele
     border-top: none;
     border-left: none;
     border-right: none;
-    color: white;
+    color:white;
 }
 
 .datos__casa--check{
@@ -133,8 +134,6 @@ input[type=password]:focus, input[type=email]:focus, input[type=text]:focus,sele
     justify-content: center; 
     align-content: flex-end; 
 } 
-
-
 
 .boton__entrar{
     align-self: center;
@@ -183,14 +182,18 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   border: 1px solid rgba(84, 102, 165, 0.85);
-  -webkit-text-fill-color:#271d1d9f;
+  -webkit-text-fill-color:white;
   transition: background-color 5000s ease-in-out 0s;
-  color:var(--blanco);
+  /* color:var(--blanco); */
 }
 
-input:-webkit-autofill {
-    -webkit-text-fill-color: var(--blanco) !important;
+
+.contrasena:focus+ span::after{
+    content:"Debe incluir un número, una letra y un caracter especial";
+    color:gray;
+    font-size: 0.8rem;
 }
+
 
 
 /* MediaQueries Breakpoint */

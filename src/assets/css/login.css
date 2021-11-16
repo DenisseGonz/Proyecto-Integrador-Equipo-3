@@ -80,7 +80,7 @@ body{
     padding-bottom: 45px;
     border-radius: 25px;
     color:white;
-    font-family: var(--titulo);
+    font-family: 'IM Fell English SC', serif;
     -webkit-text-stroke: 1.2px rgba(84, 102, 165, 0.85);
     font-size: 1.5rem;   
 }
